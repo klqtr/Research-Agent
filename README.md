@@ -69,7 +69,22 @@ OCR 使用 PyMuPDF 内置引擎和官方 Tesseract 英语语言数据，位于 `
 
 `scripts/run_tests.py`只运行完整测试集并保存stdout、XML、命令和退出码；报告优先使用LATEST_TESTS指针，局部模块测试不会覆盖完整回归的证据。
 
-文献追踪在“检索与追踪”中显式保存/启用，默认空/停用。30–1440分钟间隔，每条最多48次刷新、每60秒调度最多2条，次数到上限自动停用；只访问公共arXiv元数据。调度仅随本地Web服务运行。当前最多2次/30分钟间隔的实测主题用于验证，第一份快照已真实产生，第二个周期等待到时；详情见reports/tracking_report.md。`scripts/tracking_probe.py`默认只读，`--create`才会创建有界实验条目。
+文献追踪在“检索与追踪”中显式保存/启用，默认空/停用。30–1440分钟间隔，每条最多48次刷新、每60秒调度最多2条，次数到上限自动停用；只访问公共arXiv元数据。调度仅随本地Web服务运行。真实实验两次刷新于01:55:39与02:26:07成功，第二条为scheduled，随后达到两次预算自动停用，原始状态已保存；这不代表长期稳定性。详情见reports/tracking_report.md。`scripts/tracking_probe.py`默认只读，`--create`才创建有界条目。
+
+引用图现有21份PDF/20家族、71条边，点击节点或排序条目聚焦邻居，引用证据按钮回到真实参考页/块，可导出带编号图例SVG。同库同元数据旧匹配64条，新增7条经原PDF逐块复核；71条只通过锚点完整性检查，不能称为引用精确率100%。PageRank不代表论文质量，版本家族边不推断引用最新修订版。
+
+扩展库来源：`scripts/expand_references.py`默认仅列候选，`--download --limit 14`才按原文arXiv标识受限下载；现有库已经扩展，重复执行会选择其他候选，不能用于重现同一21份库。原始manifest见experiments/LATEST_REFERENCE_EXPANSION.txt。`scripts/enrich_metadata.py`只对精确ID+版本补齐公开元数据，原始Atom留存；机构缺失不猜测。图谱复核入口为`scripts/evaluate_graph.py`，需同一文献ID集合，详见reports/citation_graph_report.md。
+
+精确重建21份演示文献库：
+```powershell
+# 默认只校验；--download-missing 才下载锁定来源，不覆盖不匹配文件
+.venv/Scripts/python.exe scripts/replay_library_sources.py --download-missing
+.venv/Scripts/python.exe scripts/fetch_ocr_data.py
+.venv/Scripts/python.exe scripts/import_papers.py
+.venv/Scripts/python.exe scripts/enrich_metadata.py --from-atom experiments/metadata_20261016_022037/raw.atom
+.venv/Scripts/python.exe scripts/evaluate_graph.py
+```
+`data/library_sources.json`锁定精确版本、原文件名和SHA256。未来上游文件哈希改变会报错，不冒称同源复现；缺失文件联网恢复路径尚未重新下载验收。本机已将21份PDF重新解析到隔离临时库、离线恢复20份元数据，完整20节点/71边锚点及排名一致（6.69秒、零联网），原库未修改；记录见experiments/LATEST_REBUILD.txt。可运行`scripts/rebuild_library_probe.py`复核。
 
 真实教材为作者官网发布的同名541页版本，未取得官方资料包哈希；扫描件是由真实论文两页派生，不是官方 `1706.03762v1_img.pdf`。合成541页样例单独标记。
 

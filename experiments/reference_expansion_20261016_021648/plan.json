@@ -1,0 +1,377 @@
+{
+  "at": "2026-10-16T02:16:48.654022+08:00",
+  "download_enabled": true,
+  "max_total_bytes": 83886080,
+  "max_each_bytes": 12582912,
+  "minimum_gap_seconds": 3,
+  "candidates": [
+    {
+      "arxiv_id": "2002.08909",
+      "explicit_versions": [],
+      "citing_paper_count": 3,
+      "numeric_citation_mentions": 7,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "cb551710ff63f0804805",
+          "source_title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "page": 10,
+          "chunk_id": "cb551710ff63f0804805:p10:c137",
+          "reference_text": "Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pa- supat, and Ming-Wei Chang. 2020. REALM: Retrieval-augmented language model pre-training. arXiv preprint arXiv:2002.08909.",
+          "numeric_citation_mentions": null
+        },
+        {
+          "source_paper_id": "23e3249e9a1e75418d82",
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 12,
+          "chunk_id": "23e3249e9a1e75418d82:p12:c234",
+          "reference_text": "[20] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. REALM: Retrieval-augmented language model pre-training. ArXiv, abs/2002.08909, 2020. URL https: //arxiv.org/abs/2002.08909.",
+          "numeric_citation_mentions": 7
+        },
+        {
+          "source_paper_id": "23e3249e9a1e75418d82",
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 12,
+          "chunk_id": "23e3249e9a1e75418d82:p12:c234",
+          "reference_text": "[20] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. REALM: Retrieval-augmented language model pre-training. ArXiv, abs/2002.08909, 2020. URL https: //arxiv.org/abs/2002.08909.",
+          "numeric_citation_mentions": 7
+        },
+        {
+          "source_paper_id": "97fd272f1fdfc1867746",
+          "source_title": "Language Models are Few-Shot Learners",
+          "page": 69,
+          "chunk_id": "97fd272f1fdfc1867746:p69:c815",
+          "reference_text": "[GLT+20] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. Realm: Retrieval- augmented language model pre-training. arXiv preprint arXiv:2002.08909, 2020.",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1609.08144",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 8,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "bdfaa68d8984f0dc02be",
+          "source_title": "Attention Is All You Need",
+          "page": 12,
+          "chunk_id": "bdfaa68d8984f0dc02be:p12:c191",
+          "reference_text": "[38] Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016.",
+          "numeric_citation_mentions": 8
+        },
+        {
+          "source_paper_id": "5692a5514787a8c6727b",
+          "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "page": 12,
+          "chunk_id": "5692a5514787a8c6727b:p12:c202",
+          "reference_text": "Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. 2016. Google’s neural ma- chine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144.",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1910.13461",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 4,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "23e3249e9a1e75418d82",
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 13,
+          "chunk_id": "23e3249e9a1e75418d82:p13:c248",
+          "reference_text": "[32] Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Veselin Stoyanov, and Luke Zettlemoyer. BART: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. arXiv preprint arXiv:1910.13461, 2019. URL https://arxiv.org/abs/1910.13461.",
+          "numeric_citation_mentions": 4
+        },
+        {
+          "source_paper_id": "23e3249e9a1e75418d82",
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 13,
+          "chunk_id": "23e3249e9a1e75418d82:p13:c248",
+          "reference_text": "[32] Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Veselin Stoyanov, and Luke Zettlemoyer. BART: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. arXiv preprint arXiv:1910.13461, 2019. URL https://arxiv.org/abs/1910.13461.",
+          "numeric_citation_mentions": 4
+        },
+        {
+          "source_paper_id": "97fd272f1fdfc1867746",
+          "source_title": "Language Models are Few-Shot Learners",
+          "page": 71,
+          "chunk_id": "97fd272f1fdfc1867746:p71:c856",
+          "reference_text": "[LLG+19] Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov, and Luke Zettlemoyer. Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. arXiv preprint arXiv:1910.13461, 2019.",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1701.06538",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 2,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "bdfaa68d8984f0dc02be",
+          "source_title": "Attention Is All You Need",
+          "page": 12,
+          "chunk_id": "bdfaa68d8984f0dc02be:p12:c185",
+          "reference_text": "[32] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538, 2017.",
+          "numeric_citation_mentions": 2
+        },
+        {
+          "source_paper_id": "97fd272f1fdfc1867746",
+          "source_title": "Language Models are Few-Shot Learners",
+          "page": 74,
+          "chunk_id": "97fd272f1fdfc1867746:p74:c911",
+          "reference_text": "[SMM+17] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538, 2017.",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1702.08734",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 2,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "cb551710ff63f0804805",
+          "source_title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "page": 10,
+          "chunk_id": "cb551710ff63f0804805:p10:c145",
+          "reference_text": "Jeff Johnson, Matthijs Douze, and Herv´e J´egou. 2017. Billion-scale similarity search with GPUs. arXiv preprint arXiv:1702.08734.",
+          "numeric_citation_mentions": null
+        },
+        {
+          "source_paper_id": "23e3249e9a1e75418d82",
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 12,
+          "chunk_id": "23e3249e9a1e75418d82:p12:c237",
+          "reference_text": "[23] Jeff Johnson, Matthijs Douze, and Hervé Jégou. Billion-scale similarity search with gpus. arXiv preprint arXiv:1702.08734, 2017. URL https://arxiv.org/abs/1702.08734.",
+          "numeric_citation_mentions": 2
+        },
+        {
+          "source_paper_id": "23e3249e9a1e75418d82",
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 12,
+          "chunk_id": "23e3249e9a1e75418d82:p12:c237",
+          "reference_text": "[23] Jeff Johnson, Matthijs Douze, and Hervé Jégou. Billion-scale similarity search with gpus. arXiv preprint arXiv:1702.08734, 2017. URL https://arxiv.org/abs/1702.08734.",
+          "numeric_citation_mentions": 2
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1602.02410",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 1,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "bdfaa68d8984f0dc02be",
+          "source_title": "Attention Is All You Need",
+          "page": 11,
+          "chunk_id": "bdfaa68d8984f0dc02be:p11:c167",
+          "reference_text": "[15] Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, and Yonghui Wu. Exploring the limits of language modeling. arXiv preprint arXiv:1602.02410, 2016.",
+          "numeric_citation_mentions": 1
+        },
+        {
+          "source_paper_id": "97fd272f1fdfc1867746",
+          "source_title": "Language Models are Few-Shot Learners",
+          "page": 70,
+          "chunk_id": "97fd272f1fdfc1867746:p70:c834",
+          "reference_text": "[JVS+16] Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, and Yonghui Wu. Exploring the limits of language modeling. arXiv preprint arXiv:1602.02410, 2016.",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1607.06450",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 1,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "bdfaa68d8984f0dc02be",
+          "source_title": "Attention Is All You Need",
+          "page": 10,
+          "chunk_id": "bdfaa68d8984f0dc02be:p10:c152",
+          "reference_text": "[1] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. Layer normalization. arXiv preprint arXiv:1607.06450, 2016.",
+          "numeric_citation_mentions": 1
+        },
+        {
+          "source_paper_id": "f8237d393163900fa8e4",
+          "source_title": "Understanding Deep Learning",
+          "page": 479,
+          "chunk_id": "f8237d393163900fa8e4:p479:c5834",
+          "reference_text": "Ba, J. L., Kiros, J. R., & Hinton, G. E. (2016). Layer normalization. arXiv:1607.06450. 203",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1503.02531",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 0,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "97fd272f1fdfc1867746",
+          "source_title": "Language Models are Few-Shot Learners",
+          "page": 70,
+          "chunk_id": "97fd272f1fdfc1867746:p70:c827",
+          "reference_text": "[HVD15] Geoffrey Hinton, Oriol Vinyals, and Jeff Dean. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531, 2015.",
+          "numeric_citation_mentions": null
+        },
+        {
+          "source_paper_id": "f8237d393163900fa8e4",
+          "source_title": "Understanding Deep Learning",
+          "page": 493,
+          "chunk_id": "f8237d393163900fa8e4:p493:c6218",
+          "reference_text": "Hinton, G., Vinyals, O., Dean, J., et al. (2015). Distilling the knowledge in a neural network. arXiv:1503.02531, 2(7). 416",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1606.08415",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 0,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "5692a5514787a8c6727b",
+          "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "page": 10,
+          "chunk_id": "5692a5514787a8c6727b:p10:c153",
+          "reference_text": "Dan Hendrycks and Kevin Gimpel. 2016. Bridging nonlinearities and stochastic regularizers with gaus- sian error linear units. CoRR, abs/1606.08415.",
+          "numeric_citation_mentions": null
+        },
+        {
+          "source_paper_id": "f8237d393163900fa8e4",
+          "source_title": "Understanding Deep Learning",
+          "page": 493,
+          "chunk_id": "f8237d393163900fa8e4:p493:c6219",
+          "reference_text": "Hendrycks, D., & Gimpel, K. (2016). Gaussian error linear units (GELUs). arXiv:1606.08415. 38",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "2002.08910",
+      "explicit_versions": [],
+      "citing_paper_count": 2,
+      "numeric_citation_mentions": 0,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "cb551710ff63f0804805",
+          "source_title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "page": 10,
+          "chunk_id": "cb551710ff63f0804805:p10:c149",
+          "reference_text": "Adam Roberts, Colin Raffel, and Noam Shazeer. 2020. How much knowledge can you pack into the pa- rameters of a language model? arXiv preprint arXiv:2002.08910.",
+          "numeric_citation_mentions": null
+        },
+        {
+          "source_paper_id": "97fd272f1fdfc1867746",
+          "source_title": "Language Models are Few-Shot Learners",
+          "page": 73,
+          "chunk_id": "97fd272f1fdfc1867746:p73:c901",
+          "reference_text": "[RRS20] Adam Roberts, Colin Raffel, and Noam Shazeer. How much knowledge can you pack into the parameters of a language model? arXiv preprint arXiv:2002.08910, 2020.",
+          "numeric_citation_mentions": null
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1705.03122",
+      "explicit_versions": [
+        2
+      ],
+      "citing_paper_count": 1,
+      "numeric_citation_mentions": 8,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "bdfaa68d8984f0dc02be",
+          "source_title": "Attention Is All You Need",
+          "page": 11,
+          "chunk_id": "bdfaa68d8984f0dc02be:p11:c161",
+          "reference_text": "[9] Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N. Dauphin. Convolu- tional sequence to sequence learning. arXiv preprint arXiv:1705.03122v2, 2017.",
+          "numeric_citation_mentions": 8
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1409.0473",
+      "explicit_versions": [],
+      "citing_paper_count": 1,
+      "numeric_citation_mentions": 5,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "bdfaa68d8984f0dc02be",
+          "source_title": "Attention Is All You Need",
+          "page": 10,
+          "chunk_id": "bdfaa68d8984f0dc02be:p10:c153",
+          "reference_text": "[2] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. CoRR, abs/1409.0473, 2014.",
+          "numeric_citation_mentions": 5
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1610.10099",
+      "explicit_versions": [
+        2
+      ],
+      "citing_paper_count": 1,
+      "numeric_citation_mentions": 4,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "bdfaa68d8984f0dc02be",
+          "source_title": "Attention Is All You Need",
+          "page": 11,
+          "chunk_id": "bdfaa68d8984f0dc02be:p11:c170",
+          "reference_text": "[18] Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, and Ko- ray Kavukcuoglu. Neural machine translation in linear time. arXiv preprint arXiv:1610.10099v2, 2017.",
+          "numeric_citation_mentions": 4
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    },
+    {
+      "arxiv_id": "1910.10683",
+      "explicit_versions": [],
+      "citing_paper_count": 1,
+      "numeric_citation_mentions": 3,
+      "already_in_library": false,
+      "anchors": [
+        {
+          "source_paper_id": "23e3249e9a1e75418d82",
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 14,
+          "chunk_id": "23e3249e9a1e75418d82:p14:c269",
+          "reference_text": "[51] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. Exploring the limits of transfer learning with a uniﬁed text-to-text transformer. arXiv e-prints, 2019. URL https://arxiv.org/abs/1910.10683.",
+          "numeric_citation_mentions": 3
+        }
+      ],
+      "limitations": "引用频次仅用于可解释优先级；不能识别应付式引用或断言论文质量/相关性。作者年份引文频次未统计。"
+    }
+  ]
+}

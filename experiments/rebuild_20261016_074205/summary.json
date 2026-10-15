@@ -1,0 +1,182 @@
+{
+  "network_calls": 0,
+  "original_library_modified": false,
+  "elapsed_seconds": 6.690620100001979,
+  "files": [
+    {
+      "filename": "UnderstandingDeepLearning_02_09_26_C.pdf",
+      "expected_id": "f8237d393163900fa8e4",
+      "actual_id": "f8237d393163900fa8e4",
+      "metadata_restored": false,
+      "pages": 541,
+      "chunks": 7190
+    },
+    {
+      "filename": "1706.03762v1.pdf",
+      "expected_id": "0a9bff1be3575cf9fe26",
+      "actual_id": "0a9bff1be3575cf9fe26",
+      "metadata_restored": true,
+      "pages": 15,
+      "chunks": 478
+    },
+    {
+      "filename": "1706.03762v7.pdf",
+      "expected_id": "bdfaa68d8984f0dc02be",
+      "actual_id": "bdfaa68d8984f0dc02be",
+      "metadata_restored": true,
+      "pages": 15,
+      "chunks": 484
+    },
+    {
+      "filename": "1810.04805v2.pdf",
+      "expected_id": "5692a5514787a8c6727b",
+      "actual_id": "5692a5514787a8c6727b",
+      "metadata_restored": true,
+      "pages": 16,
+      "chunks": 348
+    },
+    {
+      "filename": "2004.04906v2.pdf",
+      "expected_id": "cb551710ff63f0804805",
+      "actual_id": "cb551710ff63f0804805",
+      "metadata_restored": true,
+      "pages": 11,
+      "chunks": 163
+    },
+    {
+      "filename": "2005.11401v4.pdf",
+      "expected_id": "23e3249e9a1e75418d82",
+      "actual_id": "23e3249e9a1e75418d82",
+      "metadata_restored": true,
+      "pages": 19,
+      "chunks": 320
+    },
+    {
+      "filename": "2005.14165v4.pdf",
+      "expected_id": "97fd272f1fdfc1867746",
+      "actual_id": "97fd272f1fdfc1867746",
+      "metadata_restored": true,
+      "pages": 75,
+      "chunks": 934
+    },
+    {
+      "filename": "2002.08909.pdf",
+      "expected_id": "0ec1a7ab3de5514c6d3b",
+      "actual_id": "0ec1a7ab3de5514c6d3b",
+      "metadata_restored": true,
+      "pages": 12,
+      "chunks": 260
+    },
+    {
+      "filename": "1609.08144.pdf",
+      "expected_id": "285fb4323972464ba0be",
+      "actual_id": "285fb4323972464ba0be",
+      "metadata_restored": true,
+      "pages": 23,
+      "chunks": 314
+    },
+    {
+      "filename": "1910.13461.pdf",
+      "expected_id": "c884c393e817e408e581",
+      "actual_id": "c884c393e817e408e581",
+      "metadata_restored": true,
+      "pages": 10,
+      "chunks": 192
+    },
+    {
+      "filename": "1701.06538.pdf",
+      "expected_id": "2567713d198a376b65b9",
+      "actual_id": "2567713d198a376b65b9",
+      "metadata_restored": true,
+      "pages": 19,
+      "chunks": 313
+    },
+    {
+      "filename": "1702.08734.pdf",
+      "expected_id": "89b2371b261846059d41",
+      "actual_id": "89b2371b261846059d41",
+      "metadata_restored": true,
+      "pages": 12,
+      "chunks": 323
+    },
+    {
+      "filename": "1602.02410.pdf",
+      "expected_id": "38095da0c38496d97fd6",
+      "actual_id": "38095da0c38496d97fd6",
+      "metadata_restored": true,
+      "pages": 11,
+      "chunks": 215
+    },
+    {
+      "filename": "1607.06450.pdf",
+      "expected_id": "c464f839fb8d59f7fde9",
+      "actual_id": "c464f839fb8d59f7fde9",
+      "metadata_restored": true,
+      "pages": 14,
+      "chunks": 485
+    },
+    {
+      "filename": "1503.02531.pdf",
+      "expected_id": "74e6689115c539db499f",
+      "actual_id": "74e6689115c539db499f",
+      "metadata_restored": true,
+      "pages": 9,
+      "chunks": 120
+    },
+    {
+      "filename": "1606.08415.pdf",
+      "expected_id": "ef59863c8e36d4b64c43",
+      "actual_id": "ef59863c8e36d4b64c43",
+      "metadata_restored": true,
+      "pages": 10,
+      "chunks": 199
+    },
+    {
+      "filename": "2002.08910.pdf",
+      "expected_id": "995796c4f44af1fb2853",
+      "actual_id": "995796c4f44af1fb2853",
+      "metadata_restored": true,
+      "pages": 9,
+      "chunks": 128
+    },
+    {
+      "filename": "1705.03122v2.pdf",
+      "expected_id": "21dd02432f07d9bee122",
+      "actual_id": "21dd02432f07d9bee122",
+      "metadata_restored": true,
+      "pages": 15,
+      "chunks": 361
+    },
+    {
+      "filename": "1409.0473.pdf",
+      "expected_id": "84801c8410da51b449d3",
+      "actual_id": "84801c8410da51b449d3",
+      "metadata_restored": true,
+      "pages": 15,
+      "chunks": 386
+    },
+    {
+      "filename": "1610.10099v2.pdf",
+      "expected_id": "dd1f80c0c4fd67cf9afd",
+      "actual_id": "dd1f80c0c4fd67cf9afd",
+      "metadata_restored": true,
+      "pages": 9,
+      "chunks": 202
+    },
+    {
+      "filename": "1910.10683.pdf",
+      "expected_id": "ad07e47cedf437a41564",
+      "actual_id": "ad07e47cedf437a41564",
+      "metadata_restored": true,
+      "pages": 67,
+      "chunks": 805
+    }
+  ],
+  "id_checks_passed": 21,
+  "metadata_restored": 20,
+  "nodes": 20,
+  "edges": 71,
+  "exact_edge_and_anchor_set_reproduced": true,
+  "exact_node_ranks_reproduced": true,
+  "scope": "Offline original-byte/parser/Atom/store/graph recovery; does not prove future source URLs will retain identical bytes."
+}

@@ -1,0 +1,761 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/tbRwSgbrWnuALGZDIdN/4fTj9Xc</id>
+  <title>arXiv Query: search_query=&amp;id_list=1706.03762v1,1706.03762v7,1810.04805v2,2004.04906v2,2005.11401v4,2005.14165v4,2002.08909v1,1609.08144v2,1910.13461v1,1701.06538v1,1702.08734v1,1602.02410v2,1607.06450v1,1503.02531v1,1606.08415v5,2002.08910v4,1705.03122v2,1409.0473v7,1610.10099v2,1910.10683v4&amp;start=0&amp;max_results=20</title>
+  <updated>2026-10-15T18:20:39Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=20&amp;id_list=1706.03762v1,1706.03762v7,1810.04805v2,2004.04906v2,2005.11401v4,2005.14165v4,2002.08909v1,1609.08144v2,1910.13461v1,1701.06538v1,1702.08734v1,1602.02410v2,1607.06450v1,1503.02531v1,1606.08415v5,2002.08910v4,1705.03122v2,1409.0473v7,1610.10099v2,1910.10683v4" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>20</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1610.10099v2</id>
+    <title>Neural Machine Translation in Linear Time</title>
+    <updated>2017-03-15T18:09:51Z</updated>
+    <link href="https://arxiv.org/abs/1610.10099v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1610.10099v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a novel neural network for processing sequences. The ByteNet is a one-dimensional convolutional neural network that is composed of two parts, one to encode the source sequence and the other to decode the target sequence. The two network parts are connected by stacking the decoder on top of the encoder and preserving the temporal resolution of the sequences. To address the differing lengths of the source and the target, we introduce an efficient mechanism by which the decoder is dynamically unfolded over the representation of the encoder. The ByteNet uses dilation in the convolutional layers to increase its receptive field. The resulting network has two core properties: it runs in time that is linear in the length of the sequences and it sidesteps the need for excessive memorization. The ByteNet decoder attains state-of-the-art performance on character-level language modelling and outperforms the previous best results obtained with recurrent networks. The ByteNet also achieves state-of-the-art performance on character-to-character machine translation on the English-to-German WMT translation task, surpassing comparable neural translation models that are based on recurrent networks with attentional pooling and run in quadratic time. We find that the latent alignment structure contained in the representations reflects the expected alignment between the tokens.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-10-31T19:56:39Z</published>
+    <arxiv:comment>9 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Nal Kalchbrenner</name>
+    </author>
+    <author>
+      <name>Lasse Espeholt</name>
+    </author>
+    <author>
+      <name>Karen Simonyan</name>
+    </author>
+    <author>
+      <name>Aaron van den Oord</name>
+    </author>
+    <author>
+      <name>Alex Graves</name>
+    </author>
+    <author>
+      <name>Koray Kavukcuoglu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1706.03762v7</id>
+    <title>Attention Is All You Need</title>
+    <updated>2023-08-02T00:41:18Z</updated>
+    <link href="https://arxiv.org/abs/1706.03762v7" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.03762v7" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-12T17:57:34Z</published>
+    <arxiv:comment>15 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ashish Vaswani</name>
+    </author>
+    <author>
+      <name>Noam Shazeer</name>
+    </author>
+    <author>
+      <name>Niki Parmar</name>
+    </author>
+    <author>
+      <name>Jakob Uszkoreit</name>
+    </author>
+    <author>
+      <name>Llion Jones</name>
+    </author>
+    <author>
+      <name>Aidan N. Gomez</name>
+    </author>
+    <author>
+      <name>Lukasz Kaiser</name>
+    </author>
+    <author>
+      <name>Illia Polosukhin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2002.08910v4</id>
+    <title>How Much Knowledge Can You Pack Into the Parameters of a Language Model?</title>
+    <updated>2020-10-05T21:26:45Z</updated>
+    <link href="https://arxiv.org/abs/2002.08910v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2002.08910v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>It has recently been observed that neural language models trained on unstructured text can implicitly store and retrieve knowledge using natural language queries. In this short paper, we measure the practical utility of this approach by fine-tuning pre-trained models to answer questions without access to any external context or knowledge. We show that this approach scales with model size and performs competitively with open-domain systems that explicitly retrieve answers from an external knowledge source when answering questions. To facilitate reproducibility and future work, we release our code and trained models at https://goo.gle/t5-cbqa.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-02-10T18:55:58Z</published>
+    <arxiv:comment>Camera-ready version for EMNLP</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Adam Roberts</name>
+    </author>
+    <author>
+      <name>Colin Raffel</name>
+    </author>
+    <author>
+      <name>Noam Shazeer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.14165v4</id>
+    <title>Language Models are Few-Shot Learners</title>
+    <updated>2020-07-22T19:47:17Z</updated>
+    <link href="https://arxiv.org/abs/2005.14165v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.14165v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-28T17:29:03Z</published>
+    <arxiv:comment>40+32 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Tom B. Brown</name>
+    </author>
+    <author>
+      <name>Benjamin Mann</name>
+    </author>
+    <author>
+      <name>Nick Ryder</name>
+    </author>
+    <author>
+      <name>Melanie Subbiah</name>
+    </author>
+    <author>
+      <name>Jared Kaplan</name>
+    </author>
+    <author>
+      <name>Prafulla Dhariwal</name>
+    </author>
+    <author>
+      <name>Arvind Neelakantan</name>
+    </author>
+    <author>
+      <name>Pranav Shyam</name>
+    </author>
+    <author>
+      <name>Girish Sastry</name>
+    </author>
+    <author>
+      <name>Amanda Askell</name>
+    </author>
+    <author>
+      <name>Sandhini Agarwal</name>
+    </author>
+    <author>
+      <name>Ariel Herbert-Voss</name>
+    </author>
+    <author>
+      <name>Gretchen Krueger</name>
+    </author>
+    <author>
+      <name>Tom Henighan</name>
+    </author>
+    <author>
+      <name>Rewon Child</name>
+    </author>
+    <author>
+      <name>Aditya Ramesh</name>
+    </author>
+    <author>
+      <name>Daniel M. Ziegler</name>
+    </author>
+    <author>
+      <name>Jeffrey Wu</name>
+    </author>
+    <author>
+      <name>Clemens Winter</name>
+    </author>
+    <author>
+      <name>Christopher Hesse</name>
+    </author>
+    <author>
+      <name>Mark Chen</name>
+    </author>
+    <author>
+      <name>Eric Sigler</name>
+    </author>
+    <author>
+      <name>Mateusz Litwin</name>
+    </author>
+    <author>
+      <name>Scott Gray</name>
+    </author>
+    <author>
+      <name>Benjamin Chess</name>
+    </author>
+    <author>
+      <name>Jack Clark</name>
+    </author>
+    <author>
+      <name>Christopher Berner</name>
+    </author>
+    <author>
+      <name>Sam McCandlish</name>
+    </author>
+    <author>
+      <name>Alec Radford</name>
+    </author>
+    <author>
+      <name>Ilya Sutskever</name>
+    </author>
+    <author>
+      <name>Dario Amodei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1810.04805v2</id>
+    <title>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</title>
+    <updated>2019-05-24T20:37:26Z</updated>
+    <link href="https://arxiv.org/abs/1810.04805v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1810.04805v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications.
+  BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-10-11T00:50:01Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jacob Devlin</name>
+    </author>
+    <author>
+      <name>Ming-Wei Chang</name>
+    </author>
+    <author>
+      <name>Kenton Lee</name>
+    </author>
+    <author>
+      <name>Kristina Toutanova</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1702.08734v1</id>
+    <title>Billion-scale similarity search with GPUs</title>
+    <updated>2017-02-28T10:42:31Z</updated>
+    <link href="https://arxiv.org/abs/1702.08734v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1702.08734v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Similarity search finds application in specialized database systems handling complex data such as images or videos, which are typically represented by high-dimensional features and require specific indexing structures. This paper tackles the problem of better utilizing GPUs for this task. While GPUs excel at data-parallel tasks, prior approaches are bottlenecked by algorithms that expose less parallelism, such as k-min selection, or make poor use of the memory hierarchy.
+  We propose a design for k-selection that operates at up to 55% of theoretical peak performance, enabling a nearest neighbor implementation that is 8.5x faster than prior GPU state of the art. We apply it in different similarity search scenarios, by proposing optimized design for brute-force, approximate and compressed-domain search based on product quantization. In all these setups, we outperform the state of the art by large margins. Our implementation enables the construction of a high accuracy k-NN graph on 95 million images from the Yfcc100M dataset in 35 minutes, and of a graph connecting 1 billion vectors in less than 12 hours on 4 Maxwell Titan X GPUs. We have open-sourced our approach for the sake of comparison and reproducibility.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-02-28T10:42:31Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Jeff Johnson</name>
+    </author>
+    <author>
+      <name>Matthijs Douze</name>
+    </author>
+    <author>
+      <name>Hervé Jégou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1602.02410v2</id>
+    <title>Exploring the Limits of Language Modeling</title>
+    <updated>2016-02-11T23:01:48Z</updated>
+    <link href="https://arxiv.org/abs/1602.02410v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1602.02410v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work we explore recent advances in Recurrent Neural Networks for large scale Language Modeling, a task central to language understanding. We extend current models to deal with two key challenges present in this task: corpora and vocabulary sizes, and complex, long term structure of language. We perform an exhaustive study on techniques such as character Convolutional Neural Networks or Long-Short Term Memory, on the One Billion Word Benchmark. Our best single model significantly improves state-of-the-art perplexity from 51.3 down to 30.0 (whilst reducing the number of parameters by a factor of 20), while an ensemble of models sets a new record by improving perplexity from 41.0 down to 23.7. We also release these models for the NLP and ML community to study and improve upon.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-02-07T19:11:17Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Rafal Jozefowicz</name>
+    </author>
+    <author>
+      <name>Oriol Vinyals</name>
+    </author>
+    <author>
+      <name>Mike Schuster</name>
+    </author>
+    <author>
+      <name>Noam Shazeer</name>
+    </author>
+    <author>
+      <name>Yonghui Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1705.03122v2</id>
+    <title>Convolutional Sequence to Sequence Learning</title>
+    <updated>2017-05-12T16:14:26Z</updated>
+    <link href="https://arxiv.org/abs/1705.03122v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1705.03122v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The prevalent approach to sequence to sequence learning maps an input sequence to a variable length output sequence via recurrent neural networks. We introduce an architecture based entirely on convolutional neural networks. Compared to recurrent models, computations over all elements can be fully parallelized during training and optimization is easier since the number of non-linearities is fixed and independent of the input length. Our use of gated linear units eases gradient propagation and we equip each decoder layer with a separate attention module. We outperform the accuracy of the deep LSTM setup of Wu et al. (2016) on both WMT'14 English-German and WMT'14 English-French translation at an order of magnitude faster speed, both on GPU and CPU.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-05-08T23:25:30Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jonas Gehring</name>
+    </author>
+    <author>
+      <name>Michael Auli</name>
+    </author>
+    <author>
+      <name>David Grangier</name>
+    </author>
+    <author>
+      <name>Denis Yarats</name>
+    </author>
+    <author>
+      <name>Yann N. Dauphin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1910.10683v4</id>
+    <title>Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer</title>
+    <updated>2023-09-19T15:14:48Z</updated>
+    <link href="https://arxiv.org/abs/1910.10683v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1910.10683v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on a downstream task, has emerged as a powerful technique in natural language processing (NLP). The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts all text-based language problems into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled data sets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new ``Colossal Clean Crawled Corpus'', we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our data set, pre-trained models, and code.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-10-23T17:37:36Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Colin Raffel</name>
+    </author>
+    <author>
+      <name>Noam Shazeer</name>
+    </author>
+    <author>
+      <name>Adam Roberts</name>
+    </author>
+    <author>
+      <name>Katherine Lee</name>
+    </author>
+    <author>
+      <name>Sharan Narang</name>
+    </author>
+    <author>
+      <name>Michael Matena</name>
+    </author>
+    <author>
+      <name>Yanqi Zhou</name>
+    </author>
+    <author>
+      <name>Wei Li</name>
+    </author>
+    <author>
+      <name>Peter J. Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1910.13461v1</id>
+    <title>BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension</title>
+    <updated>2019-10-29T18:01:00Z</updated>
+    <link href="https://arxiv.org/abs/1910.13461v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1910.13461v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present BART, a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder), GPT (with the left-to-right decoder), and many other more recent pretraining schemes. We evaluate a number of noising approaches, finding the best performance by both randomly shuffling the order of the original sentences and using a novel in-filling scheme, where spans of text are replaced with a single mask token. BART is particularly effective when fine tuned for text generation but also works well for comprehension tasks. It matches the performance of RoBERTa with comparable training resources on GLUE and SQuAD, achieves new state-of-the-art results on a range of abstractive dialogue, question answering, and summarization tasks, with gains of up to 6 ROUGE. BART also provides a 1.1 BLEU increase over a back-translation system for machine translation, with only target language pretraining. We also report ablation experiments that replicate other pretraining schemes within the BART framework, to better measure which factors most influence end-task performance.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-10-29T18:01:00Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mike Lewis</name>
+    </author>
+    <author>
+      <name>Yinhan Liu</name>
+    </author>
+    <author>
+      <name>Naman Goyal</name>
+    </author>
+    <author>
+      <name>Marjan Ghazvininejad</name>
+    </author>
+    <author>
+      <name>Abdelrahman Mohamed</name>
+    </author>
+    <author>
+      <name>Omer Levy</name>
+    </author>
+    <author>
+      <name>Ves Stoyanov</name>
+    </author>
+    <author>
+      <name>Luke Zettlemoyer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1503.02531v1</id>
+    <title>Distilling the Knowledge in a Neural Network</title>
+    <updated>2015-03-09T15:44:49Z</updated>
+    <link href="https://arxiv.org/abs/1503.02531v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1503.02531v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. Caruana and his collaborators have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and we develop this approach further using a different compression technique. We achieve some surprising results on MNIST and we show that we can significantly improve the acoustic model of a heavily used commercial system by distilling the knowledge in an ensemble of models into a single model. We also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-03-09T15:44:49Z</published>
+    <arxiv:comment>NIPS 2014 Deep Learning Workshop</arxiv:comment>
+    <arxiv:primary_category term="stat.ML"/>
+    <author>
+      <name>Geoffrey Hinton</name>
+    </author>
+    <author>
+      <name>Oriol Vinyals</name>
+    </author>
+    <author>
+      <name>Jeff Dean</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1706.03762v1</id>
+    <title>Attention Is All You Need</title>
+    <updated>2017-06-12T17:57:34Z</updated>
+    <link href="https://arxiv.org/abs/1706.03762v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.03762v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-12T17:57:34Z</published>
+    <arxiv:comment>15 pages, 5 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ashish Vaswani</name>
+    </author>
+    <author>
+      <name>Noam Shazeer</name>
+    </author>
+    <author>
+      <name>Niki Parmar</name>
+    </author>
+    <author>
+      <name>Jakob Uszkoreit</name>
+    </author>
+    <author>
+      <name>Llion Jones</name>
+    </author>
+    <author>
+      <name>Aidan N. Gomez</name>
+    </author>
+    <author>
+      <name>Lukasz Kaiser</name>
+    </author>
+    <author>
+      <name>Illia Polosukhin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2002.08909v1</id>
+    <title>REALM: Retrieval-Augmented Language Model Pre-Training</title>
+    <updated>2020-02-10T18:40:59Z</updated>
+    <link href="https://arxiv.org/abs/2002.08909v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2002.08909v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language model pre-training has been shown to capture a surprising amount of world knowledge, crucial for NLP tasks such as question answering. However, this knowledge is stored implicitly in the parameters of a neural network, requiring ever-larger networks to cover more facts.
+  To capture knowledge in a more modular and interpretable way, we augment language model pre-training with a latent knowledge retriever, which allows the model to retrieve and attend over documents from a large corpus such as Wikipedia, used during pre-training, fine-tuning and inference. For the first time, we show how to pre-train such a knowledge retriever in an unsupervised manner, using masked language modeling as the learning signal and backpropagating through a retrieval step that considers millions of documents.
+  We demonstrate the effectiveness of Retrieval-Augmented Language Model pre-training (REALM) by fine-tuning on the challenging task of Open-domain Question Answering (Open-QA). We compare against state-of-the-art models for both explicit and implicit knowledge storage on three popular Open-QA benchmarks, and find that we outperform all previous methods by a significant margin (4-16% absolute accuracy), while also providing qualitative benefits such as interpretability and modularity.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-02-10T18:40:59Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Kelvin Guu</name>
+    </author>
+    <author>
+      <name>Kenton Lee</name>
+    </author>
+    <author>
+      <name>Zora Tung</name>
+    </author>
+    <author>
+      <name>Panupong Pasupat</name>
+    </author>
+    <author>
+      <name>Ming-Wei Chang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1607.06450v1</id>
+    <title>Layer Normalization</title>
+    <updated>2016-07-21T19:57:52Z</updated>
+    <link href="https://arxiv.org/abs/1607.06450v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1607.06450v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Training state-of-the-art, deep neural networks is computationally expensive. One way to reduce the training time is to normalize the activities of the neurons. A recently introduced technique called batch normalization uses the distribution of the summed input to a neuron over a mini-batch of training cases to compute a mean and variance which are then used to normalize the summed input to that neuron on each training case. This significantly reduces the training time in feed-forward neural networks. However, the effect of batch normalization is dependent on the mini-batch size and it is not obvious how to apply it to recurrent neural networks. In this paper, we transpose batch normalization into layer normalization by computing the mean and variance used for normalization from all of the summed inputs to the neurons in a layer on a single training case. Like batch normalization, we also give each neuron its own adaptive bias and gain which are applied after the normalization but before the non-linearity. Unlike batch normalization, layer normalization performs exactly the same computation at training and test times. It is also straightforward to apply to recurrent neural networks by computing the normalization statistics separately at each time step. Layer normalization is very effective at stabilizing the hidden state dynamics in recurrent networks. Empirically, we show that layer normalization can substantially reduce the training time compared with previously published techniques.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-07-21T19:57:52Z</published>
+    <arxiv:primary_category term="stat.ML"/>
+    <author>
+      <name>Jimmy Lei Ba</name>
+    </author>
+    <author>
+      <name>Jamie Ryan Kiros</name>
+    </author>
+    <author>
+      <name>Geoffrey E. Hinton</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.11401v4</id>
+    <title>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</title>
+    <updated>2021-04-12T15:42:18Z</updated>
+    <link href="https://arxiv.org/abs/2005.11401v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.11401v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-22T21:34:34Z</published>
+    <arxiv:comment>Accepted at NeurIPS 2020</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Patrick Lewis</name>
+    </author>
+    <author>
+      <name>Ethan Perez</name>
+    </author>
+    <author>
+      <name>Aleksandra Piktus</name>
+    </author>
+    <author>
+      <name>Fabio Petroni</name>
+    </author>
+    <author>
+      <name>Vladimir Karpukhin</name>
+    </author>
+    <author>
+      <name>Naman Goyal</name>
+    </author>
+    <author>
+      <name>Heinrich Küttler</name>
+    </author>
+    <author>
+      <name>Mike Lewis</name>
+    </author>
+    <author>
+      <name>Wen-tau Yih</name>
+    </author>
+    <author>
+      <name>Tim Rocktäschel</name>
+    </author>
+    <author>
+      <name>Sebastian Riedel</name>
+    </author>
+    <author>
+      <name>Douwe Kiela</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1606.08415v5</id>
+    <title>Gaussian Error Linear Units (GELUs)</title>
+    <updated>2023-06-06T01:53:32Z</updated>
+    <link href="https://arxiv.org/abs/1606.08415v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1606.08415v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose the Gaussian Error Linear Unit (GELU), a high-performing neural network activation function. The GELU activation function is $xΦ(x)$, where $Φ(x)$ the standard Gaussian cumulative distribution function. The GELU nonlinearity weights inputs by their value, rather than gates inputs by their sign as in ReLUs ($x\mathbf{1}_{x&gt;0}$). We perform an empirical evaluation of the GELU nonlinearity against the ReLU and ELU activations and find performance improvements across all considered computer vision, natural language processing, and speech tasks.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-06-27T19:20:40Z</published>
+    <arxiv:comment>Trimmed version of 2016 draft</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Dan Hendrycks</name>
+    </author>
+    <author>
+      <name>Kevin Gimpel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1609.08144v2</id>
+    <title>Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation</title>
+    <updated>2016-10-08T19:10:41Z</updated>
+    <link href="https://arxiv.org/abs/1609.08144v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1609.08144v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Neural Machine Translation (NMT) is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60% compared to Google's phrase-based production system.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-09-26T19:59:55Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yonghui Wu</name>
+    </author>
+    <author>
+      <name>Mike Schuster</name>
+    </author>
+    <author>
+      <name>Zhifeng Chen</name>
+    </author>
+    <author>
+      <name>Quoc V. Le</name>
+    </author>
+    <author>
+      <name>Mohammad Norouzi</name>
+    </author>
+    <author>
+      <name>Wolfgang Macherey</name>
+    </author>
+    <author>
+      <name>Maxim Krikun</name>
+    </author>
+    <author>
+      <name>Yuan Cao</name>
+    </author>
+    <author>
+      <name>Qin Gao</name>
+    </author>
+    <author>
+      <name>Klaus Macherey</name>
+    </author>
+    <author>
+      <name>Jeff Klingner</name>
+    </author>
+    <author>
+      <name>Apurva Shah</name>
+    </author>
+    <author>
+      <name>Melvin Johnson</name>
+    </author>
+    <author>
+      <name>Xiaobing Liu</name>
+    </author>
+    <author>
+      <name>Łukasz Kaiser</name>
+    </author>
+    <author>
+      <name>Stephan Gouws</name>
+    </author>
+    <author>
+      <name>Yoshikiyo Kato</name>
+    </author>
+    <author>
+      <name>Taku Kudo</name>
+    </author>
+    <author>
+      <name>Hideto Kazawa</name>
+    </author>
+    <author>
+      <name>Keith Stevens</name>
+    </author>
+    <author>
+      <name>George Kurian</name>
+    </author>
+    <author>
+      <name>Nishant Patil</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Cliff Young</name>
+    </author>
+    <author>
+      <name>Jason Smith</name>
+    </author>
+    <author>
+      <name>Jason Riesa</name>
+    </author>
+    <author>
+      <name>Alex Rudnick</name>
+    </author>
+    <author>
+      <name>Oriol Vinyals</name>
+    </author>
+    <author>
+      <name>Greg Corrado</name>
+    </author>
+    <author>
+      <name>Macduff Hughes</name>
+    </author>
+    <author>
+      <name>Jeffrey Dean</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2004.04906v2</id>
+    <title>Dense Passage Retrieval for Open-Domain Question Answering</title>
+    <updated>2020-05-02T00:53:53Z</updated>
+    <link href="https://arxiv.org/abs/2004.04906v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2004.04906v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Open-domain question answering relies on efficient passage retrieval to select candidate contexts, where traditional sparse vector space models, such as TF-IDF or BM25, are the de facto method. In this work, we show that retrieval can be practically implemented using dense representations alone, where embeddings are learned from a small number of questions and passages by a simple dual-encoder framework. When evaluated on a wide range of open-domain QA datasets, our dense retriever outperforms a strong Lucene-BM25 system largely by 9%-19% absolute in terms of top-20 passage retrieval accuracy, and helps our end-to-end QA system establish new state-of-the-art on multiple open-domain QA benchmarks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-04-10T04:53:17Z</published>
+    <arxiv:comment>corrected typos in Table 3; add a paragraph in Sec. 6.2</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Vladimir Karpukhin</name>
+    </author>
+    <author>
+      <name>Barlas Oğuz</name>
+    </author>
+    <author>
+      <name>Sewon Min</name>
+    </author>
+    <author>
+      <name>Patrick Lewis</name>
+    </author>
+    <author>
+      <name>Ledell Wu</name>
+    </author>
+    <author>
+      <name>Sergey Edunov</name>
+    </author>
+    <author>
+      <name>Danqi Chen</name>
+    </author>
+    <author>
+      <name>Wen-tau Yih</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1409.0473v7</id>
+    <title>Neural Machine Translation by Jointly Learning to Align and Translate</title>
+    <updated>2016-05-19T21:53:22Z</updated>
+    <link href="https://arxiv.org/abs/1409.0473v7" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1409.0473v7" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-09-01T16:33:02Z</published>
+    <arxiv:comment>Accepted at ICLR 2015 as oral presentation</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Dzmitry Bahdanau</name>
+    </author>
+    <author>
+      <name>Kyunghyun Cho</name>
+    </author>
+    <author>
+      <name>Yoshua Bengio</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1701.06538v1</id>
+    <title>Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer</title>
+    <updated>2017-01-23T18:10:00Z</updated>
+    <link href="https://arxiv.org/abs/1701.06538v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1701.06538v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically increasing model capacity without a proportional increase in computation. In practice, however, there are significant algorithmic and performance challenges. In this work, we address these challenges and finally realize the promise of conditional computation, achieving greater than 1000x improvements in model capacity with only minor losses in computational efficiency on modern GPU clusters. We introduce a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to thousands of feed-forward sub-networks. A trainable gating network determines a sparse combination of these experts to use for each example. We apply the MoE to the tasks of language modeling and machine translation, where model capacity is critical for absorbing the vast quantities of knowledge available in the training corpora. We present model architectures in which a MoE with up to 137 billion parameters is applied convolutionally between stacked LSTM layers. On large language modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at lower computational cost.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-01-23T18:10:00Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Noam Shazeer</name>
+    </author>
+    <author>
+      <name>Azalia Mirhoseini</name>
+    </author>
+    <author>
+      <name>Krzysztof Maziarz</name>
+    </author>
+    <author>
+      <name>Andy Davis</name>
+    </author>
+    <author>
+      <name>Quoc Le</name>
+    </author>
+    <author>
+      <name>Geoffrey Hinton</name>
+    </author>
+    <author>
+      <name>Jeff Dean</name>
+    </author>
+  </entry>
+</feed>

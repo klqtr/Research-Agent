@@ -7,6 +7,7 @@ import statistics
 import xml.etree.ElementTree as ET
 from difflib import unified_diff
 import httpx
+from .citation_graph import build_graph
 from .parsing import similarity, tokens
 
 
@@ -23,37 +24,7 @@ def family_representatives(papers):
 
 
 def graph(papers):
-    papers = family_representatives(papers)
-    edges = []
-    for src in papers:
-        reftext = " ".join(r["text"] for r in src["references"]).lower()
-        for dst in papers:
-            if src["id"] == dst["id"]:
-                continue
-            title = re.sub(r"\s+", " ", dst["title"]).strip().lower()
-            id_match = dst.get("arxiv_id") and dst["arxiv_id"] in reftext
-            if id_match or (len(title) > 15 and title in reftext):
-                matching_ref = next((r for r in src["references"] if title in r["text"].lower() or (dst.get("arxiv_id") and dst["arxiv_id"] in r["text"])), {})
-                edges.append({"source": src["id"], "target": dst["id"], "basis": "reference_text_match",
-                              "cited_version": "unspecified_family", "target_family": dst.get("arxiv_id") or dst["id"],
-                              "source_page": matching_ref.get("page"), "source_chunk_id": matching_ref.get("chunk_id")})
-    n = len(papers)
-    ranks = {p["id"]: 1 / n for p in papers} if n else {}
-    outgoing = {key: [e["target"] for e in edges if e["source"] == key] for key in ranks}
-    for _ in range(60):
-        dangling = sum(ranks[k] for k, out in outgoing.items() if not out)
-        updated = {key: .15 / n + .85 * dangling / n for key in ranks}
-        for source, targets in outgoing.items():
-            for target in targets:
-                updated[target] += .85 * ranks[source] / len(targets)
-        if sum(abs(updated[k] - ranks[k]) for k in ranks) < 1e-10:
-            ranks = updated
-            break
-        ranks = updated
-    nodes = [{"id": p["id"], "title": p["title"], "pagerank": round(ranks[p["id"]], 6),
-              "arxiv_id": p.get("arxiv_id"), "version": p.get("version"), "versions": p["versions"]} for p in papers]
-    return {"nodes": sorted(nodes, key=lambda p: p["pagerank"], reverse=True), "edges": edges,
-            "limitations": "同arXiv家族合并，节点用最新版本代表；边仅表示引用论文家族，不表示引用了该最新版本。仅参考文献标题/标识匹配，缺边不等于未引用；PageRank 高不等于研究质量高。"}
+    return build_graph(family_representatives(papers))
 
 
 def future_work(papers):

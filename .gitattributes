@@ -9,3 +9,4 @@
 *.pdf binary
 *.jpg binary
 *.png binary
+*.atom -text

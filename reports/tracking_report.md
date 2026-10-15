@@ -4,6 +4,6 @@
 
 调度、租约、版本去重、失败保留、限额与停用的单元测试使用明确时钟和搜索替身，不冒充真实等待。真实受限实验主题为retrieval augmented generation，启用间隔30分钟，最多2次。
 
-本次观测来源`experiments/tracking_probe_20261016_021123.json`，已记录1次实际刷新，状态['completed']。第二次到时后应依据数据库真实状态和活跃服务句柄继续核验；未完成前不报告完整周期成功。达到两次后应自动停用，需再检查状态证实，不能只依据实现推断。
+本次观测来源`experiments/tracking_probe_20261016_022648.json`，已记录2次实际刷新，状态['completed', 'completed']。两次刷新已实际完成，第二条明确记录scheduled，达到预算后enabled=0、disabled_reason=refresh_limit_reached。第一条完成01:55:39，第二条02:26:07（北京时间），符合间隔30分钟后下个60秒扫描周期执行。第一次早于trigger_kind字段，迁移后为unspecified；不回填为scheduled。两次新增分别5与0，表示版本去重，不能据此证明召回完整。
 
 UI显示北京时间，原始记录用UTC。无公网、多用户或独立守护进程验收；只有本地Web服务运行期间才会自动调度。

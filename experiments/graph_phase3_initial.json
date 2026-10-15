@@ -1,0 +1,1932 @@
+{
+  "library_ids": [
+    "f8237d393163900fa8e4",
+    "0a9bff1be3575cf9fe26",
+    "bdfaa68d8984f0dc02be",
+    "5692a5514787a8c6727b",
+    "cb551710ff63f0804805",
+    "23e3249e9a1e75418d82",
+    "97fd272f1fdfc1867746",
+    "0ec1a7ab3de5514c6d3b",
+    "285fb4323972464ba0be",
+    "c884c393e817e408e581",
+    "2567713d198a376b65b9",
+    "89b2371b261846059d41",
+    "38095da0c38496d97fd6",
+    "c464f839fb8d59f7fde9",
+    "74e6689115c539db499f",
+    "ef59863c8e36d4b64c43",
+    "995796c4f44af1fb2853",
+    "21dd02432f07d9bee122",
+    "84801c8410da51b449d3",
+    "dd1f80c0c4fd67cf9afd",
+    "ad07e47cedf437a41564"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "84801c8410da51b449d3",
+        "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "pagerank": 0.15010738,
+        "arxiv_id": "1409.0473",
+        "version": 7,
+        "versions": [
+          {
+            "id": "84801c8410da51b449d3",
+            "version": 7
+          }
+        ],
+        "authors": [
+          {
+            "name": "Dzmitry Bahdanau",
+            "affiliations": []
+          },
+          {
+            "name": "Kyunghyun Cho",
+            "affiliations": []
+          },
+          {
+            "name": "Yoshua Bengio",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2014,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "285fb4323972464ba0be",
+        "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
+        "pagerank": 0.08536051,
+        "arxiv_id": "1609.08144",
+        "version": 2,
+        "versions": [
+          {
+            "id": "285fb4323972464ba0be",
+            "version": 2
+          }
+        ],
+        "authors": [
+          {
+            "name": "Yonghui Wu",
+            "affiliations": []
+          },
+          {
+            "name": "Mike Schuster",
+            "affiliations": []
+          },
+          {
+            "name": "Zhifeng Chen",
+            "affiliations": []
+          },
+          {
+            "name": "Quoc V. Le",
+            "affiliations": []
+          },
+          {
+            "name": "Mohammad Norouzi",
+            "affiliations": []
+          },
+          {
+            "name": "Wolfgang Macherey",
+            "affiliations": []
+          },
+          {
+            "name": "Maxim Krikun",
+            "affiliations": []
+          },
+          {
+            "name": "Yuan Cao",
+            "affiliations": []
+          },
+          {
+            "name": "Qin Gao",
+            "affiliations": []
+          },
+          {
+            "name": "Klaus Macherey",
+            "affiliations": []
+          },
+          {
+            "name": "Jeff Klingner",
+            "affiliations": []
+          },
+          {
+            "name": "Apurva Shah",
+            "affiliations": []
+          },
+          {
+            "name": "Melvin Johnson",
+            "affiliations": []
+          },
+          {
+            "name": "Xiaobing Liu",
+            "affiliations": []
+          },
+          {
+            "name": "Łukasz Kaiser",
+            "affiliations": []
+          },
+          {
+            "name": "Stephan Gouws",
+            "affiliations": []
+          },
+          {
+            "name": "Yoshikiyo Kato",
+            "affiliations": []
+          },
+          {
+            "name": "Taku Kudo",
+            "affiliations": []
+          },
+          {
+            "name": "Hideto Kazawa",
+            "affiliations": []
+          },
+          {
+            "name": "Keith Stevens",
+            "affiliations": []
+          },
+          {
+            "name": "George Kurian",
+            "affiliations": []
+          },
+          {
+            "name": "Nishant Patil",
+            "affiliations": []
+          },
+          {
+            "name": "Wei Wang",
+            "affiliations": []
+          },
+          {
+            "name": "Cliff Young",
+            "affiliations": []
+          },
+          {
+            "name": "Jason Smith",
+            "affiliations": []
+          },
+          {
+            "name": "Jason Riesa",
+            "affiliations": []
+          },
+          {
+            "name": "Alex Rudnick",
+            "affiliations": []
+          },
+          {
+            "name": "Oriol Vinyals",
+            "affiliations": []
+          },
+          {
+            "name": "Greg Corrado",
+            "affiliations": []
+          },
+          {
+            "name": "Macduff Hughes",
+            "affiliations": []
+          },
+          {
+            "name": "Jeffrey Dean",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2016,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "bdfaa68d8984f0dc02be",
+        "title": "Attention Is All You Need",
+        "pagerank": 0.07419716,
+        "arxiv_id": "1706.03762",
+        "version": 7,
+        "versions": [
+          {
+            "id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          },
+          {
+            "id": "bdfaa68d8984f0dc02be",
+            "version": 7
+          }
+        ],
+        "authors": [
+          {
+            "name": "Ashish Vaswani",
+            "affiliations": []
+          },
+          {
+            "name": "Noam Shazeer",
+            "affiliations": []
+          },
+          {
+            "name": "Niki Parmar",
+            "affiliations": []
+          },
+          {
+            "name": "Jakob Uszkoreit",
+            "affiliations": []
+          },
+          {
+            "name": "Llion Jones",
+            "affiliations": []
+          },
+          {
+            "name": "Aidan N. Gomez",
+            "affiliations": []
+          },
+          {
+            "name": "Lukasz Kaiser",
+            "affiliations": []
+          },
+          {
+            "name": "Illia Polosukhin",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2017,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "5692a5514787a8c6727b",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "pagerank": 0.0637596,
+        "arxiv_id": "1810.04805",
+        "version": 2,
+        "versions": [
+          {
+            "id": "5692a5514787a8c6727b",
+            "version": 2
+          }
+        ],
+        "authors": [
+          {
+            "name": "Jacob Devlin",
+            "affiliations": []
+          },
+          {
+            "name": "Ming-Wei Chang",
+            "affiliations": []
+          },
+          {
+            "name": "Kenton Lee",
+            "affiliations": []
+          },
+          {
+            "name": "Kristina Toutanova",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2018,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "c464f839fb8d59f7fde9",
+        "title": "Layer Normalization",
+        "pagerank": 0.05686732,
+        "arxiv_id": "1607.06450",
+        "version": 1,
+        "versions": [
+          {
+            "id": "c464f839fb8d59f7fde9",
+            "version": 1
+          }
+        ],
+        "authors": [
+          {
+            "name": "Jimmy Lei Ba",
+            "affiliations": []
+          },
+          {
+            "name": "Jamie Ryan Kiros",
+            "affiliations": []
+          },
+          {
+            "name": "Geoffrey E. Hinton",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2016,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "ef59863c8e36d4b64c43",
+        "title": "Gaussian Error Linear Units (GELUs)",
+        "pagerank": 0.05468628,
+        "arxiv_id": "1606.08415",
+        "version": 5,
+        "versions": [
+          {
+            "id": "ef59863c8e36d4b64c43",
+            "version": 5
+          }
+        ],
+        "authors": [
+          {
+            "name": "Dan Hendrycks",
+            "affiliations": []
+          },
+          {
+            "name": "Kevin Gimpel",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2016,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "38095da0c38496d97fd6",
+        "title": "Exploring the Limits of Language Modeling",
+        "pagerank": 0.05309592,
+        "arxiv_id": "1602.02410",
+        "version": 2,
+        "versions": [
+          {
+            "id": "38095da0c38496d97fd6",
+            "version": 2
+          }
+        ],
+        "authors": [
+          {
+            "name": "Rafal Jozefowicz",
+            "affiliations": []
+          },
+          {
+            "name": "Oriol Vinyals",
+            "affiliations": []
+          },
+          {
+            "name": "Mike Schuster",
+            "affiliations": []
+          },
+          {
+            "name": "Noam Shazeer",
+            "affiliations": []
+          },
+          {
+            "name": "Yonghui Wu",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2016,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "ad07e47cedf437a41564",
+        "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+        "pagerank": 0.04838462,
+        "arxiv_id": "1910.10683",
+        "version": 4,
+        "versions": [
+          {
+            "id": "ad07e47cedf437a41564",
+            "version": 4
+          }
+        ],
+        "authors": [
+          {
+            "name": "Colin Raffel",
+            "affiliations": []
+          },
+          {
+            "name": "Noam Shazeer",
+            "affiliations": []
+          },
+          {
+            "name": "Adam Roberts",
+            "affiliations": []
+          },
+          {
+            "name": "Katherine Lee",
+            "affiliations": []
+          },
+          {
+            "name": "Sharan Narang",
+            "affiliations": []
+          },
+          {
+            "name": "Michael Matena",
+            "affiliations": []
+          },
+          {
+            "name": "Yanqi Zhou",
+            "affiliations": []
+          },
+          {
+            "name": "Wei Li",
+            "affiliations": []
+          },
+          {
+            "name": "Peter J. Liu",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2019,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "2567713d198a376b65b9",
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "pagerank": 0.04571422,
+        "arxiv_id": "1701.06538",
+        "version": 1,
+        "versions": [
+          {
+            "id": "2567713d198a376b65b9",
+            "version": 1
+          }
+        ],
+        "authors": [
+          {
+            "name": "Noam Shazeer",
+            "affiliations": []
+          },
+          {
+            "name": "Azalia Mirhoseini",
+            "affiliations": []
+          },
+          {
+            "name": "Krzysztof Maziarz",
+            "affiliations": []
+          },
+          {
+            "name": "Andy Davis",
+            "affiliations": []
+          },
+          {
+            "name": "Quoc Le",
+            "affiliations": []
+          },
+          {
+            "name": "Geoffrey Hinton",
+            "affiliations": []
+          },
+          {
+            "name": "Jeff Dean",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2017,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "995796c4f44af1fb2853",
+        "title": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+        "pagerank": 0.04411373,
+        "arxiv_id": "2002.08910",
+        "version": 4,
+        "versions": [
+          {
+            "id": "995796c4f44af1fb2853",
+            "version": 4
+          }
+        ],
+        "authors": [
+          {
+            "name": "Adam Roberts",
+            "affiliations": []
+          },
+          {
+            "name": "Colin Raffel",
+            "affiliations": []
+          },
+          {
+            "name": "Noam Shazeer",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2020,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "dd1f80c0c4fd67cf9afd",
+        "title": "Neural Machine Translation in Linear Time",
+        "pagerank": 0.03833927,
+        "arxiv_id": "1610.10099",
+        "version": 2,
+        "versions": [
+          {
+            "id": "dd1f80c0c4fd67cf9afd",
+            "version": 2
+          }
+        ],
+        "authors": [
+          {
+            "name": "Nal Kalchbrenner",
+            "affiliations": []
+          },
+          {
+            "name": "Lasse Espeholt",
+            "affiliations": []
+          },
+          {
+            "name": "Karen Simonyan",
+            "affiliations": []
+          },
+          {
+            "name": "Aaron van den Oord",
+            "affiliations": []
+          },
+          {
+            "name": "Alex Graves",
+            "affiliations": []
+          },
+          {
+            "name": "Koray Kavukcuoglu",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2016,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "c884c393e817e408e581",
+        "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+        "pagerank": 0.03648607,
+        "arxiv_id": "1910.13461",
+        "version": 1,
+        "versions": [
+          {
+            "id": "c884c393e817e408e581",
+            "version": 1
+          }
+        ],
+        "authors": [
+          {
+            "name": "Mike Lewis",
+            "affiliations": []
+          },
+          {
+            "name": "Yinhan Liu",
+            "affiliations": []
+          },
+          {
+            "name": "Naman Goyal",
+            "affiliations": []
+          },
+          {
+            "name": "Marjan Ghazvininejad",
+            "affiliations": []
+          },
+          {
+            "name": "Abdelrahman Mohamed",
+            "affiliations": []
+          },
+          {
+            "name": "Omer Levy",
+            "affiliations": []
+          },
+          {
+            "name": "Ves Stoyanov",
+            "affiliations": []
+          },
+          {
+            "name": "Luke Zettlemoyer",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2019,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "0ec1a7ab3de5514c6d3b",
+        "title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+        "pagerank": 0.03638246,
+        "arxiv_id": "2002.08909",
+        "version": 1,
+        "versions": [
+          {
+            "id": "0ec1a7ab3de5514c6d3b",
+            "version": 1
+          }
+        ],
+        "authors": [
+          {
+            "name": "Kelvin Guu",
+            "affiliations": []
+          },
+          {
+            "name": "Kenton Lee",
+            "affiliations": []
+          },
+          {
+            "name": "Zora Tung",
+            "affiliations": []
+          },
+          {
+            "name": "Panupong Pasupat",
+            "affiliations": []
+          },
+          {
+            "name": "Ming-Wei Chang",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2020,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "cb551710ff63f0804805",
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "pagerank": 0.03589488,
+        "arxiv_id": "2004.04906",
+        "version": 2,
+        "versions": [
+          {
+            "id": "cb551710ff63f0804805",
+            "version": 2
+          }
+        ],
+        "authors": [
+          {
+            "name": "Vladimir Karpukhin",
+            "affiliations": []
+          },
+          {
+            "name": "Barlas Oğuz",
+            "affiliations": []
+          },
+          {
+            "name": "Sewon Min",
+            "affiliations": []
+          },
+          {
+            "name": "Patrick Lewis",
+            "affiliations": []
+          },
+          {
+            "name": "Ledell Wu",
+            "affiliations": []
+          },
+          {
+            "name": "Sergey Edunov",
+            "affiliations": []
+          },
+          {
+            "name": "Danqi Chen",
+            "affiliations": []
+          },
+          {
+            "name": "Wen-tau Yih",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2020,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "89b2371b261846059d41",
+        "title": "Billion-scale similarity search with GPUs",
+        "pagerank": 0.03414837,
+        "arxiv_id": "1702.08734",
+        "version": 1,
+        "versions": [
+          {
+            "id": "89b2371b261846059d41",
+            "version": 1
+          }
+        ],
+        "authors": [
+          {
+            "name": "Jeff Johnson",
+            "affiliations": []
+          },
+          {
+            "name": "Matthijs Douze",
+            "affiliations": []
+          },
+          {
+            "name": "Hervé Jégou",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2017,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "74e6689115c539db499f",
+        "title": "Distilling the Knowledge in a Neural Network",
+        "pagerank": 0.03365829,
+        "arxiv_id": "1503.02531",
+        "version": 1,
+        "versions": [
+          {
+            "id": "74e6689115c539db499f",
+            "version": 1
+          }
+        ],
+        "authors": [
+          {
+            "name": "Geoffrey Hinton",
+            "affiliations": []
+          },
+          {
+            "name": "Oriol Vinyals",
+            "affiliations": []
+          },
+          {
+            "name": "Jeff Dean",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2015,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "21dd02432f07d9bee122",
+        "title": "Convolutional Sequence to Sequence Learning",
+        "pagerank": 0.03276861,
+        "arxiv_id": "1705.03122",
+        "version": 2,
+        "versions": [
+          {
+            "id": "21dd02432f07d9bee122",
+            "version": 2
+          }
+        ],
+        "authors": [
+          {
+            "name": "Jonas Gehring",
+            "affiliations": []
+          },
+          {
+            "name": "Michael Auli",
+            "affiliations": []
+          },
+          {
+            "name": "David Grangier",
+            "affiliations": []
+          },
+          {
+            "name": "Denis Yarats",
+            "affiliations": []
+          },
+          {
+            "name": "Yann N. Dauphin",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2017,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "97fd272f1fdfc1867746",
+        "title": "Language Models are Few-Shot Learners",
+        "pagerank": 0.02628334,
+        "arxiv_id": "2005.14165",
+        "version": 4,
+        "versions": [
+          {
+            "id": "97fd272f1fdfc1867746",
+            "version": 4
+          }
+        ],
+        "authors": [
+          {
+            "name": "Tom B. Brown",
+            "affiliations": []
+          },
+          {
+            "name": "Benjamin Mann",
+            "affiliations": []
+          },
+          {
+            "name": "Nick Ryder",
+            "affiliations": []
+          },
+          {
+            "name": "Melanie Subbiah",
+            "affiliations": []
+          },
+          {
+            "name": "Jared Kaplan",
+            "affiliations": []
+          },
+          {
+            "name": "Prafulla Dhariwal",
+            "affiliations": []
+          },
+          {
+            "name": "Arvind Neelakantan",
+            "affiliations": []
+          },
+          {
+            "name": "Pranav Shyam",
+            "affiliations": []
+          },
+          {
+            "name": "Girish Sastry",
+            "affiliations": []
+          },
+          {
+            "name": "Amanda Askell",
+            "affiliations": []
+          },
+          {
+            "name": "Sandhini Agarwal",
+            "affiliations": []
+          },
+          {
+            "name": "Ariel Herbert-Voss",
+            "affiliations": []
+          },
+          {
+            "name": "Gretchen Krueger",
+            "affiliations": []
+          },
+          {
+            "name": "Tom Henighan",
+            "affiliations": []
+          },
+          {
+            "name": "Rewon Child",
+            "affiliations": []
+          },
+          {
+            "name": "Aditya Ramesh",
+            "affiliations": []
+          },
+          {
+            "name": "Daniel M. Ziegler",
+            "affiliations": []
+          },
+          {
+            "name": "Jeffrey Wu",
+            "affiliations": []
+          },
+          {
+            "name": "Clemens Winter",
+            "affiliations": []
+          },
+          {
+            "name": "Christopher Hesse",
+            "affiliations": []
+          },
+          {
+            "name": "Mark Chen",
+            "affiliations": []
+          },
+          {
+            "name": "Eric Sigler",
+            "affiliations": []
+          },
+          {
+            "name": "Mateusz Litwin",
+            "affiliations": []
+          },
+          {
+            "name": "Scott Gray",
+            "affiliations": []
+          },
+          {
+            "name": "Benjamin Chess",
+            "affiliations": []
+          },
+          {
+            "name": "Jack Clark",
+            "affiliations": []
+          },
+          {
+            "name": "Christopher Berner",
+            "affiliations": []
+          },
+          {
+            "name": "Sam McCandlish",
+            "affiliations": []
+          },
+          {
+            "name": "Alec Radford",
+            "affiliations": []
+          },
+          {
+            "name": "Ilya Sutskever",
+            "affiliations": []
+          },
+          {
+            "name": "Dario Amodei",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2020,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "23e3249e9a1e75418d82",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "pagerank": 0.02599304,
+        "arxiv_id": "2005.11401",
+        "version": 4,
+        "versions": [
+          {
+            "id": "23e3249e9a1e75418d82",
+            "version": 4
+          }
+        ],
+        "authors": [
+          {
+            "name": "Patrick Lewis",
+            "affiliations": []
+          },
+          {
+            "name": "Ethan Perez",
+            "affiliations": []
+          },
+          {
+            "name": "Aleksandra Piktus",
+            "affiliations": []
+          },
+          {
+            "name": "Fabio Petroni",
+            "affiliations": []
+          },
+          {
+            "name": "Vladimir Karpukhin",
+            "affiliations": []
+          },
+          {
+            "name": "Naman Goyal",
+            "affiliations": []
+          },
+          {
+            "name": "Heinrich Küttler",
+            "affiliations": []
+          },
+          {
+            "name": "Mike Lewis",
+            "affiliations": []
+          },
+          {
+            "name": "Wen-tau Yih",
+            "affiliations": []
+          },
+          {
+            "name": "Tim Rocktäschel",
+            "affiliations": []
+          },
+          {
+            "name": "Sebastian Riedel",
+            "affiliations": []
+          },
+          {
+            "name": "Douwe Kiela",
+            "affiliations": []
+          }
+        ],
+        "first_submission_year": 2020,
+        "year_basis": "arxiv_published_metadata"
+      },
+      {
+        "id": "f8237d393163900fa8e4",
+        "title": "Understanding Deep Learning",
+        "pagerank": 0.02375895,
+        "arxiv_id": null,
+        "version": null,
+        "versions": [
+          {
+            "id": "f8237d393163900fa8e4",
+            "version": null
+          }
+        ],
+        "authors": [],
+        "first_submission_year": null,
+        "year_basis": "unknown_not_inferred_from_pdf_creation_date"
+      }
+    ],
+    "edges": [
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 518,
+        "source_chunk_id": "f8237d393163900fa8e4:p518:c6900",
+        "reference_quote": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polo- sukhin, I. (2017). Attention is all you need. Neural Information Processing Systems, 30, 5998–6008. 158, 233, 234, 235, 236, 237",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "5692a5514787a8c6727b",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 486,
+        "source_chunk_id": "f8237d393163900fa8e4:p486:c6009",
+        "reference_quote": "Devlin, J., Chang, M., Lee, K., & Toutanova, K. (2019). BERT: pre-training of deep bidirec- tional transformers for language understand- ing. ACL Human Language Technologies, 4171–4186. 159, 234",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "97fd272f1fdfc1867746",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2005.14165",
+        "source_page": 482,
+        "source_chunk_id": "f8237d393163900fa8e4:p482:c5902",
+        "reference_quote": "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., et al. (2020). Language models are few-shot learners. Neu- ral Information Processing Systems, 33, 1877– 1901. 9, 159, 234, 237, 423, 426",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 479,
+        "source_chunk_id": "f8237d393163900fa8e4:p479:c5834",
+        "reference_quote": "Ba, J. L., Kiros, J. R., & Hinton, G. E. (2016). Layer normalization. arXiv:1607.06450. 203",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "74e6689115c539db499f",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1503.02531",
+        "source_page": 493,
+        "source_chunk_id": "f8237d393163900fa8e4:p493:c6218",
+        "reference_quote": "Hinton, G., Vinyals, O., Dean, J., et al. (2015). Distilling the knowledge in a neural network. arXiv:1503.02531, 2(7). 416",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "ef59863c8e36d4b64c43",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1606.08415",
+        "source_page": 493,
+        "source_chunk_id": "f8237d393163900fa8e4:p493:c6219",
+        "reference_quote": "Hendrycks, D., & Gimpel, K. (2016). Gaussian error linear units (GELUs). arXiv:1606.08415. 38",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "84801c8410da51b449d3",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 479,
+        "source_chunk_id": "f8237d393163900fa8e4:p479:c5838",
+        "reference_quote": "Bahdanau, D., Cho, K., & Bengio, Y. (2015). Neu- ral machine translation by jointly learning to align and translate. International Conference on Learning Representations. 233, 235",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "ad07e47cedf437a41564",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 509,
+        "source_chunk_id": "f8237d393163900fa8e4:p509:c6657",
+        "reference_quote": "Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., Liu, P. J., et al. (2020). Exploring the limits of transfer learning with a unified text-to-text transformer. Journal of Machine Learning Re- search, 21(140), 1–67. 236",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "285fb4323972464ba0be",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 12,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p12:c191",
+        "reference_quote": "[38] Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016.",
+        "numeric_body_mentions": 8,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "2567713d198a376b65b9",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1701.06538",
+        "source_page": 12,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p12:c185",
+        "reference_quote": "[32] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538, 2017.",
+        "numeric_body_mentions": 2,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "38095da0c38496d97fd6",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1602.02410",
+        "source_page": 11,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p11:c167",
+        "reference_quote": "[15] Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, and Yonghui Wu. Exploring the limits of language modeling. arXiv preprint arXiv:1602.02410, 2016.",
+        "numeric_body_mentions": 1,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 10,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p10:c152",
+        "reference_quote": "[1] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. Layer normalization. arXiv preprint arXiv:1607.06450, 2016.",
+        "numeric_body_mentions": 1,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "21dd02432f07d9bee122",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1705.03122",
+        "source_page": 11,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p11:c161",
+        "reference_quote": "[9] Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N. Dauphin. Convolu- tional sequence to sequence learning. arXiv preprint arXiv:1705.03122v2, 2017.",
+        "numeric_body_mentions": 8,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "84801c8410da51b449d3",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 10,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p10:c153",
+        "reference_quote": "[2] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. CoRR, abs/1409.0473, 2014.",
+        "numeric_body_mentions": 5,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "dd1f80c0c4fd67cf9afd",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1610.10099",
+        "source_page": 11,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p11:c170",
+        "reference_quote": "[18] Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, and Ko- ray Kavukcuoglu. Neural machine translation in linear time. arXiv preprint arXiv:1610.10099v2, 2017.",
+        "numeric_body_mentions": 4,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "5692a5514787a8c6727b",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 11,
+        "source_chunk_id": "5692a5514787a8c6727b:p11:c182",
+        "reference_quote": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in Neural Information Pro- cessing Systems, pages 6000–6010.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "5692a5514787a8c6727b",
+        "target": "285fb4323972464ba0be",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 12,
+        "source_chunk_id": "5692a5514787a8c6727b:p12:c202",
+        "reference_quote": "Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. 2016. Google’s neural ma- chine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "5692a5514787a8c6727b",
+        "target": "ef59863c8e36d4b64c43",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1606.08415",
+        "source_page": 10,
+        "source_chunk_id": "5692a5514787a8c6727b:p10:c153",
+        "reference_quote": "Dan Hendrycks and Kevin Gimpel. 2016. Bridging nonlinearities and stochastic regularizers with gaus- sian error linear units. CoRR, abs/1606.08415.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "cb551710ff63f0804805",
+        "target": "5692a5514787a8c6727b",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 9,
+        "source_chunk_id": "cb551710ff63f0804805:p9:c131",
+        "reference_quote": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language under- standing. In NAACL-HLT.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "cb551710ff63f0804805",
+        "target": "0ec1a7ab3de5514c6d3b",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08909",
+        "source_page": 10,
+        "source_chunk_id": "cb551710ff63f0804805:p10:c137",
+        "reference_quote": "Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pa- supat, and Ming-Wei Chang. 2020. REALM: Retrieval-augmented language model pre-training. arXiv preprint arXiv:2002.08909.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "cb551710ff63f0804805",
+        "target": "89b2371b261846059d41",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1702.08734",
+        "source_page": 10,
+        "source_chunk_id": "cb551710ff63f0804805:p10:c145",
+        "reference_quote": "Jeff Johnson, Matthijs Douze, and Herv´e J´egou. 2017. Billion-scale similarity search with GPUs. arXiv preprint arXiv:1702.08734.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "cb551710ff63f0804805",
+        "target": "995796c4f44af1fb2853",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08910",
+        "source_page": 10,
+        "source_chunk_id": "cb551710ff63f0804805:p10:c149",
+        "reference_quote": "Adam Roberts, Colin Raffel, and Noam Shazeer. 2020. How much knowledge can you pack into the pa- rameters of a language model? arXiv preprint arXiv:2002.08910.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 15,
+        "source_chunk_id": "23e3249e9a1e75418d82:p15:c277",
+        "reference_quote": "[58] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz Kaiser, and Illia Polosukhin. Attention is all you need. In I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett, editors, Advances in Neural Information Processing Systems 30, pages 5998–6008. Curran Associates, Inc., 2017. URL http://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf.",
+        "numeric_body_mentions": 1,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "5692a5514787a8c6727b",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 11,
+        "source_chunk_id": "23e3249e9a1e75418d82:p11:c221",
+        "reference_quote": "[8] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Con- ference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages 4171–4186, Minneapolis, Minnesota, June 2019. Association for Computational Linguistics. doi: 10.18653/v1/N19-1423. URL https://www.aclweb.org/anthology/N19-1423.",
+        "numeric_body_mentions": 3,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "cb551710ff63f0804805",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2004.04906",
+        "source_page": 12,
+        "source_chunk_id": "23e3249e9a1e75418d82:p12:c240",
+        "reference_quote": "[26] Vladimir Karpukhin, Barlas Oguz, Sewon Min, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih. Dense passage retrieval for open-domain question answering. arXiv preprint arXiv:2004.04906, 2020. URL https://arxiv.org/abs/2004.04906.",
+        "numeric_body_mentions": 9,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "0ec1a7ab3de5514c6d3b",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08909",
+        "source_page": 12,
+        "source_chunk_id": "23e3249e9a1e75418d82:p12:c234",
+        "reference_quote": "[20] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. REALM: Retrieval-augmented language model pre-training. ArXiv, abs/2002.08909, 2020. URL https: //arxiv.org/abs/2002.08909.",
+        "numeric_body_mentions": 7,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "c884c393e817e408e581",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.13461",
+        "source_page": 13,
+        "source_chunk_id": "23e3249e9a1e75418d82:p13:c248",
+        "reference_quote": "[32] Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Veselin Stoyanov, and Luke Zettlemoyer. BART: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. arXiv preprint arXiv:1910.13461, 2019. URL https://arxiv.org/abs/1910.13461.",
+        "numeric_body_mentions": 4,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "89b2371b261846059d41",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1702.08734",
+        "source_page": 12,
+        "source_chunk_id": "23e3249e9a1e75418d82:p12:c237",
+        "reference_quote": "[23] Jeff Johnson, Matthijs Douze, and Hervé Jégou. Billion-scale similarity search with gpus. arXiv preprint arXiv:1702.08734, 2017. URL https://arxiv.org/abs/1702.08734.",
+        "numeric_body_mentions": 2,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "995796c4f44af1fb2853",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08910",
+        "source_page": 14,
+        "source_chunk_id": "23e3249e9a1e75418d82:p14:c270",
+        "reference_quote": "[52] Adam Roberts, Colin Raffel, and Noam Shazeer. How much knowledge can you pack into the parameters of a language model? arXiv e-prints, 2020. URL https://arxiv.org/abs/ 2002.08910.",
+        "numeric_body_mentions": 6,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "ad07e47cedf437a41564",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 14,
+        "source_chunk_id": "23e3249e9a1e75418d82:p14:c269",
+        "reference_quote": "[51] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. Exploring the limits of transfer learning with a uniﬁed text-to-text transformer. arXiv e-prints, 2019. URL https://arxiv.org/abs/1910.10683.",
+        "numeric_body_mentions": 3,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 74,
+        "source_chunk_id": "97fd272f1fdfc1867746:p74:c921",
+        "reference_quote": "[VSP+17] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Advances in neural information processing systems, 2017.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "5692a5514787a8c6727b",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 68,
+        "source_chunk_id": "97fd272f1fdfc1867746:p68:c801",
+        "reference_quote": "[DCLT18] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805, 2018.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "23e3249e9a1e75418d82",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2005.11401",
+        "source_page": 71,
+        "source_chunk_id": "97fd272f1fdfc1867746:p71:c859",
+        "reference_quote": "[LPP+20] Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich K¨uttler, Mike Lewis, Wen-tau Yih, Tim Rockt¨aschel, Sebastian Riedel, and Kiela Douwe. Retrieval-augmented generation for knowledge-intensive nlp tasks. arXiv preprint arXiv:2005.11401, 2020.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "0ec1a7ab3de5514c6d3b",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08909",
+        "source_page": 69,
+        "source_chunk_id": "97fd272f1fdfc1867746:p69:c815",
+        "reference_quote": "[GLT+20] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. Realm: Retrieval- augmented language model pre-training. arXiv preprint arXiv:2002.08909, 2020.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "c884c393e817e408e581",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.13461",
+        "source_page": 71,
+        "source_chunk_id": "97fd272f1fdfc1867746:p71:c856",
+        "reference_quote": "[LLG+19] Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov, and Luke Zettlemoyer. Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. arXiv preprint arXiv:1910.13461, 2019.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "2567713d198a376b65b9",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1701.06538",
+        "source_page": 74,
+        "source_chunk_id": "97fd272f1fdfc1867746:p74:c911",
+        "reference_quote": "[SMM+17] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538, 2017.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "38095da0c38496d97fd6",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1602.02410",
+        "source_page": 70,
+        "source_chunk_id": "97fd272f1fdfc1867746:p70:c834",
+        "reference_quote": "[JVS+16] Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, and Yonghui Wu. Exploring the limits of language modeling. arXiv preprint arXiv:1602.02410, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "74e6689115c539db499f",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1503.02531",
+        "source_page": 70,
+        "source_chunk_id": "97fd272f1fdfc1867746:p70:c827",
+        "reference_quote": "[HVD15] Geoffrey Hinton, Oriol Vinyals, and Jeff Dean. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531, 2015.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "995796c4f44af1fb2853",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08910",
+        "source_page": 73,
+        "source_chunk_id": "97fd272f1fdfc1867746:p73:c901",
+        "reference_quote": "[RRS20] Adam Roberts, Colin Raffel, and Noam Shazeer. How much knowledge can you pack into the parameters of a language model? arXiv preprint arXiv:2002.08910, 2020.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "ad07e47cedf437a41564",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 73,
+        "source_chunk_id": "97fd272f1fdfc1867746:p73:c902",
+        "reference_quote": "[RSR+19] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. Exploring the limits of transfer learning with a uniﬁed text-to-text transformer, 2019.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "0ec1a7ab3de5514c6d3b",
+        "target": "c884c393e817e408e581",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.13461",
+        "source_page": 9,
+        "source_chunk_id": "0ec1a7ab3de5514c6d3b:p9:c166",
+        "reference_quote": "Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mo- hamed, A., Levy, O., Stoyanov, V., and Zettlemoyer, L. Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehen- sion. ArXiv, abs/1910.13461, 2019.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "0ec1a7ab3de5514c6d3b",
+        "target": "995796c4f44af1fb2853",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08910",
+        "source_page": 10,
+        "source_chunk_id": "0ec1a7ab3de5514c6d3b:p10:c172",
+        "reference_quote": "Roberts, A., Raffel, C., and Shazeer, N. How much knowl- edge can you pack into the parameters of a language model? arXiv preprint arXiv:TBD, 2020.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "0ec1a7ab3de5514c6d3b",
+        "target": "84801c8410da51b449d3",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 9,
+        "source_chunk_id": "0ec1a7ab3de5514c6d3b:p9:c156",
+        "reference_quote": "Bahdanau, D., Cho, K., and Bengio, Y. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473, 2014.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "0ec1a7ab3de5514c6d3b",
+        "target": "ad07e47cedf437a41564",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 10,
+        "source_chunk_id": "0ec1a7ab3de5514c6d3b:p10:c189",
+        "reference_quote": "Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., and Liu, P. J. Exploring the limits of transfer learning with a uniﬁed text-to-text transformer. arXiv preprint arXiv:1910.10683, 2019.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "285fb4323972464ba0be",
+        "target": "84801c8410da51b449d3",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 20,
+        "source_chunk_id": "285fb4323972464ba0be:p20:c247",
+        "reference_quote": "[2] Bahdanau, D., Cho, K., and Bengio, Y. Neural machine translation by jointly learning to align and translate. In International Conference on Learning Representations (2015).",
+        "numeric_body_mentions": 6,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "c884c393e817e408e581",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 10,
+        "source_chunk_id": "c884c393e817e408e581:p10:c186",
+        "reference_quote": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Advances in neural information processing systems, pp. 5998–6008, 2017.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "c884c393e817e408e581",
+        "target": "5692a5514787a8c6727b",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 9,
+        "source_chunk_id": "c884c393e817e408e581:p9:c165",
+        "reference_quote": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre-training of deep bidirectional transformers for language understand- ing. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Com- putational Linguistics: Human Language Technolo- gies, Volume 1 (Long and Short Papers), pp. 4171– 4186, Minneapolis, Minnesota, June 2019. Associa- tion for Computational Linguistics. doi: 10.18653/ v1/N19-1423. URL https://www.aclweb. org/anthology/N19-1423.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "c884c393e817e408e581",
+        "target": "ef59863c8e36d4b64c43",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1606.08415",
+        "source_page": 9,
+        "source_chunk_id": "c884c393e817e408e581:p9:c180",
+        "reference_quote": "Dan Hendrycks and Kevin Gimpel. Gaussian error lin- ear units (gelus). arXiv preprint arXiv:1606.08415, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "2567713d198a376b65b9",
+        "target": "285fb4323972464ba0be",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 12,
+        "source_chunk_id": "2567713d198a376b65b9:p12:c168",
+        "reference_quote": "Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V. Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, Jeff Klingner, Apurva Shah, Melvin John- son, Xiaobing Liu, Łukasz Kaiser, Stephan Gouws, Yoshikiyo Kato, Taku Kudo, Hideto Kazawa, Keith Stevens, George Kurian, Nishant Patil, Wei Wang, Cliff Young, Jason Smith, Jason Riesa, Alex Rudnick, Oriol Vinyals, Greg Corrado, Macduff Hughes, and Jeffrey Dean. Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "2567713d198a376b65b9",
+        "target": "38095da0c38496d97fd6",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1602.02410",
+        "source_page": 11,
+        "source_chunk_id": "2567713d198a376b65b9:p11:c151",
+        "reference_quote": "Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, and Yonghui Wu. Exploring the limits of language modeling. arXiv preprint arXiv:1602.02410, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "2567713d198a376b65b9",
+        "target": "84801c8410da51b449d3",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 10,
+        "source_chunk_id": "2567713d198a376b65b9:p10:c128",
+        "reference_quote": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473, 2014.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "995796c4f44af1fb2853",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 7,
+        "source_chunk_id": "995796c4f44af1fb2853:p7:c114",
+        "reference_quote": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in Neural Information Pro- cessing Systems.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "995796c4f44af1fb2853",
+        "target": "5692a5514787a8c6727b",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 6,
+        "source_chunk_id": "995796c4f44af1fb2853:p6:c93",
+        "reference_quote": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. BERT: Pre-training of deep bidirectional transformers for language under- standing. arXiv preprint arXiv:1810.04805.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "995796c4f44af1fb2853",
+        "target": "cb551710ff63f0804805",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "2004.04906",
+        "source_page": 6,
+        "source_chunk_id": "995796c4f44af1fb2853:p6:c83",
+        "reference_quote": "Vladimir Karpukhin, Barlas Ouguz, Sewon Min, Ledell Yu Wu, Sergey Edunov, Danqi Chen, and Wen tau Yih. 2020. Dense passage retrieval for open-domain question answering. arXiv preprint arXiv:2004.04906.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "995796c4f44af1fb2853",
+        "target": "ad07e47cedf437a41564",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 7,
+        "source_chunk_id": "995796c4f44af1fb2853:p7:c110",
+        "reference_quote": "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. 2019. Exploring the limits of transfer learning with a uniﬁed text-to-text trans- former. arXiv preprint arXiv:1910.10683.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "285fb4323972464ba0be",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 11,
+        "source_chunk_id": "21dd02432f07d9bee122:p11:c225",
+        "reference_quote": "Wu, Yonghui, Schuster, Mike, Chen, Zhifeng, Le, Quoc V, Norouzi, Mohammad, Macherey, Wolfgang, Krikun, Maxim, Cao, Yuan, Gao, Qin, Macherey, Klaus, et al. Google’s Neural Machine Translation System: Bridging the Gap between Human and Machine Translation. arXiv preprint arXiv:1609.08144, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "2567713d198a376b65b9",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1701.06538",
+        "source_page": 11,
+        "source_chunk_id": "21dd02432f07d9bee122:p11:c232",
+        "reference_quote": "Shazeer, Noam, Mirhoseini, Azalia, Maziarz, Krzysztof, Davis, Andy, Le, Quoc, Hinton, Geoffrey, and Dean, Jeff. Outrageously large neural networks: The sparsely- gated mixture-of-experts layer. ArXiv e-prints, January 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 9,
+        "source_chunk_id": "21dd02432f07d9bee122:p9:c186",
+        "reference_quote": "Ba, Jimmy Lei, Kiros, Jamie Ryan, and Hinton, Ge- offrey E. Layer normalization. arXiv preprint arXiv:1607.06450, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "84801c8410da51b449d3",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 9,
+        "source_chunk_id": "21dd02432f07d9bee122:p9:c187",
+        "reference_quote": "Bahdanau, Dzmitry, Cho, Kyunghyun, and Bengio, Yoshua. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473, 2014.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "dd1f80c0c4fd67cf9afd",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1610.10099",
+        "source_page": 10,
+        "source_chunk_id": "21dd02432f07d9bee122:p10:c197",
+        "reference_quote": "Kalchbrenner, Nal, Espeholt, Lasse, Simonyan, Karen, van den Oord, Aaron, Graves, Alex, and Kavukcuoglu, Koray. Neural Machine Translation in Linear Time. arXiv, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "dd1f80c0c4fd67cf9afd",
+        "target": "285fb4323972464ba0be",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 9,
+        "source_chunk_id": "dd1f80c0c4fd67cf9afd:p9:c187",
+        "reference_quote": "Kudo, Taku, Kazawa, Hideto, Stevens, Keith, Kurian, George, Patil, Nishant, Wang, Wei, Young, Cliff, Smith, Jason, Riesa, Jason, Rudnick, Alex, Vinyals, Oriol, Corrado, Greg, Hughes, Macduff, and Dean, Jeffrey. Googles neural machine translation system: Bridging the gap between human and machine translation. CoRR, abs/1609.08144, 2016a.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "dd1f80c0c4fd67cf9afd",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 7,
+        "source_chunk_id": "dd1f80c0c4fd67cf9afd:p7:c162",
+        "reference_quote": "Ba, Lei Jimmy, Kiros, Ryan, and Hinton, Geoffrey E. Layer normalization. CoRR, abs/1607.06450, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "dd1f80c0c4fd67cf9afd",
+        "target": "84801c8410da51b449d3",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 7,
+        "source_chunk_id": "dd1f80c0c4fd67cf9afd:p7:c163",
+        "reference_quote": "Bahdanau, Dzmitry, Cho, Kyunghyun, and Bengio, Yoshua. Neural machine translation by jointly learning to align and translate. CoRR, abs/1409.0473, 2014.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 66,
+        "source_chunk_id": "ad07e47cedf437a41564:p66:c785",
+        "reference_quote": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Advances in neural information processing systems, 2017.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "5692a5514787a8c6727b",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 59,
+        "source_chunk_id": "ad07e47cedf437a41564:p59:c679",
+        "reference_quote": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre- training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805, 2018.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "285fb4323972464ba0be",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 67,
+        "source_chunk_id": "ad07e47cedf437a41564:p67:c796",
+        "reference_quote": "Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V. Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "2567713d198a376b65b9",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1701.06538",
+        "source_page": 65,
+        "source_chunk_id": "ad07e47cedf437a41564:p65:c771",
+        "reference_quote": "Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538, 2017.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "38095da0c38496d97fd6",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1602.02410",
+        "source_page": 61,
+        "source_chunk_id": "ad07e47cedf437a41564:p61:c707",
+        "reference_quote": "Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, and Yonghui Wu. Exploring the limits of language modeling. arXiv preprint arXiv:1602.02410, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 58,
+        "source_chunk_id": "ad07e47cedf437a41564:p58:c656",
+        "reference_quote": "Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E. Hinton. Layer normalization. arXiv preprint arXiv:1607.06450, 2016.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "74e6689115c539db499f",
+        "basis": "explicit_arxiv_identifier_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1503.02531",
+        "source_page": 60,
+        "source_chunk_id": "ad07e47cedf437a41564:p60:c694",
+        "reference_quote": "Geoffrey Hinton, Oriol Vinyals, and Jeff Dean. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531, 2015.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "84801c8410da51b449d3",
+        "basis": "complete_normalized_title_in_reference",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 58,
+        "source_chunk_id": "ad07e47cedf437a41564:p58:c658",
+        "reference_quote": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. In Third International Conference on Learning Representations, 2015.",
+        "numeric_body_mentions": null,
+        "anchor_status": "reference_chunk_verified",
+        "quality_inference": "none_citation_frequency_is_not_scholarly_quality"
+      }
+    ],
+    "algorithm": {
+      "name": "PageRank",
+      "damping": 0.85,
+      "max_iterations": 200,
+      "iterations": 21,
+      "residual_l1": 7.798645063061826e-11,
+      "converged": true,
+      "weights": "unweighted_unique_family_edges",
+      "citation_direction": "citing_paper_to_cited_paper"
+    },
+    "limitations": "同arXiv家族合并，节点用当前库内最新版本代表；边只表示论文家族引用，不表示引用了最新修订版。引用匹配/原文锚点可复核，但没有证明引用质量或完整性；PageRank不代表论文质量。"
+  }
+}

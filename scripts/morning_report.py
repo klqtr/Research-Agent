@@ -16,7 +16,8 @@ def main():
     book = next(row for row in robustness if row["file"] == "UnderstandingDeepLearning_02_09_26_C.pdf")
     structure = json.loads((ROOT / evidence["page_structure"] / "summary.json").read_text(encoding="utf-8")) if evidence.get("page_structure") else None
     tracking = json.loads((ROOT / evidence["tracking_probe"]).read_text(encoding="utf-8")) if evidence.get("tracking_probe") else None
-    tracking_note = (f"已观察{len(tracking['runs'])}次真实快照，状态{[r['status'] for r in tracking['runs']]}；是否达到刷新上限停用以原始watch字段为准。" if tracking else "未执行真实追踪实验。")
+    tracking_note = (f"已观察{len(tracking['runs'])}次真实快照，状态{[r['status'] for r in tracking['runs']]}；enabled={tracking['watch']['enabled']}，停用原因{tracking['watch']['disabled_reason']}。" if tracking else "未执行真实追踪实验。")
+    citation = json.loads((ROOT / evidence["citation_graph"] / "summary.json").read_text(encoding="utf-8")) if evidence.get("citation_graph") else None
     paths = []
     for name in ("src", "tests", "scripts", "docs", "reports", "experiments", "output"):
         for path in (ROOT / name).rglob("*"):
@@ -30,13 +31,15 @@ def main():
 ## 1. 实际执行窗口
 2026-10-16 00:35:23 至本报告生成时，墙钟约{elapsed:.1f}分钟，包含工具等待。真实起始目录为空，无现有成果被删除或推倒。没有付费API、云资源采购、大型模型下载、远程推送或赛事提交。
 
+**执行中断说明**：约02:40至07:39的一次浏览器SVG导出验证调用，工具报告等待17,971.4秒（约299.5分钟），没有新的研发产出，也无法在阻塞调用内保存周期检查点。原因未确诊，不冒称这5小时持续编写或实验；扣除该等待后的墙钟约{max(0,elapsed-299.5):.1f}分钟仍含其他工具等待，并非精确有效工时。返回后已保存实际SVG并复核20节点/9条聚焦边/20项图例，完整测试再次82通过。
+
 ## 2. 已完成的主要功能
 - 官方命题核验：必须做六模块全流程科研助手，35%技术深度/25%科研创新为最高权重；公开接口原始规则存档，冲突和待确认事项分列。
 - 模块化Python/FastAPI/SQLite后端与真实Web工作台；可导入、管理和保留原始PDF，移除索引不删原文。
 - 正文版本近似检测、v1/v7确认、逐块diff；首页标题/身份修复。
 - 页/块/bbox证据、混合词汇检索、文献配额、设备数字事实重排、部分拒答、引用原文核验。
 - 英语本地OCR、真实目录层级、按页表格候选/缓存/CSV、图注和数学glyph候选、541页真实作者版教材解析、服务端页图和证据框高亮、数字引用往返。
-- 版本家族PageRank、Future Work待验证原文、真实arXiv搜索/受限下载API、反馈驱动词汇兴趣排序、显式启用的有界自动追踪和历史。
+- 21份真实PDF/20家族的版本归并PageRank、逐边证据、聚焦图谱/SVG导出、精确版本公共元数据、Future Work待验证原文、真实arXiv搜索/受限下载API、反馈兴趣排序、显式启用的有界自动追踪和历史。
 - CSV描述统计/SVG、可信写作模板/精确修订版参考条目、Mermaid脚本。
 - 可选真实LLM问答/翻译与原生Function Calling工具往返适配；真实模型未配置，效果未验收。默认只运行披露清楚的确定性工作流。
 
@@ -48,7 +51,7 @@ def main():
 - `scripts/`：获取/导入、评测/OCR/长文/HTTP、报告/PDF、检查点与本报告再生成。
 - `docs/`：官方规则、技术方案、创新、架构、AI协同、模型状态。
 - `reports/`：评测、消融、严格评审、视频脚本、答辩、提交清单、真实浏览器截图。
-- `output/pdf/ResearchTrace_technical_report.pdf`：9页研发稿，已渲染检查。
+- `output/pdf/ResearchTrace_technical_report.pdf`：10页研发稿，视觉核验与文件哈希见reports/pdf_validation.json。
 - 根目录README、依赖锁、环境模板、Dockerfile、进度/恢复日志。
 
 ## 4. 已执行的测试
@@ -80,8 +83,13 @@ def main():
 ## 第二阶段新增证据
 表格开发/回归案例列数匹配{structure['correct_column_cases'] if structure else '未测'}/{structure['table_cases'] if structure else '未测'}，指定关键单元格匹配{structure['matched_selected_cells'] if structure else '未测'}/{structure['selected_cells'] if structure else '未测'}；不代表整个表格准确率。v2跨栏合并、v3短表题宽表丢列的失败记录均保留。{tracking_note}契约替身不冒充真实调度等待。
 
+## 第三阶段新增证据
+同库同元数据引用边{citation['old_edges'] if citation else '未测'}→{citation['edges'] if citation else '未测'}，{citation['anchors_verified'] if citation else '未测'}条锚点完整性通过；新增7条标题与作者已对照原PDF物理页文本块。它们是改动后回归，非独立精确率/召回率。14篇扩展下载约12.68MB、20份arXiv版本精确元数据匹配，来源Atom/哈希可查；机构缺失不猜测。初次5条原页核验因双栏整页排序失败，逐块顺序修复后7条通过，原失败输出保留。图谱可聚焦、逐边原文跳转与SVG导出。
+
+21份原PDF共48,165,754字节，精确版本与SHA256均已锁定并校验。隔离临时SQLite从原文件重新解析、离线恢复20份元数据，21身份/20节点/71边的页块锚点集合及排名完全复现（6.69秒、零联网、原库未修改）。不能称作新机器安装或公网下载验收；未来上游变更会报哈希不匹配，不覆盖原文。记录见experiments/LATEST_REBUILD.txt。
+
 ## 8. 未解决的技术问题
-真实模型端点和调用预算缺失；无语义蕴含验证或神经Dense检索；复杂表格/公式/机构元数据不足；专业划词翻译和非数字引文联动不足；定时追踪长周期稳定性待验证/训练式多用户推荐未完成；尚无20篇真实图谱质量标注；Docker/公网/并发未验收。
+真实模型端点和调用预算缺失；无语义蕴含验证或神经Dense检索；复杂表格/公式/机构元数据不足；专业划词翻译和非数字引文联动不足；定时追踪长期稳定性待验证/训练式多用户推荐未完成；20家族图只有来源核验及修复回归，缺全图独立质量金标；Docker/公网/并发未验收。
 
 ## 9. 完整竞赛提交还缺什么
 真实LLM核心能力及实验、官方全部资料包验收、六模块高级功能补齐；参赛者/学校/组别/报名信息；依赖与文献模型许可最终核验；GitHub/Gitee评审权限、公网服务和5-8分钟1080p普通话MP4。PDF当前是研发稿，需随最终实现更新，不能直接宣称完成参赛。严格内部成熟度43/100，不是官方评分或获奖预测。

@@ -110,7 +110,10 @@ Attention v1/v7正文字词4-shingle相似度0.7171，识别同arXiv家族，旧
         tracking_path = ROOT / tracking_pointer.read_text(encoding="utf-8").strip()
         tracking = json.loads(tracking_path.read_text(encoding="utf-8"))
         runs = tracking.get("runs", [])
-        eval_text += f"\n## 第二阶段：真实追踪\n\n来源`{tracking_path.relative_to(ROOT).as_posix()}`，已观察{len(runs)}次真实刷新，状态{[r['status'] for r in runs]}。受限实验每30分钟一次、最多2次，当前记录不等于第二次周期已完成。空/停用条目不联网、并发租约、失败保留与上限自动停用另有明确时钟/搜索替身契约测试，不能将其当成真实长时间运行。\n"
+        watch = tracking.get("watch") or {}
+        stopped = len(runs) == 2 and watch.get("runs_count") == 2 and not watch.get("enabled") and watch.get("disabled_reason") == "refresh_limit_reached"
+        tracking_status = "两次刷新已实际完成，第二条明确记录scheduled，达到预算后enabled=0、disabled_reason=refresh_limit_reached。" if stopped and runs[0].get("trigger_kind")=="scheduled" else "尚未核验完整的两次刷新与预算停用。"
+        eval_text += f"\n## 第二阶段：真实追踪\n\n来源`{tracking_path.relative_to(ROOT).as_posix()}`，已观察{len(runs)}次真实刷新，状态{[r['status'] for r in runs]}。{tracking_status}受限实验每30分钟一次、最多2次，不能推广为长期稳定性结论。空/停用条目不联网、并发租约、失败保留与上限自动停用另有明确时钟/搜索替身契约测试。\n"
         extra_manifest["tracking_probe"] = str(tracking_path.relative_to(ROOT))
         (REPORTS / "tracking_report.md").write_text(f"""# 持久化文献追踪验证
 
@@ -118,15 +121,29 @@ Attention v1/v7正文字词4-shingle相似度0.7171，识别同arXiv家族，旧
 
 调度、租约、版本去重、失败保留、限额与停用的单元测试使用明确时钟和搜索替身，不冒充真实等待。真实受限实验主题为retrieval augmented generation，启用间隔30分钟，最多2次。
 
-本次观测来源`{tracking_path.relative_to(ROOT).as_posix()}`，已记录{len(runs)}次实际刷新，状态{[r['status'] for r in runs]}。第二次到时后应依据数据库真实状态和活跃服务句柄继续核验；未完成前不报告完整周期成功。达到两次后应自动停用，需再检查状态证实，不能只依据实现推断。
+本次观测来源`{tracking_path.relative_to(ROOT).as_posix()}`，已记录{len(runs)}次实际刷新，状态{[r['status'] for r in runs]}。{tracking_status}第一条完成01:55:39，第二条02:26:07（北京时间），符合间隔30分钟后下个60秒扫描周期执行。第一次早于trigger_kind字段，迁移后为unspecified；不回填为scheduled。两次新增分别5与0，表示版本去重，不能据此证明召回完整。
 
 UI显示北京时间，原始记录用UTC。无公网、多用户或独立守护进程验收；只有本地Web服务运行期间才会自动调度。
 """, encoding="utf-8")
+    graph_pointer = ROOT / "experiments/LATEST_GRAPH.txt"
+    if graph_pointer.exists():
+        graph_folder = ROOT / graph_pointer.read_text(encoding="utf-8").strip()
+        graph_result = json.loads((graph_folder / "summary.json").read_text(encoding="utf-8"))
+        extra_manifest["citation_graph"] = str(graph_folder.relative_to(ROOT))
+        graph_note = f"同一21份PDF/20个家族、相同已校验元数据下，旧匹配{graph_result['old_edges']}条，新匹配{graph_result['edges']}条，新增{graph_result['added_edges']}、移除{graph_result['removed_edges']}。{graph_result['anchors_verified']}/{graph_result['anchor_checks']}条边通过块存在/物理页/原始参考文本完整性检查。7条新增边已按原PDF页块复核标题与作者，但这是改动后检查与回归，**不是独立引用精确率/召回率测评**。"
+        eval_text += "\n## 第三阶段：引用图与来源\n\n"+graph_note+f"原始图、逐边检查与CSV见`{graph_folder.relative_to(ROOT).as_posix()}`。PageRank为非加权家族图，残差{graph_result['algorithm']['residual_l1']:.3g}；引用次数和PageRank均不代表学术质量。\n"
+        (REPORTS / "citation_graph_report.md").write_text("# 引用图与元数据核验\n\n"+graph_note+f"\n\n来源：`{graph_folder.relative_to(ROOT).as_posix()}`。单次本机完整图耗时{graph_result['single_run_latency_ms']:.1f}ms，不是并发或P95基准。旧算法基线graph_before_matching_change.json已在元数据更新后、修改匹配前保存，另一份graph_before_phase3.json混合了元数据变化，不用作纯算法对照。\n\n14篇扩展论文均来自原库真实参考文献内的arXiv标识；下载总量12,681,905字节，保留原文件、来源与哈希。20份arXiv版本通过公共Atom元数据批次精确ID+版本匹配，补充标题、作者和首发年，机构缺失保持空。教材年份未知，不用PDF创建时间猜测。原始Atom与manifest可查，未推断同行评审状态。\n\n完整标题归一化处理断行、连字、小型大写字母；保留标题终止边界，测试防止书名短前缀匹配另一篇长标题、不同参考条目拼接和ID尾数误匹配。早期100轮PageRank在20节点星形测试中残差未达1e-10，扩至最多200轮后通过。失败XML保留。\n\n正文数字引文频次只计参考文献页之前的块，作者年份引文未计，可能漏同页及范围引文；不做应付式引用过滤。边仅表示家族关系，并未推断被引用的是本地最新修订版。图中可聚焦节点、点证据回原文、导出带编号图例SVG。尚缺全图独立金标、引用质量分类、真实LLM综述与后续解决判定。\n",encoding="utf-8")
+    rebuild_pointer=ROOT/"experiments/LATEST_REBUILD.txt"
+    if rebuild_pointer.exists():
+        rebuild_folder=ROOT/rebuild_pointer.read_text(encoding="utf-8").strip()
+        rebuilt=json.loads((rebuild_folder/"summary.json").read_text(encoding="utf-8"))
+        extra_manifest["offline_rebuild"]=str(rebuild_folder.relative_to(ROOT))
+        eval_text+=f"\n## 离线恢复验证\n\n原文件SHA256锁定后，在隔离临时SQLite库中重新解析21份PDF，用已保存Atom恢复20个精确版本元数据；{rebuilt['id_checks_passed']}/21身份一致，20节点71边的源页/块集合及节点排名完全一致，耗时{rebuilt['elapsed_seconds']:.2f}秒。无网络、原库未修改。来源`{rebuild_folder.relative_to(ROOT).as_posix()}`。这不是新机器安装或公网重新下载验收，未来上游内容变化应报哈希不匹配，不覆盖原文件。\n"
     (REPORTS / "evaluation_report.md").write_text(eval_text, encoding="utf-8")
     ablation = "# 消融与迭代报告\n\n同一配置内固定k=5，关闭文献配额/设备事实重排分别观察变化；BM25与字符分支也分别运行。没有付费模型或模拟效果数据。\n\n开发集：\n\n" + table(dev["retrieval"]) + "\n新论文验证：\n\n" + table(hold["retrieval"])
     ablation += "\n结论：开发集配额改善跨篇覆盖，事实重排改善设备数字块定位；新论文集两者均未增加总体命中。简单BM25在两道新论文跨篇题上的全命中高于融合方案，说明融合可能损害特定任务，不能只展示总分。需另设更大标注集和语义多样性测试，不继续对当前验证集调参。\n\n"
     ablation += "|轮次|问题与修改|真实结果|新增风险|\n|---|---|---|---|\n|初版|Windows临时目录/受限进程异常|9通过12环境错误，之后正常权限21通过|需记录本机运行方式|\n|解析修复|v7版权声明当标题，按首页水平大字号提取|真实v7标题回归通过|复杂标题仍可能失败|\n|检索第1轮|停用词与字符资格门槛|开发集全目标命中77.8%→83.3%|词汇/跨语种泛化有限|\n|检索第2轮|硬件事实重排，单列消融|开发集100%，新论文91.7%|开发集适配，验证集无额外收益|\n|OCR修复|下载官方语言数据，相对路径避开中文路径限制|扫描页真实识别，教材4页OCR|复杂公式未验证|\n|图谱修复|版本家族合并、边只代表家族；首页身份提取|避免版本重复计权和教材误认arXiv引用|引文匹配仍有漏边|\n|浏览器修复|插件预览黑屏，改为按页PNG和bbox高亮|API图像/原文不变回归，浏览器视觉复核|页图不提供PDF.js文字选择|\n"
-    ablation += "|第二阶段解析|表题限定、并列表题隔离、短表题宽表回归|列数6/8→8/8，指定单元格15/18→18/18；70项完整回归通过|已用于修复的页不是独立盲测，复杂单元格仍有未测错误|\n|第二阶段追踪|显式启用、有界预算、事务租约与历史|契约测试通过，首次自动公共API刷新真实成功|第二次30分钟周期尚待实际观察，不能提前报告通过|\n"
+    ablation += f"|第二阶段解析|表题限定、并列表题隔离、短表题宽表回归|列数6/8→8/8，指定单元格15/18→18/18；阶段70项回归通过|已用于修复的页不是独立盲测，复杂单元格仍有未测错误|\n|第二阶段追踪|显式启用、有界预算、事务租约与历史|两次实际刷新、第二次scheduled、达到预算自动停用已核验|仅30分钟有界观察，非长期稳定性|\n|第三阶段图谱|独立参考条目/完整标题/真锚点；20家族|相同输入64→71条，新增7条原PDF复核；最新{test_counts['tests']}项完整回归通过|改动后回归不是独立精确率/召回率，未做引用质量分类|\n"
     (REPORTS / "ablation_study.md").write_text(ablation, encoding="utf-8")
     figure_dir = REPORTS / "figures"
     figure_dir.mkdir(exist_ok=True)

@@ -1,19 +1,20 @@
 {
-  "at": "2026-10-16T02:09:48.667131+08:00",
+  "at": "2026-10-16T07:46:24.799096+08:00",
   "pdf": "output\\pdf\\ResearchTrace_technical_report.pdf",
-  "sha256": "4c7c405180158a22ed35fc4c1bcca5b44112d2cb560033d2b814d7394fd311dc",
-  "rendered_pages": 9,
-  "render_command": "pdftoppm -scale-to 1100 -png",
-  "review": "All nine page thumbnails and full page 8 inspected by Codex; no clipping or overlap observed. This is visual review, not semantic validation.",
+  "sha256": "38fd5f3a2d9a245d5d3c1aa76ddff6767939b9142f669c1ea008d8c1f3b5a3b2",
+  "rendered_pages": 10,
+  "render_command": "pdftoppm -scale-to 1000 -png",
+  "review": "Final ten page thumbnails inspected; full page9 inspected in phase3 and final page10 after recovery evidence insertion. No clipping or overlap observed. Visual review is not semantic validation.",
   "rendered_images": [
-    "tmp\\phase2_report_qa\\page-1.png",
-    "tmp\\phase2_report_qa\\page-2.png",
-    "tmp\\phase2_report_qa\\page-3.png",
-    "tmp\\phase2_report_qa\\page-4.png",
-    "tmp\\phase2_report_qa\\page-5.png",
-    "tmp\\phase2_report_qa\\page-6.png",
-    "tmp\\phase2_report_qa\\page-7.png",
-    "tmp\\phase2_report_qa\\page-8.png",
-    "tmp\\phase2_report_qa\\page-9.png"
+    "tmp\\final_report_qa\\page-01.png",
+    "tmp\\final_report_qa\\page-02.png",
+    "tmp\\final_report_qa\\page-03.png",
+    "tmp\\final_report_qa\\page-04.png",
+    "tmp\\final_report_qa\\page-05.png",
+    "tmp\\final_report_qa\\page-06.png",
+    "tmp\\final_report_qa\\page-07.png",
+    "tmp\\final_report_qa\\page-08.png",
+    "tmp\\final_report_qa\\page-09.png",
+    "tmp\\final_report_qa\\page-10.png"
   ]
 }

@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
     stamp = datetime.now(timezone(timedelta(hours=8))).strftime("%Y%m%d_%H%M%S")
     relative = f"experiments/full_tests_{stamp}.xml"
     command = [sys.executable, "-m", "pytest", "-q", f"--basetemp=tmp/pytest_full_{stamp}", f"--junitxml={relative}"]

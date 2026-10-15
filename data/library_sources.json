@@ -1,0 +1,196 @@
+{
+  "scope": "exact_21_file_phase3_library",
+  "metadata_atom": "experiments/metadata_20261016_022037/raw.atom",
+  "no_redistribution_permission_inferred": true,
+  "files": [
+    {
+      "filename": "UnderstandingDeepLearning_02_09_26_C.pdf",
+      "arxiv_id": null,
+      "version": null,
+      "url": "https://github.com/udlbook/udlbook/releases/download/v5.0.3/UnderstandingDeepLearning_02_09_26_C.pdf",
+      "sha256": "f8237d393163900fa8e43210e680a3f987b45ccac7750b372e156fae3df0bf32",
+      "bytes": 22344992,
+      "paper_id": "f8237d393163900fa8e4"
+    },
+    {
+      "filename": "1706.03762v1.pdf",
+      "arxiv_id": "1706.03762",
+      "version": 1,
+      "url": "https://arxiv.org/pdf/1706.03762v1",
+      "sha256": "0a9bff1be3575cf9fe26a4a3d3a9175bc791ecec90de8b9deba4cff75d2b9476",
+      "bytes": 2128686,
+      "paper_id": "0a9bff1be3575cf9fe26"
+    },
+    {
+      "filename": "1706.03762v7.pdf",
+      "arxiv_id": "1706.03762",
+      "version": 7,
+      "url": "https://arxiv.org/pdf/1706.03762v7",
+      "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+      "bytes": 2215244,
+      "paper_id": "bdfaa68d8984f0dc02be"
+    },
+    {
+      "filename": "1810.04805v2.pdf",
+      "arxiv_id": "1810.04805",
+      "version": 2,
+      "url": "https://arxiv.org/pdf/1810.04805v2",
+      "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e",
+      "bytes": 775166,
+      "paper_id": "5692a5514787a8c6727b"
+    },
+    {
+      "filename": "2004.04906v2.pdf",
+      "arxiv_id": "2004.04906",
+      "version": 2,
+      "url": "https://arxiv.org/pdf/2004.04906v2",
+      "sha256": "cb551710ff63f08048057924d0f4e7a954aaaeff19e31b6e306fa0aef32d6291",
+      "bytes": 366394,
+      "paper_id": "cb551710ff63f0804805"
+    },
+    {
+      "filename": "2005.11401v4.pdf",
+      "arxiv_id": "2005.11401",
+      "version": 4,
+      "url": "https://arxiv.org/pdf/2005.11401v4",
+      "sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233",
+      "bytes": 885323,
+      "paper_id": "23e3249e9a1e75418d82"
+    },
+    {
+      "filename": "2005.14165v4.pdf",
+      "arxiv_id": "2005.14165",
+      "version": 4,
+      "url": "https://arxiv.org/pdf/2005.14165v4",
+      "sha256": "97fd272f1fdfc18677462d0292f5fbf26ca86b4d1b485c2dba03269b643a0e83",
+      "bytes": 6768044,
+      "paper_id": "97fd272f1fdfc1867746"
+    },
+    {
+      "filename": "2002.08909.pdf",
+      "arxiv_id": "2002.08909",
+      "version": 1,
+      "url": "https://arxiv.org/pdf/2002.08909v1",
+      "sha256": "0ec1a7ab3de5514c6d3baa8af0322816d4ee7cd4c14b9f2c450cbc9da9e6b363",
+      "bytes": 419037,
+      "paper_id": "0ec1a7ab3de5514c6d3b"
+    },
+    {
+      "filename": "1609.08144.pdf",
+      "arxiv_id": "1609.08144",
+      "version": 2,
+      "url": "https://arxiv.org/pdf/1609.08144v2",
+      "sha256": "285fb4323972464ba0be4f7c76a0db1a3cc196d5e44be542152f085d47fe5812",
+      "bytes": 1688289,
+      "paper_id": "285fb4323972464ba0be"
+    },
+    {
+      "filename": "1910.13461.pdf",
+      "arxiv_id": "1910.13461",
+      "version": 1,
+      "url": "https://arxiv.org/pdf/1910.13461v1",
+      "sha256": "c884c393e817e408e581a3ac219263f54e086b0703e0b079e41c2f2e71f63195",
+      "bytes": 296072,
+      "paper_id": "c884c393e817e408e581"
+    },
+    {
+      "filename": "1701.06538.pdf",
+      "arxiv_id": "1701.06538",
+      "version": 1,
+      "url": "https://arxiv.org/pdf/1701.06538v1",
+      "sha256": "2567713d198a376b65b92f0c60b9f58c8c5f66755530b92203533a17c4ec4b8e",
+      "bytes": 544288,
+      "paper_id": "2567713d198a376b65b9"
+    },
+    {
+      "filename": "1702.08734.pdf",
+      "arxiv_id": "1702.08734",
+      "version": 1,
+      "url": "https://arxiv.org/pdf/1702.08734v1",
+      "sha256": "89b2371b261846059d416bdf1423b15a6e3cc7d1b2d5dc2729ee5f6c3399049a",
+      "bytes": 1233821,
+      "paper_id": "89b2371b261846059d41"
+    },
+    {
+      "filename": "1602.02410.pdf",
+      "arxiv_id": "1602.02410",
+      "version": 2,
+      "url": "https://arxiv.org/pdf/1602.02410v2",
+      "sha256": "38095da0c38496d97fd6970d314b2fc5d0aa6ed3f9c50a1e67f85521af5d9af8",
+      "bytes": 335251,
+      "paper_id": "38095da0c38496d97fd6"
+    },
+    {
+      "filename": "1607.06450.pdf",
+      "arxiv_id": "1607.06450",
+      "version": 1,
+      "url": "https://arxiv.org/pdf/1607.06450v1",
+      "sha256": "c464f839fb8d59f7fde92f9b4caa67c2d1f2f196b88f93fb60502249df0aaef7",
+      "bytes": 612446,
+      "paper_id": "c464f839fb8d59f7fde9"
+    },
+    {
+      "filename": "1503.02531.pdf",
+      "arxiv_id": "1503.02531",
+      "version": 1,
+      "url": "https://arxiv.org/pdf/1503.02531v1",
+      "sha256": "74e6689115c539db499f9d6153edecb364059926fd45402454f8210442444c5a",
+      "bytes": 106630,
+      "paper_id": "74e6689115c539db499f"
+    },
+    {
+      "filename": "1606.08415.pdf",
+      "arxiv_id": "1606.08415",
+      "version": 5,
+      "url": "https://arxiv.org/pdf/1606.08415v5",
+      "sha256": "ef59863c8e36d4b64c43ced6b399a95412b4f232ff1ce83e84cf10b8a786b6a8",
+      "bytes": 2767669,
+      "paper_id": "ef59863c8e36d4b64c43"
+    },
+    {
+      "filename": "2002.08910.pdf",
+      "arxiv_id": "2002.08910",
+      "version": 4,
+      "url": "https://arxiv.org/pdf/2002.08910v4",
+      "sha256": "995796c4f44af1fb28537641f044e52431abcd94437d0e8bcb768895d0aee54d",
+      "bytes": 310594,
+      "paper_id": "995796c4f44af1fb2853"
+    },
+    {
+      "filename": "1705.03122v2.pdf",
+      "arxiv_id": "1705.03122",
+      "version": 2,
+      "url": "https://arxiv.org/pdf/1705.03122v2",
+      "sha256": "21dd02432f07d9bee1227090f0f64003da5ad2eb8d691b1ab7cfa94c25f23b5d",
+      "bytes": 573273,
+      "paper_id": "21dd02432f07d9bee122"
+    },
+    {
+      "filename": "1409.0473.pdf",
+      "arxiv_id": "1409.0473",
+      "version": 7,
+      "url": "https://arxiv.org/pdf/1409.0473v7",
+      "sha256": "84801c8410da51b449d379d2fa4939a416123f2c93991077a680f863026022a7",
+      "bytes": 444482,
+      "paper_id": "84801c8410da51b449d3"
+    },
+    {
+      "filename": "1610.10099v2.pdf",
+      "arxiv_id": "1610.10099",
+      "version": 2,
+      "url": "https://arxiv.org/pdf/1610.10099v2",
+      "sha256": "dd1f80c0c4fd67cf9afddac3ec5d3b22bbf02864d04adad53eb286ce53e33ac3",
+      "bytes": 2160032,
+      "paper_id": "dd1f80c0c4fd67cf9afd"
+    },
+    {
+      "filename": "1910.10683.pdf",
+      "arxiv_id": "1910.10683",
+      "version": 4,
+      "url": "https://arxiv.org/pdf/1910.10683v4",
+      "sha256": "ad07e47cedf437a4156419ce5d3076e08a3e59bbfd6dac7cc53df1009cdcbe7f",
+      "bytes": 1190021,
+      "paper_id": "ad07e47cedf437a41564"
+    }
+  ]
+}

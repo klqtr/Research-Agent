@@ -18,6 +18,7 @@ from .planner import workflow
 from .page_analysis import cached_analysis, table_csv
 from .store import Store
 from .tracking import WatchService, watch_loop
+from .references import reference_candidates
 from .tools import csv_analysis, diff_versions, download_arxiv_pdf, future_work, graph, recommend_results, search_arxiv, writing_outline
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -158,6 +159,10 @@ def create_app(settings=None):
     @app.get("/api/graph")
     def citation_graph():
         return graph(store.papers())
+
+    @app.get("/api/reference-candidates")
+    def reference_discovery(limit: int = Query(default=20, ge=1, le=100)):
+        return {"candidates": reference_candidates(store.papers())[:limit], "mode": "source_reference_discovery_not_quality_classifier"}
 
     @app.get("/api/future-work")
     def future():

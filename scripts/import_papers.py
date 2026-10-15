@@ -23,6 +23,10 @@ def main():
             existing = None
         if existing:
             paper = {**existing, **paper, "created_at": existing.get("created_at", paper["created_at"])}
+            metadata = existing.get("arxiv_metadata", {})
+            if metadata.get("arxiv_id") == paper.get("arxiv_id") and metadata.get("version") == paper.get("version") and metadata.get("title"):
+                paper.update(title=metadata["title"], authors=metadata.get("authors", []),
+                             author="; ".join(a["name"] for a in metadata.get("authors", [])))
         matches = duplicates(paper, store.papers())
         target = store.root / (paper["id"] + ".pdf")
         if not target.exists():

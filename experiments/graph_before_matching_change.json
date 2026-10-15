@@ -1,0 +1,873 @@
+{
+  "library_ids": [
+    "f8237d393163900fa8e4",
+    "0a9bff1be3575cf9fe26",
+    "bdfaa68d8984f0dc02be",
+    "5692a5514787a8c6727b",
+    "cb551710ff63f0804805",
+    "23e3249e9a1e75418d82",
+    "97fd272f1fdfc1867746",
+    "0ec1a7ab3de5514c6d3b",
+    "285fb4323972464ba0be",
+    "c884c393e817e408e581",
+    "2567713d198a376b65b9",
+    "89b2371b261846059d41",
+    "38095da0c38496d97fd6",
+    "c464f839fb8d59f7fde9",
+    "74e6689115c539db499f",
+    "ef59863c8e36d4b64c43",
+    "995796c4f44af1fb2853",
+    "21dd02432f07d9bee122",
+    "84801c8410da51b449d3",
+    "dd1f80c0c4fd67cf9afd",
+    "ad07e47cedf437a41564"
+  ],
+  "metadata_enriched": true,
+  "graph": {
+    "nodes": [
+      {
+        "id": "84801c8410da51b449d3",
+        "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "pagerank": 0.150404,
+        "arxiv_id": "1409.0473",
+        "version": 7,
+        "versions": [
+          {
+            "id": "84801c8410da51b449d3",
+            "version": 7
+          }
+        ]
+      },
+      {
+        "id": "285fb4323972464ba0be",
+        "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
+        "pagerank": 0.081871,
+        "arxiv_id": "1609.08144",
+        "version": 2,
+        "versions": [
+          {
+            "id": "285fb4323972464ba0be",
+            "version": 2
+          }
+        ]
+      },
+      {
+        "id": "bdfaa68d8984f0dc02be",
+        "title": "Attention Is All You Need",
+        "pagerank": 0.076901,
+        "arxiv_id": "1706.03762",
+        "version": 7,
+        "versions": [
+          {
+            "id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          },
+          {
+            "id": "bdfaa68d8984f0dc02be",
+            "version": 7
+          }
+        ]
+      },
+      {
+        "id": "c464f839fb8d59f7fde9",
+        "title": "Layer Normalization",
+        "pagerank": 0.06116,
+        "arxiv_id": "1607.06450",
+        "version": 1,
+        "versions": [
+          {
+            "id": "c464f839fb8d59f7fde9",
+            "version": 1
+          }
+        ]
+      },
+      {
+        "id": "ef59863c8e36d4b64c43",
+        "title": "Gaussian Error Linear Units (GELUs)",
+        "pagerank": 0.057585,
+        "arxiv_id": "1606.08415",
+        "version": 5,
+        "versions": [
+          {
+            "id": "ef59863c8e36d4b64c43",
+            "version": 5
+          }
+        ]
+      },
+      {
+        "id": "38095da0c38496d97fd6",
+        "title": "Exploring the Limits of Language Modeling",
+        "pagerank": 0.053421,
+        "arxiv_id": "1602.02410",
+        "version": 2,
+        "versions": [
+          {
+            "id": "38095da0c38496d97fd6",
+            "version": 2
+          }
+        ]
+      },
+      {
+        "id": "ad07e47cedf437a41564",
+        "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+        "pagerank": 0.0504,
+        "arxiv_id": "1910.10683",
+        "version": 4,
+        "versions": [
+          {
+            "id": "ad07e47cedf437a41564",
+            "version": 4
+          }
+        ]
+      },
+      {
+        "id": "5692a5514787a8c6727b",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "pagerank": 0.043628,
+        "arxiv_id": "1810.04805",
+        "version": 2,
+        "versions": [
+          {
+            "id": "5692a5514787a8c6727b",
+            "version": 2
+          }
+        ]
+      },
+      {
+        "id": "2567713d198a376b65b9",
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "pagerank": 0.041626,
+        "arxiv_id": "1701.06538",
+        "version": 1,
+        "versions": [
+          {
+            "id": "2567713d198a376b65b9",
+            "version": 1
+          }
+        ]
+      },
+      {
+        "id": "c884c393e817e408e581",
+        "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+        "pagerank": 0.041099,
+        "arxiv_id": "1910.13461",
+        "version": 1,
+        "versions": [
+          {
+            "id": "c884c393e817e408e581",
+            "version": 1
+          }
+        ]
+      },
+      {
+        "id": "dd1f80c0c4fd67cf9afd",
+        "title": "Neural Machine Translation in Linear Time",
+        "pagerank": 0.040801,
+        "arxiv_id": "1610.10099",
+        "version": 2,
+        "versions": [
+          {
+            "id": "dd1f80c0c4fd67cf9afd",
+            "version": 2
+          }
+        ]
+      },
+      {
+        "id": "0ec1a7ab3de5514c6d3b",
+        "title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+        "pagerank": 0.039896,
+        "arxiv_id": "2002.08909",
+        "version": 1,
+        "versions": [
+          {
+            "id": "0ec1a7ab3de5514c6d3b",
+            "version": 1
+          }
+        ]
+      },
+      {
+        "id": "995796c4f44af1fb2853",
+        "title": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+        "pagerank": 0.039896,
+        "arxiv_id": "2002.08910",
+        "version": 4,
+        "versions": [
+          {
+            "id": "995796c4f44af1fb2853",
+            "version": 4
+          }
+        ]
+      },
+      {
+        "id": "89b2371b261846059d41",
+        "title": "Billion-scale similarity search with GPUs",
+        "pagerank": 0.037275,
+        "arxiv_id": "1702.08734",
+        "version": 1,
+        "versions": [
+          {
+            "id": "89b2371b261846059d41",
+            "version": 1
+          }
+        ]
+      },
+      {
+        "id": "74e6689115c539db499f",
+        "title": "Distilling the Knowledge in a Neural Network",
+        "pagerank": 0.035733,
+        "arxiv_id": "1503.02531",
+        "version": 1,
+        "versions": [
+          {
+            "id": "74e6689115c539db499f",
+            "version": 1
+          }
+        ]
+      },
+      {
+        "id": "cb551710ff63f0804805",
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "pagerank": 0.035652,
+        "arxiv_id": "2004.04906",
+        "version": 2,
+        "versions": [
+          {
+            "id": "cb551710ff63f0804805",
+            "version": 2
+          }
+        ]
+      },
+      {
+        "id": "21dd02432f07d9bee122",
+        "title": "Convolutional Sequence to Sequence Learning",
+        "pagerank": 0.03365,
+        "arxiv_id": "1705.03122",
+        "version": 2,
+        "versions": [
+          {
+            "id": "21dd02432f07d9bee122",
+            "version": 2
+          }
+        ]
+      },
+      {
+        "id": "97fd272f1fdfc1867746",
+        "title": "Language Models are Few-Shot Learners",
+        "pagerank": 0.027756,
+        "arxiv_id": "2005.14165",
+        "version": 4,
+        "versions": [
+          {
+            "id": "97fd272f1fdfc1867746",
+            "version": 4
+          }
+        ]
+      },
+      {
+        "id": "23e3249e9a1e75418d82",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "pagerank": 0.026933,
+        "arxiv_id": "2005.11401",
+        "version": 4,
+        "versions": [
+          {
+            "id": "23e3249e9a1e75418d82",
+            "version": 4
+          }
+        ]
+      },
+      {
+        "id": "f8237d393163900fa8e4",
+        "title": "Understanding Deep Learning",
+        "pagerank": 0.024312,
+        "arxiv_id": null,
+        "version": null,
+        "versions": [
+          {
+            "id": "f8237d393163900fa8e4",
+            "version": null
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 518,
+        "source_chunk_id": "f8237d393163900fa8e4:p518:c6900"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "97fd272f1fdfc1867746",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2005.14165",
+        "source_page": 482,
+        "source_chunk_id": "f8237d393163900fa8e4:p482:c5902"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 479,
+        "source_chunk_id": "f8237d393163900fa8e4:p479:c5834"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "74e6689115c539db499f",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1503.02531",
+        "source_page": 493,
+        "source_chunk_id": "f8237d393163900fa8e4:p493:c6218"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "ef59863c8e36d4b64c43",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1606.08415",
+        "source_page": 493,
+        "source_chunk_id": "f8237d393163900fa8e4:p493:c6219"
+      },
+      {
+        "source": "f8237d393163900fa8e4",
+        "target": "ad07e47cedf437a41564",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 509,
+        "source_chunk_id": "f8237d393163900fa8e4:p509:c6657"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "285fb4323972464ba0be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 12,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p12:c191"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "2567713d198a376b65b9",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1701.06538",
+        "source_page": 12,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p12:c185"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "38095da0c38496d97fd6",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1602.02410",
+        "source_page": 11,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p11:c167"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 10,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p10:c152"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "21dd02432f07d9bee122",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1705.03122",
+        "source_page": 11,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p11:c161"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "84801c8410da51b449d3",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 10,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p10:c153"
+      },
+      {
+        "source": "bdfaa68d8984f0dc02be",
+        "target": "dd1f80c0c4fd67cf9afd",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1610.10099",
+        "source_page": 11,
+        "source_chunk_id": "bdfaa68d8984f0dc02be:p11:c170"
+      },
+      {
+        "source": "5692a5514787a8c6727b",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 11,
+        "source_chunk_id": "5692a5514787a8c6727b:p11:c182"
+      },
+      {
+        "source": "5692a5514787a8c6727b",
+        "target": "285fb4323972464ba0be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 12,
+        "source_chunk_id": "5692a5514787a8c6727b:p12:c202"
+      },
+      {
+        "source": "5692a5514787a8c6727b",
+        "target": "ef59863c8e36d4b64c43",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1606.08415",
+        "source_page": 10,
+        "source_chunk_id": "5692a5514787a8c6727b:p10:c153"
+      },
+      {
+        "source": "cb551710ff63f0804805",
+        "target": "0ec1a7ab3de5514c6d3b",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08909",
+        "source_page": 10,
+        "source_chunk_id": "cb551710ff63f0804805:p10:c137"
+      },
+      {
+        "source": "cb551710ff63f0804805",
+        "target": "89b2371b261846059d41",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1702.08734",
+        "source_page": 10,
+        "source_chunk_id": "cb551710ff63f0804805:p10:c145"
+      },
+      {
+        "source": "cb551710ff63f0804805",
+        "target": "995796c4f44af1fb2853",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08910",
+        "source_page": 10,
+        "source_chunk_id": "cb551710ff63f0804805:p10:c149"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 15,
+        "source_chunk_id": "23e3249e9a1e75418d82:p15:c277"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "5692a5514787a8c6727b",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 11,
+        "source_chunk_id": "23e3249e9a1e75418d82:p11:c221"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "cb551710ff63f0804805",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2004.04906",
+        "source_page": 12,
+        "source_chunk_id": "23e3249e9a1e75418d82:p12:c240"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "0ec1a7ab3de5514c6d3b",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08909",
+        "source_page": 12,
+        "source_chunk_id": "23e3249e9a1e75418d82:p12:c234"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "c884c393e817e408e581",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.13461",
+        "source_page": 13,
+        "source_chunk_id": "23e3249e9a1e75418d82:p13:c248"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "89b2371b261846059d41",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1702.08734",
+        "source_page": 12,
+        "source_chunk_id": "23e3249e9a1e75418d82:p12:c237"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "995796c4f44af1fb2853",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08910",
+        "source_page": 14,
+        "source_chunk_id": "23e3249e9a1e75418d82:p14:c270"
+      },
+      {
+        "source": "23e3249e9a1e75418d82",
+        "target": "ad07e47cedf437a41564",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 14,
+        "source_chunk_id": "23e3249e9a1e75418d82:p14:c269"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 74,
+        "source_chunk_id": "97fd272f1fdfc1867746:p74:c921"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "5692a5514787a8c6727b",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 68,
+        "source_chunk_id": "97fd272f1fdfc1867746:p68:c801"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "23e3249e9a1e75418d82",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2005.11401",
+        "source_page": 71,
+        "source_chunk_id": "97fd272f1fdfc1867746:p71:c859"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "0ec1a7ab3de5514c6d3b",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08909",
+        "source_page": 69,
+        "source_chunk_id": "97fd272f1fdfc1867746:p69:c815"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "c884c393e817e408e581",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.13461",
+        "source_page": 71,
+        "source_chunk_id": "97fd272f1fdfc1867746:p71:c856"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "2567713d198a376b65b9",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1701.06538",
+        "source_page": 74,
+        "source_chunk_id": "97fd272f1fdfc1867746:p74:c911"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "38095da0c38496d97fd6",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1602.02410",
+        "source_page": 70,
+        "source_chunk_id": "97fd272f1fdfc1867746:p70:c834"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "74e6689115c539db499f",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1503.02531",
+        "source_page": 70,
+        "source_chunk_id": "97fd272f1fdfc1867746:p70:c827"
+      },
+      {
+        "source": "97fd272f1fdfc1867746",
+        "target": "995796c4f44af1fb2853",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2002.08910",
+        "source_page": 73,
+        "source_chunk_id": "97fd272f1fdfc1867746:p73:c901"
+      },
+      {
+        "source": "0ec1a7ab3de5514c6d3b",
+        "target": "c884c393e817e408e581",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.13461",
+        "source_page": 9,
+        "source_chunk_id": "0ec1a7ab3de5514c6d3b:p9:c166"
+      },
+      {
+        "source": "0ec1a7ab3de5514c6d3b",
+        "target": "84801c8410da51b449d3",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 9,
+        "source_chunk_id": "0ec1a7ab3de5514c6d3b:p9:c156"
+      },
+      {
+        "source": "0ec1a7ab3de5514c6d3b",
+        "target": "ad07e47cedf437a41564",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 10,
+        "source_chunk_id": "0ec1a7ab3de5514c6d3b:p10:c189"
+      },
+      {
+        "source": "285fb4323972464ba0be",
+        "target": "84801c8410da51b449d3",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 20,
+        "source_chunk_id": "285fb4323972464ba0be:p20:c247"
+      },
+      {
+        "source": "c884c393e817e408e581",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 10,
+        "source_chunk_id": "c884c393e817e408e581:p10:c186"
+      },
+      {
+        "source": "c884c393e817e408e581",
+        "target": "ef59863c8e36d4b64c43",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1606.08415",
+        "source_page": 9,
+        "source_chunk_id": "c884c393e817e408e581:p9:c180"
+      },
+      {
+        "source": "2567713d198a376b65b9",
+        "target": "285fb4323972464ba0be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 12,
+        "source_chunk_id": "2567713d198a376b65b9:p12:c168"
+      },
+      {
+        "source": "2567713d198a376b65b9",
+        "target": "38095da0c38496d97fd6",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1602.02410",
+        "source_page": 11,
+        "source_chunk_id": "2567713d198a376b65b9:p11:c151"
+      },
+      {
+        "source": "2567713d198a376b65b9",
+        "target": "84801c8410da51b449d3",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 10,
+        "source_chunk_id": "2567713d198a376b65b9:p10:c128"
+      },
+      {
+        "source": "995796c4f44af1fb2853",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 7,
+        "source_chunk_id": "995796c4f44af1fb2853:p7:c114"
+      },
+      {
+        "source": "995796c4f44af1fb2853",
+        "target": "5692a5514787a8c6727b",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 6,
+        "source_chunk_id": "995796c4f44af1fb2853:p6:c93"
+      },
+      {
+        "source": "995796c4f44af1fb2853",
+        "target": "cb551710ff63f0804805",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "2004.04906",
+        "source_page": 6,
+        "source_chunk_id": "995796c4f44af1fb2853:p6:c83"
+      },
+      {
+        "source": "995796c4f44af1fb2853",
+        "target": "ad07e47cedf437a41564",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1910.10683",
+        "source_page": 7,
+        "source_chunk_id": "995796c4f44af1fb2853:p7:c110"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "285fb4323972464ba0be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 11,
+        "source_chunk_id": "21dd02432f07d9bee122:p11:c225"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 9,
+        "source_chunk_id": "21dd02432f07d9bee122:p9:c186"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "84801c8410da51b449d3",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 9,
+        "source_chunk_id": "21dd02432f07d9bee122:p9:c187"
+      },
+      {
+        "source": "21dd02432f07d9bee122",
+        "target": "dd1f80c0c4fd67cf9afd",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1610.10099",
+        "source_page": 10,
+        "source_chunk_id": "21dd02432f07d9bee122:p10:c197"
+      },
+      {
+        "source": "dd1f80c0c4fd67cf9afd",
+        "target": "285fb4323972464ba0be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 9,
+        "source_chunk_id": "dd1f80c0c4fd67cf9afd:p9:c187"
+      },
+      {
+        "source": "dd1f80c0c4fd67cf9afd",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 7,
+        "source_chunk_id": "dd1f80c0c4fd67cf9afd:p7:c162"
+      },
+      {
+        "source": "dd1f80c0c4fd67cf9afd",
+        "target": "84801c8410da51b449d3",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 7,
+        "source_chunk_id": "dd1f80c0c4fd67cf9afd:p7:c163"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "bdfaa68d8984f0dc02be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1706.03762",
+        "source_page": 66,
+        "source_chunk_id": "ad07e47cedf437a41564:p66:c785"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "5692a5514787a8c6727b",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1810.04805",
+        "source_page": 59,
+        "source_chunk_id": "ad07e47cedf437a41564:p59:c679"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "285fb4323972464ba0be",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1609.08144",
+        "source_page": 67,
+        "source_chunk_id": "ad07e47cedf437a41564:p67:c796"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "2567713d198a376b65b9",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1701.06538",
+        "source_page": 65,
+        "source_chunk_id": "ad07e47cedf437a41564:p65:c771"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "38095da0c38496d97fd6",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1602.02410",
+        "source_page": 61,
+        "source_chunk_id": "ad07e47cedf437a41564:p61:c707"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "c464f839fb8d59f7fde9",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1607.06450",
+        "source_page": 58,
+        "source_chunk_id": "ad07e47cedf437a41564:p58:c656"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "74e6689115c539db499f",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1503.02531",
+        "source_page": 60,
+        "source_chunk_id": "ad07e47cedf437a41564:p60:c694"
+      },
+      {
+        "source": "ad07e47cedf437a41564",
+        "target": "84801c8410da51b449d3",
+        "basis": "reference_text_match",
+        "cited_version": "unspecified_family",
+        "target_family": "1409.0473",
+        "source_page": 58,
+        "source_chunk_id": "ad07e47cedf437a41564:p58:c658"
+      }
+    ],
+    "limitations": "同arXiv家族合并，节点用最新版本代表；边仅表示引用论文家族，不表示引用了该最新版本。仅参考文献标题/标识匹配，缺边不等于未引用；PageRank 高不等于研究质量高。"
+  }
+}

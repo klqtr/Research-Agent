@@ -1,0 +1,105 @@
+{
+  "nodes": 20,
+  "edges": 71,
+  "single_run_latency_ms": 165.48969999712426,
+  "same_library_as_baseline": true,
+  "old_edges": 64,
+  "added_edges": 7,
+  "removed_edges": 0,
+  "anchor_checks": 71,
+  "anchors_verified": 71,
+  "repair_cases": [
+    {
+      "source_arxiv_id": null,
+      "target_arxiv_id": "1810.04805",
+      "expected_page": 486,
+      "expected_author": "Devlin",
+      "matched": true,
+      "complete_title_and_author_in_original_pdf_page": true,
+      "pdf_check_method": "physical-page text blocks, preserving within-block reading order; not visual or semantic equivalence",
+      "was_missing_before": true,
+      "reference_quote": "Devlin, J., Chang, M., Lee, K., & Toutanova, K. (2019). BERT: pre-training of deep bidirec- tional transformers for language understand- ing. ACL Human Language Technologies, 4171–4186. 159, 234"
+    },
+    {
+      "source_arxiv_id": null,
+      "target_arxiv_id": "1409.0473",
+      "expected_page": 479,
+      "expected_author": "Bahdanau",
+      "matched": true,
+      "complete_title_and_author_in_original_pdf_page": true,
+      "pdf_check_method": "physical-page text blocks, preserving within-block reading order; not visual or semantic equivalence",
+      "was_missing_before": true,
+      "reference_quote": "Bahdanau, D., Cho, K., & Bengio, Y. (2015). Neu- ral machine translation by jointly learning to align and translate. International Conference on Learning Representations. 233, 235"
+    },
+    {
+      "source_arxiv_id": "2004.04906",
+      "target_arxiv_id": "1810.04805",
+      "expected_page": 9,
+      "expected_author": "Devlin",
+      "matched": true,
+      "complete_title_and_author_in_original_pdf_page": true,
+      "pdf_check_method": "physical-page text blocks, preserving within-block reading order; not visual or semantic equivalence",
+      "was_missing_before": true,
+      "reference_quote": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language under- standing. In NAACL-HLT."
+    },
+    {
+      "source_arxiv_id": "2005.14165",
+      "target_arxiv_id": "1910.10683",
+      "expected_page": 73,
+      "expected_author": "Raffel",
+      "matched": true,
+      "complete_title_and_author_in_original_pdf_page": true,
+      "pdf_check_method": "physical-page text blocks, preserving within-block reading order; not visual or semantic equivalence",
+      "was_missing_before": true,
+      "reference_quote": "[RSR+19] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. Exploring the limits of transfer learning with a uniﬁed text-to-text transformer, 2019."
+    },
+    {
+      "source_arxiv_id": "2002.08909",
+      "target_arxiv_id": "2002.08910",
+      "expected_page": 10,
+      "expected_author": "Roberts",
+      "matched": true,
+      "complete_title_and_author_in_original_pdf_page": true,
+      "pdf_check_method": "physical-page text blocks, preserving within-block reading order; not visual or semantic equivalence",
+      "was_missing_before": true,
+      "reference_quote": "Roberts, A., Raffel, C., and Shazeer, N. How much knowl- edge can you pack into the parameters of a language model? arXiv preprint arXiv:TBD, 2020."
+    },
+    {
+      "source_arxiv_id": "1910.13461",
+      "target_arxiv_id": "1810.04805",
+      "expected_page": 9,
+      "expected_author": "Devlin",
+      "matched": true,
+      "complete_title_and_author_in_original_pdf_page": true,
+      "pdf_check_method": "physical-page text blocks, preserving within-block reading order; not visual or semantic equivalence",
+      "was_missing_before": true,
+      "reference_quote": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre-training of deep bidirectional transformers for language understand- ing. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Com- putational Linguistics: Human Language Technolo- gies, Volume 1 (Long and Short Papers), pp. 4171– 4186, Minneapolis, Minnesota, June 2019. Associa- tion for Computational Linguistics. doi: 10.18653/ v1/N19-1423. URL https://www.aclweb. org/anthology/N19-1423."
+    },
+    {
+      "source_arxiv_id": "1705.03122",
+      "target_arxiv_id": "1701.06538",
+      "expected_page": 11,
+      "expected_author": "Shazeer",
+      "matched": true,
+      "complete_title_and_author_in_original_pdf_page": true,
+      "pdf_check_method": "physical-page text blocks, preserving within-block reading order; not visual or semantic equivalence",
+      "was_missing_before": true,
+      "reference_quote": "Shazeer, Noam, Mirhoseini, Azalia, Maziarz, Krzysztof, Davis, Andy, Le, Quoc, Hinton, Geoffrey, and Dean, Jeff. Outrageously large neural networks: The sparsely- gated mixture-of-experts layer. ArXiv e-prints, January 2016."
+    }
+  ],
+  "algorithm": {
+    "name": "PageRank",
+    "damping": 0.85,
+    "max_iterations": 200,
+    "iterations": 21,
+    "residual_l1": 7.798645063061826e-11,
+    "converged": true,
+    "weights": "unweighted_unique_family_edges",
+    "citation_direction": "citing_paper_to_cited_paper"
+  },
+  "evaluation_scope": "Post-change inspection and regression, not an independent precision/recall study.",
+  "source_sha256": {
+    "src/citation_graph.py": "abc69c5330a4596fd4a5ec1d0a0c239b84a4b29e5b85db4bc6eaf4fac5eb60ad",
+    "src/tools.py": "b2df9e96b72a8854351d79acd1f1087704271de8d324f412560dd3230d1ea6bd"
+  }
+}

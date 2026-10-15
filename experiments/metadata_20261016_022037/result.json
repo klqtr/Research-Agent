@@ -1,0 +1,208 @@
+{
+  "requested_identifiers": [
+    "1706.03762v1",
+    "1706.03762v7",
+    "1810.04805v2",
+    "2004.04906v2",
+    "2005.11401v4",
+    "2005.14165v4",
+    "2002.08909v1",
+    "1609.08144v2",
+    "1910.13461v1",
+    "1701.06538v1",
+    "1702.08734v1",
+    "1602.02410v2",
+    "1607.06450v1",
+    "1503.02531v1",
+    "1606.08415v5",
+    "2002.08910v4",
+    "1705.03122v2",
+    "1409.0473v7",
+    "1610.10099v2",
+    "1910.10683v4"
+  ],
+  "returned_metadata": 20,
+  "updates": [
+    {
+      "paper_id": "0a9bff1be3575cf9fe26",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Attention Is All You Need",
+      "title": "Attention Is All You Need",
+      "author_count": 8,
+      "arxiv_id": "1706.03762",
+      "version": 1
+    },
+    {
+      "paper_id": "bdfaa68d8984f0dc02be",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Attention Is All You Need",
+      "title": "Attention Is All You Need",
+      "author_count": 8,
+      "arxiv_id": "1706.03762",
+      "version": 7
+    },
+    {
+      "paper_id": "5692a5514787a8c6727b",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "author_count": 4,
+      "arxiv_id": "1810.04805",
+      "version": 2
+    },
+    {
+      "paper_id": "cb551710ff63f0804805",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "author_count": 8,
+      "arxiv_id": "2004.04906",
+      "version": 2
+    },
+    {
+      "paper_id": "23e3249e9a1e75418d82",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "author_count": 12,
+      "arxiv_id": "2005.11401",
+      "version": 4
+    },
+    {
+      "paper_id": "97fd272f1fdfc1867746",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Language Models are Few-Shot Learners",
+      "title": "Language Models are Few-Shot Learners",
+      "author_count": 31,
+      "arxiv_id": "2005.14165",
+      "version": 4
+    },
+    {
+      "paper_id": "0ec1a7ab3de5514c6d3b",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+      "title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+      "author_count": 5,
+      "arxiv_id": "2002.08909",
+      "version": 1
+    },
+    {
+      "paper_id": "285fb4323972464ba0be",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Google’s Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
+      "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
+      "author_count": 31,
+      "arxiv_id": "1609.08144",
+      "version": 2
+    },
+    {
+      "paper_id": "c884c393e817e408e581",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+      "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+      "author_count": 8,
+      "arxiv_id": "1910.13461",
+      "version": 1
+    },
+    {
+      "paper_id": "2567713d198a376b65b9",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "O UTRAGEOUSLY L ARGE N EURAL N ETWORKS : T HE S PARSELY -G ATED M IXTURE - OF -E XPERTS L AYER",
+      "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+      "author_count": 7,
+      "arxiv_id": "1701.06538",
+      "version": 1
+    },
+    {
+      "paper_id": "89b2371b261846059d41",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Billion-scale similarity search with GPUs",
+      "title": "Billion-scale similarity search with GPUs",
+      "author_count": 3,
+      "arxiv_id": "1702.08734",
+      "version": 1
+    },
+    {
+      "paper_id": "38095da0c38496d97fd6",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Exploring the Limits of Language Modeling",
+      "title": "Exploring the Limits of Language Modeling",
+      "author_count": 5,
+      "arxiv_id": "1602.02410",
+      "version": 2
+    },
+    {
+      "paper_id": "c464f839fb8d59f7fde9",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Layer Normalization",
+      "title": "Layer Normalization",
+      "author_count": 3,
+      "arxiv_id": "1607.06450",
+      "version": 1
+    },
+    {
+      "paper_id": "74e6689115c539db499f",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Distilling the Knowledge in a Neural Network",
+      "title": "Distilling the Knowledge in a Neural Network",
+      "author_count": 3,
+      "arxiv_id": "1503.02531",
+      "version": 1
+    },
+    {
+      "paper_id": "ef59863c8e36d4b64c43",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "G AUSSIAN E RROR L INEAR U NITS (GELU S )",
+      "title": "Gaussian Error Linear Units (GELUs)",
+      "author_count": 2,
+      "arxiv_id": "1606.08415",
+      "version": 5
+    },
+    {
+      "paper_id": "995796c4f44af1fb2853",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+      "title": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+      "author_count": 3,
+      "arxiv_id": "2002.08910",
+      "version": 4
+    },
+    {
+      "paper_id": "21dd02432f07d9bee122",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Convolutional Sequence to Sequence Learning",
+      "title": "Convolutional Sequence to Sequence Learning",
+      "author_count": 5,
+      "arxiv_id": "1705.03122",
+      "version": 2
+    },
+    {
+      "paper_id": "84801c8410da51b449d3",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "N EURAL M ACHINE T RANSLATION BY J OINTLY L EARNING TO A LIGN AND T RANSLATE",
+      "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+      "author_count": 3,
+      "arxiv_id": "1409.0473",
+      "version": 7
+    },
+    {
+      "paper_id": "dd1f80c0c4fd67cf9afd",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Neural Machine Translation in Linear Time",
+      "title": "Neural Machine Translation in Linear Time",
+      "author_count": 6,
+      "arxiv_id": "1610.10099",
+      "version": 2
+    },
+    {
+      "paper_id": "ad07e47cedf437a41564",
+      "status": "updated_from_exact_version_metadata",
+      "original_title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+      "author_count": 9,
+      "arxiv_id": "1910.10683",
+      "version": 4
+    }
+  ],
+  "paid_api_calls": "none"
+}

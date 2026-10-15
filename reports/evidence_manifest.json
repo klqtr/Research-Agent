@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-16T02:11:23+08:00",
+  "generated_at": "2026-10-16T07:44:00+08:00",
   "development": "experiments\\retrieval_20261016_005801",
   "holdout": "experiments\\retrieval_20261016_010526",
-  "test_xml": "experiments\\full_tests_20261016_020623.xml",
+  "test_xml": "experiments\\full_tests_20261016_074255.xml",
   "test_counts": {
-    "tests": 70,
+    "tests": 89,
     "failures": 0,
     "errors": 0,
     "skipped": 0
@@ -12,5 +12,7 @@
   "robustness": "experiments\\robustness_20261016_020249.json",
   "real_scan": "experiments\\real_scan_20261016_010636.json",
   "page_structure": "experiments\\page_structure_20261016_015212",
-  "tracking_probe": "experiments\\tracking_probe_20261016_021123.json"
+  "tracking_probe": "experiments\\tracking_probe_20261016_022648.json",
+  "citation_graph": "experiments\\graph_20261016_023533",
+  "offline_rebuild": "experiments\\rebuild_20261016_074205"
 }

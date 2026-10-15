@@ -1,0 +1,178 @@
+{
+  "at": "2026-10-15T23:41:27.644823+00:00",
+  "download_enabled": false,
+  "received_bytes": 0,
+  "records": [
+    {
+      "filename": "UnderstandingDeepLearning_02_09_26_C.pdf",
+      "url": "https://github.com/udlbook/udlbook/releases/download/v5.0.3/UnderstandingDeepLearning_02_09_26_C.pdf",
+      "expected_sha256": "f8237d393163900fa8e43210e680a3f987b45ccac7750b372e156fae3df0bf32",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "f8237d393163900fa8e43210e680a3f987b45ccac7750b372e156fae3df0bf32",
+      "status": "verified"
+    },
+    {
+      "filename": "1706.03762v1.pdf",
+      "url": "https://arxiv.org/pdf/1706.03762v1",
+      "expected_sha256": "0a9bff1be3575cf9fe26a4a3d3a9175bc791ecec90de8b9deba4cff75d2b9476",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "0a9bff1be3575cf9fe26a4a3d3a9175bc791ecec90de8b9deba4cff75d2b9476",
+      "status": "verified"
+    },
+    {
+      "filename": "1706.03762v7.pdf",
+      "url": "https://arxiv.org/pdf/1706.03762v7",
+      "expected_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+      "status": "verified"
+    },
+    {
+      "filename": "1810.04805v2.pdf",
+      "url": "https://arxiv.org/pdf/1810.04805v2",
+      "expected_sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e",
+      "status": "verified"
+    },
+    {
+      "filename": "2004.04906v2.pdf",
+      "url": "https://arxiv.org/pdf/2004.04906v2",
+      "expected_sha256": "cb551710ff63f08048057924d0f4e7a954aaaeff19e31b6e306fa0aef32d6291",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "cb551710ff63f08048057924d0f4e7a954aaaeff19e31b6e306fa0aef32d6291",
+      "status": "verified"
+    },
+    {
+      "filename": "2005.11401v4.pdf",
+      "url": "https://arxiv.org/pdf/2005.11401v4",
+      "expected_sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233",
+      "status": "verified"
+    },
+    {
+      "filename": "2005.14165v4.pdf",
+      "url": "https://arxiv.org/pdf/2005.14165v4",
+      "expected_sha256": "97fd272f1fdfc18677462d0292f5fbf26ca86b4d1b485c2dba03269b643a0e83",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "97fd272f1fdfc18677462d0292f5fbf26ca86b4d1b485c2dba03269b643a0e83",
+      "status": "verified"
+    },
+    {
+      "filename": "2002.08909.pdf",
+      "url": "https://arxiv.org/pdf/2002.08909v1",
+      "expected_sha256": "0ec1a7ab3de5514c6d3baa8af0322816d4ee7cd4c14b9f2c450cbc9da9e6b363",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "0ec1a7ab3de5514c6d3baa8af0322816d4ee7cd4c14b9f2c450cbc9da9e6b363",
+      "status": "verified"
+    },
+    {
+      "filename": "1609.08144.pdf",
+      "url": "https://arxiv.org/pdf/1609.08144v2",
+      "expected_sha256": "285fb4323972464ba0be4f7c76a0db1a3cc196d5e44be542152f085d47fe5812",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "285fb4323972464ba0be4f7c76a0db1a3cc196d5e44be542152f085d47fe5812",
+      "status": "verified"
+    },
+    {
+      "filename": "1910.13461.pdf",
+      "url": "https://arxiv.org/pdf/1910.13461v1",
+      "expected_sha256": "c884c393e817e408e581a3ac219263f54e086b0703e0b079e41c2f2e71f63195",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "c884c393e817e408e581a3ac219263f54e086b0703e0b079e41c2f2e71f63195",
+      "status": "verified"
+    },
+    {
+      "filename": "1701.06538.pdf",
+      "url": "https://arxiv.org/pdf/1701.06538v1",
+      "expected_sha256": "2567713d198a376b65b92f0c60b9f58c8c5f66755530b92203533a17c4ec4b8e",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "2567713d198a376b65b92f0c60b9f58c8c5f66755530b92203533a17c4ec4b8e",
+      "status": "verified"
+    },
+    {
+      "filename": "1702.08734.pdf",
+      "url": "https://arxiv.org/pdf/1702.08734v1",
+      "expected_sha256": "89b2371b261846059d416bdf1423b15a6e3cc7d1b2d5dc2729ee5f6c3399049a",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "89b2371b261846059d416bdf1423b15a6e3cc7d1b2d5dc2729ee5f6c3399049a",
+      "status": "verified"
+    },
+    {
+      "filename": "1602.02410.pdf",
+      "url": "https://arxiv.org/pdf/1602.02410v2",
+      "expected_sha256": "38095da0c38496d97fd6970d314b2fc5d0aa6ed3f9c50a1e67f85521af5d9af8",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "38095da0c38496d97fd6970d314b2fc5d0aa6ed3f9c50a1e67f85521af5d9af8",
+      "status": "verified"
+    },
+    {
+      "filename": "1607.06450.pdf",
+      "url": "https://arxiv.org/pdf/1607.06450v1",
+      "expected_sha256": "c464f839fb8d59f7fde92f9b4caa67c2d1f2f196b88f93fb60502249df0aaef7",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "c464f839fb8d59f7fde92f9b4caa67c2d1f2f196b88f93fb60502249df0aaef7",
+      "status": "verified"
+    },
+    {
+      "filename": "1503.02531.pdf",
+      "url": "https://arxiv.org/pdf/1503.02531v1",
+      "expected_sha256": "74e6689115c539db499f9d6153edecb364059926fd45402454f8210442444c5a",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "74e6689115c539db499f9d6153edecb364059926fd45402454f8210442444c5a",
+      "status": "verified"
+    },
+    {
+      "filename": "1606.08415.pdf",
+      "url": "https://arxiv.org/pdf/1606.08415v5",
+      "expected_sha256": "ef59863c8e36d4b64c43ced6b399a95412b4f232ff1ce83e84cf10b8a786b6a8",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "ef59863c8e36d4b64c43ced6b399a95412b4f232ff1ce83e84cf10b8a786b6a8",
+      "status": "verified"
+    },
+    {
+      "filename": "2002.08910.pdf",
+      "url": "https://arxiv.org/pdf/2002.08910v4",
+      "expected_sha256": "995796c4f44af1fb28537641f044e52431abcd94437d0e8bcb768895d0aee54d",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "995796c4f44af1fb28537641f044e52431abcd94437d0e8bcb768895d0aee54d",
+      "status": "verified"
+    },
+    {
+      "filename": "1705.03122v2.pdf",
+      "url": "https://arxiv.org/pdf/1705.03122v2",
+      "expected_sha256": "21dd02432f07d9bee1227090f0f64003da5ad2eb8d691b1ab7cfa94c25f23b5d",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "21dd02432f07d9bee1227090f0f64003da5ad2eb8d691b1ab7cfa94c25f23b5d",
+      "status": "verified"
+    },
+    {
+      "filename": "1409.0473.pdf",
+      "url": "https://arxiv.org/pdf/1409.0473v7",
+      "expected_sha256": "84801c8410da51b449d379d2fa4939a416123f2c93991077a680f863026022a7",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "84801c8410da51b449d379d2fa4939a416123f2c93991077a680f863026022a7",
+      "status": "verified"
+    },
+    {
+      "filename": "1610.10099v2.pdf",
+      "url": "https://arxiv.org/pdf/1610.10099v2",
+      "expected_sha256": "dd1f80c0c4fd67cf9afddac3ec5d3b22bbf02864d04adad53eb286ce53e33ac3",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "dd1f80c0c4fd67cf9afddac3ec5d3b22bbf02864d04adad53eb286ce53e33ac3",
+      "status": "verified"
+    },
+    {
+      "filename": "1910.10683.pdf",
+      "url": "https://arxiv.org/pdf/1910.10683v4",
+      "expected_sha256": "ad07e47cedf437a4156419ce5d3076e08a3e59bbfd6dac7cc53df1009cdcbe7f",
+      "operation": "existing_file_read_only",
+      "actual_sha256": "ad07e47cedf437a4156419ce5d3076e08a3e59bbfd6dac7cc53df1009cdcbe7f",
+      "status": "verified"
+    }
+  ],
+  "verified": 21,
+  "expected": 21,
+  "scope": "Exact source-byte verification, not a network reproduction unless download_enabled and files were missing."
+}

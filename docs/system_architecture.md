@@ -16,6 +16,12 @@ flowchart LR
  RET --> EX[无模型抽取式证据]
  AG --> TOOLS[检索 API/图谱/CSV统计/写作]
  DB --> TOOLS
+ TOOLS --> CG[独立参考条目匹配/家族PageRank]
+ CG --> ANCHOR[引用原页/块证据与聚焦图]
+ ANCHOR --> UI
+ REF[参考文献显式arXiv标识] --> BOUND[有界公开PDF下载/哈希]
+ BOUND --> ING
+ META[公共Atom精确ID与版本] --> DB
  CHECK --> UI
  EX --> UI
  TOOLS --> UI

@@ -77,7 +77,7 @@ shot = ROOT / "reports/screenshots/library.jpg"
 if shot.exists():
     story.append(Image(str(shot), width=170*mm, height=95.7*mm))
     story.append(Spacer(1, 12))
-p("已完成：PDF/OCR、版本检查、证据检索、图谱、CSV与本地工作台。\n主要缺项：真实LLM、复杂公式表格、专业翻译联动、长周期追踪验收与公网部署。")
+p("已完成：PDF/OCR、版本检查、证据检索、20家族图谱、CSV与本地工作台。\n主要缺项：真实LLM、复杂公式表格、专业翻译联动、长期追踪与公网部署。")
 p("参赛者、学校、组别、指导教师：待用户填写。\nAI协同研发，真实阶段记录与复现命令随项目提供。", "SmallCN")
 p("证据生成时间：" + manifest["generated_at"], "SmallCN")
 
@@ -150,15 +150,29 @@ if manifest.get("page_structure"):
     p("教材181条原生书签形成目录层级；精确标题匹配失败时只保留页定位。界面支持任意页跳转、结构表格、CSV下载与原页表格框；真实HTTP记录缓存标记和输出，不把缓存命中当作首次解析耗时。")
     p("有界文献追踪", "H2CN")
     p("默认空列表，创建默认停用；只有用户启用才按30-1440分钟间隔访问公共arXiv元数据。每条最多48次，每调度周期最多2条；事务租约防并发重入，版本去重和错误历史持久化。没有LLM或外部消息。")
-    p("真实受限实验为30分钟间隔、最多2次，首份快照已观察；第二次刷新及达到上限停用仍待后续实际核验。时钟/搜索替身只证明调度契约，不冒充已经等待完整周期。", "SmallCN")
+    p("真实受限实验为30分钟间隔、最多2次：01:55:39与02:26:07两份快照成功，第二条记录scheduled；达到上限后enabled=0、disabled_reason=refresh_limit_reached已实际观察。第一条早于触发类型字段，保留unspecified，不补写。不能将两次观察推广为长期稳定性。", "SmallCN")
 
-page("08 / 复现、来源与提交状态")
+if manifest.get("citation_graph"):
+    citation = json.loads((ROOT / manifest["citation_graph"] / "summary.json").read_text(encoding="utf-8"))
+    page("08 / 引用图来源与证据核验")
+    p("从参考文献出发的受限扩展", "H2CN")
+    p("原始7份文献基础上，依据真实参考条目里的arXiv标识下载14篇，共12,681,905字节；总计21份PDF、20个论文家族。每次限制数量、单文件大小和下载间隔，保留来源与SHA256，不重新分发原PDF。20个arXiv版本经一次公共Atom批次精确ID与版本匹配，补充作者、完整标题和首发年；机构缺失保持空，教材年份未知。")
+    p("相同输入的匹配前后对照", "H2CN")
+    table([["项目", "真实观察", "解释边界"], ["引用边", f"{citation['old_edges']} → {citation['edges']}", "相同已校验元数据与文献ID"], ["锚点完整性", f"{citation['anchors_verified']}/{citation['anchor_checks']}", "块存在、物理页及原参考文本一致"], ["新增边原文核对", "7/7", "改动后修复回归，非独立金标"], ["PageRank残差", f"{citation['algorithm']['residual_l1']:.3g}", "非加权家族图；不代表质量"]], [120,100,262])
+    p("新匹配逐条处理参考文献，归一化断行、连字和小型大写；完整标题终止边界防止短书名误匹配长论文名。不同参考条目不能拼接成命中。旧算法64边基线在元数据更新后保存；另一份更新前基线有混杂因素，未用来声称算法提升。")
+    p("核验与展示", "H2CN")
+    p("7条新增引用核对原PDF对应物理页的文本块、作者与完整标题。最初整页排序会交错双栏导致5条核验失败，按块保持阅读顺序后7条通过，旧输出保留。此为来源核对，不证明语义蕴含、全图精确率或引用质量。界面采用编号图例、论文聚焦、逐边原文跳转和SVG导出，避免20节点标题重叠。")
+    p("正文数字引文频次只统计参考文献首页之前的块，作者年份、范围引用和同页引文可能漏计；边只表示论文家族关系，不推断引用最新版本。仍缺独立全图标注、应付式引用过滤、真实LLM综述、Future Work后续解决验证。", "SmallCN")
+
+page("09 / 复现、来源与提交状态")
 p("最小复现", "H2CN")
 p("Python 3.12创建venv并安装requirements-dev.txt；下载公开论文、作者版教材及英语OCR数据；scripts/import_papers.py导入；uvicorn src.app:app --host 127.0.0.1 --port 8000启动。逐条命令见README。")
 p("pytest；scripts/evaluate.py；scripts/evaluate.py data/holdout_cases.json；scripts/robustness.py；scripts/scan_real_sample.py；启动服务后scripts/live_smoke.py。每轮保留时间戳原始证据、配置、数据哈希与汇总。", "SmallCN")
 p("实验来源目录", "H2CN")
 for name in ("development", "holdout", "test_xml", "robustness", "real_scan"):
     p(name + ": " + manifest[name], "SmallCN")
+if manifest.get("offline_rebuild"):
+    p("离线恢复：锁定21份原PDF，隔离临时SQLite重新解析、恢复20份Atom元数据，20节点/71边的源页/块与排名完全一致（6.69秒、零联网、原库未修改）。不是新机器安装或公网重下载验收。精确命令见README，来源：" + manifest["offline_rebuild"], "SmallCN")
 p("公开原始来源", "H2CN")
 p("官方赛道：https://www.boxuegu.com/matchTrack/detail/?id=10040\n规则原始接口与正文：docs/sources/official_track_raw.json、official_rules.txt。\n真实论文：arxiv.org 的 1706.03762v1/v7、1810.04805v2、2005.11401v4、2005.14165v4、2004.04906v2。\n教材作者：https://udlbook.github.io/udlbook/，v5.0.3同名教材。\nOCR数据：github.com/tesseract-ocr/tessdata_fast，来源与哈希随附。", "SmallCN")
 p("提交与原创性声明", "H2CN")

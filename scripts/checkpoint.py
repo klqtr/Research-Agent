@@ -7,7 +7,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_ROOTS = ("src", "tests", "scripts", "docs", "reports", "experiments", "output")
-SUFFIXES = {".py", ".js", ".css", ".html", ".md", ".json", ".jsonl", ".xml", ".txt", ".log", ".svg", ".png", ".jpg", ".pdf", ".ps1"}
+SUFFIXES = {".py", ".js", ".css", ".html", ".md", ".json", ".jsonl", ".xml", ".txt", ".log", ".svg", ".png", ".jpg", ".pdf", ".ps1", ".atom", ".csv"}
 
 
 def main():
