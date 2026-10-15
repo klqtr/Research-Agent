@@ -15,3 +15,8 @@
 - 版本差异：实际点击比较v1/v7，正文diff显示版权声明、引用号及41.0/41.8等原文变化；显示的是逐块文本diff，不是模型生成总结。
 - 工作流：选择Attention v1+BERT，执行“Compare training hardware and prepare a graph and outline.”，显示retrieve/graph/outline步骤、8条证据、2个家族/1条边、5节框架。明确标记deterministic_workflow。
 - 最终证据锚点：跨篇检索首条为Attention第7页硬件段落，点击定位后页图框出对应段落，正文同时高亮，原始PDF链接定位page=7。截图`evidence.jpg`与`evidence_anchor.jpg`。
+
+第二阶段：
+- Attention真实第8页通过新增页码输入跳转；点击“提取当前页结构”，显示13行5列的候选、28.4/41.0原值、CSV导出链接及明确未核验提示。截图`page_structure.jpg`。多行表头、指数仍需原图复核。
+- 追踪界面显示真实主题已刷新1/2次、间隔30分钟与上次成功时间；默认启用勾选框为空。已验证第一次真实快照存在，第二次定时刷新尚未到时。
+- 刷新后界面将原始UTC存储时间转换为北京时间01:55:39；点击“查看真实快照”显示实际返回5条文献，新版本标记与completed状态，未点击手动刷新。截图`tracking.jpg`。

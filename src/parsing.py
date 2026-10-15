@@ -3,6 +3,7 @@ import hashlib
 import re
 from datetime import datetime, timezone
 import fitz
+from .hierarchy import build_tree, heading_level
 
 
 def normalize(text):
@@ -87,7 +88,8 @@ def parse_pdf(raw, filename, settings):
                     chunks.append(item)
                     page_chunks.append(cid)
                 if re.match(r"^(\d+(?:\.\d+){0,2}\s+[A-Z]|Abstract$|References$|Appendix|Conclusion|Future Work)", content) and len(content) < 160:
-                    headings.append({"title": content, "page": number, "chunk_id": chunks[-1]["id"]})
+                    headings.append({"title": content, "page": number, "chunk_id": chunks[-1]["id"],
+                                     "level": heading_level(content), "basis": "text_heading_heuristic"})
                 if re.match(r"^(References|Bibliography)$", content, re.I):
                     in_refs = True
                 elif in_refs:
@@ -95,6 +97,30 @@ def parse_pdf(raw, filename, settings):
             pages.append({"number": number, "width": page.rect.width, "height": page.rect.height,
                           "mode": mode, "chunks": page_chunks, "images": len(page.get_images())})
         metadata = doc.metadata or {}
+        native_toc = doc.get_toc(simple=True)
+        if native_toc:
+            extracted_headings = headings
+            headings = []
+            page_candidates = {}
+            for chunk in chunks:
+                if len(chunk["text"]) < 300:
+                    page_candidates.setdefault(chunk["page"], []).append(
+                        (chunk["id"], re.sub(r"\s+", "", chunk["text"]).lower()))
+            for level, title, number in native_toc:
+                if not 1 <= number <= len(pages):
+                    continue
+                compact_title = re.sub(r"\s+", "", title).lower()
+                anchor = next((chunk_id for chunk_id, text in page_candidates.get(number, []) if compact_title in text), None)
+                headings.append({"level": max(1, min(int(level), 8)), "title": title, "page": number,
+                                 "chunk_id": anchor, "basis": "pdf_native_outline",
+                                 "anchor_basis": "title_text_match" if anchor else "page_only_no_exact_title_anchor"})
+            # Some PDF bookmarks omit Abstract/References. Retain these explicit
+            # source headings without replacing a native hierarchy with heuristics.
+            for item in extracted_headings:
+                if item["title"].lower() in ("abstract", "references", "bibliography"):
+                    if not any(h["page"] == item["page"] and h["title"].lower() == item["title"].lower() for h in headings):
+                        headings.append(item)
+            headings.sort(key=lambda h: (h["page"], int(h["chunk_id"].rsplit(":c", 1)[-1]) if h["chunk_id"] else -1))
         first = [c["text"] for c in chunks if c["page"] == 1]
         title = metadata.get("title", "").strip()
         if not title or title.lower() in ("untitled", "article"):
@@ -106,7 +132,7 @@ def parse_pdf(raw, filename, settings):
         return {"id": paper_id, "filename": filename, "title": title, "author": metadata.get("author", ""),
                 "arxiv_id": arxiv.group(1) if arxiv else None,
                 "version": int(arxiv.group(2)) if arxiv and arxiv.group(2) else None,
-                "pages": pages, "chunks": chunks, "headings": headings, "references": references,
+                "pages": pages, "chunks": chunks, "headings": headings, "heading_tree": build_tree(headings), "references": references,
                 "warnings": warnings, "created_at": datetime.now(timezone.utc).isoformat(),
                 "limitations": ["原生文本与坐标已提取；复杂公式未保证还原 LaTeX，表格未保证单元格结构。"]}
 

@@ -1,5 +1,6 @@
 """Real execution on synthetic stress fixtures, explicitly not official test PDFs."""
 import json
+import hashlib
 import sys
 import time
 import tracemalloc
@@ -45,6 +46,7 @@ def main():
         _, peak = tracemalloc.get_traced_memory()
         tracemalloc.stop()
         record = {"file": path.name, "fixture": "synthetic_not_official" if path in (longpath, scanpath) else "real_author_release_matching_official_filename_not_pack_hash_verified", "pages": len(paper["pages"]),
+                  "parser_sha256": hashlib.sha256((ROOT / "src/parsing.py").read_bytes()).hexdigest(),
                   "chunks": len(paper["chunks"]), "latency_seconds": elapsed,
                   "python_peak_tracemalloc_mb": peak / 1024 / 1024,
                   "memory_limitations": "tracemalloc only tracks Python allocations, not native PDF/OCR engine memory",

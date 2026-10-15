@@ -44,10 +44,10 @@ OCR 使用 PyMuPDF 内置引擎和官方 Tesseract 英语语言数据，位于 `
 
 |官方模块|已实现且可运行|仍缺少|
 |---|---|---|
-|PDF 管理解析|批量上传、保留原PDF、页码/bbox、标题导航、原文OCR、内容shingle去重、版本确认、版本diff API、移除索引保留原文|可靠作者/机构、复杂表格单元格、公式LaTeX、学习式语义去重|
+|PDF 管理解析|批量上传、保留原PDF、页码/bbox、原生目录层级、原文OCR、按页表格候选/缓存/CSV、图注/图像/数学glyph候选、内容shingle去重、版本确认/diff|可靠作者/机构、完整复杂单元格与合并表头、扫描表格结构、公式LaTeX、学习式语义去重|
 |抗幻觉问答|BM25+字符RRF、文献配额、硬件事实重排、证据跳转、引用约束、部分拒答|真实模型效果实验、Dense/Rerank模型、语义蕴含验证|
 |联动阅读翻译|原始版式页图、bbox高亮/原PDF链接、数字引文跳转返回、按页正文/译文同步滚动、翻译接口及不可用提示|划词/悬停、PDF像素级双向联动、作者年份等完整引文无损跳转、真实翻译质量验证|
-|搜索追踪推荐|真实arXiv检索、受限标识下载入库API、代码链接线索、持久反馈及可解释兴趣排序|定时追踪、训练式推荐、多用户、PubMed、引用含金量可靠判定|
+|搜索追踪推荐|真实arXiv检索/下载API、持久兴趣排序、显式启用的定时追踪/租约/限额/版本去重/运行历史|长周期稳定性、训练式多用户推荐、PubMed、引用含金量可靠判定|
 |图谱综述前沿|引用标题/标识匹配、版本家族合并、PageRank、Future Work原文候选|真实LLM综述、时间线证伪旧Idea、20篇真实图谱质量标注|
 |写作可视化|可信文献库参考列表、写作模板、Mermaid脚本、CSV统计/SVG图表|真实LLM论文框架与图注、TikZ等完整脚本、多类型图表、一键全文学术翻译|
 
@@ -55,15 +55,21 @@ OCR 使用 PyMuPDF 内置引擎和官方 Tesseract 英语语言数据，位于 `
 
 ```powershell
 .venv/Scripts/python.exe -m pytest -q --junitxml=experiments/reproduced_tests.xml
+.venv/Scripts/python.exe scripts/run_tests.py
 .venv/Scripts/python.exe scripts/evaluate.py
 .venv/Scripts/python.exe scripts/evaluate.py data/holdout_cases.json
 .venv/Scripts/python.exe scripts/robustness.py
 .venv/Scripts/python.exe scripts/scan_real_sample.py
+.venv/Scripts/python.exe scripts/evaluate_page_structure.py
 # 服务启动后：
 .venv/Scripts/python.exe scripts/live_smoke.py
 ```
 
 每次检索评测生成独立时间戳目录，含配置、数据哈希、逐题原文证据和汇总。开发集21题（18正/3负），新论文验证15题（12正/3负）；指标是**严格原文目标证据命中@5**，不是回答准确率。先用开发集发现问题并修改，再冻结检索算法跑新论文验证；不能把开发集改善宣称为无偏泛化性能。详细结论见 `reports/evaluation_report.md`、`reports/ablation_study.md`。
+
+`scripts/run_tests.py`只运行完整测试集并保存stdout、XML、命令和退出码；报告优先使用LATEST_TESTS指针，局部模块测试不会覆盖完整回归的证据。
+
+文献追踪在“检索与追踪”中显式保存/启用，默认空/停用。30–1440分钟间隔，每条最多48次刷新、每60秒调度最多2条，次数到上限自动停用；只访问公共arXiv元数据。调度仅随本地Web服务运行。当前最多2次/30分钟间隔的实测主题用于验证，第一份快照已真实产生，第二个周期等待到时；详情见reports/tracking_report.md。`scripts/tracking_probe.py`默认只读，`--create`才会创建有界实验条目。
 
 真实教材为作者官网发布的同名541页版本，未取得官方资料包哈希；扫描件是由真实论文两页派生，不是官方 `1706.03762v1_img.pdf`。合成541页样例单独标记。
 

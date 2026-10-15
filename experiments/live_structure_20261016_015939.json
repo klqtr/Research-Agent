@@ -1,0 +1,5099 @@
+[
+  {
+    "paper_id": "0a9bff1be3575cf9fe26",
+    "page": 8,
+    "attempt": 0,
+    "latency_ms": 33.30819999973755,
+    "response": {
+      "page": 8,
+      "width": 612.0,
+      "height": 792.0,
+      "tables": [
+        {
+          "id": 0,
+          "caption": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost.",
+          "caption_bbox": [
+            107.69100189208984,
+            71.19947814941406,
+            504.00311279296875,
+            92.07107543945312
+          ],
+          "bbox": [
+            136.67098999023438,
+            97.78645324707031,
+            475.3241882324219,
+            240.21701049804688
+          ],
+          "rows": [
+            [
+              "",
+              "BLEU",
+              "",
+              "",
+              "Training Cost (FLOPs)"
+            ],
+            [
+              "Model",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "EN-DE",
+              "EN-FR",
+              "EN-DE",
+              "EN-FR"
+            ],
+            [
+              "ByteNet [16]",
+              "23.75",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Deep-Att + PosUnk [35]",
+              "",
+              "39.2",
+              "",
+              "1 . 0 · 10 20"
+            ],
+            [
+              "GNMT + RL [34]",
+              "24.6",
+              "39.92",
+              "2 . 3 · 10 19",
+              "1 . 4 · 10 20"
+            ],
+            [
+              "ConvS2S [9]",
+              "25.16",
+              "40.46",
+              "9 . 6 · 10 18",
+              "1 . 5 · 10 20"
+            ],
+            [
+              "MoE [29]",
+              "26.03",
+              "40.56",
+              "2 . 0 · 10 19",
+              "1 . 2 · 10 20"
+            ],
+            [
+              "Deep-Att + PosUnk Ensemble [35]",
+              "",
+              "40.4",
+              "",
+              "8 . 0 · 10 20"
+            ],
+            [
+              "GNMT + RL Ensemble [34]",
+              "26.30",
+              "41.16",
+              "1 . 8 · 10 20",
+              "1 . 1 · 10 21"
+            ],
+            [
+              "ConvS2S Ensemble [9]",
+              "26.36",
+              "41.29",
+              "7 . 7 · 10 19",
+              "1 . 2 · 10 21"
+            ],
+            [
+              "Transformer (base model)",
+              "27.3",
+              "38.1",
+              "",
+              "3 . 3 · 10 18"
+            ],
+            [
+              "Transformer (big)",
+              "28.4",
+              "41.0",
+              "",
+              "2 . 3 · 10 19"
+            ]
+          ],
+          "column_centers": [
+            172.54629516601562,
+            303.6540985107422,
+            344.9390869140625,
+            402.1640625,
+            454.1830749511719
+          ],
+          "source_cells": [
+            {
+              "text": "BLEU",
+              "bbox": [
+                311.02099609375,
+                97.78645324707031,
+                337.0333557128906,
+                107.74905395507812
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 1
+            },
+            {
+              "text": "Training Cost (FLOPs)",
+              "bbox": [
+                383.2498474121094,
+                97.78645324707031,
+                475.3241882324219,
+                107.74905395507812
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 4
+            },
+            {
+              "text": "Model",
+              "bbox": [
+                136.67100524902344,
+                106.07545471191406,
+                162.683349609375,
+                116.03805541992188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 0
+            },
+            {
+              "text": "EN-DE",
+              "bbox": [
+                288.7200012207031,
+                113.49745178222656,
+                318.59783935546875,
+                123.46005249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 1
+            },
+            {
+              "text": "EN-FR",
+              "bbox": [
+                330.5529479980469,
+                113.49745178222656,
+                359.33489990234375,
+                123.46005249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 2
+            },
+            {
+              "text": "EN-DE",
+              "bbox": [
+                387.4692687988281,
+                113.49745178222656,
+                417.34710693359375,
+                123.46005249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 3
+            },
+            {
+              "text": "EN-FR",
+              "bbox": [
+                440.0419006347656,
+                113.49745178222656,
+                468.8238525390625,
+                123.46005249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 4
+            },
+            {
+              "text": "ByteNet [16]",
+              "bbox": [
+                136.67100524902344,
+                124.80445861816406,
+                188.96469116210938,
+                134.76705932617188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 0
+            },
+            {
+              "text": "23.75",
+              "bbox": [
+                292.44622802734375,
+                124.80445861816406,
+                314.862060546875,
+                134.76705932617188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 1
+            },
+            {
+              "text": "Deep-Att + PosUnk [35]",
+              "bbox": [
+                136.67100524902344,
+                136.1874542236328,
+                234.98191833496094,
+                146.15005493164062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 0
+            },
+            {
+              "text": "39.2",
+              "bbox": [
+                336.22186279296875,
+                136.1874542236328,
+                353.6564025878906,
+                146.15005493164062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 2
+            },
+            {
+              "text": "1 . 0 · 10 20",
+              "bbox": [
+                435.26397705078125,
+                134.6767120361328,
+                473.10211181640625,
+                145.91949462890625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 4,
+              "column": 4
+            },
+            {
+              "text": "GNMT + RL [34]",
+              "bbox": [
+                136.67098999023438,
+                147.5694122314453,
+                208.42160034179688,
+                157.53201293945312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 0
+            },
+            {
+              "text": "24.6",
+              "bbox": [
+                294.93682861328125,
+                147.5694122314453,
+                312.3713684082031,
+                157.53201293945312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 1
+            },
+            {
+              "text": "39.92",
+              "bbox": [
+                333.7311706542969,
+                147.5694122314453,
+                356.1470031738281,
+                157.53201293945312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 2
+            },
+            {
+              "text": "2 . 3 · 10 19",
+              "bbox": [
+                383.2449951171875,
+                146.05970764160156,
+                421.0831298828125,
+                157.30145263671875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 5,
+              "column": 3
+            },
+            {
+              "text": "1 . 4 · 10 20",
+              "bbox": [
+                435.2640075683594,
+                146.05970764160156,
+                473.1021423339844,
+                157.30145263671875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 5,
+              "column": 4
+            },
+            {
+              "text": "ConvS2S [9]",
+              "bbox": [
+                136.6710205078125,
+                158.95143127441406,
+                188.02818298339844,
+                168.91403198242188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 0
+            },
+            {
+              "text": "25.16",
+              "bbox": [
+                292.4461975097656,
+                158.95143127441406,
+                314.8620300292969,
+                168.91403198242188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 1
+            },
+            {
+              "text": "40.46",
+              "bbox": [
+                333.731201171875,
+                158.95143127441406,
+                356.14703369140625,
+                168.91403198242188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 2
+            },
+            {
+              "text": "9 . 6 · 10 18",
+              "bbox": [
+                383.2450256347656,
+                157.4417266845703,
+                421.0831604003906,
+                168.6834716796875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 6,
+              "column": 3
+            },
+            {
+              "text": "1 . 5 · 10 20",
+              "bbox": [
+                435.2640380859375,
+                157.4417266845703,
+                473.1021728515625,
+                168.6834716796875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 6,
+              "column": 4
+            },
+            {
+              "text": "MoE [29]",
+              "bbox": [
+                136.67105102539062,
+                170.3344268798828,
+                175.6845703125,
+                180.29702758789062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 7,
+              "column": 0
+            },
+            {
+              "text": "26.03",
+              "bbox": [
+                292.4462585449219,
+                170.3344268798828,
+                314.8620910644531,
+                180.29702758789062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 7,
+              "column": 1
+            },
+            {
+              "text": "40.56",
+              "bbox": [
+                333.73126220703125,
+                170.3344268798828,
+                356.1470947265625,
+                180.29702758789062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 7,
+              "column": 2
+            },
+            {
+              "text": "2 . 0 · 10 19",
+              "bbox": [
+                383.24505615234375,
+                168.8236846923828,
+                421.08319091796875,
+                180.06646728515625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 7,
+              "column": 3
+            },
+            {
+              "text": "1 . 2 · 10 20",
+              "bbox": [
+                435.2640686035156,
+                168.8236846923828,
+                473.1022033691406,
+                180.06646728515625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 7,
+              "column": 4
+            },
+            {
+              "text": "Deep-Att + PosUnk Ensemble [35]",
+              "bbox": [
+                136.67100524902344,
+                182.97145080566406,
+                276.7650451660156,
+                192.93405151367188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 8,
+              "column": 0
+            },
+            {
+              "text": "40.4",
+              "bbox": [
+                336.2218322753906,
+                182.97145080566406,
+                353.6563720703125,
+                192.93405151367188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 8,
+              "column": 2
+            },
+            {
+              "text": "8 . 0 · 10 20",
+              "bbox": [
+                435.26397705078125,
+                181.4617462158203,
+                473.10211181640625,
+                192.7034912109375
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 8,
+              "column": 4
+            },
+            {
+              "text": "GNMT + RL Ensemble [34]",
+              "bbox": [
+                136.67098999023438,
+                194.3544464111328,
+                250.20474243164062,
+                204.31704711914062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 9,
+              "column": 0
+            },
+            {
+              "text": "26.30",
+              "bbox": [
+                292.4461669921875,
+                194.3544464111328,
+                314.86199951171875,
+                204.31704711914062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 9,
+              "column": 1
+            },
+            {
+              "text": "41.16",
+              "bbox": [
+                333.7311706542969,
+                194.3544464111328,
+                356.1470031738281,
+                204.31704711914062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 9,
+              "column": 2
+            },
+            {
+              "text": "1 . 8 · 10 20",
+              "bbox": [
+                383.2449951171875,
+                192.8437042236328,
+                421.0831298828125,
+                204.08648681640625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 9,
+              "column": 3
+            },
+            {
+              "text": "1 . 1 · 10 21",
+              "bbox": [
+                435.2640075683594,
+                192.8437042236328,
+                473.1021423339844,
+                204.08648681640625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 9,
+              "column": 4
+            },
+            {
+              "text": "ConvS2S Ensemble [9]",
+              "bbox": [
+                136.6710205078125,
+                205.7364044189453,
+                229.8113250732422,
+                215.69900512695312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 10,
+              "column": 0
+            },
+            {
+              "text": "26.36",
+              "bbox": [
+                292.4461975097656,
+                205.7364044189453,
+                314.8620300292969,
+                215.69900512695312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 10,
+              "column": 1
+            },
+            {
+              "text": "41.29",
+              "bbox": [
+                333.73602294921875,
+                205.64544677734375,
+                356.15185546875,
+                215.60804748535156
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 10,
+              "column": 2
+            },
+            {
+              "text": "7 . 7 · 10 19",
+              "bbox": [
+                383.2450256347656,
+                204.22669982910156,
+                421.0831604003906,
+                215.46844482421875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 10,
+              "column": 3
+            },
+            {
+              "text": "1 . 2 · 10 21",
+              "bbox": [
+                435.2640380859375,
+                204.22669982910156,
+                473.1021728515625,
+                215.46844482421875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 10,
+              "column": 4
+            },
+            {
+              "text": "Transformer (base model)",
+              "bbox": [
+                136.67100524902344,
+                218.87245178222656,
+                240.3418426513672,
+                228.83505249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 11,
+              "column": 0
+            },
+            {
+              "text": "27.3",
+              "bbox": [
+                294.9368896484375,
+                218.87245178222656,
+                312.3714294433594,
+                228.83505249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 11,
+              "column": 1
+            },
+            {
+              "text": "38.1",
+              "bbox": [
+                336.2218933105469,
+                218.87245178222656,
+                353.65643310546875,
+                228.83505249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 11,
+              "column": 2
+            },
+            {
+              "text": "3 . 3 · 10 18",
+              "bbox": [
+                407.3389892578125,
+                217.36170959472656,
+                450.7341003417969,
+                228.6044921875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMBSY10",
+                "CMBX10",
+                "CMBX7",
+                "CMMIB10"
+              ],
+              "row": 11,
+              "column": 4
+            },
+            {
+              "text": "Transformer (big)",
+              "bbox": [
+                136.67098999023438,
+                230.25440979003906,
+                207.97332763671875,
+                240.21701049804688
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 12,
+              "column": 0
+            },
+            {
+              "text": "28.4",
+              "bbox": [
+                294.94097900390625,
+                230.1634521484375,
+                312.3755187988281,
+                240.1260528564453
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 12,
+              "column": 1
+            },
+            {
+              "text": "41.0",
+              "bbox": [
+                336.2259826660156,
+                230.1634521484375,
+                353.6605224609375,
+                240.1260528564453
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 12,
+              "column": 2
+            },
+            {
+              "text": "2 . 3 · 10 19",
+              "bbox": [
+                410.12298583984375,
+                228.7447052001953,
+                447.96112060546875,
+                239.9864501953125
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 12,
+              "column": 4
+            }
+          ],
+          "row_count": 13,
+          "column_count": 5,
+          "method": "caption_bounded_layout_rows",
+          "status": "heuristic_candidate_requires_review"
+        }
+      ],
+      "figure_captions": [],
+      "embedded_images": [],
+      "formula_candidates": [
+        {
+          "text": "1 . 0 · 10 20",
+          "bbox": [
+            435.26397705078125,
+            134.6767120361328,
+            473.10211181640625,
+            145.91949462890625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "2 . 3 · 10 19",
+          "bbox": [
+            383.2449951171875,
+            146.05970764160156,
+            421.0831298828125,
+            157.30145263671875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 4 · 10 20",
+          "bbox": [
+            435.2640075683594,
+            146.05970764160156,
+            473.1021423339844,
+            157.30145263671875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "9 . 6 · 10 18",
+          "bbox": [
+            383.2450256347656,
+            157.4417266845703,
+            421.0831604003906,
+            168.6834716796875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 5 · 10 20",
+          "bbox": [
+            435.2640380859375,
+            157.4417266845703,
+            473.1021728515625,
+            168.6834716796875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "2 . 0 · 10 19",
+          "bbox": [
+            383.24505615234375,
+            168.8236846923828,
+            421.08319091796875,
+            180.06646728515625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 2 · 10 20",
+          "bbox": [
+            435.2640686035156,
+            168.8236846923828,
+            473.1022033691406,
+            180.06646728515625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "8 . 0 · 10 20",
+          "bbox": [
+            435.26397705078125,
+            181.4617462158203,
+            473.10211181640625,
+            192.7034912109375
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 8 · 10 20",
+          "bbox": [
+            383.2449951171875,
+            192.8437042236328,
+            421.0831298828125,
+            204.08648681640625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 1 · 10 21",
+          "bbox": [
+            435.2640075683594,
+            192.8437042236328,
+            473.1021423339844,
+            204.08648681640625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "7 . 7 · 10 19",
+          "bbox": [
+            383.2450256347656,
+            204.22669982910156,
+            421.0831604003906,
+            215.46844482421875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 2 · 10 21",
+          "bbox": [
+            435.2640380859375,
+            204.22669982910156,
+            473.1021728515625,
+            215.46844482421875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "3 . 3 · 10 18",
+          "bbox": [
+            407.3389892578125,
+            217.36170959472656,
+            450.7341003417969,
+            228.6044921875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMBSY10",
+            "CMBX10",
+            "CMBX7",
+            "CMMIB10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "2 . 3 · 10 19",
+          "bbox": [
+            410.12298583984375,
+            228.7447052001953,
+            447.96112060546875,
+            239.9864501953125
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41 . 0 ,",
+          "bbox": [
+            108.0,
+            270.81390380859375,
+            505.2453308105469,
+            280.98406982421875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "outperforming all of the previously published single models, at less than 1 / 4 the training cost of the",
+          "bbox": [
+            108.0,
+            281.7229309082031,
+            503.9964294433594,
+            291.9112548828125
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "dropout rate P drop = 0 . 1 , instead of 0 . 3 .",
+          "bbox": [
+            108.0,
+            303.5409240722656,
+            269.62261962890625,
+            314.99749755859375
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMMI7",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "used beam search with a beam size of 4 and length penalty α = 0 . 6 [ 34 ]. These hyperparameters",
+          "bbox": [
+            108.0,
+            341.7479248046875,
+            504.0009460449219,
+            351.96502685546875
+          ],
+          "size": 10.061732292175293,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "In Table 3 rows (B), we observe that reducing the attention key size d k hurts model quality. This",
+          "bbox": [
+            108.0,
+            544.6509399414062,
+            504.00360107421875,
+            556.362060546875
+          ],
+          "size": 10.061732292175293,
+          "fonts": [
+            "CMMI10",
+            "CMMI7",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "We trained a 4-layer transformer with d model = 1024 on the Wall Street Journal (WSJ) portion of the",
+          "bbox": [
+            107.53199768066406,
+            671.1399536132812,
+            504.0003356933594,
+            682.5975341796875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMMI7",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        }
+      ],
+      "analyzer_version": "caption-layout-v4-neighbour-scope",
+      "latency_ms": 19.767,
+      "limitations": [
+        "行列由版式启发式恢复，合并表头/缺失单元格可能错位，必须对照页图。",
+        "图注与嵌入图片分别提取，未断言配对关系；矢量图不一定有嵌入图片。",
+        "数学字体仅生成原文glyph候选，不宣称已还原LaTeX；扫描页表格结构尚不支持。"
+      ],
+      "source_sha256": "0a9bff1be3575cf9fe26a4a3d3a9175bc791ecec90de8b9deba4cff75d2b9476",
+      "cache_hit": true
+    }
+  },
+  {
+    "paper_id": "0a9bff1be3575cf9fe26",
+    "page": 8,
+    "attempt": 1,
+    "latency_ms": 10.46459999633953,
+    "response": {
+      "page": 8,
+      "width": 612.0,
+      "height": 792.0,
+      "tables": [
+        {
+          "id": 0,
+          "caption": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost.",
+          "caption_bbox": [
+            107.69100189208984,
+            71.19947814941406,
+            504.00311279296875,
+            92.07107543945312
+          ],
+          "bbox": [
+            136.67098999023438,
+            97.78645324707031,
+            475.3241882324219,
+            240.21701049804688
+          ],
+          "rows": [
+            [
+              "",
+              "BLEU",
+              "",
+              "",
+              "Training Cost (FLOPs)"
+            ],
+            [
+              "Model",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "EN-DE",
+              "EN-FR",
+              "EN-DE",
+              "EN-FR"
+            ],
+            [
+              "ByteNet [16]",
+              "23.75",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Deep-Att + PosUnk [35]",
+              "",
+              "39.2",
+              "",
+              "1 . 0 · 10 20"
+            ],
+            [
+              "GNMT + RL [34]",
+              "24.6",
+              "39.92",
+              "2 . 3 · 10 19",
+              "1 . 4 · 10 20"
+            ],
+            [
+              "ConvS2S [9]",
+              "25.16",
+              "40.46",
+              "9 . 6 · 10 18",
+              "1 . 5 · 10 20"
+            ],
+            [
+              "MoE [29]",
+              "26.03",
+              "40.56",
+              "2 . 0 · 10 19",
+              "1 . 2 · 10 20"
+            ],
+            [
+              "Deep-Att + PosUnk Ensemble [35]",
+              "",
+              "40.4",
+              "",
+              "8 . 0 · 10 20"
+            ],
+            [
+              "GNMT + RL Ensemble [34]",
+              "26.30",
+              "41.16",
+              "1 . 8 · 10 20",
+              "1 . 1 · 10 21"
+            ],
+            [
+              "ConvS2S Ensemble [9]",
+              "26.36",
+              "41.29",
+              "7 . 7 · 10 19",
+              "1 . 2 · 10 21"
+            ],
+            [
+              "Transformer (base model)",
+              "27.3",
+              "38.1",
+              "",
+              "3 . 3 · 10 18"
+            ],
+            [
+              "Transformer (big)",
+              "28.4",
+              "41.0",
+              "",
+              "2 . 3 · 10 19"
+            ]
+          ],
+          "column_centers": [
+            172.54629516601562,
+            303.6540985107422,
+            344.9390869140625,
+            402.1640625,
+            454.1830749511719
+          ],
+          "source_cells": [
+            {
+              "text": "BLEU",
+              "bbox": [
+                311.02099609375,
+                97.78645324707031,
+                337.0333557128906,
+                107.74905395507812
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 1
+            },
+            {
+              "text": "Training Cost (FLOPs)",
+              "bbox": [
+                383.2498474121094,
+                97.78645324707031,
+                475.3241882324219,
+                107.74905395507812
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 4
+            },
+            {
+              "text": "Model",
+              "bbox": [
+                136.67100524902344,
+                106.07545471191406,
+                162.683349609375,
+                116.03805541992188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 0
+            },
+            {
+              "text": "EN-DE",
+              "bbox": [
+                288.7200012207031,
+                113.49745178222656,
+                318.59783935546875,
+                123.46005249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 1
+            },
+            {
+              "text": "EN-FR",
+              "bbox": [
+                330.5529479980469,
+                113.49745178222656,
+                359.33489990234375,
+                123.46005249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 2
+            },
+            {
+              "text": "EN-DE",
+              "bbox": [
+                387.4692687988281,
+                113.49745178222656,
+                417.34710693359375,
+                123.46005249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 3
+            },
+            {
+              "text": "EN-FR",
+              "bbox": [
+                440.0419006347656,
+                113.49745178222656,
+                468.8238525390625,
+                123.46005249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 4
+            },
+            {
+              "text": "ByteNet [16]",
+              "bbox": [
+                136.67100524902344,
+                124.80445861816406,
+                188.96469116210938,
+                134.76705932617188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 0
+            },
+            {
+              "text": "23.75",
+              "bbox": [
+                292.44622802734375,
+                124.80445861816406,
+                314.862060546875,
+                134.76705932617188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 1
+            },
+            {
+              "text": "Deep-Att + PosUnk [35]",
+              "bbox": [
+                136.67100524902344,
+                136.1874542236328,
+                234.98191833496094,
+                146.15005493164062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 0
+            },
+            {
+              "text": "39.2",
+              "bbox": [
+                336.22186279296875,
+                136.1874542236328,
+                353.6564025878906,
+                146.15005493164062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 2
+            },
+            {
+              "text": "1 . 0 · 10 20",
+              "bbox": [
+                435.26397705078125,
+                134.6767120361328,
+                473.10211181640625,
+                145.91949462890625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 4,
+              "column": 4
+            },
+            {
+              "text": "GNMT + RL [34]",
+              "bbox": [
+                136.67098999023438,
+                147.5694122314453,
+                208.42160034179688,
+                157.53201293945312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 0
+            },
+            {
+              "text": "24.6",
+              "bbox": [
+                294.93682861328125,
+                147.5694122314453,
+                312.3713684082031,
+                157.53201293945312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 1
+            },
+            {
+              "text": "39.92",
+              "bbox": [
+                333.7311706542969,
+                147.5694122314453,
+                356.1470031738281,
+                157.53201293945312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 2
+            },
+            {
+              "text": "2 . 3 · 10 19",
+              "bbox": [
+                383.2449951171875,
+                146.05970764160156,
+                421.0831298828125,
+                157.30145263671875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 5,
+              "column": 3
+            },
+            {
+              "text": "1 . 4 · 10 20",
+              "bbox": [
+                435.2640075683594,
+                146.05970764160156,
+                473.1021423339844,
+                157.30145263671875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 5,
+              "column": 4
+            },
+            {
+              "text": "ConvS2S [9]",
+              "bbox": [
+                136.6710205078125,
+                158.95143127441406,
+                188.02818298339844,
+                168.91403198242188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 0
+            },
+            {
+              "text": "25.16",
+              "bbox": [
+                292.4461975097656,
+                158.95143127441406,
+                314.8620300292969,
+                168.91403198242188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 1
+            },
+            {
+              "text": "40.46",
+              "bbox": [
+                333.731201171875,
+                158.95143127441406,
+                356.14703369140625,
+                168.91403198242188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 2
+            },
+            {
+              "text": "9 . 6 · 10 18",
+              "bbox": [
+                383.2450256347656,
+                157.4417266845703,
+                421.0831604003906,
+                168.6834716796875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 6,
+              "column": 3
+            },
+            {
+              "text": "1 . 5 · 10 20",
+              "bbox": [
+                435.2640380859375,
+                157.4417266845703,
+                473.1021728515625,
+                168.6834716796875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 6,
+              "column": 4
+            },
+            {
+              "text": "MoE [29]",
+              "bbox": [
+                136.67105102539062,
+                170.3344268798828,
+                175.6845703125,
+                180.29702758789062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 7,
+              "column": 0
+            },
+            {
+              "text": "26.03",
+              "bbox": [
+                292.4462585449219,
+                170.3344268798828,
+                314.8620910644531,
+                180.29702758789062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 7,
+              "column": 1
+            },
+            {
+              "text": "40.56",
+              "bbox": [
+                333.73126220703125,
+                170.3344268798828,
+                356.1470947265625,
+                180.29702758789062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 7,
+              "column": 2
+            },
+            {
+              "text": "2 . 0 · 10 19",
+              "bbox": [
+                383.24505615234375,
+                168.8236846923828,
+                421.08319091796875,
+                180.06646728515625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 7,
+              "column": 3
+            },
+            {
+              "text": "1 . 2 · 10 20",
+              "bbox": [
+                435.2640686035156,
+                168.8236846923828,
+                473.1022033691406,
+                180.06646728515625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 7,
+              "column": 4
+            },
+            {
+              "text": "Deep-Att + PosUnk Ensemble [35]",
+              "bbox": [
+                136.67100524902344,
+                182.97145080566406,
+                276.7650451660156,
+                192.93405151367188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 8,
+              "column": 0
+            },
+            {
+              "text": "40.4",
+              "bbox": [
+                336.2218322753906,
+                182.97145080566406,
+                353.6563720703125,
+                192.93405151367188
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 8,
+              "column": 2
+            },
+            {
+              "text": "8 . 0 · 10 20",
+              "bbox": [
+                435.26397705078125,
+                181.4617462158203,
+                473.10211181640625,
+                192.7034912109375
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 8,
+              "column": 4
+            },
+            {
+              "text": "GNMT + RL Ensemble [34]",
+              "bbox": [
+                136.67098999023438,
+                194.3544464111328,
+                250.20474243164062,
+                204.31704711914062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 9,
+              "column": 0
+            },
+            {
+              "text": "26.30",
+              "bbox": [
+                292.4461669921875,
+                194.3544464111328,
+                314.86199951171875,
+                204.31704711914062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 9,
+              "column": 1
+            },
+            {
+              "text": "41.16",
+              "bbox": [
+                333.7311706542969,
+                194.3544464111328,
+                356.1470031738281,
+                204.31704711914062
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 9,
+              "column": 2
+            },
+            {
+              "text": "1 . 8 · 10 20",
+              "bbox": [
+                383.2449951171875,
+                192.8437042236328,
+                421.0831298828125,
+                204.08648681640625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 9,
+              "column": 3
+            },
+            {
+              "text": "1 . 1 · 10 21",
+              "bbox": [
+                435.2640075683594,
+                192.8437042236328,
+                473.1021423339844,
+                204.08648681640625
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 9,
+              "column": 4
+            },
+            {
+              "text": "ConvS2S Ensemble [9]",
+              "bbox": [
+                136.6710205078125,
+                205.7364044189453,
+                229.8113250732422,
+                215.69900512695312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 10,
+              "column": 0
+            },
+            {
+              "text": "26.36",
+              "bbox": [
+                292.4461975097656,
+                205.7364044189453,
+                314.8620300292969,
+                215.69900512695312
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 10,
+              "column": 1
+            },
+            {
+              "text": "41.29",
+              "bbox": [
+                333.73602294921875,
+                205.64544677734375,
+                356.15185546875,
+                215.60804748535156
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 10,
+              "column": 2
+            },
+            {
+              "text": "7 . 7 · 10 19",
+              "bbox": [
+                383.2450256347656,
+                204.22669982910156,
+                421.0831604003906,
+                215.46844482421875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 10,
+              "column": 3
+            },
+            {
+              "text": "1 . 2 · 10 21",
+              "bbox": [
+                435.2640380859375,
+                204.22669982910156,
+                473.1021728515625,
+                215.46844482421875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 10,
+              "column": 4
+            },
+            {
+              "text": "Transformer (base model)",
+              "bbox": [
+                136.67100524902344,
+                218.87245178222656,
+                240.3418426513672,
+                228.83505249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 11,
+              "column": 0
+            },
+            {
+              "text": "27.3",
+              "bbox": [
+                294.9368896484375,
+                218.87245178222656,
+                312.3714294433594,
+                228.83505249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 11,
+              "column": 1
+            },
+            {
+              "text": "38.1",
+              "bbox": [
+                336.2218933105469,
+                218.87245178222656,
+                353.65643310546875,
+                228.83505249023438
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 11,
+              "column": 2
+            },
+            {
+              "text": "3 . 3 · 10 18",
+              "bbox": [
+                407.3389892578125,
+                217.36170959472656,
+                450.7341003417969,
+                228.6044921875
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMBSY10",
+                "CMBX10",
+                "CMBX7",
+                "CMMIB10"
+              ],
+              "row": 11,
+              "column": 4
+            },
+            {
+              "text": "Transformer (big)",
+              "bbox": [
+                136.67098999023438,
+                230.25440979003906,
+                207.97332763671875,
+                240.21701049804688
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 12,
+              "column": 0
+            },
+            {
+              "text": "28.4",
+              "bbox": [
+                294.94097900390625,
+                230.1634521484375,
+                312.3755187988281,
+                240.1260528564453
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 12,
+              "column": 1
+            },
+            {
+              "text": "41.0",
+              "bbox": [
+                336.2259826660156,
+                230.1634521484375,
+                353.6605224609375,
+                240.1260528564453
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 12,
+              "column": 2
+            },
+            {
+              "text": "2 . 3 · 10 19",
+              "bbox": [
+                410.12298583984375,
+                228.7447052001953,
+                447.96112060546875,
+                239.9864501953125
+              ],
+              "size": 9.962599754333496,
+              "fonts": [
+                "CMMI10",
+                "CMR10",
+                "CMR7",
+                "CMSY10"
+              ],
+              "row": 12,
+              "column": 4
+            }
+          ],
+          "row_count": 13,
+          "column_count": 5,
+          "method": "caption_bounded_layout_rows",
+          "status": "heuristic_candidate_requires_review"
+        }
+      ],
+      "figure_captions": [],
+      "embedded_images": [],
+      "formula_candidates": [
+        {
+          "text": "1 . 0 · 10 20",
+          "bbox": [
+            435.26397705078125,
+            134.6767120361328,
+            473.10211181640625,
+            145.91949462890625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "2 . 3 · 10 19",
+          "bbox": [
+            383.2449951171875,
+            146.05970764160156,
+            421.0831298828125,
+            157.30145263671875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 4 · 10 20",
+          "bbox": [
+            435.2640075683594,
+            146.05970764160156,
+            473.1021423339844,
+            157.30145263671875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "9 . 6 · 10 18",
+          "bbox": [
+            383.2450256347656,
+            157.4417266845703,
+            421.0831604003906,
+            168.6834716796875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 5 · 10 20",
+          "bbox": [
+            435.2640380859375,
+            157.4417266845703,
+            473.1021728515625,
+            168.6834716796875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "2 . 0 · 10 19",
+          "bbox": [
+            383.24505615234375,
+            168.8236846923828,
+            421.08319091796875,
+            180.06646728515625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 2 · 10 20",
+          "bbox": [
+            435.2640686035156,
+            168.8236846923828,
+            473.1022033691406,
+            180.06646728515625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "8 . 0 · 10 20",
+          "bbox": [
+            435.26397705078125,
+            181.4617462158203,
+            473.10211181640625,
+            192.7034912109375
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 8 · 10 20",
+          "bbox": [
+            383.2449951171875,
+            192.8437042236328,
+            421.0831298828125,
+            204.08648681640625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 1 · 10 21",
+          "bbox": [
+            435.2640075683594,
+            192.8437042236328,
+            473.1021423339844,
+            204.08648681640625
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "7 . 7 · 10 19",
+          "bbox": [
+            383.2450256347656,
+            204.22669982910156,
+            421.0831604003906,
+            215.46844482421875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "1 . 2 · 10 21",
+          "bbox": [
+            435.2640380859375,
+            204.22669982910156,
+            473.1021728515625,
+            215.46844482421875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "3 . 3 · 10 18",
+          "bbox": [
+            407.3389892578125,
+            217.36170959472656,
+            450.7341003417969,
+            228.6044921875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMBSY10",
+            "CMBX10",
+            "CMBX7",
+            "CMMIB10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "2 . 3 · 10 19",
+          "bbox": [
+            410.12298583984375,
+            228.7447052001953,
+            447.96112060546875,
+            239.9864501953125
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "CMR7",
+            "CMSY10"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41 . 0 ,",
+          "bbox": [
+            108.0,
+            270.81390380859375,
+            505.2453308105469,
+            280.98406982421875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "outperforming all of the previously published single models, at less than 1 / 4 the training cost of the",
+          "bbox": [
+            108.0,
+            281.7229309082031,
+            503.9964294433594,
+            291.9112548828125
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "dropout rate P drop = 0 . 1 , instead of 0 . 3 .",
+          "bbox": [
+            108.0,
+            303.5409240722656,
+            269.62261962890625,
+            314.99749755859375
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMMI7",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "used beam search with a beam size of 4 and length penalty α = 0 . 6 [ 34 ]. These hyperparameters",
+          "bbox": [
+            108.0,
+            341.7479248046875,
+            504.0009460449219,
+            351.96502685546875
+          ],
+          "size": 10.061732292175293,
+          "fonts": [
+            "CMMI10",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "In Table 3 rows (B), we observe that reducing the attention key size d k hurts model quality. This",
+          "bbox": [
+            108.0,
+            544.6509399414062,
+            504.00360107421875,
+            556.362060546875
+          ],
+          "size": 10.061732292175293,
+          "fonts": [
+            "CMMI10",
+            "CMMI7",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        },
+        {
+          "text": "We trained a 4-layer transformer with d model = 1024 on the Wall Street Journal (WSJ) portion of the",
+          "bbox": [
+            107.53199768066406,
+            671.1399536132812,
+            504.0003356933594,
+            682.5975341796875
+          ],
+          "size": 9.962599754333496,
+          "fonts": [
+            "CMMI10",
+            "CMMI7",
+            "CMR10",
+            "NimbusRomNo9L-Regu"
+          ],
+          "kind": "math_glyph_candidate",
+          "latex": null,
+          "status": "source_glyphs_only_not_latex_transcription"
+        }
+      ],
+      "analyzer_version": "caption-layout-v4-neighbour-scope",
+      "latency_ms": 19.767,
+      "limitations": [
+        "行列由版式启发式恢复，合并表头/缺失单元格可能错位，必须对照页图。",
+        "图注与嵌入图片分别提取，未断言配对关系；矢量图不一定有嵌入图片。",
+        "数学字体仅生成原文glyph候选，不宣称已还原LaTeX；扫描页表格结构尚不支持。"
+      ],
+      "source_sha256": "0a9bff1be3575cf9fe26a4a3d3a9175bc791ecec90de8b9deba4cff75d2b9476",
+      "cache_hit": true
+    }
+  },
+  {
+    "paper_id": "0a9bff1be3575cf9fe26",
+    "page": 8,
+    "table": 0,
+    "kind": "real_csv_export",
+    "status": 200,
+    "sha256": "96c7eeb72b0b84a005c919054a35447e1f69f9f8eb98718865ec5f63e9401d29",
+    "csv_utf8": ",BLEU,,,Training Cost (FLOPs)\r\nModel,,,,\r\n,EN-DE,EN-FR,EN-DE,EN-FR\r\nByteNet [16],23.75,,,\r\nDeep-Att + PosUnk [35],,39.2,,1 . 0 · 10 20\r\nGNMT + RL [34],24.6,39.92,2 . 3 · 10 19,1 . 4 · 10 20\r\nConvS2S [9],25.16,40.46,9 . 6 · 10 18,1 . 5 · 10 20\r\nMoE [29],26.03,40.56,2 . 0 · 10 19,1 . 2 · 10 20\r\nDeep-Att + PosUnk Ensemble [35],,40.4,,8 . 0 · 10 20\r\nGNMT + RL Ensemble [34],26.30,41.16,1 . 8 · 10 20,1 . 1 · 10 21\r\nConvS2S Ensemble [9],26.36,41.29,7 . 7 · 10 19,1 . 2 · 10 21\r\nTransformer (base model),27.3,38.1,,3 . 3 · 10 18\r\nTransformer (big),28.4,41.0,,2 . 3 · 10 19\r\n"
+  },
+  {
+    "paper_id": "23e3249e9a1e75418d82",
+    "page": 6,
+    "attempt": 0,
+    "latency_ms": 44.92570000002161,
+    "response": {
+      "page": 6,
+      "width": 612.0,
+      "height": 792.0,
+      "tables": [
+        {
+          "id": 0,
+          "caption": "Table 1: Open-Domain QA Test Scores. For TQA, left column uses the standard test set for Open- Domain QA, right column uses the TQA-Wiki test set. See Appendix D for further details.",
+          "caption_bbox": [
+            107.69100189208984,
+            79.3233871459961,
+            303.697021484375,
+            121.93710327148438
+          ],
+          "bbox": [
+            113.81651306152344,
+            131.41307067871094,
+            296.228759765625,
+            210.20970153808594
+          ],
+          "rows": [
+            [
+              "",
+              "Model",
+              "NQ",
+              "TQA",
+              "WQ",
+              "CT"
+            ],
+            [
+              "Closed",
+              "T5-11B [52]",
+              "34.5",
+              "- /50.1",
+              "37.4",
+              "-"
+            ],
+            [
+              "Book",
+              "T5-11B+SSM[52]",
+              "36.6",
+              "- /60.5",
+              "44.7",
+              "-"
+            ],
+            [
+              "Open",
+              "REALM [20]",
+              "40.4",
+              "- / -",
+              "40.7",
+              "46.8"
+            ],
+            [
+              "Book",
+              "DPR [26]",
+              "41.5",
+              "57.9 / -",
+              "41.1",
+              "50.6"
+            ],
+            [
+              "",
+              "RAG-Token",
+              "44.1",
+              "55.2/66.1",
+              "45.5",
+              "50.0"
+            ],
+            [
+              "",
+              "RAG-Seq.",
+              "44.5",
+              "56.8/ 68.0",
+              "45.2",
+              "52.2"
+            ]
+          ],
+          "column_centers": [
+            125.21707153320312,
+            164.0611343383789,
+            205.60653686523438,
+            239.17031860351562,
+            266.7961120605469,
+            288.8942108154297
+          ],
+          "source_cells": [
+            {
+              "text": "Model",
+              "bbox": [
+                141.39306640625,
+                131.41307067871094,
+                163.26084899902344,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 1
+            },
+            {
+              "text": "NQ",
+              "bbox": [
+                199.55914306640625,
+                131.41307067871094,
+                211.6529998779297,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 2
+            },
+            {
+              "text": "TQA",
+              "bbox": [
+                227.59945678710938,
+                131.41307067871094,
+                244.8105926513672,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 3
+            },
+            {
+              "text": "WQ",
+              "bbox": [
+                259.81903076171875,
+                131.41307067871094,
+                273.772216796875,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 4
+            },
+            {
+              "text": "CT",
+              "bbox": [
+                283.5461120605469,
+                131.41307067871094,
+                294.24969482421875,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 5
+            },
+            {
+              "text": "Closed",
+              "bbox": [
+                113.81651306152344,
+                145.64488220214844,
+                136.6176300048828,
+                153.93594360351562
+              ],
+              "size": 8.291069984436035,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 0
+            },
+            {
+              "text": "T5-11B [52]",
+              "bbox": [
+                143.00994873046875,
+                145.58103942871094,
+                185.11231994628906,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 1
+            },
+            {
+              "text": "34.5",
+              "bbox": [
+                198.2781982421875,
+                145.58103942871094,
+                212.93487548828125,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 2
+            },
+            {
+              "text": "- /50.1",
+              "bbox": [
+                226.31851196289062,
+                145.58103942871094,
+                252.02212524414062,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 3
+            },
+            {
+              "text": "37.4",
+              "bbox": [
+                259.4677429199219,
+                145.58103942871094,
+                274.1244812011719,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 4
+            },
+            {
+              "text": "-",
+              "bbox": [
+                287.4997253417969,
+                145.58103942871094,
+                290.2886962890625,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 5
+            },
+            {
+              "text": "Book",
+              "bbox": [
+                113.81651306152344,
+                154.88621520996094,
+                131.96566772460938,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 0
+            },
+            {
+              "text": "T5-11B+SSM[52]",
+              "bbox": [
+                143.00994873046875,
+                156.29776000976562,
+                190.83583068847656,
+                162.811767578125
+              ],
+              "size": 6.514017581939697,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 1
+            },
+            {
+              "text": "36.6",
+              "bbox": [
+                198.28073120117188,
+                154.88621520996094,
+                212.93740844726562,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 2
+            },
+            {
+              "text": "- /60.5",
+              "bbox": [
+                226.31265258789062,
+                154.88621520996094,
+                252.02468872070312,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 3
+            },
+            {
+              "text": "44.7",
+              "bbox": [
+                259.4702453613281,
+                154.88621520996094,
+                274.1269836425781,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 4
+            },
+            {
+              "text": "-",
+              "bbox": [
+                287.5022277832031,
+                154.88621520996094,
+                290.29119873046875,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 5
+            },
+            {
+              "text": "Open",
+              "bbox": [
+                113.81651306152344,
+                169.0542449951172,
+                131.95730590820312,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 0
+            },
+            {
+              "text": "REALM [20]",
+              "bbox": [
+                143.00994873046875,
+                169.0542449951172,
+                188.3702850341797,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 1
+            },
+            {
+              "text": "40.4",
+              "bbox": [
+                198.2781982421875,
+                169.0542449951172,
+                212.93487548828125,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 2
+            },
+            {
+              "text": "- / -",
+              "bbox": [
+                226.31851196289062,
+                169.0542449951172,
+                246.0924530029297,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 3
+            },
+            {
+              "text": "40.7",
+              "bbox": [
+                259.46771240234375,
+                169.0542449951172,
+                274.1244201660156,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 4
+            },
+            {
+              "text": "46.8",
+              "bbox": [
+                281.5699768066406,
+                169.0542449951172,
+                296.2267150878906,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 5
+            },
+            {
+              "text": "Book",
+              "bbox": [
+                113.81651306152344,
+                178.3603973388672,
+                131.96566772460938,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 0
+            },
+            {
+              "text": "DPR [26]",
+              "bbox": [
+                143.00994873046875,
+                178.3603973388672,
+                175.34678649902344,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 1
+            },
+            {
+              "text": "41.5",
+              "bbox": [
+                198.2781982421875,
+                178.3603973388672,
+                212.93487548828125,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 2
+            },
+            {
+              "text": "57.9 / -",
+              "bbox": [
+                220.38174438476562,
+                178.283935546875,
+                246.0861358642578,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 3
+            },
+            {
+              "text": "41.1",
+              "bbox": [
+                259.4697570800781,
+                178.3603973388672,
+                274.12646484375,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 4
+            },
+            {
+              "text": "50.6",
+              "bbox": [
+                281.5720520019531,
+                178.3603973388672,
+                296.228759765625,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 5
+            },
+            {
+              "text": "RAG-Token",
+              "bbox": [
+                143.00994873046875,
+                192.52830505371094,
+                183.78900146484375,
+                200.90354919433594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 1
+            },
+            {
+              "text": "44.1",
+              "bbox": [
+                198.27816772460938,
+                192.52830505371094,
+                212.93487548828125,
+                200.90354919433594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 2
+            },
+            {
+              "text": "55.2/66.1",
+              "bbox": [
+                220.38046264648438,
+                192.52830505371094,
+                252.02212524414062,
+                200.90354919433594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 3
+            },
+            {
+              "text": "45.5",
+              "bbox": [
+                259.4679260253906,
+                192.45184326171875,
+                274.1246337890625,
+                200.82708740234375
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 5,
+              "column": 4
+            },
+            {
+              "text": "50.0",
+              "bbox": [
+                281.56988525390625,
+                192.52830505371094,
+                296.2265930175781,
+                200.90354919433594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 5
+            },
+            {
+              "text": "RAG-Seq.",
+              "bbox": [
+                143.00991821289062,
+                201.83445739746094,
+                177.80068969726562,
+                210.20970153808594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 1
+            },
+            {
+              "text": "44.5",
+              "bbox": [
+                198.28073120117188,
+                201.75799560546875,
+                212.93740844726562,
+                210.13323974609375
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 6,
+              "column": 2
+            },
+            {
+              "text": "56.8/ 68.0",
+              "bbox": [
+                220.38174438476562,
+                201.75799560546875,
+                252.0235595703125,
+                210.20970153808594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 3
+            },
+            {
+              "text": "45.2",
+              "bbox": [
+                259.4679260253906,
+                201.83445739746094,
+                274.1246337890625,
+                210.20970153808594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 4
+            },
+            {
+              "text": "52.2",
+              "bbox": [
+                281.56988525390625,
+                201.75799560546875,
+                296.2265930175781,
+                210.13323974609375
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 6,
+              "column": 5
+            }
+          ],
+          "row_count": 7,
+          "column_count": 6,
+          "method": "caption_bounded_layout_rows",
+          "status": "heuristic_candidate_requires_review"
+        },
+        {
+          "id": 1,
+          "caption": "Table 2: Generation and classiﬁcation Test Scores. MS-MARCO SotA is [ 4 ], FEVER-3 is [ 68 ] and FEVER-2 is [ 57 ] *Uses gold context/evidence. Best model without gold access underlined.",
+          "caption_bbox": [
+            309.64898681640625,
+            79.1303939819336,
+            505.745849609375,
+            121.74404907226562
+          ],
+          "bbox": [
+            314.9419250488281,
+            139.26351928710938,
+            499.01568603515625,
+            210.14523315429688
+          ],
+          "rows": [
+            [
+              "Model",
+              "",
+              "Jeopardy",
+              "",
+              "",
+              "MSMARCO FVR3 FVR2",
+              ""
+            ],
+            [
+              "",
+              "",
+              "B-1 QB-1",
+              "R-L",
+              "B-1",
+              "Label Acc.",
+              ""
+            ],
+            [
+              "SotA",
+              "-",
+              "-",
+              "49.8 * 49.9 *",
+              "",
+              "76.8",
+              "92.2 *"
+            ],
+            [
+              "BART",
+              "15.1",
+              "19.7",
+              "38.2",
+              "41.6",
+              "64.0",
+              "81.1"
+            ],
+            [
+              "RAG-Tok. 17.3",
+              "",
+              "22.2",
+              "40.1",
+              "41.5",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "72.5",
+              "89.5"
+            ],
+            [
+              "RAG-Seq. 14.7",
+              "",
+              "21.4",
+              "40.8",
+              "44.2",
+              "",
+              ""
+            ]
+          ],
+          "column_centers": [
+            325.9281311035156,
+            363.86724853515625,
+            386.5230712890625,
+            411.32318115234375,
+            436.2428741455078,
+            461.99122619628906,
+            488.56822204589844
+          ],
+          "source_cells": [
+            {
+              "text": "Model",
+              "bbox": [
+                321.6646728515625,
+                139.26351928710938,
+                343.97027587890625,
+                147.80642700195312
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 0
+            },
+            {
+              "text": "Jeopardy",
+              "bbox": [
+                360.78271484375,
+                139.26351928710938,
+                391.6225891113281,
+                147.80642700195312
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 2
+            },
+            {
+              "text": "MSMARCO FVR3 FVR2",
+              "bbox": [
+                401.9424743652344,
+                139.26351928710938,
+                499.01568603515625,
+                147.80642700195312
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 5
+            },
+            {
+              "text": "B-1 QB-1",
+              "bbox": [
+                357.4573974609375,
+                148.75497436523438,
+                396.0201110839844,
+                157.29788208007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 2
+            },
+            {
+              "text": "R-L",
+              "bbox": [
+                404.44342041015625,
+                148.75497436523438,
+                418.2060852050781,
+                157.29788208007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 3
+            },
+            {
+              "text": "B-1",
+              "bbox": [
+                429.8330078125,
+                148.75497436523438,
+                442.6473693847656,
+                157.29788208007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 4
+            },
+            {
+              "text": "Label Acc.",
+              "bbox": [
+                456.5381774902344,
+                148.75497436523438,
+                494.0159912109375,
+                157.29788208007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 5
+            },
+            {
+              "text": "SotA",
+              "bbox": [
+                314.9419250488281,
+                163.20663452148438,
+                332.5061950683594,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 0
+            },
+            {
+              "text": "-",
+              "bbox": [
+                362.4405822753906,
+                163.20663452148438,
+                365.2853698730469,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 1
+            },
+            {
+              "text": "-",
+              "bbox": [
+                385.1049499511719,
+                163.20663452148438,
+                387.9497375488281,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 2
+            },
+            {
+              "text": "49.8 * 49.9 *",
+              "bbox": [
+                401.711669921875,
+                163.12863159179688,
+                445.8498840332031,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 3
+            },
+            {
+              "text": "76.8",
+              "bbox": [
+                454.5141906738281,
+                163.12863159179688,
+                469.46429443359375,
+                171.6715545654297
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 2,
+              "column": 5
+            },
+            {
+              "text": "92.2 *",
+              "bbox": [
+                478.9640197753906,
+                163.12863159179688,
+                498.18267822265625,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 6
+            },
+            {
+              "text": "BART",
+              "bbox": [
+                314.9419250488281,
+                177.65829467773438,
+                336.9143371582031,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 0
+            },
+            {
+              "text": "15.1",
+              "bbox": [
+                356.3921813964844,
+                177.65829467773438,
+                371.3423156738281,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 1
+            },
+            {
+              "text": "19.7",
+              "bbox": [
+                379.0480041503906,
+                177.65829467773438,
+                393.9981384277344,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 2
+            },
+            {
+              "text": "38.2",
+              "bbox": [
+                403.8481140136719,
+                177.65829467773438,
+                418.7982482910156,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 3
+            },
+            {
+              "text": "41.6",
+              "bbox": [
+                428.767822265625,
+                177.65829467773438,
+                443.7179260253906,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 4
+            },
+            {
+              "text": "64.0",
+              "bbox": [
+                454.51617431640625,
+                177.65829467773438,
+                469.4662780761719,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 5
+            },
+            {
+              "text": "81.1",
+              "bbox": [
+                481.0931701660156,
+                177.65829467773438,
+                496.04327392578125,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 6
+            },
+            {
+              "text": "RAG-Tok. 17.3",
+              "bbox": [
+                314.9419250488281,
+                192.03182983398438,
+                371.3394470214844,
+                200.65274047851562
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 0
+            },
+            {
+              "text": "22.2",
+              "bbox": [
+                379.0536804199219,
+                192.03182983398438,
+                394.0037841796875,
+                200.5747528076172
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 4,
+              "column": 2
+            },
+            {
+              "text": "40.1",
+              "bbox": [
+                403.8477478027344,
+                192.10983276367188,
+                418.7978515625,
+                200.65274047851562
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 3
+            },
+            {
+              "text": "41.5",
+              "bbox": [
+                428.7674255371094,
+                192.10983276367188,
+                443.717529296875,
+                200.65274047851562
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 4
+            },
+            {
+              "text": "72.5",
+              "bbox": [
+                454.51416015625,
+                196.85653686523438,
+                469.46429443359375,
+                205.39944458007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 5
+            },
+            {
+              "text": "89.5",
+              "bbox": [
+                481.0997619628906,
+                196.85653686523438,
+                496.04986572265625,
+                205.39944458007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 6
+            },
+            {
+              "text": "RAG-Seq. 14.7",
+              "bbox": [
+                314.9419250488281,
+                201.60232543945312,
+                371.3423156738281,
+                210.14523315429688
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 0
+            },
+            {
+              "text": "21.4",
+              "bbox": [
+                379.0480041503906,
+                201.60232543945312,
+                393.9981384277344,
+                210.14523315429688
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 2
+            },
+            {
+              "text": "40.8",
+              "bbox": [
+                403.8481140136719,
+                201.60232543945312,
+                418.7982482910156,
+                210.14523315429688
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 3
+            },
+            {
+              "text": "44.2",
+              "bbox": [
+                428.76458740234375,
+                201.60232543945312,
+                443.7147216796875,
+                210.14523315429688
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 4
+            }
+          ],
+          "row_count": 7,
+          "column_count": 7,
+          "method": "caption_bounded_layout_rows",
+          "status": "heuristic_candidate_requires_review"
+        }
+      ],
+      "figure_captions": [],
+      "embedded_images": [],
+      "formula_candidates": [],
+      "analyzer_version": "caption-layout-v4-neighbour-scope",
+      "latency_ms": 17.059,
+      "limitations": [
+        "行列由版式启发式恢复，合并表头/缺失单元格可能错位，必须对照页图。",
+        "图注与嵌入图片分别提取，未断言配对关系；矢量图不一定有嵌入图片。",
+        "数学字体仅生成原文glyph候选，不宣称已还原LaTeX；扫描页表格结构尚不支持。"
+      ],
+      "source_sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233",
+      "cache_hit": false
+    }
+  },
+  {
+    "paper_id": "23e3249e9a1e75418d82",
+    "page": 6,
+    "attempt": 1,
+    "latency_ms": 11.905999999726191,
+    "response": {
+      "page": 6,
+      "width": 612.0,
+      "height": 792.0,
+      "tables": [
+        {
+          "id": 0,
+          "caption": "Table 1: Open-Domain QA Test Scores. For TQA, left column uses the standard test set for Open- Domain QA, right column uses the TQA-Wiki test set. See Appendix D for further details.",
+          "caption_bbox": [
+            107.69100189208984,
+            79.3233871459961,
+            303.697021484375,
+            121.93710327148438
+          ],
+          "bbox": [
+            113.81651306152344,
+            131.41307067871094,
+            296.228759765625,
+            210.20970153808594
+          ],
+          "rows": [
+            [
+              "",
+              "Model",
+              "NQ",
+              "TQA",
+              "WQ",
+              "CT"
+            ],
+            [
+              "Closed",
+              "T5-11B [52]",
+              "34.5",
+              "- /50.1",
+              "37.4",
+              "-"
+            ],
+            [
+              "Book",
+              "T5-11B+SSM[52]",
+              "36.6",
+              "- /60.5",
+              "44.7",
+              "-"
+            ],
+            [
+              "Open",
+              "REALM [20]",
+              "40.4",
+              "- / -",
+              "40.7",
+              "46.8"
+            ],
+            [
+              "Book",
+              "DPR [26]",
+              "41.5",
+              "57.9 / -",
+              "41.1",
+              "50.6"
+            ],
+            [
+              "",
+              "RAG-Token",
+              "44.1",
+              "55.2/66.1",
+              "45.5",
+              "50.0"
+            ],
+            [
+              "",
+              "RAG-Seq.",
+              "44.5",
+              "56.8/ 68.0",
+              "45.2",
+              "52.2"
+            ]
+          ],
+          "column_centers": [
+            125.21707153320312,
+            164.0611343383789,
+            205.60653686523438,
+            239.17031860351562,
+            266.7961120605469,
+            288.8942108154297
+          ],
+          "source_cells": [
+            {
+              "text": "Model",
+              "bbox": [
+                141.39306640625,
+                131.41307067871094,
+                163.26084899902344,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 1
+            },
+            {
+              "text": "NQ",
+              "bbox": [
+                199.55914306640625,
+                131.41307067871094,
+                211.6529998779297,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 2
+            },
+            {
+              "text": "TQA",
+              "bbox": [
+                227.59945678710938,
+                131.41307067871094,
+                244.8105926513672,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 3
+            },
+            {
+              "text": "WQ",
+              "bbox": [
+                259.81903076171875,
+                131.41307067871094,
+                273.772216796875,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 4
+            },
+            {
+              "text": "CT",
+              "bbox": [
+                283.5461120605469,
+                131.41307067871094,
+                294.24969482421875,
+                139.78831481933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 5
+            },
+            {
+              "text": "Closed",
+              "bbox": [
+                113.81651306152344,
+                145.64488220214844,
+                136.6176300048828,
+                153.93594360351562
+              ],
+              "size": 8.291069984436035,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 0
+            },
+            {
+              "text": "T5-11B [52]",
+              "bbox": [
+                143.00994873046875,
+                145.58103942871094,
+                185.11231994628906,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 1
+            },
+            {
+              "text": "34.5",
+              "bbox": [
+                198.2781982421875,
+                145.58103942871094,
+                212.93487548828125,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 2
+            },
+            {
+              "text": "- /50.1",
+              "bbox": [
+                226.31851196289062,
+                145.58103942871094,
+                252.02212524414062,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 3
+            },
+            {
+              "text": "37.4",
+              "bbox": [
+                259.4677429199219,
+                145.58103942871094,
+                274.1244812011719,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 4
+            },
+            {
+              "text": "-",
+              "bbox": [
+                287.4997253417969,
+                145.58103942871094,
+                290.2886962890625,
+                153.95628356933594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 5
+            },
+            {
+              "text": "Book",
+              "bbox": [
+                113.81651306152344,
+                154.88621520996094,
+                131.96566772460938,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 0
+            },
+            {
+              "text": "T5-11B+SSM[52]",
+              "bbox": [
+                143.00994873046875,
+                156.29776000976562,
+                190.83583068847656,
+                162.811767578125
+              ],
+              "size": 6.514017581939697,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 1
+            },
+            {
+              "text": "36.6",
+              "bbox": [
+                198.28073120117188,
+                154.88621520996094,
+                212.93740844726562,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 2
+            },
+            {
+              "text": "- /60.5",
+              "bbox": [
+                226.31265258789062,
+                154.88621520996094,
+                252.02468872070312,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 3
+            },
+            {
+              "text": "44.7",
+              "bbox": [
+                259.4702453613281,
+                154.88621520996094,
+                274.1269836425781,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 4
+            },
+            {
+              "text": "-",
+              "bbox": [
+                287.5022277832031,
+                154.88621520996094,
+                290.29119873046875,
+                163.26145935058594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 5
+            },
+            {
+              "text": "Open",
+              "bbox": [
+                113.81651306152344,
+                169.0542449951172,
+                131.95730590820312,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 0
+            },
+            {
+              "text": "REALM [20]",
+              "bbox": [
+                143.00994873046875,
+                169.0542449951172,
+                188.3702850341797,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 1
+            },
+            {
+              "text": "40.4",
+              "bbox": [
+                198.2781982421875,
+                169.0542449951172,
+                212.93487548828125,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 2
+            },
+            {
+              "text": "- / -",
+              "bbox": [
+                226.31851196289062,
+                169.0542449951172,
+                246.0924530029297,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 3
+            },
+            {
+              "text": "40.7",
+              "bbox": [
+                259.46771240234375,
+                169.0542449951172,
+                274.1244201660156,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 4
+            },
+            {
+              "text": "46.8",
+              "bbox": [
+                281.5699768066406,
+                169.0542449951172,
+                296.2267150878906,
+                177.4294891357422
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 5
+            },
+            {
+              "text": "Book",
+              "bbox": [
+                113.81651306152344,
+                178.3603973388672,
+                131.96566772460938,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 0
+            },
+            {
+              "text": "DPR [26]",
+              "bbox": [
+                143.00994873046875,
+                178.3603973388672,
+                175.34678649902344,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 1
+            },
+            {
+              "text": "41.5",
+              "bbox": [
+                198.2781982421875,
+                178.3603973388672,
+                212.93487548828125,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 2
+            },
+            {
+              "text": "57.9 / -",
+              "bbox": [
+                220.38174438476562,
+                178.283935546875,
+                246.0861358642578,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 3
+            },
+            {
+              "text": "41.1",
+              "bbox": [
+                259.4697570800781,
+                178.3603973388672,
+                274.12646484375,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 4
+            },
+            {
+              "text": "50.6",
+              "bbox": [
+                281.5720520019531,
+                178.3603973388672,
+                296.228759765625,
+                186.7356414794922
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 5
+            },
+            {
+              "text": "RAG-Token",
+              "bbox": [
+                143.00994873046875,
+                192.52830505371094,
+                183.78900146484375,
+                200.90354919433594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 1
+            },
+            {
+              "text": "44.1",
+              "bbox": [
+                198.27816772460938,
+                192.52830505371094,
+                212.93487548828125,
+                200.90354919433594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 2
+            },
+            {
+              "text": "55.2/66.1",
+              "bbox": [
+                220.38046264648438,
+                192.52830505371094,
+                252.02212524414062,
+                200.90354919433594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 3
+            },
+            {
+              "text": "45.5",
+              "bbox": [
+                259.4679260253906,
+                192.45184326171875,
+                274.1246337890625,
+                200.82708740234375
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 5,
+              "column": 4
+            },
+            {
+              "text": "50.0",
+              "bbox": [
+                281.56988525390625,
+                192.52830505371094,
+                296.2265930175781,
+                200.90354919433594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 5
+            },
+            {
+              "text": "RAG-Seq.",
+              "bbox": [
+                143.00991821289062,
+                201.83445739746094,
+                177.80068969726562,
+                210.20970153808594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 1
+            },
+            {
+              "text": "44.5",
+              "bbox": [
+                198.28073120117188,
+                201.75799560546875,
+                212.93740844726562,
+                210.13323974609375
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 6,
+              "column": 2
+            },
+            {
+              "text": "56.8/ 68.0",
+              "bbox": [
+                220.38174438476562,
+                201.75799560546875,
+                252.0235595703125,
+                210.20970153808594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 3
+            },
+            {
+              "text": "45.2",
+              "bbox": [
+                259.4679260253906,
+                201.83445739746094,
+                274.1246337890625,
+                210.20970153808594
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 4
+            },
+            {
+              "text": "52.2",
+              "bbox": [
+                281.56988525390625,
+                201.75799560546875,
+                296.2265930175781,
+                210.13323974609375
+              ],
+              "size": 8.375245094299316,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 6,
+              "column": 5
+            }
+          ],
+          "row_count": 7,
+          "column_count": 6,
+          "method": "caption_bounded_layout_rows",
+          "status": "heuristic_candidate_requires_review"
+        },
+        {
+          "id": 1,
+          "caption": "Table 2: Generation and classiﬁcation Test Scores. MS-MARCO SotA is [ 4 ], FEVER-3 is [ 68 ] and FEVER-2 is [ 57 ] *Uses gold context/evidence. Best model without gold access underlined.",
+          "caption_bbox": [
+            309.64898681640625,
+            79.1303939819336,
+            505.745849609375,
+            121.74404907226562
+          ],
+          "bbox": [
+            314.9419250488281,
+            139.26351928710938,
+            499.01568603515625,
+            210.14523315429688
+          ],
+          "rows": [
+            [
+              "Model",
+              "",
+              "Jeopardy",
+              "",
+              "",
+              "MSMARCO FVR3 FVR2",
+              ""
+            ],
+            [
+              "",
+              "",
+              "B-1 QB-1",
+              "R-L",
+              "B-1",
+              "Label Acc.",
+              ""
+            ],
+            [
+              "SotA",
+              "-",
+              "-",
+              "49.8 * 49.9 *",
+              "",
+              "76.8",
+              "92.2 *"
+            ],
+            [
+              "BART",
+              "15.1",
+              "19.7",
+              "38.2",
+              "41.6",
+              "64.0",
+              "81.1"
+            ],
+            [
+              "RAG-Tok. 17.3",
+              "",
+              "22.2",
+              "40.1",
+              "41.5",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "72.5",
+              "89.5"
+            ],
+            [
+              "RAG-Seq. 14.7",
+              "",
+              "21.4",
+              "40.8",
+              "44.2",
+              "",
+              ""
+            ]
+          ],
+          "column_centers": [
+            325.9281311035156,
+            363.86724853515625,
+            386.5230712890625,
+            411.32318115234375,
+            436.2428741455078,
+            461.99122619628906,
+            488.56822204589844
+          ],
+          "source_cells": [
+            {
+              "text": "Model",
+              "bbox": [
+                321.6646728515625,
+                139.26351928710938,
+                343.97027587890625,
+                147.80642700195312
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 0
+            },
+            {
+              "text": "Jeopardy",
+              "bbox": [
+                360.78271484375,
+                139.26351928710938,
+                391.6225891113281,
+                147.80642700195312
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 2
+            },
+            {
+              "text": "MSMARCO FVR3 FVR2",
+              "bbox": [
+                401.9424743652344,
+                139.26351928710938,
+                499.01568603515625,
+                147.80642700195312
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 0,
+              "column": 5
+            },
+            {
+              "text": "B-1 QB-1",
+              "bbox": [
+                357.4573974609375,
+                148.75497436523438,
+                396.0201110839844,
+                157.29788208007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 2
+            },
+            {
+              "text": "R-L",
+              "bbox": [
+                404.44342041015625,
+                148.75497436523438,
+                418.2060852050781,
+                157.29788208007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 3
+            },
+            {
+              "text": "B-1",
+              "bbox": [
+                429.8330078125,
+                148.75497436523438,
+                442.6473693847656,
+                157.29788208007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 4
+            },
+            {
+              "text": "Label Acc.",
+              "bbox": [
+                456.5381774902344,
+                148.75497436523438,
+                494.0159912109375,
+                157.29788208007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 1,
+              "column": 5
+            },
+            {
+              "text": "SotA",
+              "bbox": [
+                314.9419250488281,
+                163.20663452148438,
+                332.5061950683594,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 0
+            },
+            {
+              "text": "-",
+              "bbox": [
+                362.4405822753906,
+                163.20663452148438,
+                365.2853698730469,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 1
+            },
+            {
+              "text": "-",
+              "bbox": [
+                385.1049499511719,
+                163.20663452148438,
+                387.9497375488281,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 2
+            },
+            {
+              "text": "49.8 * 49.9 *",
+              "bbox": [
+                401.711669921875,
+                163.12863159179688,
+                445.8498840332031,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 3
+            },
+            {
+              "text": "76.8",
+              "bbox": [
+                454.5141906738281,
+                163.12863159179688,
+                469.46429443359375,
+                171.6715545654297
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 2,
+              "column": 5
+            },
+            {
+              "text": "92.2 *",
+              "bbox": [
+                478.9640197753906,
+                163.12863159179688,
+                498.18267822265625,
+                171.74954223632812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 2,
+              "column": 6
+            },
+            {
+              "text": "BART",
+              "bbox": [
+                314.9419250488281,
+                177.65829467773438,
+                336.9143371582031,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 0
+            },
+            {
+              "text": "15.1",
+              "bbox": [
+                356.3921813964844,
+                177.65829467773438,
+                371.3423156738281,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 1
+            },
+            {
+              "text": "19.7",
+              "bbox": [
+                379.0480041503906,
+                177.65829467773438,
+                393.9981384277344,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 2
+            },
+            {
+              "text": "38.2",
+              "bbox": [
+                403.8481140136719,
+                177.65829467773438,
+                418.7982482910156,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 3
+            },
+            {
+              "text": "41.6",
+              "bbox": [
+                428.767822265625,
+                177.65829467773438,
+                443.7179260253906,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 4
+            },
+            {
+              "text": "64.0",
+              "bbox": [
+                454.51617431640625,
+                177.65829467773438,
+                469.4662780761719,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 5
+            },
+            {
+              "text": "81.1",
+              "bbox": [
+                481.0931701660156,
+                177.65829467773438,
+                496.04327392578125,
+                186.20120239257812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 3,
+              "column": 6
+            },
+            {
+              "text": "RAG-Tok. 17.3",
+              "bbox": [
+                314.9419250488281,
+                192.03182983398438,
+                371.3394470214844,
+                200.65274047851562
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi",
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 0
+            },
+            {
+              "text": "22.2",
+              "bbox": [
+                379.0536804199219,
+                192.03182983398438,
+                394.0037841796875,
+                200.5747528076172
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Medi"
+              ],
+              "row": 4,
+              "column": 2
+            },
+            {
+              "text": "40.1",
+              "bbox": [
+                403.8477478027344,
+                192.10983276367188,
+                418.7978515625,
+                200.65274047851562
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 3
+            },
+            {
+              "text": "41.5",
+              "bbox": [
+                428.7674255371094,
+                192.10983276367188,
+                443.717529296875,
+                200.65274047851562
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 4,
+              "column": 4
+            },
+            {
+              "text": "72.5",
+              "bbox": [
+                454.51416015625,
+                196.85653686523438,
+                469.46429443359375,
+                205.39944458007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 5
+            },
+            {
+              "text": "89.5",
+              "bbox": [
+                481.0997619628906,
+                196.85653686523438,
+                496.04986572265625,
+                205.39944458007812
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 5,
+              "column": 6
+            },
+            {
+              "text": "RAG-Seq. 14.7",
+              "bbox": [
+                314.9419250488281,
+                201.60232543945312,
+                371.3423156738281,
+                210.14523315429688
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 0
+            },
+            {
+              "text": "21.4",
+              "bbox": [
+                379.0480041503906,
+                201.60232543945312,
+                393.9981384277344,
+                210.14523315429688
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 2
+            },
+            {
+              "text": "40.8",
+              "bbox": [
+                403.8481140136719,
+                201.60232543945312,
+                418.7982482910156,
+                210.14523315429688
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 3
+            },
+            {
+              "text": "44.2",
+              "bbox": [
+                428.76458740234375,
+                201.60232543945312,
+                443.7147216796875,
+                210.14523315429688
+              ],
+              "size": 8.542917251586914,
+              "fonts": [
+                "NimbusRomNo9L-Regu"
+              ],
+              "row": 6,
+              "column": 4
+            }
+          ],
+          "row_count": 7,
+          "column_count": 7,
+          "method": "caption_bounded_layout_rows",
+          "status": "heuristic_candidate_requires_review"
+        }
+      ],
+      "figure_captions": [],
+      "embedded_images": [],
+      "formula_candidates": [],
+      "analyzer_version": "caption-layout-v4-neighbour-scope",
+      "latency_ms": 17.059,
+      "limitations": [
+        "行列由版式启发式恢复，合并表头/缺失单元格可能错位，必须对照页图。",
+        "图注与嵌入图片分别提取，未断言配对关系；矢量图不一定有嵌入图片。",
+        "数学字体仅生成原文glyph候选，不宣称已还原LaTeX；扫描页表格结构尚不支持。"
+      ],
+      "source_sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233",
+      "cache_hit": true
+    }
+  },
+  {
+    "paper_id": "23e3249e9a1e75418d82",
+    "page": 6,
+    "table": 0,
+    "kind": "real_csv_export",
+    "status": 200,
+    "sha256": "262e0af8c3c572cfbfe3318b8e162dc1fb596daa2710fd5e1f8c128b4c380cef",
+    "csv_utf8": ",Model,NQ,TQA,WQ,CT\r\nClosed,T5-11B [52],34.5,'- /50.1,37.4,'-\r\nBook,T5-11B+SSM[52],36.6,'- /60.5,44.7,'-\r\nOpen,REALM [20],40.4,'- / -,40.7,46.8\r\nBook,DPR [26],41.5,57.9 / -,41.1,50.6\r\n,RAG-Token,44.1,55.2/66.1,45.5,50.0\r\n,RAG-Seq.,44.5,56.8/ 68.0,45.2,52.2\r\n"
+  },
+  {
+    "paper_id": "23e3249e9a1e75418d82",
+    "page": 6,
+    "table": 1,
+    "kind": "real_csv_export",
+    "status": 200,
+    "sha256": "d4d3eb55d598571522589a1f5bf4a792f72a7c63f2cb44360ae87446e6a60b60",
+    "csv_utf8": "Model,,Jeopardy,,,MSMARCO FVR3 FVR2,\r\n,,B-1 QB-1,R-L,B-1,Label Acc.,\r\nSotA,'-,'-,49.8 * 49.9 *,,76.8,92.2 *\r\nBART,15.1,19.7,38.2,41.6,64.0,81.1\r\nRAG-Tok. 17.3,,22.2,40.1,41.5,,\r\n,,,,,72.5,89.5\r\nRAG-Seq. 14.7,,21.4,40.8,44.2,,\r\n"
+  }
+]

@@ -3,3 +3,9 @@
 .pdf-scroll{height:650px;overflow:auto;border:1px solid var(--line);background:#e7eae1}.pdf-scroll img{width:100%;height:auto;display:block}.page-nav{display:flex;gap:8px;align-items:center;margin:10px 0;font-size:11px}.page-nav button{padding:5px 8px}.highlight{background:#e2edc2;border-left:3px solid #568242;padding:8px}
 
 .citation-link{font:inherit;display:inline;padding:0 3px;border:0;color:#2c7550;background:#e7efdd}.version-panel{margin-top:22px}.version-panel select{min-width:0;max-width:38%;padding:10px;border:1px solid var(--line);font:inherit}.version-panel pre{max-height:340px;overflow:auto;white-space:pre-wrap;font:11px Consolas,monospace}#workflow-button{margin-left:8px}
+
+.structure-panel{border-top:1px solid var(--line);margin-top:18px;padding-top:16px;font-size:11px}.structure-panel pre{white-space:pre-wrap}.table-scroll{max-height:360px;overflow:auto;margin:10px 0}.table-scroll table{border-collapse:collapse;font:10px Consolas,monospace}.table-scroll td{padding:6px;border:1px solid var(--line);white-space:nowrap}.structure-panel article{margin-bottom:20px}
+
+.watch-config{margin-top:30px;padding-top:25px;border-top:1px solid var(--line)}.watch-config .inline label{max-width:220px}.watch-config h3{font-size:14px}.watch-config button{font-size:12px}
+
+#page-jump{width:65px;padding:4px}.page-nav{flex-wrap:wrap}

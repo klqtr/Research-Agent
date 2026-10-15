@@ -1,6 +1,6 @@
 # 真实评测报告
 
-生成时间：2026-10-16T01:32:42+08:00（Asia/Shanghai）。本报告由 `scripts/build_reports.py` 从已保存结果生成。
+生成时间：2026-10-16T02:11:23+08:00（Asia/Shanghai）。本报告由 `scripts/build_reports.py` 从已保存结果生成。
 
 ## 范围与方法
 没有已授权模型端点，未进行真实LLM回答/翻译/规划质量评测，不报告模型Token、费用或模型准确率。当前比较的是词汇检索、版本识别、引用完整性和工程鲁棒性。
@@ -45,9 +45,9 @@
 ## 版本与文档解析
 Attention v1/v7正文字词4-shingle相似度0.7171，识别同arXiv家族，旧版后上传会建议保留库中较新版本。它是词汇近似算法，不宣称学习式语义去重；只有一组真实修订对，尚无大样本去重准确率。
 
-- `synthetic_541_pages.pdf`：541页、541块，0.571秒，Python tracemalloc峰值2.73MiB，页模式{'native': 541}；样例性质`synthetic_not_official`。
-- `synthetic_scan.pdf`：1页、2块，0.160秒，Python tracemalloc峰值18.24MiB，页模式{'ocr': 1}；样例性质`synthetic_not_official`。
-- `UnderstandingDeepLearning_02_09_26_C.pdf`：541页、7190块，5.236秒，Python tracemalloc峰值33.49MiB，页模式{'ocr': 4, 'native': 537}；样例性质`real_author_release_matching_official_filename_not_pack_hash_verified`。
+- `synthetic_541_pages.pdf`：541页、541块，0.542秒，Python tracemalloc峰值2.73MiB，页模式{'native': 541}；样例性质`synthetic_not_official`。
+- `synthetic_scan.pdf`：1页、2块，0.151秒，Python tracemalloc峰值18.24MiB，页模式{'ocr': 1}；样例性质`synthetic_not_official`。
+- `UnderstandingDeepLearning_02_09_26_C.pdf`：541页、7190块，7.736秒，Python tracemalloc峰值34.82MiB，页模式{'native': 537, 'ocr': 4}；样例性质`real_author_release_matching_official_filename_not_pack_hash_verified`。
 
 真实教材来自作者官网明确链接的v5.0.3发布，文件名与官方要求一致，但未比对官方资料包哈希。541页真实教材耗时包含4页实际OCR。合成541页不能替代复杂长文验证。
 
@@ -58,9 +58,17 @@ Attention v1/v7正文字词4-shingle相似度0.7171，识别同arXiv家族，旧
 该指标不是CER/WER、LaTeX/表格或版式准确率。tracemalloc不包含原生MuPDF、Tesseract内存；耗时为本机单次结果，不是设备无关性能承诺。OCR英语数据来源与SHA保存在data/tessdata/SOURCE.json。
 
 ## 软件测试与实际运行
-`experiments/iteration9_tests.xml`：54项，失败0、错误0、跳过0。初始环境错误XML保留，没有改写成通过。
+`experiments/full_tests_20261016_020623.xml`：70项，失败0、错误0、跳过0。初始环境错误XML保留，没有改写成通过。
 
 真实HTTP检查：health、文献、图谱、网页、问答、工作流、CSV返回200；未配置模型翻译返回503，符合预期。arXiv公共检索真实完成。原始响应在experiments/live_smoke_*.json。模型超时/错误JSON/用量解析是明确MockTransport契约测试，不是模型推理效果。
 
 ## 复现与风险
 按README安装，下载样例与OCR，导入后运行evaluate.py及测试。原始PDF不入Git，按来源脚本重取；其版权不因公开可下载而自动允许重新分发。Docker、公网部署、真实LLM、官方完整资料包、多用户、20篇真实图谱、专业翻译及公式表格质量仍未验收。
+
+## 第二阶段：按页结构回归
+
+来源`experiments/page_structure_20261016_015212`。8个表格案例中列数匹配8个，指定18个关键单元格匹配18个。**这不是整个表格准确率，也不是独立盲测**；RAG/DPR页面先作外推暴露跨栏问题，随后用于修复回归。合并表头、科学计数、缺失值及扫描表格仍需人工核验，公式仅提供glyph候选。
+
+## 第二阶段：真实追踪
+
+来源`experiments/tracking_probe_20261016_021123.json`，已观察1次真实刷新，状态['completed']。受限实验每30分钟一次、最多2次，当前记录不等于第二次周期已完成。空/停用条目不联网、并发租约、失败保留与上限自动停用另有明确时钟/搜索替身契约测试，不能将其当成真实长时间运行。

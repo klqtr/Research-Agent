@@ -1,0 +1,120 @@
+{
+  "observed_at": "2026-10-16T01:56:35.570128+08:00",
+  "created_this_probe": false,
+  "watch": {
+    "id": 1,
+    "query": "retrieval augmented generation",
+    "interval_minutes": 30,
+    "enabled": 1,
+    "refresh_limit": 2,
+    "runs_count": 1,
+    "next_due_at": "2026-10-15T18:25:39+00:00",
+    "lease_until": null,
+    "last_started_at": "2026-10-15T17:55:38+00:00",
+    "last_success_at": "2026-10-15T17:55:39+00:00",
+    "last_error": null,
+    "disabled_reason": null,
+    "created_at": "2026-10-15T17:54:57+00:00"
+  },
+  "runs": [
+    {
+      "id": 1,
+      "watch_id": 1,
+      "started_at": "2026-10-15T17:55:38+00:00",
+      "finished_at": "2026-10-15T17:55:39+00:00",
+      "status": "completed",
+      "new_count": 5,
+      "results": [
+        {
+          "title": "Analyzing performance of Retrieval Augmented Generation models for Question Answering Tasks",
+          "url": "http://arxiv.org/abs/2610.20419v1",
+          "published": "2026-10-14T16:14:55Z",
+          "abstract": "Retrieval-Augmented Generation (RAG) models have become almost a cornerstone of open-domain question answering tasks; in which the quality of answers generated in the process, greatly relies on the effectiveness of retrieval mechanisms. In the realm of LLM, the last two years have seen tremendous progress in RAG architectures, with many models reporting to have improved performance through various design innovations. The cultural question and answering systems of South Asia, in particular, present a specific challenge since the region is home to the vast number of languages and traditions, which are closely interrelated. Along with these deeply intertwined historical narratives increase the need for culturally grounded and context-aware interpretation. Despite major architectural advances in LLMs, claiming significant improvements, challenges remain when answering these region specific questions in native languages. In this study, we aim to extract high-performing factors to guide the development of optimized hybrid RAG systems. We further explore whether the integration of RAG changes performance differently for culturally grounded and non-cultural questions in a South Asian multilingual setup, and whether RAG produces a higher overall percentage of correct answers than contexted answering. We also examine how LLM performance changes when RAG methods are integrated into the question-answering pipeline in comparison with non-contexted and contexted answering and, evaluate whether the introduction of RAG benefits popular or non-popular culturally grounded questions more. Not only does our work evaluate the current methods but also carves a path for future designs of more accurate and efficient question-answering pipelines.",
+          "code_available": false,
+          "reason": "按最新提交排序；摘要含 GitHub 链接时标记代码线索，尚未核验仓库可运行性。",
+          "recommendation_score": 0.6824,
+          "recommendation_components": {
+            "query_overlap": 1.0,
+            "library_overlap": 0.4117647058823529,
+            "feedback_overlap": 0,
+            "code_link_signal": 0
+          },
+          "recommendation_note": "可解释词汇兴趣排序；不是训练出的推荐模型。代码链接仅为可复现性线索，未实际运行仓库。",
+          "is_new_to_watch": true
+        },
+        {
+          "title": "MMKG-R1: Constructing Multimodal Knowledge Graphs via Reinforcement Learning",
+          "url": "http://arxiv.org/abs/2610.19341v1",
+          "published": "2026-10-14T00:35:59Z",
+          "abstract": "Multimodal knowledge graphs (MMKGs) organize information across different modalities to support multimodal Graph Retrieval-Augmented Generation (RAG), which aims to improve the performance of multimodal large language models (MLLMs). The effectiveness of these multimodal Graph RAG methods largely depends on the quality of the constructed MMKGs. However, most existing methods construct MMKGs without explicit guidance on graph quality, while reinforcement learning (RL)-based methods that rely on final-answer correctness may provide only indirect feedback on MMKG quality. To address these limitations, we propose MMKG-R1, a novel MMKG-quality-driven RL framework for training an MLLM as a multimodal knowledge constructor. To be specific, MMKG-R1 introduces multiple quality-aware rewards to directly evaluate both the quality of information extracted from individual knowledge sources and the quality of the assembled MMKG. These rewards are then used to guide the RL training. Experiments across multiple datasets show that MMKG-R1 constructs MMKGs that improve downstream question-answering accuracy.",
+          "code_available": false,
+          "reason": "按最新提交排序；摘要含 GitHub 链接时标记代码线索，尚未核验仓库可运行性。",
+          "recommendation_score": 0.6765,
+          "recommendation_components": {
+            "query_overlap": 1.0,
+            "library_overlap": 0.38235294117647056,
+            "feedback_overlap": 0,
+            "code_link_signal": 0
+          },
+          "recommendation_note": "可解释词汇兴趣排序；不是训练出的推荐模型。代码链接仅为可复现性线索，未实际运行仓库。",
+          "is_new_to_watch": true
+        },
+        {
+          "title": "The Cost of Context: Profiling the Energy Footprint of Input Tokens in Large Language Models",
+          "url": "http://arxiv.org/abs/2610.19819v1",
+          "published": "2026-10-14T08:58:57Z",
+          "abstract": "The rapid adoption of Retrieval-Augmented Generation (RAG) and long-context LLMs has shifted the computational burden toward the prefill phase---the initial stage where the model processes all input tokens in parallel before generating a response---yet its energy impact remains poorly characterised. We investigate the contradiction between massive hardware-level power spikes and the sub-linear marginal cost of input tokens reported in system-level studies. Through high-resolution telemetry of Llama-3.1 and Qwen-2 models on NVIDIA A100 hardware, we identify the efficiency threshold where $O(n^2)$ attention complexity overcomes GPU parallelisation. Our results quantify how optimised memory orchestration (PagedAttention) delays this scaling bottleneck across three orders of context scaling, yielding up to an 8.9$\\times$ energy efficiency advantage at 112,000 tokens compared to standard baselines. Furthermore, we characterise the energy disparity between input and output tokens, demonstrating that optimised serving (vLLM) causes this ratio to narrow (from $\\approx$850$\\times$ to 750$\\times$) as context scales due to high decode efficiency, whereas unoptimised baselines show a much smaller, roughly constant gap ($\\approx$150--230$\\times$) because their prefill is itself expensive. This work establishes context-scaling laws that differentiate engine-level optimisations from inherent model constraints, providing an empirical framework for sustainable LLM deployment.",
+          "code_available": false,
+          "reason": "按最新提交排序；摘要含 GitHub 链接时标记代码线索，尚未核验仓库可运行性。",
+          "recommendation_score": 0.6588,
+          "recommendation_components": {
+            "query_overlap": 1.0,
+            "library_overlap": 0.29411764705882354,
+            "feedback_overlap": 0,
+            "code_link_signal": 0
+          },
+          "recommendation_note": "可解释词汇兴趣排序；不是训练出的推荐模型。代码链接仅为可复现性线索，未实际运行仓库。",
+          "is_new_to_watch": true
+        },
+        {
+          "title": "GraphRAG-LTM: A Layered Threat Modeling Framework for Attacks on Graph Retrieval-Augmented Generation",
+          "url": "http://arxiv.org/abs/2610.19549v1",
+          "published": "2026-10-14T04:04:34Z",
+          "abstract": "Graph retrieval-augmented generation (GraphRAG) uses document-derived knowledge graphs to assemble evidence for large language model (LLM) answers. Its security depends on both the seed chunks retrieved for a query and the graph evidence assembled from them, yet attacks on this evidence path remain underexplored. We introduce GraphRAG-LTM, a Layered Threat Modeling framework that tests three nested levels of attacker access. BB Query uses ranking feedback to make query edits under a semantic-similarity constraint and demote relevant seed chunks. WB Query uses retriever gradients for the same objective. Graph-aware WB keeps the white-box adversarial query and deletes bridge triplets from the query-specific evidence graph, disrupting multi-hop evidence propagation through localized graph edits. Across datasets, retrievers, and LLM backbones, rank feedback alone reduces answer quality, gradient access strengthens query attacks, and bridge-triplet deletion further impairs supporting-fact retrieval. Further analyses show how seed retrieval and graph evidence jointly contribute to these failures.",
+          "code_available": false,
+          "reason": "按最新提交排序；摘要含 GitHub 链接时标记代码线索，尚未核验仓库可运行性。",
+          "recommendation_score": 0.6412,
+          "recommendation_components": {
+            "query_overlap": 1.0,
+            "library_overlap": 0.20588235294117646,
+            "feedback_overlap": 0,
+            "code_link_signal": 0
+          },
+          "recommendation_note": "可解释词汇兴趣排序；不是训练出的推荐模型。代码链接仅为可复现性线索，未实际运行仓库。",
+          "is_new_to_watch": true
+        },
+        {
+          "title": "RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation",
+          "url": "http://arxiv.org/abs/2610.19398v1",
+          "published": "2026-10-14T01:47:17Z",
+          "abstract": "Iterative retrieval-augmented generation (RAG) accumulates knowledge from retrieved evidence to answer complex questions, but existing methods struggle to reconstruct entity correspondences and inferential dependencies across retrieved passages as new information emerges. We propose RCER, an iterative RAG method that reconstructs these cross-evidence relations directly from accumulated source passages. Inter-round relational evidence acquisition identifies entity correspondences and relational dependencies to drive dynamic problem decomposition and iterative retrieval. Reasoning context reconstruction independently constructs a coherent reasoning context through joint selection of complementary passages and derivation of cross-evidence inferences. Cross-evidence compositional reasoning leverages these inferences to establish entity correspondences and compose relations across selected passages for answer derivation. Experiments show that RCER outperforms the best baselines by 2.83 EM and 3.06 F1 points on average across three multi-hop QA benchmarks and achieves superior performance on narrative and implicit reasoning tasks.",
+          "code_available": false,
+          "reason": "按最新提交排序；摘要含 GitHub 链接时标记代码线索，尚未核验仓库可运行性。",
+          "recommendation_score": 0.6412,
+          "recommendation_components": {
+            "query_overlap": 1.0,
+            "library_overlap": 0.20588235294117646,
+            "feedback_overlap": 0,
+            "code_link_signal": 0
+          },
+          "recommendation_note": "可解释词汇兴趣排序；不是训练出的推荐模型。代码链接仅为可复现性线索，未实际运行仓库。",
+          "is_new_to_watch": true
+        }
+      ],
+      "error": null
+    }
+  ],
+  "kind": "real_local_service_and_public_arxiv_scheduler_probe",
+  "expected_stop": "disabled after at most two attempts",
+  "llm_calls": "none"
+}

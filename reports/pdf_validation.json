@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-16T02:09:48.667131+08:00",
+  "pdf": "output\\pdf\\ResearchTrace_technical_report.pdf",
+  "sha256": "4c7c405180158a22ed35fc4c1bcca5b44112d2cb560033d2b814d7394fd311dc",
+  "rendered_pages": 9,
+  "render_command": "pdftoppm -scale-to 1100 -png",
+  "review": "All nine page thumbnails and full page 8 inspected by Codex; no clipping or overlap observed. This is visual review, not semantic validation.",
+  "rendered_images": [
+    "tmp\\phase2_report_qa\\page-1.png",
+    "tmp\\phase2_report_qa\\page-2.png",
+    "tmp\\phase2_report_qa\\page-3.png",
+    "tmp\\phase2_report_qa\\page-4.png",
+    "tmp\\phase2_report_qa\\page-5.png",
+    "tmp\\phase2_report_qa\\page-6.png",
+    "tmp\\phase2_report_qa\\page-7.png",
+    "tmp\\phase2_report_qa\\page-8.png",
+    "tmp\\phase2_report_qa\\page-9.png"
+  ]
+}

@@ -1,0 +1,248 @@
+[
+  {
+    "case": {
+      "file": "1706.03762v1.pdf",
+      "page": 8,
+      "caption": "Table 2:",
+      "columns": 5,
+      "row_label": "Transformer (big)",
+      "cells": {
+        "1": "28.4",
+        "2": "41.0"
+      },
+      "group": "initial_development"
+    },
+    "table_found": true,
+    "column_count_correct": true,
+    "actual_columns": 5,
+    "selected_row": [
+      "Transformer (big)",
+      "28.4",
+      "41.0",
+      "",
+      "2 . 3 · 10 19"
+    ],
+    "cell_hits": {
+      "1": true,
+      "2": true
+    }
+  },
+  {
+    "case": {
+      "file": "1706.03762v7.pdf",
+      "page": 8,
+      "caption": "Table 2:",
+      "columns": 5,
+      "row_label": "Transformer (big)",
+      "cells": {
+        "1": "28.4",
+        "2": "41.8"
+      },
+      "group": "initial_development"
+    },
+    "table_found": true,
+    "column_count_correct": true,
+    "actual_columns": 5,
+    "selected_row": [
+      "Transformer (big)",
+      "28.4",
+      "41.8",
+      "",
+      "2 . 3 · 10 19"
+    ],
+    "cell_hits": {
+      "1": true,
+      "2": true
+    }
+  },
+  {
+    "case": {
+      "file": "1810.04805v2.pdf",
+      "page": 6,
+      "caption": "Table 1:",
+      "columns": 10,
+      "row_label": "BERT LARGE",
+      "cells": {
+        "1": "86.7/85.9",
+        "9": "82.1"
+      },
+      "group": "initial_development"
+    },
+    "table_found": true,
+    "column_count_correct": true,
+    "actual_columns": 10,
+    "selected_row": [
+      "BERT LARGE",
+      "86.7/85.9",
+      "72.1",
+      "92.7",
+      "94.9",
+      "60.5",
+      "86.5",
+      "89.3",
+      "70.1",
+      "82.1"
+    ],
+    "cell_hits": {
+      "1": true,
+      "9": true
+    }
+  },
+  {
+    "case": {
+      "file": "2005.14165v4.pdf",
+      "page": 8,
+      "caption": "Table 2.1:",
+      "columns": 8,
+      "row_label": "GPT-3 175B or “GPT-3”",
+      "cells": {
+        "1": "175.0B",
+        "2": "96",
+        "6": "3.2M"
+      },
+      "group": "initial_development"
+    },
+    "table_found": true,
+    "column_count_correct": true,
+    "actual_columns": 8,
+    "selected_row": [
+      "GPT-3 175B or “GPT-3”",
+      "175.0B",
+      "96",
+      "12288",
+      "96",
+      "128",
+      "3.2M",
+      "0 . 6 × 10 − 4"
+    ],
+    "cell_hits": {
+      "1": true,
+      "2": true,
+      "6": true
+    }
+  },
+  {
+    "case": {
+      "file": "2005.11401v4.pdf",
+      "page": 6,
+      "caption": "Table 1:",
+      "columns": 6,
+      "row_label": "T5-11B [52]",
+      "cells": {
+        "2": "34.5",
+        "4": "37.4"
+      },
+      "group": "new_page_then_regression"
+    },
+    "table_found": true,
+    "column_count_correct": true,
+    "actual_columns": 6,
+    "selected_row": [
+      "Closed",
+      "T5-11B [52]",
+      "34.5",
+      "- /50.1",
+      "37.4",
+      "-"
+    ],
+    "cell_hits": {
+      "2": true,
+      "4": true
+    }
+  },
+  {
+    "case": {
+      "file": "2005.11401v4.pdf",
+      "page": 6,
+      "caption": "Table 2:",
+      "columns": 7,
+      "row_label": "BART",
+      "cells": {
+        "1": "15.1",
+        "2": "19.7",
+        "6": "81.1"
+      },
+      "group": "new_page_then_regression"
+    },
+    "table_found": true,
+    "column_count_correct": true,
+    "actual_columns": 7,
+    "selected_row": [
+      "BART",
+      "15.1",
+      "19.7",
+      "38.2",
+      "41.6",
+      "64.0",
+      "81.1"
+    ],
+    "cell_hits": {
+      "1": true,
+      "2": true,
+      "6": true
+    }
+  },
+  {
+    "case": {
+      "file": "2004.04906v2.pdf",
+      "page": 5,
+      "caption": "Table 1:",
+      "columns": 5,
+      "row_label": "Natural Questions",
+      "cells": {
+        "1": "79,168",
+        "4": "3,610"
+      },
+      "group": "new_page_then_regression"
+    },
+    "table_found": true,
+    "column_count_correct": true,
+    "actual_columns": 5,
+    "selected_row": [
+      "Natural Questions",
+      "79,168",
+      "58,880",
+      "8,757",
+      "3,610"
+    ],
+    "cell_hits": {
+      "1": true,
+      "4": true
+    }
+  },
+  {
+    "case": {
+      "file": "2004.04906v2.pdf",
+      "page": 6,
+      "caption": "Table 2:",
+      "columns": 12,
+      "row_label": "BM25",
+      "cells": {
+        "2": "59.1",
+        "11": "80.0"
+      },
+      "group": "new_page_then_regression"
+    },
+    "table_found": true,
+    "column_count_correct": true,
+    "actual_columns": 12,
+    "selected_row": [
+      "None",
+      "BM25",
+      "59.1",
+      "66.9",
+      "55.0",
+      "70.9",
+      "68.8",
+      "73.7",
+      "76.7",
+      "71.1",
+      "84.1",
+      "80.0"
+    ],
+    "cell_hits": {
+      "2": true,
+      "11": true
+    }
+  }
+]

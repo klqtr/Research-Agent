@@ -1,14 +1,16 @@
 {
-  "generated_at": "2026-10-16T01:32:42+08:00",
+  "generated_at": "2026-10-16T02:11:23+08:00",
   "development": "experiments\\retrieval_20261016_005801",
   "holdout": "experiments\\retrieval_20261016_010526",
-  "test_xml": "experiments\\iteration9_tests.xml",
+  "test_xml": "experiments\\full_tests_20261016_020623.xml",
   "test_counts": {
-    "tests": 54,
+    "tests": 70,
     "failures": 0,
     "errors": 0,
     "skipped": 0
   },
-  "robustness": "experiments\\robustness_20261016_010241.json",
-  "real_scan": "experiments\\real_scan_20261016_010636.json"
+  "robustness": "experiments\\robustness_20261016_020249.json",
+  "real_scan": "experiments\\real_scan_20261016_010636.json",
+  "page_structure": "experiments\\page_structure_20261016_015212",
+  "tracking_probe": "experiments\\tracking_probe_20261016_021123.json"
 }

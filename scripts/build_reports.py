@@ -24,7 +24,8 @@ def main():
     REPORTS.mkdir(exist_ok=True)
     dev_path, dev = read_result("LATEST_RETRIEVAL.txt")
     hold_path, hold = read_result("LATEST_HOLDOUT.txt")
-    latest_test = max((ROOT / "experiments").glob("*tests.xml"), key=lambda p: p.stat().st_mtime)
+    test_pointer = ROOT / "experiments/LATEST_TESTS.txt"
+    latest_test = (ROOT / test_pointer.read_text(encoding="utf-8").strip()) if test_pointer.exists() else max((ROOT / "experiments").glob("*tests.xml"), key=lambda p: p.stat().st_mtime)
     suites = list(ET.parse(latest_test).getroot().iter("testsuite"))
     test_counts = {key: sum(int(s.attrib.get(key, 0)) for s in suites) for key in ("tests", "failures", "errors", "skipped")}
     robust_file = max((ROOT / "experiments").glob("robustness_*.json"), key=lambda p: p.stat().st_mtime)
@@ -85,10 +86,47 @@ Attention v1/v7正文字词4-shingle相似度0.7171，识别同arXiv家族，旧
 
 ## 复现与风险
 按README安装，下载样例与OCR，导入后运行evaluate.py及测试。原始PDF不入Git，按来源脚本重取；其版权不因公开可下载而自动允许重新分发。Docker、公网部署、真实LLM、官方完整资料包、多用户、20篇真实图谱、专业翻译及公式表格质量仍未验收。\n"""
+    extra_manifest = {}
+    structure_pointer = ROOT / "experiments/LATEST_PAGE_STRUCTURE.txt"
+    if structure_pointer.exists():
+        structure_folder = ROOT / structure_pointer.read_text(encoding="utf-8").strip()
+        structure = json.loads((structure_folder / "summary.json").read_text(encoding="utf-8"))
+        eval_text += f"\n## 第二阶段：按页结构回归\n\n来源`{structure_folder.relative_to(ROOT).as_posix()}`。{structure['table_cases']}个表格案例中列数匹配{structure['correct_column_cases']}个，指定{structure['selected_cells']}个关键单元格匹配{structure['matched_selected_cells']}个。**这不是整个表格准确率，也不是独立盲测**；RAG/DPR页面先作外推暴露跨栏问题，随后用于修复回归。合并表头、科学计数、缺失值及扫描表格仍需人工核验，公式仅提供glyph候选。\n"
+        extra_manifest["page_structure"] = str(structure_folder.relative_to(ROOT))
+        (REPORTS / "document_structure_report.md").write_text(f"""# 按页文档结构实验
+
+先比较整页线框与文字策略：四份开发论文表格页的线框策略未检测到表格，整页文字策略把正文也切入网格（Attention v1为64行8列）。原始输出在page_structure各轮raw.json。
+
+表题与相邻短行限定区域的v2，在8个案例中列数正确6/8、指定单元格15/18；RAG并排双表被合并。v3按表题横向范围隔离后指定案例改善，但合成宽表回归失败（短表题裁掉右侧列），失败XML保留。v4只有发现同一水平带的并列表题才隔离，修复宽表回归。
+
+最新`{structure['analyzer_version']}`：列数{structure['correct_column_cases']}/{structure['table_cases']}，指定关键单元格{structure['matched_selected_cells']}/{structure['selected_cells']}。标签与checks.json逐项可查。样本小且参与修复，不能用这些数值证明泛化或完整表格恢复；未评估的合并表头、复杂指数、缺失格不能当作通过。
+
+按页惰性解析，不在导入541页时逐页检测表格。JSON缓存保留分析器版本、完整源文件哈希，原文件不改动；导出未核验CSV并中和潜在公式单元格。真实HTTP缓存/CSV输出位于live_structure_*.json。RAG页第一次约44.9ms、缓存约11.9ms为单次本机观察，不是通用性能保证。
+
+教材有181条原生书签，优先建立层级；明确标题无法匹配时只保留页定位，不伪造精确段落。图注、嵌入图像和数学字体候选分别保存，未推断图文配对，也没有声称LaTeX转录已完成。
+""", encoding="utf-8")
+    tracking_pointer = ROOT / "experiments/LATEST_TRACKING_PROBE.txt"
+    if tracking_pointer.exists():
+        tracking_path = ROOT / tracking_pointer.read_text(encoding="utf-8").strip()
+        tracking = json.loads(tracking_path.read_text(encoding="utf-8"))
+        runs = tracking.get("runs", [])
+        eval_text += f"\n## 第二阶段：真实追踪\n\n来源`{tracking_path.relative_to(ROOT).as_posix()}`，已观察{len(runs)}次真实刷新，状态{[r['status'] for r in runs]}。受限实验每30分钟一次、最多2次，当前记录不等于第二次周期已完成。空/停用条目不联网、并发租约、失败保留与上限自动停用另有明确时钟/搜索替身契约测试，不能将其当成真实长时间运行。\n"
+        extra_manifest["tracking_probe"] = str(tracking_path.relative_to(ROOT))
+        (REPORTS / "tracking_report.md").write_text(f"""# 持久化文献追踪验证
+
+实现：默认空列表；创建默认停用；启用后30–1440分钟间隔，每条最多48次、每个调度周期最多处理2条。事务租约防重入，运行历史/新版本去重/失败信息持久化。只访问公共arXiv元数据，不调用模型，不发送外部消息。
+
+调度、租约、版本去重、失败保留、限额与停用的单元测试使用明确时钟和搜索替身，不冒充真实等待。真实受限实验主题为retrieval augmented generation，启用间隔30分钟，最多2次。
+
+本次观测来源`{tracking_path.relative_to(ROOT).as_posix()}`，已记录{len(runs)}次实际刷新，状态{[r['status'] for r in runs]}。第二次到时后应依据数据库真实状态和活跃服务句柄继续核验；未完成前不报告完整周期成功。达到两次后应自动停用，需再检查状态证实，不能只依据实现推断。
+
+UI显示北京时间，原始记录用UTC。无公网、多用户或独立守护进程验收；只有本地Web服务运行期间才会自动调度。
+""", encoding="utf-8")
     (REPORTS / "evaluation_report.md").write_text(eval_text, encoding="utf-8")
     ablation = "# 消融与迭代报告\n\n同一配置内固定k=5，关闭文献配额/设备事实重排分别观察变化；BM25与字符分支也分别运行。没有付费模型或模拟效果数据。\n\n开发集：\n\n" + table(dev["retrieval"]) + "\n新论文验证：\n\n" + table(hold["retrieval"])
     ablation += "\n结论：开发集配额改善跨篇覆盖，事实重排改善设备数字块定位；新论文集两者均未增加总体命中。简单BM25在两道新论文跨篇题上的全命中高于融合方案，说明融合可能损害特定任务，不能只展示总分。需另设更大标注集和语义多样性测试，不继续对当前验证集调参。\n\n"
     ablation += "|轮次|问题与修改|真实结果|新增风险|\n|---|---|---|---|\n|初版|Windows临时目录/受限进程异常|9通过12环境错误，之后正常权限21通过|需记录本机运行方式|\n|解析修复|v7版权声明当标题，按首页水平大字号提取|真实v7标题回归通过|复杂标题仍可能失败|\n|检索第1轮|停用词与字符资格门槛|开发集全目标命中77.8%→83.3%|词汇/跨语种泛化有限|\n|检索第2轮|硬件事实重排，单列消融|开发集100%，新论文91.7%|开发集适配，验证集无额外收益|\n|OCR修复|下载官方语言数据，相对路径避开中文路径限制|扫描页真实识别，教材4页OCR|复杂公式未验证|\n|图谱修复|版本家族合并、边只代表家族；首页身份提取|避免版本重复计权和教材误认arXiv引用|引文匹配仍有漏边|\n|浏览器修复|插件预览黑屏，改为按页PNG和bbox高亮|API图像/原文不变回归，浏览器视觉复核|页图不提供PDF.js文字选择|\n"
+    ablation += "|第二阶段解析|表题限定、并列表题隔离、短表题宽表回归|列数6/8→8/8，指定单元格15/18→18/18；70项完整回归通过|已用于修复的页不是独立盲测，复杂单元格仍有未测错误|\n|第二阶段追踪|显式启用、有界预算、事务租约与历史|契约测试通过，首次自动公共API刷新真实成功|第二次30分钟周期尚待实际观察，不能提前报告通过|\n"
     (REPORTS / "ablation_study.md").write_text(ablation, encoding="utf-8")
     figure_dir = REPORTS / "figures"
     figure_dir.mkdir(exist_ok=True)
@@ -103,7 +141,7 @@ Attention v1/v7正文字词4-shingle相似度0.7171，识别同arXiv家族，旧
         svg.append(f'<text x="{x}" y="352" font-family="Arial" font-size="13">{label}</text>')
     svg.append('<rect x="70" y="386" width="14" height="14" fill="#235d4b"/><text x="91" y="398" font-family="Arial" font-size="13">Development (tuned)</text><rect x="340" y="386" width="14" height="14" fill="#b99a59"/><text x="361" y="398" font-family="Arial" font-size="13">New papers (no post-tuning)</text></svg>')
     (figure_dir / "retrieval_comparison.svg").write_text("".join(svg), encoding="utf-8")
-    (REPORTS / "evidence_manifest.json").write_text(json.dumps({"generated_at": now, "development": str(dev_path.relative_to(ROOT)), "holdout": str(hold_path.relative_to(ROOT)), "test_xml": str(latest_test.relative_to(ROOT)), "test_counts": test_counts, "robustness": str(robust_file.relative_to(ROOT)), "real_scan": str(scan_file.relative_to(ROOT))}, ensure_ascii=False, indent=2), encoding="utf-8")
+    (REPORTS / "evidence_manifest.json").write_text(json.dumps({"generated_at": now, "development": str(dev_path.relative_to(ROOT)), "holdout": str(hold_path.relative_to(ROOT)), "test_xml": str(latest_test.relative_to(ROOT)), "test_counts": test_counts, "robustness": str(robust_file.relative_to(ROOT)), "real_scan": str(scan_file.relative_to(ROOT)), **extra_manifest}, ensure_ascii=False, indent=2), encoding="utf-8")
     print("Reports generated from", dev_path.name, hold_path.name, latest_test.name)
 
 

@@ -1,6 +1,9 @@
 """FastAPI entrypoint. Default binds to localhost via documented launch command."""
 import hashlib
 import logging
+import asyncio
+import contextlib
+from contextlib import asynccontextmanager
 from pathlib import Path
 import httpx
 from fastapi import FastAPI, File, HTTPException, UploadFile, Query
@@ -12,7 +15,9 @@ from .config import Settings
 from .model import ModelClient, ModelUnavailable
 from .parsing import duplicates, parse_pdf
 from .planner import workflow
+from .page_analysis import cached_analysis, table_csv
 from .store import Store
+from .tracking import WatchService, watch_loop
 from .tools import csv_analysis, diff_versions, download_arxiv_pdf, future_work, graph, recommend_results, search_arxiv, writing_outline
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -21,8 +26,19 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 def create_app(settings=None):
     settings = settings or Settings()
     store = Store(settings.data_dir)
-    app = FastAPI(title="ResearchTrace 研证", version="0.1.0")
+    watch_service = WatchService(store)
+
+    @asynccontextmanager
+    async def lifespan(app):
+        task = asyncio.create_task(watch_loop(watch_service))
+        yield
+        task.cancel()
+        with contextlib.suppress(asyncio.CancelledError):
+            await task
+
+    app = FastAPI(title="ResearchTrace 研证", version="0.2.0", lifespan=lifespan)
     app.state.store, app.state.settings = store, settings
+    app.state.watch_service = watch_service
 
     @app.exception_handler(ValueError)
     async def bad_input(request, exc):
@@ -80,7 +96,7 @@ def create_app(settings=None):
         return FileResponse(store.root / f"{paper_id}.pdf", media_type="application/pdf")
 
     @app.get("/api/papers/{paper_id}/pages/{page_number}/image")
-    def page_image(paper_id: str, page_number: int, chunk_id: str = ""):
+    def page_image(paper_id: str, page_number: int, chunk_id: str = "", table_id: int | None = None):
         import fitz
         paper = store.get(paper_id)
         if not 1 <= page_number <= len(paper["pages"]):
@@ -90,13 +106,36 @@ def create_app(settings=None):
             chunk = next((c for c in paper["chunks"] if c["id"] == chunk_id and c["page"] == page_number), None)
             if chunk is None:
                 raise ValueError("证据锚点不属于此页")
+        table = None
+        if table_id is not None:
+            analysis = cached_analysis(store.root, paper_id, page_number)
+            if not 0 <= table_id < len(analysis["tables"]):
+                raise HTTPException(404, "表格不存在")
+            table = analysis["tables"][table_id]
         with fitz.open(store.root / (paper_id + ".pdf")) as doc:
             page = doc[page_number - 1]
             if chunk:
                 page.draw_rect(fitz.Rect(chunk["bbox"]), color=(.15, .5, .25), fill=(.8, .95, .5), fill_opacity=.2, width=1.5, overlay=True)
+            if table:
+                page.draw_rect(fitz.Rect(table["bbox"]), color=(.65, .4, .1), fill=(1, .9, .4), fill_opacity=.15, width=1.5, overlay=True)
             scale = min(1.6, 1800 / page.rect.width, 1800 / page.rect.height)
             image = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False).tobytes("png")
         return Response(image, media_type="image/png", headers={"Cache-Control": "private,max-age=300"})
+
+    @app.get("/api/papers/{paper_id}/pages/{page_number}/analysis")
+    def page_structure(paper_id: str, page_number: int):
+        paper = store.get(paper_id)
+        if not 1 <= page_number <= len(paper["pages"]):
+            raise HTTPException(404, "页码不存在")
+        return cached_analysis(store.root, paper_id, page_number)
+
+    @app.get("/api/papers/{paper_id}/pages/{page_number}/tables/{table_id}/csv")
+    def export_table(paper_id: str, page_number: int, table_id: int):
+        result = page_structure(paper_id, page_number)
+        if not 0 <= table_id < len(result["tables"]):
+            raise HTTPException(404, "表格不存在")
+        return Response("\ufeff" + table_csv(result["tables"][table_id]), media_type="text/csv;charset=utf-8",
+                        headers={"Content-Disposition": f'attachment;filename="page{page_number}_table{table_id}_unverified.csv"'})
 
     class Question(BaseModel):
         question: str = Field(min_length=1, max_length=settings.max_question_chars)
@@ -188,6 +227,37 @@ def create_app(settings=None):
     def feedback(req: Feedback):
         store.feedback(req.paper_id, req.vote)
         return {"status": "recorded", "note": "本地反馈已持久化，尚未用于多用户学习"}
+
+    class WatchCreate(BaseModel):
+        query: str = Field(min_length=1, max_length=300)
+        interval_minutes: int = Field(default=60, ge=30, le=1440)
+        enabled: bool = False
+        refresh_limit: int = Field(default=48, ge=1, le=48)
+
+    class WatchUpdate(BaseModel):
+        enabled: bool
+        interval_minutes: int | None = Field(default=None, ge=30, le=1440)
+        refresh_limit: int | None = Field(default=None, ge=1, le=48)
+
+    @app.get("/api/watchlist")
+    def watches():
+        return {"watches": watch_service.repo.list(), "policy": "仅启用条目定期访问arXiv；每项最多48次，每60秒调度最多2项，默认列表为空。"}
+
+    @app.post("/api/watchlist")
+    def add_watch(req: WatchCreate):
+        return watch_service.repo.create(req.query, req.interval_minutes, req.enabled, req.refresh_limit)
+
+    @app.patch("/api/watchlist/{watch_id}")
+    def edit_watch(watch_id: int, req: WatchUpdate):
+        return watch_service.repo.update(watch_id, req.enabled, req.interval_minutes, req.refresh_limit)
+
+    @app.post("/api/watchlist/{watch_id}/refresh")
+    def refresh_watch(watch_id: int):
+        return watch_service.refresh(watch_id, force=True)
+
+    @app.get("/api/watchlist/{watch_id}/runs")
+    def watch_runs(watch_id: int, limit: int = Query(default=10, ge=1, le=30)):
+        return {"runs": watch_service.repo.runs(watch_id, limit)}
 
     app.mount("/", StaticFiles(directory=Path(__file__).parent / "web", html=True), name="web")
     return app

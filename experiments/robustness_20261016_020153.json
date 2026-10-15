@@ -1,0 +1,48 @@
+[
+  {
+    "file": "synthetic_541_pages.pdf",
+    "fixture": "synthetic_not_official",
+    "pages": 541,
+    "parser_sha256": "489bd9ba49be4eea18573cd2fd52d5c43f9bf7e7c04e4caf3bb2eb2572651310",
+    "chunks": 541,
+    "latency_seconds": 0.5713304999953834,
+    "python_peak_tracemalloc_mb": 2.729827880859375,
+    "memory_limitations": "tracemalloc only tracks Python allocations, not native PDF/OCR engine memory",
+    "page_modes": {
+      "native": 541
+    },
+    "warnings": [],
+    "ocr_text": null
+  },
+  {
+    "file": "synthetic_scan.pdf",
+    "fixture": "synthetic_not_official",
+    "pages": 1,
+    "parser_sha256": "489bd9ba49be4eea18573cd2fd52d5c43f9bf7e7c04e4caf3bb2eb2572651310",
+    "chunks": 2,
+    "latency_seconds": 0.1802349999998114,
+    "python_peak_tracemalloc_mb": 18.23649024963379,
+    "memory_limitations": "tracemalloc only tracks Python allocations, not native PDF/OCR engine memory",
+    "page_modes": {
+      "ocr": 1
+    },
+    "warnings": [],
+    "ocr_text": "Synthetic scanned research fixture Training uses eight NVIDIA P100 GPUs. Batch size is 256 sequences. This is generated test data, not an official competition file."
+  },
+  {
+    "file": "UnderstandingDeepLearning_02_09_26_C.pdf",
+    "fixture": "real_author_release_matching_official_filename_not_pack_hash_verified",
+    "pages": 541,
+    "parser_sha256": "489bd9ba49be4eea18573cd2fd52d5c43f9bf7e7c04e4caf3bb2eb2572651310",
+    "chunks": 7190,
+    "latency_seconds": 8.191058500000509,
+    "python_peak_tracemalloc_mb": 33.56798839569092,
+    "memory_limitations": "tracemalloc only tracks Python allocations, not native PDF/OCR engine memory",
+    "page_modes": {
+      "ocr": 4,
+      "native": 537
+    },
+    "warnings": [],
+    "ocr_text": null
+  }
+]

@@ -5,6 +5,8 @@
     "title": "Attention Is All You Need",
     "pages": 15,
     "chunks": 478,
+    "headings": 24,
+    "native_outline_entries": 22,
     "warnings": [],
     "duplicates": [
       {
@@ -32,6 +34,8 @@
     "title": "Attention Is All You Need",
     "pages": 15,
     "chunks": 484,
+    "headings": 24,
+    "native_outline_entries": 22,
     "warnings": [],
     "duplicates": [
       {
@@ -59,6 +63,8 @@
     "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
     "pages": 16,
     "chunks": 348,
+    "headings": 21,
+    "native_outline_entries": 0,
     "warnings": [],
     "duplicates": [
       {
@@ -78,6 +84,8 @@
     "title": "Dense Passage Retrieval for Open-Domain Question Answering",
     "pages": 11,
     "chunks": 163,
+    "headings": 21,
+    "native_outline_entries": 0,
     "warnings": [],
     "duplicates": [
       {
@@ -97,6 +105,8 @@
     "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
     "pages": 19,
     "chunks": 320,
+    "headings": 31,
+    "native_outline_entries": 29,
     "warnings": [],
     "duplicates": [
       {
@@ -116,6 +126,8 @@
     "title": "Language Models are Few-Shot Learners",
     "pages": 75,
     "chunks": 934,
+    "headings": 34,
+    "native_outline_entries": 32,
     "warnings": [],
     "duplicates": [
       {
@@ -135,6 +147,8 @@
     "title": "Understanding Deep Learning",
     "pages": 541,
     "chunks": 7190,
+    "headings": 181,
+    "native_outline_entries": 181,
     "warnings": [],
     "duplicates": [
       {

@@ -1,0 +1,8 @@
+{
+  "analyzer_version": "caption-layout-v3-column-scope",
+  "table_cases": 8,
+  "correct_column_cases": 8,
+  "selected_cells": 18,
+  "matched_selected_cells": 18,
+  "limitations": "少量开发/回归页，非独立表格测试集；只评指定关键单元格和列数，合并表头、其他值、缺失格、公式及扫描表格质量未通过该指标证明。"
+}
