@@ -10,7 +10,7 @@ import httpx
 from .parsing import similarity, tokens
 
 
-def graph(papers):
+def family_representatives(papers):
     families = {}
     for paper in papers:
         family = paper.get("arxiv_id") or paper["id"]
@@ -19,7 +19,11 @@ def graph(papers):
     for versions in families.values():
         representative = max(versions, key=lambda p: p.get("version") or 0)
         representatives.append({**representative, "versions": [{"id": p["id"], "version": p.get("version")} for p in versions]})
-    papers = representatives
+    return representatives
+
+
+def graph(papers):
+    papers = family_representatives(papers)
     edges = []
     for src in papers:
         reftext = " ".join(r["text"] for r in src["references"]).lower()
@@ -103,8 +107,8 @@ def csv_analysis(text):
 def writing_outline(idea, papers):
     if not idea.strip() or len(idea) > 6000:
         raise ValueError("Idea 不能为空且最多6000字符")
-    refs = [{"paper_id": p["id"], "title": p["title"], "author": p.get("author", ""),
-             "source": f"https://arxiv.org/abs/{p['arxiv_id']}" if p.get("arxiv_id") else "本地上传文献，出版元数据待核验"} for p in papers]
+    refs = [{"paper_id": p["id"], "title": p["title"], "author": p.get("author", ""), "version": p.get("version"),
+             "source": (f"https://arxiv.org/abs/{p['arxiv_id']}" + (f"v{p['version']}" if p.get("version") else "")) if p.get("arxiv_id") else "本地上传文献，出版元数据待核验"} for p in family_representatives(papers)]
     return {"mode": "template", "idea": idea,
             "sections": [{"title": name, "instruction": instruction} for name, instruction in [
                 ("Abstract", "描述问题、方法及真实实验结果；没有结果时明确写待验证。"),

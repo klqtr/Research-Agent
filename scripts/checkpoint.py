@@ -22,7 +22,7 @@ def main():
                 if path.parent == ROOT / "docs/sources" and path.suffix == ".js":
                     continue
                 paths.append(path)
-    for name in ("README.md", "NIGHT_PROGRESS.md", "NEXT_STEPS.md", "RUN_LOG.md", "MORNING_REPORT.md", "requirements.txt", "requirements-dev.txt", "requirements-lock.txt", ".env.example", ".gitignore", ".gitattributes", "pytest.ini", "Dockerfile"):
+    for name in ("README.md", "NIGHT_PROGRESS.md", "NEXT_STEPS.md", "RUN_LOG.md", "MORNING_REPORT.md", "requirements.txt", "requirements-dev.txt", "requirements-report.txt", "requirements-lock.txt", ".env.example", ".gitignore", ".gitattributes", ".dockerignore", "pytest.ini", "Dockerfile"):
         path = ROOT / name
         if path.is_file():
             paths.append(path)

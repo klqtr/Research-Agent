@@ -9,5 +9,5 @@
 <section id="copilot" class="view"><div class="two-col"><div class="panel"><div class="eyebrow">ACADEMIC COPILOT</div><h2>从 Idea 到研究框架</h2><textarea id="idea" placeholder="描述你的研究问题与拟验证假设"></textarea><button class="primary" id="outline-button">生成可信框架模板</button><div id="outline" class="output"></div></div><div class="panel"><h2>让数据自己说话</h2><p>确定性统计与 SVG 图表，不执行上传代码，不推断因果。</p><label>导入 CSV<input id="csv-upload" type="file" accept=".csv"></label><textarea id="csv-text">method,score
 BM25,0.65
 Fusion,0.72
-Full,0.78</textarea><p>上方为界面绘图样例，不是项目实验结果。</p><button class="primary" id="csv-button">分析并绘图</button><svg id="chart" viewBox="0 0 600 330" aria-label="CSV 数值图表"></svg><div id="caption"></div></div></div></section>
+Full,0.78</textarea><p>默认预填是界面样例，不是项目实验结果；导入后按实际CSV计算。</p><button class="primary" id="csv-button">分析并绘图</button><svg id="chart" viewBox="0 0 600 330" aria-label="CSV 数值图表"></svg><div id="caption"></div></div></div></section>
 <footer>研证 / RESEARCHTRACE <span>可溯源 · 可复核 · 可恢复</span></footer></main><div id="toast" role="status" class="hidden"></div><script src="/app.js"></script></body></html>

@@ -1,5 +1,6 @@
 """Create the submission-draft PDF from recorded evidence; never invent metrics."""
 import json
+import os
 from pathlib import Path
 from xml.sax.saxutils import escape
 from reportlab.lib import colors
@@ -13,7 +14,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output/pdf"
 OUT.mkdir(parents=True, exist_ok=True)
-font_candidates = [Path(os.environ.get("WINDIR", "Windows")) / "Fonts" / "simsun.ttc", Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")]
+font_candidates = ([Path(os.environ["RESEARCHTRACE_REPORT_FONT"])] if os.getenv("RESEARCHTRACE_REPORT_FONT") else []) + [Path(os.environ.get("WINDIR", "Windows")) / "Fonts" / "simsun.ttc", Path("/usr/share/fonts/truetype/wqy/wqy-microhei.ttc")]
 font_path = next((p for p in font_candidates if p.exists()), None)
 if font_path is None:
     raise RuntimeError("需要可用的中文TrueType字体；请配置字体后再生成PDF")
@@ -103,7 +104,7 @@ p("原PDF保留，页图只是交互渲染结果。证据块含物理页码和bb
 page("03 / 算法设计与创新边界")
 table([["设计", "机制", "不可夸大的边界"], ["版本感知", "正文4-shingle Jaccard与首页arXiv标识；版本确认与差异比较", "词汇近似并非学习式语义；不能仅一对版本报告去重准确率"], ["跨文检索", "BM25与字符RRF；每篇至少一个候选；设备数字信息重排", "没有神经Dense模型；配额可能损害全局相关性"], ["证据约束", "块ID存在性、原文quote子串、输出结构与部分拒答", "真引用仍可能支撑假结论，尚未验证语义蕴含"], ["版本家族图谱", "同论文多版合并代表节点，标题/标识匹配引用并计算PageRank", "边只指论文家族，不能当作引用了最新修订版"], ["Future Work线索", "原文候选提取与词汇去重", "不自动断言问题仍未解决或想法具有原创性"]], [85,185,212])
 p("LLM规划状态", "H2CN")
-p("已实现可选真实模型结构化JSON计划与白名单执行，但无已授权端点，实际运行是明确披露的确定性流程。原生Function Calling已接入但仅通过Mock协议测试。模型MockTransport只测试网络契约，不产生科研效果数据。")
+p("已实现原生Function Calling、白名单工具执行和tool消息返回综合，但无已授权端点，实际运行仍是明确披露的确定性流程。原生协议仅通过Mock传输测试。模型MockTransport只测试网络契约，不产生科研效果数据。")
 p("为何比普通API包装更可审查", "H2CN")
 p("系统有可重算算法、真实PDF版本来源、逐页证据与坐标、错误引用拒绝探针、独立保存的基线/消融、旧版防静默覆盖和可恢复日志。它仍是研发原型，不能因这些工程机制就宣称已完成科研自主推理。")
 
@@ -132,7 +133,7 @@ p(f"最新自动化：{counts['tests']}项，失败{counts['failures']}，错误
 p("真引用假结论探针仍通过：这是已确认的语义漏洞。新论文3个无答案探针在应用层均拒答，但不能推导一般未知问题拒答率。英语OCR路径需相对英文目录；中文语言数据与复杂表格公式尚未验收。")
 
 page("06 / 六模块验收与严格内部评审")
-table([["官方模块", "当前证据", "主要缺项"], ["PDF解析", "真实版本与541页/OCR", "表格结构、公式LaTeX、机构元数据"], ["RAG多文问答", "真实检索与引用锚点", "真实LLM、Dense、语义蕴含"], ["联动阅读翻译", "页图与正文译文滚动机制", "真实翻译、划词、引文无损双向跳转"], ["追踪推荐", "真实arXiv与下载API", "定时刷新、推荐学习、多用户"], ["引用图谱与前沿", "家族PageRank与原文候选", "大规模标注、LLM综述、后续解决验证"], ["写作可视化", "模板、真实条目、CSV和Mermaid", "真实生成质量、多图形/全文翻译"]], [100,150,232])
+table([["官方模块", "当前证据", "主要缺项"], ["PDF解析", "真实版本与541页/OCR", "表格结构、公式LaTeX、机构元数据"], ["RAG多文问答", "真实检索与引用锚点", "真实LLM、Dense、语义蕴含"], ["联动阅读翻译", "页图与正文译文滚动机制", "真实翻译、划词、非数字引文无损跳转"], ["追踪推荐", "真实arXiv、下载API和本地兴趣排序", "定时刷新、训练式推荐、多用户"], ["引用图谱与前沿", "家族PageRank与原文候选", "大规模标注、LLM综述、后续解决验证"], ["写作可视化", "模板、真实条目、CSV和Mermaid", "真实生成质量、多图形/全文翻译"]], [100,150,232])
 p("内部成熟度39/100（非官方评分、非获奖预测）", "H2CN")
 p("Agent深度10/35、创新10/25、工程6/10、实用4/10、UI5/10、学术价值4/10。没有真实模型效果与完整六模块的证据，不给完成度或模型效果虚高分。")
 p("已经修复的高优先问题：PDF插件黑屏、v7标题误提取、教材身份被参考文献污染、版本重复计权、随机字符弱相关、私密信息与不存在年份拒答。")

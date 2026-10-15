@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-16T01:17:52+08:00",
+  "generated_at": "2026-10-16T01:32:42+08:00",
   "development": "experiments\\retrieval_20261016_005801",
   "holdout": "experiments\\retrieval_20261016_010526",
-  "test_xml": "experiments\\iteration6_tests.xml",
+  "test_xml": "experiments\\iteration9_tests.xml",
   "test_counts": {
-    "tests": 48,
+    "tests": 54,
     "failures": 0,
     "errors": 0,
     "skipped": 0

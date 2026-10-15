@@ -1,6 +1,6 @@
 # 真实评测报告
 
-生成时间：2026-10-16T01:17:52+08:00（Asia/Shanghai）。本报告由 `scripts/build_reports.py` 从已保存结果生成。
+生成时间：2026-10-16T01:32:42+08:00（Asia/Shanghai）。本报告由 `scripts/build_reports.py` 从已保存结果生成。
 
 ## 范围与方法
 没有已授权模型端点，未进行真实LLM回答/翻译/规划质量评测，不报告模型Token、费用或模型准确率。当前比较的是词汇检索、版本识别、引用完整性和工程鲁棒性。
@@ -58,7 +58,7 @@ Attention v1/v7正文字词4-shingle相似度0.7171，识别同arXiv家族，旧
 该指标不是CER/WER、LaTeX/表格或版式准确率。tracemalloc不包含原生MuPDF、Tesseract内存；耗时为本机单次结果，不是设备无关性能承诺。OCR英语数据来源与SHA保存在data/tessdata/SOURCE.json。
 
 ## 软件测试与实际运行
-`experiments/iteration6_tests.xml`：48项，失败0、错误0、跳过0。初始环境错误XML保留，没有改写成通过。
+`experiments/iteration9_tests.xml`：54项，失败0、错误0、跳过0。初始环境错误XML保留，没有改写成通过。
 
 真实HTTP检查：health、文献、图谱、网页、问答、工作流、CSV返回200；未配置模型翻译返回503，符合预期。arXiv公共检索真实完成。原始响应在experiments/live_smoke_*.json。模型超时/错误JSON/用量解析是明确MockTransport契约测试，不是模型推理效果。
 

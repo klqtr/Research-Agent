@@ -1,0 +1,17 @@
+# 实际浏览器验证记录
+
+环境：Codex内置浏览器，真实本地127.0.0.1:8000服务。验证使用界面点击/填写，不将API通过直接当作UI通过。
+
+- 文献库：7份真实文献卡片、版本标签与运行模式已显示；截图`reports/screenshots/library.jpg`。
+- 初始阅读：PDF插件预览黑屏，虽然原文API返回200。记录为真实UI缺陷并修复。
+- 修复阅读：服务端页图真实显示Attention首页，原始版式保留，正文侧可读；截图`reports/screenshots/reader.jpg`。原PDF单独保留链接。
+- 数字引文：点击Attention首页[12]跳转到第10页相应参考条目；“返回引文正文”回到第1页。并不声称作者年份引文或所有PDF引用均可无损定位。
+- 引用图谱：7份文件合并为6个论文家族，PageRank与Future Work原文候选真实显示；截图`reports/screenshots/graph.jpg`。边仅表示论文家族，不声称BERT引用了2023版Transformer。
+- 问答：实际填写训练硬件问题并选择Attention，返回抽取式证据和页码。未配置真实模型，未展示假模型综合。
+
+新增版本差异、CSV绘图、工作流和最终证据框仍需本轮后续界面回归；完成后在下方追加实际观察，不提前勾选。
+
+- 写作与CSV：填写真实新论文验证集数值（BM25 0.75、字符0.6667、融合/完整0.9167），实际绘图及图注显示；写作输出明确标记模板，没有LLM生成声明。发现参考列表重复列v1/v7，已改为按家族去重并记录精确修订版来源，追加回归。
+- 版本差异：实际点击比较v1/v7，正文diff显示版权声明、引用号及41.0/41.8等原文变化；显示的是逐块文本diff，不是模型生成总结。
+- 工作流：选择Attention v1+BERT，执行“Compare training hardware and prepare a graph and outline.”，显示retrieve/graph/outline步骤、8条证据、2个家族/1条边、5节框架。明确标记deterministic_workflow。
+- 最终证据锚点：跨篇检索首条为Attention第7页硬件段落，点击定位后页图框出对应段落，正文同时高亮，原始PDF链接定位page=7。截图`evidence.jpg`与`evidence_anchor.jpg`。

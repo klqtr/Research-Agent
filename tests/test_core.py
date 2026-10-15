@@ -137,6 +137,9 @@ def test_graph_collapses_versions():
     result = graph(papers)
     assert len(result["nodes"]) == 1 and result["nodes"][0]["id"] == "v7"
     assert len(result["nodes"][0]["versions"]) == 2
+    from src.tools import writing_outline
+    refs = writing_outline("version aware research", papers)["references"]
+    assert len(refs) == 1 and refs[0]["source"].endswith("1706.03762v7")
 
 
 def test_random_query_does_not_get_char_evidence(settings):

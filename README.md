@@ -46,7 +46,7 @@ OCR 使用 PyMuPDF 内置引擎和官方 Tesseract 英语语言数据，位于 `
 |---|---|---|
 |PDF 管理解析|批量上传、保留原PDF、页码/bbox、标题导航、原文OCR、内容shingle去重、版本确认、版本diff API、移除索引保留原文|可靠作者/机构、复杂表格单元格、公式LaTeX、学习式语义去重|
 |抗幻觉问答|BM25+字符RRF、文献配额、硬件事实重排、证据跳转、引用约束、部分拒答|真实模型效果实验、Dense/Rerank模型、语义蕴含验证|
-|联动阅读翻译|原始PDF预览、按页正文/译文同步滚动、真实翻译接口及不可用提示|划词/悬停、PDF像素级双向联动、完整引文双向无损跳转（当前仅数字编号可跳转及返回）、真实翻译质量验证|
+|联动阅读翻译|原始版式页图、bbox高亮/原PDF链接、数字引文跳转返回、按页正文/译文同步滚动、翻译接口及不可用提示|划词/悬停、PDF像素级双向联动、作者年份等完整引文无损跳转、真实翻译质量验证|
 |搜索追踪推荐|真实arXiv检索、受限标识下载入库API、代码链接线索、持久反馈及可解释兴趣排序|定时追踪、训练式推荐、多用户、PubMed、引用含金量可靠判定|
 |图谱综述前沿|引用标题/标识匹配、版本家族合并、PageRank、Future Work原文候选|真实LLM综述、时间线证伪旧Idea、20篇真实图谱质量标注|
 |写作可视化|可信文献库参考列表、写作模板、Mermaid脚本、CSV统计/SVG图表|真实LLM论文框架与图注、TikZ等完整脚本、多类型图表、一键全文学术翻译|
@@ -70,6 +70,8 @@ OCR 使用 PyMuPDF 内置引擎和官方 Tesseract 英语语言数据，位于 `
 ## 结构
 
 `src/parsing.py` 文档感知，`store.py` SQLite，`retrieval.py` 检索/引用校验，`model.py` 真实模型适配，`planner.py` 有界计划，`agent.py` 证据工作流，`tools.py` 研究工具，`app.py` API，`src/web` 原生 Web 前端，`scripts` 复现入口，`tests` 边界/契约回归，`experiments` 原始结果，`docs` 规则/方案，`reports` 报告/答辩。
+
+报告再生成：可在额外安装`requirements-report.txt`并提供中文TrueType字体的环境执行`scripts/build_reports.py`、`scripts/build_pdf_report.py`。本次使用Windows系统宋体，其他系统可设置`RESEARCHTRACE_REPORT_FONT`为可用中文TrueType字体路径。PDF需渲染检查后再交付。
 
 ## 部署
 

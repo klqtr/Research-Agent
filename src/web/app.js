@@ -33,7 +33,7 @@ async function read(id,page=1,chunkId="") {
    const pattern=new RegExp("^\\["+b.dataset.ref+"\\](?:\\s|$)");
    const ref=currentPaper.references.find(r=>pattern.test(r.text));
    if(!ref){toast("未定位此编号的参考文献，请使用References标题查看原文。");return;}
-   citationReturn={id,page,chunkId};$("back-citation").classList.remove("hidden");read(id,ref.page,ref.chunk_id);
+   citationReturn={id,page,chunkId:b.closest("p")?.id||chunkId};$("back-citation").classList.remove("hidden");read(id,ref.page,ref.chunk_id);
  });
  if(chunkId){const element=document.getElementById(chunkId);if(element)element.scrollIntoView({block:"center"});}
  $("reader").scrollIntoView({behavior:"smooth"});
