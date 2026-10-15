@@ -101,7 +101,7 @@ def test_missing_model_no_mock(client):
     assert client.post("/api/translate", json={"text": "hello"}).status_code == 503
 
 
-@pytest.mark.parametrize("question", ["", " " * 10, "a" * 6001])
+@pytest.mark.parametrize("question", ["", " " * 10, "a" * 6001], ids=["empty", "spaces", "too_long"])
 def test_invalid_question(client, question):
     assert client.post("/api/ask", json={"question": question}).status_code in (400, 422)
 
@@ -129,3 +129,53 @@ def test_model_unavailable_does_not_contact_network(settings, monkeypatch):
     monkeypatch.setattr("httpx.Client", forbidden)
     with pytest.raises(ModelUnavailable):
         ModelClient(settings).complete("hello")
+
+
+def test_graph_collapses_versions():
+    papers = [{"id": "v1", "arxiv_id": "1706.03762", "version": 1, "title": "Attention Is All You Need", "references": []},
+              {"id": "v7", "arxiv_id": "1706.03762", "version": 7, "title": "Attention Is All You Need", "references": []}]
+    result = graph(papers)
+    assert len(result["nodes"]) == 1 and result["nodes"][0]["id"] == "v7"
+    assert len(result["nodes"][0]["versions"]) == 2
+
+
+def test_random_query_does_not_get_char_evidence(settings):
+    paper = parse_pdf(pdf_bytes("The attention model is trained with eight GPUs."), "p.pdf", settings)
+    assert not retrieve("zzzxqv unobtainiumxx florbknight", [paper])
+
+
+def test_private_and_absent_year_abstention(client):
+    client.post("/api/papers", files={"file": ("p.pdf", pdf_bytes("The authors trained an attention model in 2017."))})
+    for question in ["What is the authors private bank account number?", "What was the revenue in 2030?"]:
+        result = client.post("/api/ask", json={"question": question}).json()
+        assert result["abstained"] and not result["claims"] and result["refusal_reason"]
+
+
+def test_real_attention_title_if_sample_available(settings):
+    from pathlib import Path
+    path = Path("data/papers/1706.03762v7.pdf")
+    if not path.exists():
+        pytest.skip("Public real PDF sample not downloaded")
+    paper = parse_pdf(path.read_bytes(), "random.pdf", settings)
+    assert paper["title"] == "Attention Is All You Need"
+
+
+def test_reference_arxiv_not_document_identity(settings):
+    with fitz.open() as doc:
+        doc.new_page().insert_text((50, 50), "A local paper without an arXiv identity. This is a complete first page.")
+        doc.new_page().insert_text((50, 50), "References\narXiv:1606.06565 cited research paper, not our identifier.")
+        raw = doc.tobytes()
+    assert parse_pdf(raw, "not_identity.pdf", settings)["arxiv_id"] is None
+
+
+def test_pdf_page_image_and_exact_highlight(client):
+    raw = pdf_bytes("The original source evidence must remain available and unchanged.")
+    pid = client.post("/api/papers", files={"file": ("p.pdf", raw)}).json()["paper_id"]
+    paper = client.get("/api/papers/" + pid).json()
+    chunk = paper["chunks"][0]["id"]
+    path = f"/api/papers/{pid}/pages/1/image"
+    response = client.get(path, params={"chunk_id": chunk})
+    assert response.status_code == 200 and response.content.startswith(b"\x89PNG")
+    assert client.get(f"/api/papers/{pid}/pages/0/image").status_code == 404
+    assert client.get(path, params={"chunk_id": "invented"}).status_code == 400
+    assert client.get(f"/api/papers/{pid}/pdf").content == raw

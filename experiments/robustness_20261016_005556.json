@@ -1,0 +1,32 @@
+[
+  {
+    "file": "synthetic_541_pages.pdf",
+    "fixture": "synthetic_not_official",
+    "pages": 541,
+    "chunks": 541,
+    "latency_seconds": 0.5437263999992865,
+    "python_peak_tracemalloc_mb": 2.730116844177246,
+    "memory_limitations": "tracemalloc only tracks Python allocations, not native PDF/OCR engine memory",
+    "page_modes": {
+      "native": 541
+    },
+    "warnings": [],
+    "ocr_text": null
+  },
+  {
+    "file": "synthetic_scan.pdf",
+    "fixture": "synthetic_not_official",
+    "pages": 1,
+    "chunks": 0,
+    "latency_seconds": 0.35231860000203596,
+    "python_peak_tracemalloc_mb": 6.105381011962891,
+    "memory_limitations": "tracemalloc only tracks Python allocations, not native PDF/OCR engine memory",
+    "page_modes": {
+      "unreadable": 1
+    },
+    "warnings": [
+      "第 1 页缺少可用文本且 OCR 不可用；不能据此回答该页事实"
+    ],
+    "ocr_text": ""
+  }
+]

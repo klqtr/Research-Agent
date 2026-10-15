@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-15T17:05:29.001609+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "k": 5,
+  "dataset_sha256": "842488e25dbbfe9dfc5b852793483dcc037b1e131a6a93c77c782196788fa3dd",
+  "paper_ids": {
+    "1706.03762v1.pdf": "0a9bff1be3575cf9fe26",
+    "1706.03762v7.pdf": "bdfaa68d8984f0dc02be",
+    "1810.04805v2.pdf": "5692a5514787a8c6727b",
+    "2004.04906v2.pdf": "cb551710ff63f0804805",
+    "2005.11401v4.pdf": "23e3249e9a1e75418d82",
+    "2005.14165v4.pdf": "97fd272f1fdfc1867746",
+    "UnderstandingDeepLearning_02_09_26_C.pdf": "f8237d393163900fa8e4"
+  },
+  "llm_experiments": "not_run_no_authorized_model",
+  "split": "new_paper_holdout_no_post_tuning",
+  "dataset": "data\\holdout_cases.json"
+}

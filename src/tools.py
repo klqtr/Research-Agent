@@ -7,10 +7,19 @@ import statistics
 import xml.etree.ElementTree as ET
 from difflib import unified_diff
 import httpx
-from .parsing import similarity
+from .parsing import similarity, tokens
 
 
 def graph(papers):
+    families = {}
+    for paper in papers:
+        family = paper.get("arxiv_id") or paper["id"]
+        families.setdefault(family, []).append(paper)
+    representatives = []
+    for versions in families.values():
+        representative = max(versions, key=lambda p: p.get("version") or 0)
+        representatives.append({**representative, "versions": [{"id": p["id"], "version": p.get("version")} for p in versions]})
+    papers = representatives
     edges = []
     for src in papers:
         reftext = " ".join(r["text"] for r in src["references"]).lower()
@@ -20,7 +29,10 @@ def graph(papers):
             title = re.sub(r"\s+", " ", dst["title"]).strip().lower()
             id_match = dst.get("arxiv_id") and dst["arxiv_id"] in reftext
             if id_match or (len(title) > 15 and title in reftext):
-                edges.append({"source": src["id"], "target": dst["id"], "basis": "reference_text_match"})
+                matching_ref = next((r for r in src["references"] if title in r["text"].lower() or (dst.get("arxiv_id") and dst["arxiv_id"] in r["text"])), {})
+                edges.append({"source": src["id"], "target": dst["id"], "basis": "reference_text_match",
+                              "cited_version": "unspecified_family", "target_family": dst.get("arxiv_id") or dst["id"],
+                              "source_page": matching_ref.get("page"), "source_chunk_id": matching_ref.get("chunk_id")})
     n = len(papers)
     ranks = {p["id"]: 1 / n for p in papers} if n else {}
     outgoing = {key: [e["target"] for e in edges if e["source"] == key] for key in ranks}
@@ -35,9 +47,9 @@ def graph(papers):
             break
         ranks = updated
     nodes = [{"id": p["id"], "title": p["title"], "pagerank": round(ranks[p["id"]], 6),
-              "arxiv_id": p.get("arxiv_id"), "version": p.get("version")} for p in papers]
+              "arxiv_id": p.get("arxiv_id"), "version": p.get("version"), "versions": p["versions"]} for p in papers]
     return {"nodes": sorted(nodes, key=lambda p: p["pagerank"], reverse=True), "edges": edges,
-            "limitations": "仅正文参考文献中的标题/标识匹配；缺边不等于未引用；PageRank 高不等于研究质量高。"}
+            "limitations": "同arXiv家族合并，节点用最新版本代表；边仅表示引用论文家族，不表示引用了该最新版本。仅参考文献标题/标识匹配，缺边不等于未引用；PageRank 高不等于研究质量高。"}
 
 
 def future_work(papers):
@@ -108,9 +120,15 @@ def search_arxiv(query, limit=5):
     if not query.strip() or len(query) > 300:
         raise ValueError("检索词长度须为1–300")
     with httpx.Client(timeout=20, follow_redirects=False, trust_env=False) as client:
-        response = client.get("https://export.arxiv.org/api/query", params={"search_query": "all:" + query, "max_results": min(limit, 10), "sortBy": "submittedDate", "sortOrder": "descending"})
+        # Quote ordinary multi-word topics as a phrase; passing bare words makes
+        # arXiv interpret later words broadly and returned unrelated recent papers.
+        cleaned = query.replace('"', ' ').strip()
+        response = client.get("https://export.arxiv.org/api/query", params={"search_query": 'all:"' + cleaned + '"', "max_results": min(limit, 10), "sortBy": "submittedDate", "sortOrder": "descending"})
         response.raise_for_status()
-    root = ET.fromstring(response.content)
+    try:
+        root = ET.fromstring(response.content)
+    except ET.ParseError as exc:
+        raise ValueError("arXiv返回的元数据不是有效XML") from exc
     ns = {"a": "http://www.w3.org/2005/Atom"}
     results = []
     for entry in root.findall("a:entry", ns):
@@ -120,3 +138,39 @@ def search_arxiv(query, limit=5):
                         "code_available": "github.com" in abstract.lower(),
                         "reason": "按最新提交排序；摘要含 GitHub 链接时标记代码线索，尚未核验仓库可运行性。"})
     return results
+
+
+def download_arxiv_pdf(identifier, max_bytes):
+    if not re.fullmatch(r"\d{4}\.\d{4,5}(?:v\d+)?", identifier):
+        raise ValueError("需要有效arXiv数字标识，不接受任意URL")
+    url = "https://arxiv.org/pdf/" + identifier
+    raw = bytearray()
+    with httpx.Client(timeout=35, follow_redirects=False, trust_env=False) as client:
+        with client.stream("GET", url) as response:
+            response.raise_for_status()
+            if 300 <= response.status_code < 400:
+                raise ValueError("arXiv重定向未自动跟随，请从来源手动下载后导入")
+            for block in response.iter_bytes():
+                raw.extend(block)
+                if len(raw) > max_bytes:
+                    raise ValueError("文献超过上传限制")
+    if not raw.startswith(b"%PDF-"):
+        raise ValueError("arXiv未返回有效PDF")
+    return bytes(raw), url
+
+
+def recommend_results(query, results, local_papers, profile):
+    qwords = set(tokens(query))
+    library_words = set(tokens(" ".join(p["title"] for p in local_papers)))
+    scored = []
+    for result in results:
+        words = set(tokens(result["title"] + " " + result["abstract"]))
+        query_match = len(qwords & words) / max(1, len(qwords))
+        local_match = len(library_words & words) / max(1, len(library_words))
+        preference = sum(item["weight"] * len(set(tokens(item["title"])) & words) / max(1, len(set(tokens(item["title"])))) for item in profile)
+        code_signal = .1 if result.get("code_available") else 0
+        score = .6 * query_match + .2 * local_match + .1 * preference + code_signal
+        scored.append({**result, "recommendation_score": round(score, 4),
+                       "recommendation_components": {"query_overlap": query_match, "library_overlap": local_match, "feedback_overlap": preference, "code_link_signal": code_signal},
+                       "recommendation_note": "可解释词汇兴趣排序；不是训练出的推荐模型。代码链接仅为可复现性线索，未实际运行仓库。"})
+    return sorted(scored, key=lambda item: item["recommendation_score"], reverse=True)

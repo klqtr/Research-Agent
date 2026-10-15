@@ -1,6 +1,7 @@
 """Explicit, bounded downloads of public research papers; no paid API."""
 import hashlib
 import json
+import re
 import sys
 import time
 import urllib.request
@@ -15,7 +16,10 @@ PAPERS = ["1706.03762v1", "1706.03762v7", "1810.04805v2", "2005.11401v4"]
 def main():
     TARGET.mkdir(parents=True, exist_ok=True)
     records = []
-    for identifier in PAPERS:
+    identifiers = sys.argv[1:] or PAPERS
+    if len(identifiers) > 8 or any(not re.fullmatch(r"\d{4}\.\d{4,5}v\d+", value) for value in identifiers):
+        raise ValueError("最多8个明确版本的arXiv标识")
+    for identifier in identifiers:
         url = "https://arxiv.org/pdf/" + identifier
         path = TARGET / (identifier + ".pdf")
         record = {"id": identifier, "url": url, "at": datetime.now(timezone.utc).isoformat(),

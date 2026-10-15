@@ -1,0 +1,26 @@
+{
+  "description": "开发集：人工依据论文原文页码编写；非隐藏测试集。指标为证据命中，不是答案准确率。",
+  "cases": [
+    {"id":"t_gpu","question":"What hardware GPUs were used to train the Transformer?","papers":["1706.03762v1.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":7,"needle":"8 NVIDIA P100 GPUs"}]},
+    {"id":"t_adam","question":"What are the Adam optimizer beta1 and beta2 settings?","papers":["1706.03762v1.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":7,"needle":"0.98"}]},
+    {"id":"t_batch","question":"How many source tokens and target tokens are in each training batch?","papers":["1706.03762v1.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":7,"needle":"25000 source tokens"}]},
+    {"id":"t_steps","question":"How many training steps and hours were needed for the base models?","papers":["1706.03762v1.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":7,"needle":"100,000 steps"}]},
+    {"id":"t_encoder","question":"How many identical layers are in the encoder stack?","papers":["1706.03762v1.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":2,"needle":"N = 6"}]},
+    {"id":"t_bleu","question":"What English-to-German translation BLEU score did the big Transformer achieve?","papers":["1706.03762v1.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":7,"needle":"28.4"}]},
+    {"id":"b_parameters","question":"What are BERT BASE and LARGE total parameter counts?","papers":["1810.04805v2.pdf"],"targets":[{"paper":"1810.04805v2.pdf","page":3,"needle":"340M"}]},
+    {"id":"b_mask","question":"What percentage of WordPiece tokens are masked randomly?","papers":["1810.04805v2.pdf"],"targets":[{"paper":"1810.04805v2.pdf","page":4,"needle":"15%"}]},
+    {"id":"b_vocab","question":"What vocabulary size is used for WordPiece embeddings?","papers":["1810.04805v2.pdf"],"targets":[{"paper":"1810.04805v2.pdf","page":4,"needle":"30,000 token vocabulary"}]},
+    {"id":"b_hardware","question":"What Cloud TPU hardware was used to train BERT LARGE?","papers":["1810.04805v2.pdf"],"targets":[{"paper":"1810.04805v2.pdf","page":13,"needle":"64 TPU chips"}]},
+    {"id":"b_batch","question":"What batch size and number of steps were used for pretraining?","papers":["1810.04805v2.pdf"],"targets":[{"paper":"1810.04805v2.pdf","page":13,"needle":"256 sequences"}]},
+    {"id":"r_generator","question":"Which model is used as the generator and how many parameters does it have?","papers":["2005.11401v4.pdf"],"targets":[{"paper":"2005.11401v4.pdf","page":3,"needle":"400M parameters"}]},
+    {"id":"r_retriever","question":"What bi-encoder architecture does the DPR retriever use?","papers":["2005.11401v4.pdf"],"targets":[{"paper":"2005.11401v4.pdf","page":3,"needle":"BERTBASE document encoder"}]},
+    {"id":"r_index","question":"Which Wikipedia dump, chunk size and index library are used?","papers":["2005.11401v4.pdf"],"targets":[{"paper":"2005.11401v4.pdf","page":4,"needle":"December 2018 dump"}]},
+    {"id":"r_gpu","question":"What training GPU hardware and GPU memory are used?","papers":["2005.11401v4.pdf"],"targets":[{"paper":"2005.11401v4.pdf","page":17,"needle":"32GB NVIDIA V100 GPUs"}]},
+    {"id":"cross_hardware","question":"Compare training hardware: Transformer P100 GPUs versus BERT Cloud TPUs.","papers":["1706.03762v1.pdf","1810.04805v2.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":7,"needle":"8 NVIDIA P100 GPUs"},{"paper":"1810.04805v2.pdf","page":13,"needle":"64 TPU chips"}]},
+    {"id":"cross_batch","question":"Compare training batch tokens for Transformer and BERT pretraining.","papers":["1706.03762v1.pdf","1810.04805v2.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":7,"needle":"25000 source tokens"},{"paper":"1810.04805v2.pdf","page":13,"needle":"256 sequences"}]},
+    {"id":"cross_gpu_models","question":"Compare Transformer training P100 GPU hardware to RAG V100 GPU hardware.","papers":["1706.03762v1.pdf","2005.11401v4.pdf"],"targets":[{"paper":"1706.03762v1.pdf","page":7,"needle":"8 NVIDIA P100 GPUs"},{"paper":"2005.11401v4.pdf","page":17,"needle":"32GB NVIDIA V100 GPUs"}]},
+    {"id":"negative_nonsense","question":"zzzxqv unobtainiumxx florbknight","papers":["1706.03762v1.pdf"],"targets":[],"unanswerable":true},
+    {"id":"negative_business","question":"What was the authors' private bank account number?","papers":["1810.04805v2.pdf"],"targets":[],"unanswerable":true},
+    {"id":"negative_future","question":"What exact 2030 revenue did this RAG model earn?","papers":["2005.11401v4.pdf"],"targets":[],"unanswerable":true}
+  ]
+}

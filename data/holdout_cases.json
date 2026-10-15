@@ -1,0 +1,21 @@
+{
+ "description":"冻结算法后在两篇新论文上人工标注的文献外推验证。非官方集，样本小，不据此调参。",
+ "split":"new_paper_holdout_no_post_tuning",
+ "cases":[
+  {"id":"g_parameters","question":"How many parameters does GPT-3 have?","papers":["2005.14165v4.pdf"],"targets":[{"paper":"2005.14165v4.pdf","page":1,"needle":"175 billion parameters"}]},
+  {"id":"g_context","question":"What is the context window size in tokens for all GPT-3 models?","papers":["2005.14165v4.pdf"],"targets":[{"paper":"2005.14165v4.pdf","page":8,"needle":"2048 tokens"}]},
+  {"id":"g_tokens","question":"How many total tokens were all GPT-3 models trained for?","papers":["2005.14165v4.pdf"],"targets":[{"paper":"2005.14165v4.pdf","page":8,"needle":"300 billion tokens"}]},
+  {"id":"g_adam","question":"What optimizer beta settings and gradient clipping are used in GPT-3 training?","papers":["2005.14165v4.pdf"],"targets":[{"paper":"2005.14165v4.pdf","page":43,"needle":"0.95"}]},
+  {"id":"g_hardware","question":"Which GPU hardware and cluster provider were used to train GPT-3?","papers":["2005.14165v4.pdf"],"targets":[{"paper":"2005.14165v4.pdf","page":9,"needle":"V100"}]},
+  {"id":"g_chinese","question":"GPT-3的上下文窗口有多少个token？","papers":["2005.14165v4.pdf"],"targets":[{"paper":"2005.14165v4.pdf","page":8,"needle":"2048 tokens"}]},
+  {"id":"d_dimensions","question":"What is the DPR encoder representation dimension?","papers":["2004.04906v2.pdf"],"targets":[{"paper":"2004.04906v2.pdf","page":3,"needle":"768"}]},
+  {"id":"d_batch","question":"What batch size is used for the DPR retriever in-batch negative training?","papers":["2004.04906v2.pdf"],"targets":[{"paper":"2004.04906v2.pdf","page":5,"needle":"128"}]},
+  {"id":"d_epochs","question":"For how many epochs are DPR encoders trained on large and small datasets?","papers":["2004.04906v2.pdf"],"targets":[{"paper":"2004.04906v2.pdf","page":5,"needle":"100 epochs"}]},
+  {"id":"d_faiss","question":"What are the FAISS HNSW CPU index search depth settings?","papers":["2004.04906v2.pdf"],"targets":[{"paper":"2004.04906v2.pdf","page":7,"needle":"search depth = 128"}]},
+  {"id":"cross_new_batch","question":"Compare GPT-3 total training tokens with DPR retriever batch size.","papers":["2005.14165v4.pdf","2004.04906v2.pdf"],"targets":[{"paper":"2005.14165v4.pdf","page":8,"needle":"300 billion tokens"},{"paper":"2004.04906v2.pdf","page":5,"needle":"batch size of 128"}]},
+  {"id":"cross_new_optimizer","question":"Compare Adam optimizer learning rate and beta details for GPT-3 and DPR.","papers":["2005.14165v4.pdf","2004.04906v2.pdf"],"targets":[{"paper":"2005.14165v4.pdf","page":43,"needle":"0.95"},{"paper":"2004.04906v2.pdf","page":5,"needle":"using Adam"}]},
+  {"id":"negative_rand","question":"zzxxqq unfindablezz torbleflink","papers":["2005.14165v4.pdf"],"targets":[],"unanswerable":true},
+  {"id":"negative_year","question":"What exactly was the 2098 training budget?","papers":["2004.04906v2.pdf"],"targets":[],"unanswerable":true},
+  {"id":"negative_private","question":"What is the authors private phone number?","papers":["2004.04906v2.pdf"],"targets":[],"unanswerable":true}
+ ]
+}

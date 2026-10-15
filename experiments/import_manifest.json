@@ -6,17 +6,42 @@
     "pages": 15,
     "chunks": 478,
     "warnings": [],
-    "duplicates": [],
+    "duplicates": [
+      {
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "title": "Attention Is All You Need",
+        "similarity": 1.0,
+        "same_arxiv": true,
+        "existing_version": 1,
+        "recommendation": "建议保留库中现有版本"
+      },
+      {
+        "paper_id": "bdfaa68d8984f0dc02be",
+        "title": "Attention Is All You Need",
+        "similarity": 0.7171,
+        "same_arxiv": true,
+        "existing_version": 7,
+        "recommendation": "建议保留库中现有版本"
+      }
+    ],
     "decision": "keep_both_for_version_evaluation"
   },
   {
     "filename": "1706.03762v7.pdf",
     "id": "bdfaa68d8984f0dc02be",
-    "title": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works.",
+    "title": "Attention Is All You Need",
     "pages": 15,
     "chunks": 484,
     "warnings": [],
     "duplicates": [
+      {
+        "paper_id": "bdfaa68d8984f0dc02be",
+        "title": "Attention Is All You Need",
+        "similarity": 1.0,
+        "same_arxiv": true,
+        "existing_version": 7,
+        "recommendation": "建议保留库中现有版本"
+      },
       {
         "paper_id": "0a9bff1be3575cf9fe26",
         "title": "Attention Is All You Need",
@@ -35,7 +60,35 @@
     "pages": 16,
     "chunks": 348,
     "warnings": [],
-    "duplicates": [],
+    "duplicates": [
+      {
+        "paper_id": "5692a5514787a8c6727b",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "similarity": 1.0,
+        "same_arxiv": true,
+        "existing_version": 2,
+        "recommendation": "建议保留库中现有版本"
+      }
+    ],
+    "decision": "keep_both_for_version_evaluation"
+  },
+  {
+    "filename": "2004.04906v2.pdf",
+    "id": "cb551710ff63f0804805",
+    "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "pages": 11,
+    "chunks": 163,
+    "warnings": [],
+    "duplicates": [
+      {
+        "paper_id": "cb551710ff63f0804805",
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "similarity": 1.0,
+        "same_arxiv": true,
+        "existing_version": 2,
+        "recommendation": "建议保留库中现有版本"
+      }
+    ],
     "decision": "keep_both_for_version_evaluation"
   },
   {
@@ -45,7 +98,54 @@
     "pages": 19,
     "chunks": 320,
     "warnings": [],
-    "duplicates": [],
+    "duplicates": [
+      {
+        "paper_id": "23e3249e9a1e75418d82",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "similarity": 1.0,
+        "same_arxiv": true,
+        "existing_version": 4,
+        "recommendation": "建议保留库中现有版本"
+      }
+    ],
+    "decision": "keep_both_for_version_evaluation"
+  },
+  {
+    "filename": "2005.14165v4.pdf",
+    "id": "97fd272f1fdfc1867746",
+    "title": "Language Models are Few-Shot Learners",
+    "pages": 75,
+    "chunks": 934,
+    "warnings": [],
+    "duplicates": [
+      {
+        "paper_id": "97fd272f1fdfc1867746",
+        "title": "Language Models are Few-Shot Learners",
+        "similarity": 1.0,
+        "same_arxiv": true,
+        "existing_version": 4,
+        "recommendation": "建议保留库中现有版本"
+      }
+    ],
+    "decision": "keep_both_for_version_evaluation"
+  },
+  {
+    "filename": "UnderstandingDeepLearning_02_09_26_C.pdf",
+    "id": "f8237d393163900fa8e4",
+    "title": "Understanding Deep Learning",
+    "pages": 541,
+    "chunks": 7190,
+    "warnings": [],
+    "duplicates": [
+      {
+        "paper_id": "f8237d393163900fa8e4",
+        "title": "Understanding Deep Learning",
+        "similarity": 1.0,
+        "same_arxiv": false,
+        "existing_version": null,
+        "recommendation": "请比较正文后决定保留或替换"
+      }
+    ],
     "decision": "keep_both_for_version_evaluation"
   }
 ]

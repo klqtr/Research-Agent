@@ -3,16 +3,17 @@ import hashlib
 import logging
 from pathlib import Path
 import httpx
-from fastapi import FastAPI, File, HTTPException, UploadFile
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi import FastAPI, File, HTTPException, UploadFile, Query
+from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from .agent import answer
 from .config import Settings
 from .model import ModelClient, ModelUnavailable
 from .parsing import duplicates, parse_pdf
+from .planner import workflow
 from .store import Store
-from .tools import csv_analysis, diff_versions, future_work, graph, search_arxiv, writing_outline
+from .tools import csv_analysis, diff_versions, download_arxiv_pdf, future_work, graph, recommend_results, search_arxiv, writing_outline
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
@@ -78,6 +79,25 @@ def create_app(settings=None):
         store.get(paper_id)
         return FileResponse(store.root / f"{paper_id}.pdf", media_type="application/pdf")
 
+    @app.get("/api/papers/{paper_id}/pages/{page_number}/image")
+    def page_image(paper_id: str, page_number: int, chunk_id: str = ""):
+        import fitz
+        paper = store.get(paper_id)
+        if not 1 <= page_number <= len(paper["pages"]):
+            raise HTTPException(404, "页码不存在")
+        chunk = None
+        if chunk_id:
+            chunk = next((c for c in paper["chunks"] if c["id"] == chunk_id and c["page"] == page_number), None)
+            if chunk is None:
+                raise ValueError("证据锚点不属于此页")
+        with fitz.open(store.root / (paper_id + ".pdf")) as doc:
+            page = doc[page_number - 1]
+            if chunk:
+                page.draw_rect(fitz.Rect(chunk["bbox"]), color=(.15, .5, .25), fill=(.8, .95, .5), fill_opacity=.2, width=1.5, overlay=True)
+            scale = min(1.6, 1800 / page.rect.width, 1800 / page.rect.height)
+            image = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False).tobytes("png")
+        return Response(image, media_type="image/png", headers={"Cache-Control": "private,max-age=300"})
+
     class Question(BaseModel):
         question: str = Field(min_length=1, max_length=settings.max_question_chars)
         paper_ids: list[str] = Field(default_factory=list, max_length=50)
@@ -87,6 +107,14 @@ def create_app(settings=None):
     def ask(req: Question):
         selected = [store.get(pid) for pid in req.paper_ids] if req.paper_ids else store.papers()
         return answer(req.question, selected, settings, use_model=req.use_model)
+
+    @app.post("/api/workflow")
+    def run_workflow(req: Question):
+        selected = [store.get(pid) for pid in req.paper_ids] if req.paper_ids else store.papers()
+        try:
+            return workflow(req.question, selected, settings, use_model=req.use_model)
+        except ModelUnavailable as exc:
+            raise HTTPException(503, str(exc)) from exc
 
     @app.get("/api/graph")
     def citation_graph():
@@ -123,11 +151,34 @@ def create_app(settings=None):
             raise HTTPException(503, str(exc)) from exc
 
     @app.get("/api/search")
-    def search(q: str = "", limit: int = 5):
+    def search(q: str = "", limit: int = Query(default=5, ge=1, le=10)):
         try:
-            return {"results": search_arxiv(q, limit)}
+            results = recommend_results(q, search_arxiv(q, limit), store.papers(), store.preference_profile())
+            store.record_search(q, results)
+            return {"results": results, "mode": "live_arxiv_lexical_recommendation", "tracking": "manual_refresh_snapshot_saved"}
         except (httpx.HTTPError, OSError) as exc:
             raise HTTPException(502, "arXiv 暂时不可达，未返回模拟结果") from exc
+
+    class ArxivImport(BaseModel):
+        identifier: str = Field(pattern=r"^\d{4}\.\d{4,5}(v\d+)?$")
+        keep_both: bool = False
+
+    @app.post("/api/arxiv/import")
+    def import_arxiv(req: ArxivImport):
+        try:
+            raw, url = download_arxiv_pdf(req.identifier, settings.max_upload_mb * 1024 * 1024)
+        except httpx.HTTPError as exc:
+            raise HTTPException(502, "arXiv下载失败，未创建模拟文献") from exc
+        candidate = parse_pdf(raw, req.identifier + ".pdf", settings)
+        matches = duplicates(candidate, store.papers())
+        if matches and not req.keep_both:
+            return JSONResponse(status_code=409, content={"status": "needs_decision", "duplicates": matches})
+        candidate["source_url"] = url
+        target = store.root / (candidate["id"] + ".pdf")
+        if not target.exists():
+            target.write_bytes(raw)
+        store.put(candidate)
+        return {"status": "imported", "paper_id": candidate["id"], "source_url": url}
 
     class Feedback(BaseModel):
         paper_id: str

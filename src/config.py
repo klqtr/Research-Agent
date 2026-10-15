@@ -4,6 +4,21 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
+def load_local_env():
+    path = Path(".env")
+    if path.is_file():
+        for line in path.read_text(encoding="utf-8-sig").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            if key.startswith("RESEARCHTRACE_"):
+                os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+load_local_env()
+
+
 @dataclass(frozen=True)
 class Settings:
     data_dir: Path = Path(os.getenv("RESEARCHTRACE_DATA_DIR", "data/library"))
@@ -16,3 +31,4 @@ class Settings:
     model_key: str = os.getenv("RESEARCHTRACE_MODEL_API_KEY", "")
     model_timeout: float = float(os.getenv("RESEARCHTRACE_MODEL_TIMEOUT", "45"))
     ocr_language: str = os.getenv("RESEARCHTRACE_OCR_LANGUAGE", "eng")
+    tessdata_dir: str = os.getenv("RESEARCHTRACE_TESSDATA_DIR", "data/tessdata")

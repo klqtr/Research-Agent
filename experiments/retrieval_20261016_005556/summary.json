@@ -1,0 +1,121 @@
+{
+  "retrieval": [
+    {
+      "variant": "bm25",
+      "positive_queries": 18,
+      "all_target_hit_at_5": 0.6666666666666666,
+      "target_recall_at_5": 0.7142857142857143,
+      "multi_all_hit_at_5": 0,
+      "negative_empty_retrieval_rate": 0.3333333333333333,
+      "median_latency_ms": 13.617199998407159,
+      "p95_latency_ms": 24.03510000294773
+    },
+    {
+      "variant": "char",
+      "positive_queries": 18,
+      "all_target_hit_at_5": 0.7222222222222222,
+      "target_recall_at_5": 0.7142857142857143,
+      "multi_all_hit_at_5": 0,
+      "negative_empty_retrieval_rate": 0.3333333333333333,
+      "median_latency_ms": 14.084800001000986,
+      "p95_latency_ms": 25.156300005619414
+    },
+    {
+      "variant": "fusion_no_quota",
+      "positive_queries": 18,
+      "all_target_hit_at_5": 0.7777777777777778,
+      "target_recall_at_5": 0.8095238095238095,
+      "multi_all_hit_at_5": 0,
+      "negative_empty_retrieval_rate": 0.3333333333333333,
+      "median_latency_ms": 13.899400000809692,
+      "p95_latency_ms": 27.45610000420129
+    },
+    {
+      "variant": "fusion_quota",
+      "positive_queries": 18,
+      "all_target_hit_at_5": 0.8333333333333334,
+      "target_recall_at_5": 0.8571428571428571,
+      "multi_all_hit_at_5": 0.3333333333333333,
+      "negative_empty_retrieval_rate": 0.3333333333333333,
+      "median_latency_ms": 14.004600001499057,
+      "p95_latency_ms": 27.910699995118193
+    }
+  ],
+  "citation_probes": [
+    {
+      "name": "real_quote",
+      "claim": {
+        "text": "Direct quotation",
+        "citations": [
+          {
+            "chunk_id": "0a9bff1be3575cf9fe26:p1:c1",
+            "quote": "Ashish Vaswani∗ Google Brain [EMAIL_REDACTED]"
+          }
+        ]
+      },
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "fake_chunk",
+      "claim": {
+        "text": "A fake claim",
+        "citations": [
+          {
+            "chunk_id": "nonexistent",
+            "quote": "Ashish Vaswani∗ Google Brain [EMAIL_REDACTED]"
+          }
+        ]
+      },
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "fake_quote",
+      "claim": {
+        "text": "A fake number",
+        "citations": [
+          {
+            "chunk_id": "0a9bff1be3575cf9fe26:p1:c1",
+            "quote": "The model used 99999 GPUs."
+          }
+        ]
+      },
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "missing_citation",
+      "claim": {
+        "text": "No sources",
+        "citations": []
+      },
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "wrong_entailment_real_quote",
+      "claim": {
+        "text": "The paper proves that all vaccines are ineffective.",
+        "citations": [
+          {
+            "chunk_id": "0a9bff1be3575cf9fe26:p1:c1",
+            "quote": "Ashish Vaswani∗ Google Brain [EMAIL_REDACTED]"
+          }
+        ]
+      },
+      "expected": true,
+      "accepted": true
+    }
+  ],
+  "older_version_uploaded_after_newer": [
+    {
+      "paper_id": "bdfaa68d8984f0dc02be",
+      "title": "Attention Is All You Need",
+      "similarity": 0.7171,
+      "same_arxiv": true,
+      "existing_version": 7,
+      "recommendation": "建议保留库中现有版本"
+    }
+  ]
+}

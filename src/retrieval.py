@@ -9,10 +9,12 @@ ALIASES = {"参数": "parameters parameter", "显卡": "gpu gpus", "硬件": "gp
            "批次": "batch", "学习率": "learning rate", "窗口": "context window",
            "作者": "author", "机构": "university google", "未来": "future work"}
 
+STOPWORDS = set("a an the of in on at for to from by with and or is are was were be been this that these those what which who how many much does do did used use using across compare versus as it its each can has have had into than all we our their paper model models".split())
+
 
 def terms(query):
     expanded = query + " " + " ".join(value for key, value in ALIASES.items() if key in query)
-    return tokens(expanded)
+    return [term for term in tokens(expanded) if term not in STOPWORDS and len(term) > 1]
 
 
 def chargrams(text):
@@ -20,7 +22,7 @@ def chargrams(text):
     return {text[i:i + 3] for i in range(max(0, len(text) - 2))}
 
 
-def retrieve(query, papers, k=8, strategy="fusion", diversify=True):
+def retrieve(query, papers, k=8, strategy="fusion", diversify=True, facet_rerank=False):
     chunks = [{**c, "title": p["title"]} for p in papers for c in p["chunks"] if c.get("mode") != "unreadable"]
     if not chunks:
         return []
@@ -38,13 +40,24 @@ def retrieve(query, papers, k=8, strategy="fusion", diversify=True):
             score += math.log(1 + (len(chunks) - df[term] + .5) / (df[term] + .5)) * (freq * 2.2) / (freq + 1.2 * (.25 + .75 * length / avgdl))
         bm.append((i, score))
         other = chargrams(chunks[i]["text"])
-        cg.append((i, len(grams & other) / max(1, len(grams))))
+        # A shared trigram alone is not evidence relevance (e.g. random strings).
+        overlap = bool(set(q) & set(count))
+        cg.append((i, len(grams & other) / max(1, len(grams)) if overlap else 0))
     scores = Counter()
     rankings = [bm] if strategy == "bm25" else [cg] if strategy == "char" else [bm, cg]
     for ranked in rankings:
         for rank, (idx, score) in enumerate(sorted(ranked, key=lambda x: x[1], reverse=True)):
             if score > 0:
                 scores[idx] += 1 / (60 + rank)
+    if facet_rerank and re.search(r"gpu|tpu|hardware|显卡|硬件", query, re.I):
+        for idx in list(scores):
+            text = chunks[idx]["text"]
+            # Numeric equipment details matter more than incidental model mentions.
+            # This transparent feature is evaluated separately from lexical fusion.
+            if re.search(r"\b(?:\d+|eight|four|sixteen)\b.{0,30}\b(?:GPUs?|TPUs?|TPU chips)\b", text, re.I):
+                scores[idx] += .007
+                if "NVIDIA" in text or "TPU chips" in text:
+                    scores[idx] += .004
     order = sorted(scores, key=lambda i: scores[i], reverse=True)
     selected = []
     if diversify and len(papers) > 1:

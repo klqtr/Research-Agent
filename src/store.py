@@ -13,6 +13,7 @@ class Store:
             con.execute("PRAGMA journal_mode=WAL")
             con.execute("CREATE TABLE IF NOT EXISTS papers (id TEXT PRIMARY KEY, payload TEXT NOT NULL)")
             con.execute("CREATE TABLE IF NOT EXISTS feedback (id INTEGER PRIMARY KEY, paper_id TEXT, vote INTEGER)")
+            con.execute("CREATE TABLE IF NOT EXISTS searches (id INTEGER PRIMARY KEY, query TEXT, payload TEXT, created_at TEXT)")
 
     def connect(self):
         return sqlite3.connect(self.path, timeout=20)
@@ -43,3 +44,14 @@ class Store:
             raise ValueError("反馈须为 -1 或 1")
         with self.connect() as con:
             con.execute("INSERT INTO feedback(paper_id,vote) VALUES (?,?)", (paper_id, vote))
+
+    def preference_profile(self):
+        with self.connect() as con:
+            rows = con.execute("SELECT paper_id,SUM(vote) FROM feedback GROUP BY paper_id").fetchall()
+        by_id = {p["id"]: p for p in self.papers()}
+        return [{"title": by_id[pid]["title"], "weight": max(-3, min(3, value))} for pid, value in rows if pid in by_id]
+
+    def record_search(self, query, results):
+        from datetime import datetime, timezone
+        with self.connect() as con:
+            con.execute("INSERT INTO searches(query,payload,created_at) VALUES (?,?,?)", (query, json.dumps(results, ensure_ascii=False), datetime.now(timezone.utc).isoformat()))

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-10-16T01:17:52+08:00",
+  "development": "experiments\\retrieval_20261016_005801",
+  "holdout": "experiments\\retrieval_20261016_010526",
+  "test_xml": "experiments\\iteration6_tests.xml",
+  "test_counts": {
+    "tests": 48,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "robustness": "experiments\\robustness_20261016_010241.json",
+  "real_scan": "experiments\\real_scan_20261016_010636.json"
+}

@@ -32,6 +32,7 @@ def parse_pdf(raw, filename, settings):
         raise ValueError("需要有效 PDF 文件")
     paper_id = hashlib.sha256(raw).hexdigest()[:20]
     chunks, pages, headings, references, warnings = [], [], [], [], []
+    layout_title = ""
     try:
         doc = fitz.open(stream=raw, filetype="pdf")
     except Exception as exc:
@@ -43,12 +44,29 @@ def parse_pdf(raw, filename, settings):
             raise ValueError("PDF 页数超出允许范围")
         in_refs = False
         for number, page in enumerate(doc, 1):
+            if number == 1:
+                candidates = []
+                for block in page.get_text("dict")["blocks"]:
+                    lines = block.get("lines", [])
+                    for line in lines:
+                        # arXiv's rotated side label is often larger than the paper title.
+                        if abs(line.get("dir", (1, 0))[1]) > .1:
+                            continue
+                        spans = line.get("spans", [])
+                        line_text = normalize(" ".join(s["text"] for s in spans))
+                        if 8 < len(line_text) < 200 and not re.search(r"arxiv|copyright|permission|provided proper|^abstract$", line_text, re.I):
+                            candidates.append((max((s["size"] for s in spans), default=0), line_text))
+                if candidates:
+                    largest = max(size for size, _ in candidates)
+                    layout_title = " ".join(t for size, t in candidates if size >= largest - .3)[:300]
             textpage = None
             text = page.get_text()
             mode = "native"
             if len(text.strip()) < 24:
                 try:
-                    textpage = page.get_textpage_ocr(language=settings.ocr_language, dpi=150, full=True)
+                    from pathlib import Path
+                    tessdata = settings.tessdata_dir if Path(settings.tessdata_dir, settings.ocr_language + ".traineddata").exists() else None
+                    textpage = page.get_textpage_ocr(language=settings.ocr_language, dpi=150, full=True, tessdata=tessdata)
                     mode = "ocr"
                 except Exception:
                     warnings.append(f"第 {number} 页缺少可用文本且 OCR 不可用；不能据此回答该页事实")
@@ -80,10 +98,11 @@ def parse_pdf(raw, filename, settings):
         first = [c["text"] for c in chunks if c["page"] == 1]
         title = metadata.get("title", "").strip()
         if not title or title.lower() in ("untitled", "article"):
-            title = first[0][:240] if first else filename
+            title = layout_title or (first[0][:240] if first else filename)
         full = "\n".join(c["text"] for c in chunks)
         # Identity comes from document content, never the uploaded filename.
-        arxiv = re.search(r"arXiv\s*:\s*(\d{4}\.\d{4,5})(?:v(\d+))?", full, re.I)
+        # A citation in a late reference list must never become this document's identity.
+        arxiv = re.search(r"arXiv\s*:\s*(\d{4}\.\d{4,5})(?:v(\d+))?", "\n".join(first), re.I)
         return {"id": paper_id, "filename": filename, "title": title, "author": metadata.get("author", ""),
                 "arxiv_id": arxiv.group(1) if arxiv else None,
                 "version": int(arxiv.group(2)) if arxiv and arxiv.group(2) else None,

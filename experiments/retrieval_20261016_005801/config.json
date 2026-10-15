@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-15T16:58:02.885766+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "k": 5,
+  "dataset_sha256": "8a021023c585ad977c0f1824203c33bb16f49c48cbe4c1dcc63e2845934ac706",
+  "paper_ids": {
+    "1706.03762v1.pdf": "0a9bff1be3575cf9fe26",
+    "1706.03762v7.pdf": "bdfaa68d8984f0dc02be",
+    "1810.04805v2.pdf": "5692a5514787a8c6727b",
+    "2005.11401v4.pdf": "23e3249e9a1e75418d82"
+  },
+  "llm_experiments": "not_run_no_authorized_model",
+  "split": "development_only_no_holdout"
+}
