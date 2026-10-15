@@ -1,0 +1,14 @@
+.venv/
+.vendor/
+__pycache__/
+*.pyc
+.env
+data/library/
+data/uploads/
+*.sqlite3
+*.sqlite3-*
+tmp/
+node_modules/
+data/papers/*.pdf
+docs/sources/*.js
+.pytest_cache/

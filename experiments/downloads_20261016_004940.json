@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1706.03762v1",
+    "url": "https://arxiv.org/pdf/1706.03762v1",
+    "at": "2026-10-15T16:49:19.653208+00:00",
+    "license_note": "仅本地科研验证；原文版权归作者/出版方，公开分发前逐项核验许可。",
+    "status": "downloaded",
+    "bytes": 2128686,
+    "sha256": "0a9bff1be3575cf9fe26a4a3d3a9175bc791ecec90de8b9deba4cff75d2b9476"
+  },
+  {
+    "id": "1706.03762v7",
+    "url": "https://arxiv.org/pdf/1706.03762v7",
+    "at": "2026-10-15T16:49:24.720907+00:00",
+    "license_note": "仅本地科研验证；原文版权归作者/出版方，公开分发前逐项核验许可。",
+    "status": "downloaded",
+    "bytes": 2215244,
+    "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697"
+  },
+  {
+    "id": "1810.04805v2",
+    "url": "https://arxiv.org/pdf/1810.04805v2",
+    "at": "2026-10-15T16:49:32.895030+00:00",
+    "license_note": "仅本地科研验证；原文版权归作者/出版方，公开分发前逐项核验许可。",
+    "status": "downloaded",
+    "bytes": 775166,
+    "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e"
+  },
+  {
+    "id": "2005.11401v4",
+    "url": "https://arxiv.org/pdf/2005.11401v4",
+    "at": "2026-10-15T16:49:36.760328+00:00",
+    "license_note": "仅本地科研验证；原文版权归作者/出版方，公开分发前逐项核验许可。",
+    "status": "downloaded",
+    "bytes": 885323,
+    "sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233"
+  }
+]

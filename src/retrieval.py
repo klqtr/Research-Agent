@@ -1,0 +1,86 @@
+"""Transparent lexical fusion; deliberately not called neural dense retrieval."""
+import math
+import re
+from collections import Counter
+from .parsing import tokens
+
+ALIASES = {"参数": "parameters parameter", "显卡": "gpu gpus", "硬件": "gpu hardware",
+           "训练": "training trained", "注意力": "attention", "层数": "layers layer",
+           "批次": "batch", "学习率": "learning rate", "窗口": "context window",
+           "作者": "author", "机构": "university google", "未来": "future work"}
+
+
+def terms(query):
+    expanded = query + " " + " ".join(value for key, value in ALIASES.items() if key in query)
+    return tokens(expanded)
+
+
+def chargrams(text):
+    text = re.sub(r"\s+", " ", text.lower())
+    return {text[i:i + 3] for i in range(max(0, len(text) - 2))}
+
+
+def retrieve(query, papers, k=8, strategy="fusion", diversify=True):
+    chunks = [{**c, "title": p["title"]} for p in papers for c in p["chunks"] if c.get("mode") != "unreadable"]
+    if not chunks:
+        return []
+    q = terms(query)
+    counts = [Counter(tokens(c["text"])) for c in chunks]
+    df = Counter(t for count in counts for t in count)
+    avgdl = sum(sum(c.values()) for c in counts) / len(counts) or 1
+    bm, cg = [], []
+    grams = chargrams(query)
+    for i, count in enumerate(counts):
+        length = sum(count.values())
+        score = 0.0
+        for term in set(q):
+            freq = count[term]
+            score += math.log(1 + (len(chunks) - df[term] + .5) / (df[term] + .5)) * (freq * 2.2) / (freq + 1.2 * (.25 + .75 * length / avgdl))
+        bm.append((i, score))
+        other = chargrams(chunks[i]["text"])
+        cg.append((i, len(grams & other) / max(1, len(grams))))
+    scores = Counter()
+    rankings = [bm] if strategy == "bm25" else [cg] if strategy == "char" else [bm, cg]
+    for ranked in rankings:
+        for rank, (idx, score) in enumerate(sorted(ranked, key=lambda x: x[1], reverse=True)):
+            if score > 0:
+                scores[idx] += 1 / (60 + rank)
+    order = sorted(scores, key=lambda i: scores[i], reverse=True)
+    selected = []
+    if diversify and len(papers) > 1:
+        for paper in papers:
+            match = next((idx for idx in order if chunks[idx]["paper_id"] == paper["id"]), None)
+            if match is not None:
+                selected.append(match)
+            if len(selected) >= k:
+                break
+    selected.extend(i for i in order if i not in selected)
+    return [{**chunks[i], "score": round(scores[i], 6)} for i in selected[:k]]
+
+
+def validate_claims(payload, evidence):
+    """Citation integrity only. Exact quotes cannot establish semantic entailment."""
+    if not isinstance(payload, dict) or not isinstance(payload.get("claims"), list):
+        raise ValueError("模型输出必须包含 claims 数组")
+    lookup = {e["id"]: e for e in evidence}
+    accepted, rejected = [], []
+    for claim in payload["claims"][:30]:
+        if not isinstance(claim, dict):
+            rejected.append({"reason": "invalid_structure"})
+            continue
+        refs = claim.get("citations")
+        if not isinstance(claim.get("text"), str) or not isinstance(refs, list) or not refs:
+            rejected.append({"reason": "missing_claim_or_citation"})
+            continue
+        valid = True
+        for ref in refs:
+            if not isinstance(ref, dict):
+                valid = False
+                break
+            source = lookup.get(ref.get("chunk_id"))
+            quote = ref.get("quote")
+            if not source or not isinstance(quote, str) or len(quote.strip()) < 8 or quote not in source["text"]:
+                valid = False
+                break
+        (accepted if valid else rejected).append(claim if valid else {"reason": "unverifiable_quote", "claim": claim})
+    return {"claims": accepted, "rejected": rejected, "semantic_entailment_verified": False}
