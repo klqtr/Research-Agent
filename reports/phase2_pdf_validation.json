@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-16T16:59:50.142612+08:00",
+  "pdf": "output\\pdf\\ResearchTrace_phase2_technical_report.pdf",
+  "sha256": "473361affcf5d8d3d9e269c3ec628aef4607d141514b731c67f5b30c59cb7d4d",
+  "pages": 10,
+  "rendered_images": [
+    "tmp\\phase2_pdf_qa\\verified-01.png",
+    "tmp\\phase2_pdf_qa\\verified-02.png",
+    "tmp\\phase2_pdf_qa\\verified-03.png",
+    "tmp\\phase2_pdf_qa\\verified-04.png",
+    "tmp\\phase2_pdf_qa\\verified-05.png",
+    "tmp\\phase2_pdf_qa\\verified-06.png",
+    "tmp\\phase2_pdf_qa\\verified-07.png",
+    "tmp\\phase2_pdf_qa\\verified-08.png",
+    "tmp\\phase2_pdf_qa\\verified-09.png",
+    "tmp\\phase2_pdf_qa\\verified-10.png"
+  ],
+  "review": "All 10 final page thumbnails and full architecture page inspected. Full experiment page inspected in the immediately preceding render with identical metrics. No clipping, overlap or missing glyphs observed. Visual review does not validate model efficacy.",
+  "real_model_quality_evaluated": false
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="17" time="1.373" timestamp="2026-10-16T15:41:56.695835+08:00" hostname="redacted-host"><testcase classname="tests.test_model_contract" name="test_real_api_contract_and_usage_parsing" time="0.047" /><testcase classname="tests.test_model_contract" name="test_timeout_retry_bounded" time="0.052" /><testcase classname="tests.test_model_contract" name="test_malformed_json_no_fake_fallback" time="0.037" /><testcase classname="tests.test_model_contract" name="test_no_plaintext_remote_credentials" time="0.002" /><testcase classname="tests.test_native_tools" name="test_native_tool_round_trip" time="0.184"><failure message="AssertionError: assert ('extractive_fallback' == 'real_llm_native_tools'&#10;  &#10;  - real_llm_native_tools&#10;  + extractive_fallback)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001B413827500&gt;
+tmp_path = WindowsPath('./tmp/phase2_audit_tests/test_native_tool_round_trip0')
+
+    def test_native_tool_round_trip(monkeypatch, tmp_path):
+        requests = []
+        def handle(request):
+            payload = json.loads(request.content)
+            requests.append(payload)
+            if "tools" in payload:
+                return httpx.Response(200, json={"choices": [{"message": {"role": "assistant", "content": None, "tool_calls": [{"id": "call_graph", "type": "function", "function": {"name": "graph", "arguments": "{}"}}]}}]})
+            assert payload["messages"][-1]["role"] == "tool"
+            assert payload["messages"][-1]["tool_call_id"] == "call_graph"
+            return httpx.Response(200, json={"choices": [{"message": {"content": '{"claims":[]}'}}]})
+        original = httpx.Client
+        monkeypatch.setattr(httpx, "Client", lambda **kw: original(transport=httpx.MockTransport(handle), **kw))
+        result = workflow("show citation graph", [], replace(Settings(data_dir=tmp_path), model_enabled=True, model_name="mock-transport-only"), use_model=True)
+&gt;       assert result["mode"] == "real_llm_native_tools" and "graph" in result["outputs"]
+E       AssertionError: assert ('extractive_fallback' == 'real_llm_native_tools'
+E         
+E         - real_llm_native_tools
+E         + extractive_fallback)
+
+tests\test_native_tools.py:24: AssertionError</failure></testcase><testcase classname="tests.test_native_tools" name="test_native_tool_permissions[shell-{}]" time="0.038" /><testcase classname="tests.test_native_tools" name="test_native_tool_permissions[retrieve-{&quot;command&quot;:&quot;whoami&quot;}]" time="0.041" /><testcase classname="tests.test_native_tools" name="test_native_tool_permissions[graph-bad json]" time="0.036" /><testcase classname="tests.test_extended_api" name="test_download_does_not_accept_arbitrary_urls[http://localhost/secret]" time="0.001" /><testcase classname="tests.test_extended_api" name="test_download_does_not_accept_arbitrary_urls[../file]" time="0.000" /><testcase classname="tests.test_extended_api" name="test_download_does_not_accept_arbitrary_urls[file:///etc/passwd]" time="0.000" /><testcase classname="tests.test_extended_api" name="test_download_does_not_accept_arbitrary_urls[arxiv.org/1]" time="0.000" /><testcase classname="tests.test_extended_api" name="test_download_does_not_accept_arbitrary_urls[1706.03762/../x]" time="0.000" /><testcase classname="tests.test_extended_api" name="test_search_invalid_limits" time="0.062" /><testcase classname="tests.test_extended_api" name="test_model_workflow_without_model" time="0.138"><failure message="assert 200 == 503&#10; +  where 200 = &lt;Response [200 OK]&gt;.status_code">client = &lt;starlette.testclient.TestClient object at 0x000001B4138DD580&gt;
+
+    def test_model_workflow_without_model(client):
+        response = client.post("/api/workflow", json={"question": "make an outline", "use_model": True})
+&gt;       assert response.status_code == 503
+E       assert 200 == 503
+E        +  where 200 = &lt;Response [200 OK]&gt;.status_code
+
+tests\test_extended_api.py:27: AssertionError</failure></testcase><testcase classname="tests.test_extended_api" name="test_csv_row_and_size_limits" time="0.009" /><testcase classname="tests.test_extended_api" name="test_exact_local_files_still_served" time="0.203" /></testsuite></testsuites>

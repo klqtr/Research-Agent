@@ -159,6 +159,8 @@ UI显示北京时间，原始记录用UTC。无公网、多用户或独立守护
     svg.append('<rect x="70" y="386" width="14" height="14" fill="#235d4b"/><text x="91" y="398" font-family="Arial" font-size="13">Development (tuned)</text><rect x="340" y="386" width="14" height="14" fill="#b99a59"/><text x="361" y="398" font-family="Arial" font-size="13">New papers (no post-tuning)</text></svg>')
     (figure_dir / "retrieval_comparison.svg").write_text("".join(svg), encoding="utf-8")
     (REPORTS / "evidence_manifest.json").write_text(json.dumps({"generated_at": now, "development": str(dev_path.relative_to(ROOT)), "holdout": str(hold_path.relative_to(ROOT)), "test_xml": str(latest_test.relative_to(ROOT)), "test_counts": test_counts, "robustness": str(robust_file.relative_to(ROOT)), "real_scan": str(scan_file.relative_to(ROOT)), **extra_manifest}, ensure_ascii=False, indent=2), encoding="utf-8")
+    from phase2_reports import append_phase2_reports
+    append_phase2_reports()
     print("Reports generated from", dev_path.name, hold_path.name, latest_test.name)
 
 

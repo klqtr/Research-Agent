@@ -1,0 +1,424 @@
+{
+  "version": "phase2_tasks_v1",
+  "label_provenance": "AI-assisted proposals checked against stored source strings; no external human annotation performed",
+  "training_data": "none",
+  "test_policy": "New FNO/MoleculeNet application-domain tasks were not used to modify the frozen lexical retriever. Not an independent third-party blind test; human correctness/support labels pending.",
+  "retriever_sha256": "97d6c1f73aa1b95802a041e6abed05b8478b5115301eab18af0169b92599c0c5",
+  "cases": [
+    {
+      "id": "dev_t_gpu",
+      "question": "What hardware GPUs were used to train the Transformer?",
+      "papers": [
+        "1706.03762v1.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1706.03762v1.pdf",
+          "page": 7,
+          "needle": "8 NVIDIA P100 GPUs",
+          "paper_id": "0a9bff1be3575cf9fe26",
+          "version": 1,
+          "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+          "source_quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+        }
+      ],
+      "split": "development",
+      "application_domain": "NLP",
+      "version_policy": "all",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "dev_t_adam",
+      "question": "What are the Adam optimizer beta1 and beta2 settings?",
+      "papers": [
+        "1706.03762v1.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1706.03762v1.pdf",
+          "page": 7,
+          "needle": "0.98",
+          "paper_id": "0a9bff1be3575cf9fe26",
+          "version": 1,
+          "chunk_id": "0a9bff1be3575cf9fe26:p7:c88",
+          "source_quote": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:"
+        }
+      ],
+      "split": "development",
+      "application_domain": "NLP",
+      "version_policy": "all",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "dev_t_batch",
+      "question": "How many source tokens and target tokens are in each training batch?",
+      "papers": [
+        "1706.03762v1.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1706.03762v1.pdf",
+          "page": 7,
+          "needle": "25000 source tokens",
+          "paper_id": "0a9bff1be3575cf9fe26",
+          "version": 1,
+          "chunk_id": "0a9bff1be3575cf9fe26:p7:c84",
+          "source_quote": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens."
+        }
+      ],
+      "split": "development",
+      "application_domain": "NLP",
+      "version_policy": "all",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "dev_t_steps",
+      "question": "How many training steps and hours were needed for the base models?",
+      "papers": [
+        "1706.03762v1.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1706.03762v1.pdf",
+          "page": 7,
+          "needle": "100,000 steps",
+          "paper_id": "0a9bff1be3575cf9fe26",
+          "version": 1,
+          "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+          "source_quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+        }
+      ],
+      "split": "development",
+      "application_domain": "NLP",
+      "version_policy": "all",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "dev_latest",
+      "question": "Using the latest locally available Attention Is All You Need version, quote its training GPU hardware.",
+      "papers": [
+        "1706.03762v1.pdf",
+        "1706.03762v7.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1706.03762v7.pdf",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "version": 7,
+          "page": 7,
+          "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+          "needle": "8 NVIDIA P100 GPUs",
+          "source_quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+        }
+      ],
+      "split": "development",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "NLP",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "dev_explicit_old",
+      "question": "Quote the GPU hardware in Attention v1; retain the requested old version explicitly.",
+      "papers": [
+        "1706.03762v1.pdf",
+        "1706.03762v7.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1706.03762v1.pdf",
+          "paper_id": "0a9bff1be3575cf9fe26",
+          "version": 1,
+          "page": 7,
+          "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+          "needle": "8 NVIDIA P100 GPUs",
+          "source_quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+        }
+      ],
+      "split": "development",
+      "version_policy": "explicit",
+      "explicit_version": 1,
+      "application_domain": "NLP",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_fno_equations",
+      "question": "In FNO v3, which differential equations were used in experiments? Attribute the claim to the paper.",
+      "papers": [
+        "2010.08895v1.pdf",
+        "2010.08895v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "2010.08895v3.pdf",
+          "paper_id": "6cd2645d4a50d1a61a26",
+          "version": 3,
+          "page": 1,
+          "chunk_id": "6cd2645d4a50d1a61a26:p1:c5",
+          "needle": "We perform experiments on Burgers",
+          "source_quote": "The classical development of neural networks has primarily focused on learning mappings between ﬁnite-dimensional Euclidean spaces. Recently, this has been generalized to neural operators that learn mappings between function spaces. For partial differential equations (PDEs), neural operators directly learn the mapping from any functional parametric dependence to the solution. Thus, they learn an entire family of PDEs, in contrast to classical methods which solve one instance of the equation. In this work, we formulate a new neural operator by parameterizing the integral kernel directly in Fourier space, allowing for an expressive and efﬁ- cient architecture. We perform experiments on Burgers’ equation, Darcy ﬂow, and Navier-Stokes equation. The Fourier neural operator is the ﬁrst ML-based method to successfully model turbulent ﬂows with zero-shot super-resolution. It is up to three orders of magnitude faster compared to traditional PDE solvers. Addition- ally, it achieves superior accuracy compared to previous learning-based solvers under ﬁxed resolution."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "scientific_computing",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_fno_runtime",
+      "question": "Quote FNO v3 inference time and pseudo-spectral solver time on the 256 by 256 grid. Do not generalize to all PDEs.",
+      "papers": [
+        "2010.08895v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "2010.08895v3.pdf",
+          "paper_id": "6cd2645d4a50d1a61a26",
+          "version": 3,
+          "page": 3,
+          "chunk_id": "6cd2645d4a50d1a61a26:p3:c26",
+          "needle": "0.005s",
+          "source_quote": "• On a 256 × 256 grid, the Fourier neural operator has an inference time of only 0.005s compared to the 2.2s of the pseudo-spectral method used to solve Navier-Stokes. Despite its tremendous speed advantage, the method does not suffer from accuracy degradation when used in downstream applications such as solving the Bayesian inverse problem, as shown in Figure 6."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "scientific_computing",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_fno_resolution",
+      "question": "What training and evaluation resolutions are reported for the FNO v3 zero-shot super-resolution example?",
+      "papers": [
+        "2010.08895v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "2010.08895v3.pdf",
+          "paper_id": "6cd2645d4a50d1a61a26",
+          "version": 3,
+          "page": 2,
+          "chunk_id": "6cd2645d4a50d1a61a26:p2:c14",
+          "needle": "trained on 64",
+          "source_quote": "Zero-shot super-resolution: Navier-Stokes Equation with viscosity ν = 1e−4; Ground truth on top and prediction on bottom; trained on 64 × 64 × 20 dataset; evaluated on 256 × 256 × 80 (see Section 5.4)."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "scientific_computing",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_fno_parameters",
+      "question": "According to FNO v3, are learned network parameters shared across discretizations?",
+      "papers": [
+        "2010.08895v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "2010.08895v3.pdf",
+          "paper_id": "6cd2645d4a50d1a61a26",
+          "version": 3,
+          "page": 3,
+          "chunk_id": "6cd2645d4a50d1a61a26:p3:c24",
+          "needle": "shares the same learned network parameters",
+          "source_quote": "• By construction, the method shares the same learned network parameters irrespective of the dis- cretization used on the input and output spaces. It can do zero-shot super-resolution: trained on a lower resolution directly evaluated on a higher resolution, as shown in Figure 1."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "scientific_computing",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_fno_grid_tradeoff",
+      "question": "Quote the grid resolution speed/accuracy trade-off described for traditional PDE solvers in FNO v3.",
+      "papers": [
+        "2010.08895v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "2010.08895v3.pdf",
+          "paper_id": "6cd2645d4a50d1a61a26",
+          "version": 3,
+          "page": 1,
+          "chunk_id": "6cd2645d4a50d1a61a26:p1:c9",
+          "needle": "coarse grids are fast but less accurate",
+          "source_quote": "Conventional solvers vs. Data-driven methods. Traditional solvers such as ﬁnite element meth- ods (FEM) and ﬁnite difference methods (FDM) solve the equation by discretizing the space. There- fore, they impose a trade-off on the resolution: coarse grids are fast but less accurate; ﬁne grids are accurate but slow. Complex PDE systems, as described above, usually require a very ﬁne discretiza- tion, and therefore very challenging and time-consuming for traditional solvers. On the other hand, data-driven methods can directly learn the trajectory of the family of equations from the data. As a result, the learning-based method can be orders of magnitude faster than the conventional solvers."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "scientific_computing",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_fno_old",
+      "question": "Use FNO v1 specifically and quote its abstract's comparison against traditional PDE solvers.",
+      "papers": [
+        "2010.08895v1.pdf",
+        "2010.08895v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "2010.08895v1.pdf",
+          "paper_id": "619ee219908185ff74e3",
+          "version": 1,
+          "page": 1,
+          "chunk_id": "619ee219908185ff74e3:p1:c4",
+          "needle": "three orders of magnitude",
+          "source_quote": "The classical development of neural networks has primarily focused on learning mappings between ﬁnite-dimensional Euclidean spaces. Recently, this has been generalized to neural operators that learn mappings between function spaces. For partial diﬀerential equations (PDEs), neural operators directly learn the mapping from any functional parametric dependence to the solution. Thus, they learn an entire family of PDEs, in contrast to classical methods which solve one instance of the equation. In this work, we formulate a new neural operator by parameterizing the integral kernel directly in Fourier space, allowing for an expressive and eﬃcient architecture. We perform experiments on Burgers’ equation, Darcy ﬂow, and the Navier-Stokes equation (including the turbulent regime). Our Fourier neural operator shows state-of-the-art performance compared to existing neural network methodologies and it is up to three orders of magnitude faster compared to traditional PDE solvers."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "explicit",
+      "explicit_version": 1,
+      "application_domain": "scientific_computing",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_molecule_scale",
+      "question": "How many compounds does MoleculeNet say it contains? Quote the source without claiming clinical efficacy.",
+      "papers": [
+        "1703.00564v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1703.00564v3.pdf",
+          "paper_id": "a017e94ab6a9b3165a99",
+          "version": 3,
+          "page": 4,
+          "chunk_id": "a017e94ab6a9b3165a99:p4:c79",
+          "needle": "over 700,000 compounds",
+          "source_quote": "In particular, MoleculeNet contains data on the properties of over 700,000 compounds."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "molecular_learning",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_molecule_package",
+      "question": "Which open source package integrates all MoleculeNet datasets?",
+      "papers": [
+        "1703.00564v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1703.00564v3.pdf",
+          "paper_id": "a017e94ab6a9b3165a99",
+          "version": 3,
+          "page": 4,
+          "chunk_id": "a017e94ab6a9b3165a99:p4:c80",
+          "needle": "All datasets have been curated",
+          "source_quote": "All datasets have been curated and integrated into the open source DeepChem package.30"
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "molecular_learning",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_molecule_limit",
+      "question": "What difficulty is stated for learnable representations under scarce and imbalanced molecular data? Return source context rather than an unsupported universal claim.",
+      "papers": [
+        "1703.00564v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1703.00564v3.pdf",
+          "paper_id": "a017e94ab6a9b3165a99",
+          "version": 3,
+          "page": 2,
+          "chunk_id": "a017e94ab6a9b3165a99:p2:c27",
+          "needle": "under data scarcity",
+          "source_quote": "struggle to deal with complex tasks under data scarcity and highly imbalanced classi-"
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "molecular_learning",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_molecule_script",
+      "question": "What choices are demonstrated in MoleculeNet's benchmark evaluation code figure?",
+      "papers": [
+        "1703.00564v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "1703.00564v3.pdf",
+          "paper_id": "a017e94ab6a9b3165a99",
+          "version": 3,
+          "page": 6,
+          "chunk_id": "a017e94ab6a9b3165a99:p6:c139",
+          "needle": "Figure 1: Example code for benchmark evaluation",
+          "source_quote": "Figure 1: Example code for benchmark evaluation with DeepChem, multiple methods are provided for data splitting, featurization and learning."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "molecular_learning",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_cross_domain",
+      "question": "Separately quote FNO v3 solver timing and MoleculeNet dataset scale, keeping each fact attached to its own paper.",
+      "papers": [
+        "2010.08895v3.pdf",
+        "1703.00564v3.pdf"
+      ],
+      "targets": [
+        {
+          "paper": "2010.08895v3.pdf",
+          "paper_id": "6cd2645d4a50d1a61a26",
+          "version": 3,
+          "page": 3,
+          "chunk_id": "6cd2645d4a50d1a61a26:p3:c26",
+          "needle": "0.005s",
+          "source_quote": "• On a 256 × 256 grid, the Fourier neural operator has an inference time of only 0.005s compared to the 2.2s of the pseudo-spectral method used to solve Navier-Stokes. Despite its tremendous speed advantage, the method does not suffer from accuracy degradation when used in downstream applications such as solving the Bayesian inverse problem, as shown in Figure 6."
+        },
+        {
+          "paper": "1703.00564v3.pdf",
+          "paper_id": "a017e94ab6a9b3165a99",
+          "version": 3,
+          "page": 4,
+          "chunk_id": "a017e94ab6a9b3165a99:p4:c79",
+          "needle": "over 700,000 compounds",
+          "source_quote": "In particular, MoleculeNet contains data on the properties of over 700,000 compounds."
+        }
+      ],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "cross_application_domain",
+      "gold_reviewed_by_human": false
+    },
+    {
+      "id": "test_unanswerable",
+      "question": "What randomized clinical-trial survival benefit is proven by MoleculeNet? Abstain if this source does not establish it.",
+      "papers": [
+        "1703.00564v3.pdf"
+      ],
+      "targets": [],
+      "split": "frozen_test_proposal",
+      "version_policy": "latest",
+      "explicit_version": null,
+      "application_domain": "molecular_learning",
+      "gold_reviewed_by_human": false,
+      "expected_behavior": "abstain"
+    }
+  ]
+}

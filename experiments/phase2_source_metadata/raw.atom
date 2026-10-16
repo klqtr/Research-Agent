@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Ss52JZKvEtXdCyD+EarvzemFDqI</id>
+  <title>arXiv Query: search_query=&amp;id_list=2010.08895v1,2010.08895v3,1703.00564v3&amp;start=0&amp;max_results=3</title>
+  <updated>2026-10-16T07:48:26Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=3&amp;id_list=2010.08895v1,2010.08895v3,1703.00564v3" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2010.08895v1</id>
+    <title>Fourier Neural Operator for Parametric Partial Differential Equations</title>
+    <updated>2020-10-18T00:34:21Z</updated>
+    <link href="https://arxiv.org/abs/2010.08895v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2010.08895v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The classical development of neural networks has primarily focused on learning mappings between finite-dimensional Euclidean spaces. Recently, this has been generalized to neural operators that learn mappings between function spaces. For partial differential equations (PDEs), neural operators directly learn the mapping from any functional parametric dependence to the solution. Thus, they learn an entire family of PDEs, in contrast to classical methods which solve one instance of the equation. In this work, we formulate a new neural operator by parameterizing the integral kernel directly in Fourier space, allowing for an expressive and efficient architecture. We perform experiments on Burgers' equation, Darcy flow, and the Navier-Stokes equation (including the turbulent regime). Our Fourier neural operator shows state-of-the-art performance compared to existing neural network methodologies and it is up to three orders of magnitude faster compared to traditional PDE solvers.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-10-18T00:34:21Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zongyi Li</name>
+    </author>
+    <author>
+      <name>Nikola Kovachki</name>
+    </author>
+    <author>
+      <name>Kamyar Azizzadenesheli</name>
+    </author>
+    <author>
+      <name>Burigede Liu</name>
+    </author>
+    <author>
+      <name>Kaushik Bhattacharya</name>
+    </author>
+    <author>
+      <name>Andrew Stuart</name>
+    </author>
+    <author>
+      <name>Anima Anandkumar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1703.00564v3</id>
+    <title>MoleculeNet: A Benchmark for Molecular Machine Learning</title>
+    <updated>2018-10-26T00:52:38Z</updated>
+    <link href="https://arxiv.org/abs/1703.00564v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1703.00564v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-03-02T00:39:53Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhenqin Wu</name>
+    </author>
+    <author>
+      <name>Bharath Ramsundar</name>
+    </author>
+    <author>
+      <name>Evan N. Feinberg</name>
+    </author>
+    <author>
+      <name>Joseph Gomes</name>
+    </author>
+    <author>
+      <name>Caleb Geniesse</name>
+    </author>
+    <author>
+      <name>Aneesh S. Pappu</name>
+    </author>
+    <author>
+      <name>Karl Leswing</name>
+    </author>
+    <author>
+      <name>Vijay Pande</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2010.08895v3</id>
+    <title>Fourier Neural Operator for Parametric Partial Differential Equations</title>
+    <updated>2021-05-17T03:12:33Z</updated>
+    <link href="https://arxiv.org/abs/2010.08895v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2010.08895v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The classical development of neural networks has primarily focused on learning mappings between finite-dimensional Euclidean spaces. Recently, this has been generalized to neural operators that learn mappings between function spaces. For partial differential equations (PDEs), neural operators directly learn the mapping from any functional parametric dependence to the solution. Thus, they learn an entire family of PDEs, in contrast to classical methods which solve one instance of the equation. In this work, we formulate a new neural operator by parameterizing the integral kernel directly in Fourier space, allowing for an expressive and efficient architecture. We perform experiments on Burgers' equation, Darcy flow, and Navier-Stokes equation. The Fourier neural operator is the first ML-based method to successfully model turbulent flows with zero-shot super-resolution. It is up to three orders of magnitude faster compared to traditional PDE solvers. Additionally, it achieves superior accuracy compared to previous learning-based solvers under fixed resolution.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-10-18T00:34:21Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zongyi Li</name>
+    </author>
+    <author>
+      <name>Nikola Kovachki</name>
+    </author>
+    <author>
+      <name>Kamyar Azizzadenesheli</name>
+    </author>
+    <author>
+      <name>Burigede Liu</name>
+    </author>
+    <author>
+      <name>Kaushik Bhattacharya</name>
+    </author>
+    <author>
+      <name>Andrew Stuart</name>
+    </author>
+    <author>
+      <name>Anima Anandkumar</name>
+    </author>
+  </entry>
+</feed>

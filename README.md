@@ -36,9 +36,15 @@ OCR 使用 PyMuPDF 内置引擎和官方 Tesseract 英语语言数据，位于 `
 
 复制 `.env.example` 为 `.env`，按需配置。只加载 `RESEARCHTRACE_` 前缀的变量，系统环境变量优先。默认 `RESEARCHTRACE_MODEL_ENABLED=false`，模型任务会明确返回不可用；抽取式模式仍可检索原文。
 
-只有在确认端点、模型许可、调用授权及费用预算后，才设置 `RESEARCHTRACE_MODEL_ENABLED=true`、`RESEARCHTRACE_MODEL_NAME`、`RESEARCHTRACE_MODEL_BASE_URL`、必要密钥。支持 OpenAI 兼容的 `/chat/completions`；远程接口要求 HTTPS，本机可用 HTTP。默认45秒超时、最多两次尝试、最多1600输出token/次；工作流最多4个本地工具步骤。该版本无累计费用预算器，不能在无人值守时随意启用商业端点。
+只有在确认端点、模型许可、调用授权及预算后，才设置 `RESEARCHTRACE_MODEL_ENABLED=true`、`RESEARCHTRACE_MODEL_NAME`、`RESEARCHTRACE_MODEL_BASE_URL`、必要密钥。支持OpenAI兼容`/chat/completions`，远程HTTPS/本机HTTP，URL不得内嵌凭据。默认45秒超时、最多2次尝试、1600输出Token/次；第二阶段Agent最多4模型轮/6工具。SQLite账本跨客户端/工作进程累计限制默认8次请求及100000保守Token预留，失败/重试也计入，不自动重置。`.env.example`可设置美元预留上限，但必须由用户提供输入/输出单价；未知实际用量/价格保持null，预留估计不是Tokenizer或账单保证，不会自动查询/猜测价格。
 
-`/api/ask`：真实模型综合为显式 `use_model=true`；`/api/workflow`：可选真实模型原生工具调用 → 白名单执行 → tool消息返回 → 引用核验。**原生 Function Calling 适配已实现，仅通过模拟传输契约测试，尚未真实模型验收**，未配置模型时只是已披露的确定性工作流。翻译 `/api/translate` 需要真实模型。输出中的原文匹配仅验证引用完整性，不证明语义蕴含。
+`/api/research`是第二阶段主入口：结果驱动原生工具循环、严格参数/文献权限、latest/all/explicit版本策略、失败反馈/一次断言修复、同源状态恢复。`/api/ask`沿用简单问答并接入保守发布关卡；`/api/workflow`保留确定性兼容入口，显式use_model=true时转新Agent。无模型返回明确extractive_fallback，而不是伪造综合。原生Function Calling目前仍只有明确Mock传输契约，**没有真实模型质量实验**。
+
+模型状态GET `/api/model/status`不发推理；显式POST `/api/model/probe`的inference=false仅GET模型列表，true最多执行两次小能力探测、计入共享预算。页面不会自动探测推理能力。`/api/research/{run_id}`查看状态，POST同路径`/resume`恢复；完成记录只读取缓存，不隐式再付费。崩溃租约过期后才可恢复，同一目标/文献内容/版本权限不得变更。原始模型响应和每个工具状态保存在本地research_runs.sqlite3，密钥不入库。
+
+支持关卡区分完整来源支持、部分支持、数值/版本差异候选、缺乏证据、无法判断。默认仅放行完整原文引用，截断片段/未经核验的改写会被拒绝；这会牺牲回答覆盖率，**不是通用语义蕴含或现实事实核验**，数值差异可能只是不同配置。真引用假断言的低层校验探针仍保留，新增独立关卡不能掩盖这项原始局限。
+
+翻译 `/api/translate`及按页`/api/papers/{id}/pages/{n}/translation`要求真实模型，返回段落ID/bbox对齐、术语和识别到的公式/数字/引文保护检查；丢失、重复标记或缺段落会拒收。UI可点译文段落对照原文，切页后的旧响应不覆盖新页。**完整性契约不代表真实翻译质量，当前未验收真实翻译**。
 
 ## 实际实现与差距
 
@@ -110,3 +116,22 @@ docker run --rm -p 127.0.0.1:8000:8000 -v researchtrace-data:/app/data researcht
 参赛者姓名、学校、组别、指导教师：**待用户填写，不虚构**。代码与文档由本次 AI 辅助研发生成并通过所列实际测试，AI 协同说明见 `docs/ai_collaboration.md`。保留真实阶段 Git 历史，不回填虚构提交。没有推送远程、购买云资源或调用付费模型。
 
 源代码公开许可证尚待用户决定；依赖及论文许可需按上游声明核验。PyMuPDF 有其上游许可证约束，不能因为本项目自研就忽略依赖许可。
+
+## 第二阶段评测与交付
+
+当前进展及授权缺口见`PHASE2_PROGRESS.md`、`PHASE2_FINAL_REPORT.md`，完整技术说明见`reports/technical_report.md`。既有检索评测作为历史基线保存，不冒充LLM回答实验。
+
+新增FNO v1/v3与MoleculeNet v3三份固定公开论文仅用于独立评测缓存，不修改原21份演示库（仍保留20家族/71边基线）。原始来源：[FNO](https://arxiv.org/abs/2010.08895)、[MoleculeNet](https://arxiv.org/abs/1703.00564)。它们扩展到科学计算/分子性质应用，仍属ML交叉研究，不能声称已覆盖全部学科。18任务草案含6开发/12冻结新应用任务，AI辅助来源核对、尚无真实人工金标；不是第三方盲测。算法未针对原holdout继续调参。
+
+```powershell
+.venv/Scripts/python.exe scripts/fetch_phase2_papers.py
+.venv/Scripts/python.exe scripts/phase2_corpus.py
+.venv/Scripts/python.exe scripts/phase2_offline_experiments.py
+# 默认只生成运行计划，零推理；不要把计划检查当模型实验
+.venv/Scripts/python.exe scripts/evaluate_phase2_qa.py --split frozen_test_proposal --limit 12
+.venv/Scripts/python.exe scripts/phase2_live_probe.py
+```
+
+四基线与四消融的指标定义、人工标注协议、预算公平性见`docs/phase2_evaluation_protocol.md`。只有已配置授权模型并显式传`--execute-models`才会发请求；累计账本达到上限后明确记失败/未完成，不能补模拟数字。运行器记录模型、数据SHA、temperature、每次输出限额、原始回答/证据/失败；缺人工标签时Answer Correctness/支持率/幻觉率等为null。人工审阅者类型字段不能本身证明审阅真实，必须由真实选手/审阅者执行并记录。
+
+图谱已准备20家族380个有向配对的空白标注表`data/phase2_graph_review.json`，71条算法匹配只是候选，不是人工真值。研究主题为标题词TF-IDF启发式，时间线来自公开精确版本元数据，缺日期保持未知；主题质量与Future Work后续解决判定仍未验收。

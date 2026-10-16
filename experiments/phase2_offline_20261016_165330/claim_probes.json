@@ -1,0 +1,962 @@
+[
+  {
+    "case_id": "dev_t_gpu",
+    "kind": "source_verbatim",
+    "payload": {
+      "claims": [
+        {
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": true,
+    "audit": [
+      {
+        "claim": {
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "fully_supported",
+        "reason": "complete_source_quotation_only",
+        "release": true,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_gpu",
+    "kind": "synthetic_unrelated_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "insufficient_evidence",
+        "reason": "no_lexical_support_signal",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_gpu",
+    "kind": "synthetic_numeric_gpu_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "Training uses 99999 GPUs.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "Training uses 99999 GPUs.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "evidence_conflict",
+        "reason": "numeric_discrepancy_candidate_not_general_contradiction_proof",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_adam",
+    "kind": "source_verbatim",
+    "payload": {
+      "claims": [
+        {
+          "text": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c88",
+              "quote": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c88",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          241.34036254882812,
+          504.0029296875,
+          263.8121032714844
+        ],
+        "text": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c88",
+              "quote": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:"
+            }
+          ]
+        },
+        "status": "cannot_judge",
+        "reason": "source_fragment_or_heading_not_complete_statement",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_adam",
+    "kind": "synthetic_unrelated_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c88",
+              "quote": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c88",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          241.34036254882812,
+          504.0029296875,
+          263.8121032714844
+        ],
+        "text": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c88",
+              "quote": "We used the Adam optimizer [18] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9. We varied the learning rate over the course of training, according to the formula:"
+            }
+          ]
+        },
+        "status": "insufficient_evidence",
+        "reason": "no_lexical_support_signal",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_batch",
+    "kind": "source_verbatim",
+    "payload": {
+      "claims": [
+        {
+          "text": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c84",
+              "quote": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c84",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.7509994506836,
+          74.38861846923828,
+          504.0009765625,
+          117.09707641601562
+        ],
+        "text": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": true,
+    "audit": [
+      {
+        "claim": {
+          "text": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c84",
+              "quote": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens."
+            }
+          ]
+        },
+        "status": "fully_supported",
+        "reason": "complete_source_quotation_only",
+        "release": true,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_batch",
+    "kind": "synthetic_unrelated_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c84",
+              "quote": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c84",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.7509994506836,
+          74.38861846923828,
+          504.0009765625,
+          117.09707641601562
+        ],
+        "text": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c84",
+              "quote": "2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [34]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens."
+            }
+          ]
+        },
+        "status": "insufficient_evidence",
+        "reason": "no_lexical_support_signal",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_steps",
+    "kind": "source_verbatim",
+    "payload": {
+      "claims": [
+        {
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": true,
+    "audit": [
+      {
+        "claim": {
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "fully_supported",
+        "reason": "complete_source_quotation_only",
+        "release": true,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_steps",
+    "kind": "synthetic_unrelated_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "insufficient_evidence",
+        "reason": "no_lexical_support_signal",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_t_steps",
+    "kind": "synthetic_numeric_gpu_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "Training uses 99999 GPUs.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "Training uses 99999 GPUs.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "evidence_conflict",
+        "reason": "numeric_discrepancy_candidate_not_general_contradiction_proof",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_latest",
+    "kind": "source_verbatim",
+    "payload": {
+      "claims": [
+        {
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+          "citations": [
+            {
+              "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "bdfaa68d8984f0dc02be:p7:c91",
+        "paper_id": "bdfaa68d8984f0dc02be",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          486.7832946777344,
+          504.0014953613281,
+          540.45703125
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+        "mode": "native",
+        "source_version": 7,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v7"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": true,
+    "audit": [
+      {
+        "claim": {
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+          "citations": [
+            {
+              "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+            }
+          ]
+        },
+        "status": "fully_supported",
+        "reason": "complete_source_quotation_only",
+        "release": true,
+        "source_versions": [
+          {
+            "paper_id": "bdfaa68d8984f0dc02be",
+            "version": 7
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_latest",
+    "kind": "synthetic_unrelated_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "bdfaa68d8984f0dc02be:p7:c91",
+        "paper_id": "bdfaa68d8984f0dc02be",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          486.7832946777344,
+          504.0014953613281,
+          540.45703125
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+        "mode": "native",
+        "source_version": 7,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v7"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+            }
+          ]
+        },
+        "status": "insufficient_evidence",
+        "reason": "no_lexical_support_signal",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "bdfaa68d8984f0dc02be",
+            "version": 7
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_latest",
+    "kind": "synthetic_numeric_gpu_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "Training uses 99999 GPUs.",
+          "citations": [
+            {
+              "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "bdfaa68d8984f0dc02be:p7:c91",
+        "paper_id": "bdfaa68d8984f0dc02be",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          486.7832946777344,
+          504.0014953613281,
+          540.45703125
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+        "mode": "native",
+        "source_version": 7,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v7"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "Training uses 99999 GPUs.",
+          "citations": [
+            {
+              "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+            }
+          ]
+        },
+        "status": "evidence_conflict",
+        "reason": "numeric_discrepancy_candidate_not_general_contradiction_proof",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "bdfaa68d8984f0dc02be",
+            "version": 7
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_explicit_old",
+    "kind": "source_verbatim",
+    "payload": {
+      "claims": [
+        {
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": true,
+    "audit": [
+      {
+        "claim": {
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "fully_supported",
+        "reason": "complete_source_quotation_only",
+        "release": true,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_explicit_old",
+    "kind": "synthetic_unrelated_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "This evidence proves that all vaccines are ineffective.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "insufficient_evidence",
+        "reason": "no_lexical_support_signal",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  },
+  {
+    "case_id": "dev_explicit_old",
+    "kind": "synthetic_numeric_gpu_assertion",
+    "payload": {
+      "claims": [
+        {
+          "text": "Training uses 99999 GPUs.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "0a9bff1be3575cf9fe26:p7:c86",
+        "paper_id": "0a9bff1be3575cf9fe26",
+        "page": 7,
+        "bbox": [
+          107.53199768066406,
+          153.14431762695312,
+          504.1649475097656,
+          206.81808471679688
+        ],
+        "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days.",
+        "mode": "native",
+        "source_version": 1,
+        "source_family": "1706.03762",
+        "source_url": "https://arxiv.org/abs/1706.03762v1"
+      }
+    ],
+    "quote_only_accepted": true,
+    "guard_released": false,
+    "audit": [
+      {
+        "claim": {
+          "text": "Training uses 99999 GPUs.",
+          "citations": [
+            {
+              "chunk_id": "0a9bff1be3575cf9fe26:p7:c86",
+              "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds, and the models were trained for 300,000 steps or 3.5 days."
+            }
+          ]
+        },
+        "status": "evidence_conflict",
+        "reason": "numeric_discrepancy_candidate_not_general_contradiction_proof",
+        "release": false,
+        "source_versions": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "version": 1
+          }
+        ]
+      }
+    ],
+    "provenance": "Synthetic assertion injected into real-source quotations; not a real model answer or independent human gold."
+  }
+]

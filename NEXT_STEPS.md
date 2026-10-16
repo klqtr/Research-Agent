@@ -1,4 +1,26 @@
-# 下一步与恢复入口（晨间最新交付）
+# 下一步与恢复入口（第二阶段深度研发最新）
+
+**当前以PHASE2_FINAL_REPORT.md、PHASE2_PROGRESS.md、README第二阶段部分为准。** 本轮130项完整回归通过；真实模型/真实翻译/人工金标仍未提供，不能把适配与Mock当模型效果。
+
+已完成4回合/6工具结果驱动Agent、共享累计账本/单次价格快照、五类保守发布关卡、版本策略/数值候选、段落译文保护/对齐、主题/来源时间线、四基线四消融运行器与96项零推理计划。10合成错误断言旧放行10/新发布0、6原文发布5；两对真实版本数值候选0，不当作LLM效果或真实结论变化。18任务/380图谱配对尚无外部人工标签。
+
+恢复优先：1）用户给授权模型/端点和费用/次数预算，本地.env密钥；按docs/phase2_model_acceptance.md先小批真实验收。2）冻结代码/Prompt与新任务后做真实四基线/四消融和人工审阅，缺标签保持null；看过最终失败并改代码须换最终集。3）官方难例/翻译/语义验证之后再推进公网/正式视频，不能擅自发布/付费。
+
+最新服务session37085、PID16168，本机8000，约16:53重启，phase2_live_20261016_165326.json端点正常；文字不保证未来进程存活。账本和状态在data/library各独立SQLite，不自动删除/重置；恢复同源校验和租约防并发。能力探测最多两次POST且不重试；兼容分支也在总回合内。未设置模型不发推理，默认8累计尝试。
+
+```powershell
+.venv/Scripts/python.exe scripts/run_tests.py
+.venv/Scripts/python.exe scripts/phase2_demo_probe.py
+.venv/Scripts/python.exe scripts/phase2_offline_experiments.py
+.venv/Scripts/python.exe scripts/evaluate_phase2_qa.py --split frozen_test_proposal --limit 12
+.venv/Scripts/python.exe scripts/phase2_live_probe.py
+.venv/Scripts/python.exe scripts/phase2_reports.py
+```
+
+技术报告Markdown为reports/technical_report.md；新PDF为output/pdf/ResearchTrace_phase2_technical_report.pdf，原第一阶段PDF保留。PPT内容稿在reports/defense_slides.md，非PPTX；分镜不是已录视频。最后快照仍见checkpoints/LATEST.json，包含PHASE2根文件并核验哈希，不含密钥/原PDF/运行数据库。
+
+---
+# 以下为第一阶段晨间历史记录（当前状态以上述PHASE2为准）
 
 截至约07:45：89项完整测试通过，21份真实PDF/20家族/71边；两次真实追踪及预算停用、20精确版本公共元数据、71条锚点完整性与7条原页修复回归、隔离离线重建均已完成。10页PDF已全部渲染检查。先读MORNING_REPORT、RUN_LOG和reports/evidence_manifest.json。
 

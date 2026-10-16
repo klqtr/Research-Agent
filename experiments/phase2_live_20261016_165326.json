@@ -1,0 +1,2126 @@
+[
+  {
+    "path": "/api/model/status",
+    "status": 200,
+    "body": {
+      "configured": false,
+      "inference_executed": false,
+      "native_tools": "not_probed",
+      "accounting": {
+        "attempts_reserved": 0,
+        "actual_cost_usd": null
+      },
+      "limits": {
+        "calls": 8,
+        "reserved_tokens": 100000,
+        "context_chars": 48000,
+        "cost_usd": 0.0
+      }
+    }
+  },
+  {
+    "path": "/api/health",
+    "status": 200,
+    "latency_ms": 126.2977000005776,
+    "body": {
+      "status": "ok",
+      "model_enabled": false,
+      "papers": 21,
+      "mode": "extractive_no_llm"
+    }
+  },
+  {
+    "path": "/research.js",
+    "status": 200,
+    "latency_ms": 182.83700000029057,
+    "body": {
+      "bytes": 7994
+    }
+  },
+  {
+    "path": "/api/research-map",
+    "status": 200,
+    "latency_ms": 374.71329999971204,
+    "body": {
+      "topics": [
+        {
+          "id": 1,
+          "terms": [
+            "deep",
+            "understanding",
+            "bert",
+            "pre",
+            "training"
+          ],
+          "paper_ids": [
+            "5692a5514787a8c6727b",
+            "f8237d393163900fa8e4"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 2,
+          "terms": [
+            "attention",
+            "you",
+            "need"
+          ],
+          "paper_ids": [
+            "bdfaa68d8984f0dc02be"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 3,
+          "terms": [
+            "dense",
+            "passage",
+            "retrieval",
+            "open",
+            "domain"
+          ],
+          "paper_ids": [
+            "cb551710ff63f0804805"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 4,
+          "terms": [
+            "retrieval",
+            "augmented",
+            "realm",
+            "language",
+            "pre"
+          ],
+          "paper_ids": [
+            "0ec1a7ab3de5514c6d3b",
+            "23e3249e9a1e75418d82"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 5,
+          "terms": [
+            "language",
+            "few",
+            "shot",
+            "learners"
+          ],
+          "paper_ids": [
+            "97fd272f1fdfc1867746"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 6,
+          "terms": [
+            "neural",
+            "machine",
+            "translation",
+            "linear",
+            "time"
+          ],
+          "paper_ids": [
+            "285fb4323972464ba0be",
+            "84801c8410da51b449d3",
+            "dd1f80c0c4fd67cf9afd"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 7,
+          "terms": [
+            "sequence",
+            "convolutional",
+            "learning",
+            "bart",
+            "denoising"
+          ],
+          "paper_ids": [
+            "21dd02432f07d9bee122",
+            "c884c393e817e408e581"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 8,
+          "terms": [
+            "outrageously",
+            "large",
+            "neural",
+            "networks",
+            "sparsely"
+          ],
+          "paper_ids": [
+            "2567713d198a376b65b9"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 9,
+          "terms": [
+            "billion",
+            "scale",
+            "similarity",
+            "search",
+            "gpus"
+          ],
+          "paper_ids": [
+            "89b2371b261846059d41"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 10,
+          "terms": [
+            "exploring",
+            "limits",
+            "language",
+            "modeling",
+            "transfer"
+          ],
+          "paper_ids": [
+            "38095da0c38496d97fd6",
+            "ad07e47cedf437a41564"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 11,
+          "terms": [
+            "layer",
+            "normalization"
+          ],
+          "paper_ids": [
+            "c464f839fb8d59f7fde9"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 12,
+          "terms": [
+            "distilling",
+            "knowledge",
+            "neural",
+            "network"
+          ],
+          "paper_ids": [
+            "74e6689115c539db499f"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 13,
+          "terms": [
+            "gaussian",
+            "error",
+            "linear",
+            "units",
+            "gelus"
+          ],
+          "paper_ids": [
+            "ef59863c8e36d4b64c43"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        },
+        {
+          "id": 14,
+          "terms": [
+            "knowledge",
+            "you",
+            "pack",
+            "parameters",
+            "language"
+          ],
+          "paper_ids": [
+            "995796c4f44af1fb2853"
+          ],
+          "status": "heuristic_title_topic_candidate"
+        }
+      ],
+      "timeline": [
+        {
+          "paper_id": "84801c8410da51b449d3",
+          "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+          "first_submitted": "2014-09-01T16:33:02Z",
+          "selected_version_updated": "2016-05-19T21:53:22Z",
+          "version": 7,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "74e6689115c539db499f",
+          "title": "Distilling the Knowledge in a Neural Network",
+          "first_submitted": "2015-03-09T15:44:49Z",
+          "selected_version_updated": "2015-03-09T15:44:49Z",
+          "version": 1,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "38095da0c38496d97fd6",
+          "title": "Exploring the Limits of Language Modeling",
+          "first_submitted": "2016-02-07T19:11:17Z",
+          "selected_version_updated": "2016-02-11T23:01:48Z",
+          "version": 2,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "ef59863c8e36d4b64c43",
+          "title": "Gaussian Error Linear Units (GELUs)",
+          "first_submitted": "2016-06-27T19:20:40Z",
+          "selected_version_updated": "2023-06-06T01:53:32Z",
+          "version": 5,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "c464f839fb8d59f7fde9",
+          "title": "Layer Normalization",
+          "first_submitted": "2016-07-21T19:57:52Z",
+          "selected_version_updated": "2016-07-21T19:57:52Z",
+          "version": 1,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "285fb4323972464ba0be",
+          "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
+          "first_submitted": "2016-09-26T19:59:55Z",
+          "selected_version_updated": "2016-10-08T19:10:41Z",
+          "version": 2,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "dd1f80c0c4fd67cf9afd",
+          "title": "Neural Machine Translation in Linear Time",
+          "first_submitted": "2016-10-31T19:56:39Z",
+          "selected_version_updated": "2017-03-15T18:09:51Z",
+          "version": 2,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "2567713d198a376b65b9",
+          "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+          "first_submitted": "2017-01-23T18:10:00Z",
+          "selected_version_updated": "2017-01-23T18:10:00Z",
+          "version": 1,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "89b2371b261846059d41",
+          "title": "Billion-scale similarity search with GPUs",
+          "first_submitted": "2017-02-28T10:42:31Z",
+          "selected_version_updated": "2017-02-28T10:42:31Z",
+          "version": 1,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "21dd02432f07d9bee122",
+          "title": "Convolutional Sequence to Sequence Learning",
+          "first_submitted": "2017-05-08T23:25:30Z",
+          "selected_version_updated": "2017-05-12T16:14:26Z",
+          "version": 2,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "title": "Attention Is All You Need",
+          "first_submitted": "2017-06-12T17:57:34Z",
+          "selected_version_updated": "2023-08-02T00:41:18Z",
+          "version": 7,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "5692a5514787a8c6727b",
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "first_submitted": "2018-10-11T00:50:01Z",
+          "selected_version_updated": "2019-05-24T20:37:26Z",
+          "version": 2,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "ad07e47cedf437a41564",
+          "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+          "first_submitted": "2019-10-23T17:37:36Z",
+          "selected_version_updated": "2023-09-19T15:14:48Z",
+          "version": 4,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "c884c393e817e408e581",
+          "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+          "first_submitted": "2019-10-29T18:01:00Z",
+          "selected_version_updated": "2019-10-29T18:01:00Z",
+          "version": 1,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "0ec1a7ab3de5514c6d3b",
+          "title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+          "first_submitted": "2020-02-10T18:40:59Z",
+          "selected_version_updated": "2020-02-10T18:40:59Z",
+          "version": 1,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "995796c4f44af1fb2853",
+          "title": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+          "first_submitted": "2020-02-10T18:55:58Z",
+          "selected_version_updated": "2020-10-05T21:26:45Z",
+          "version": 4,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "cb551710ff63f0804805",
+          "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "first_submitted": "2020-04-10T04:53:17Z",
+          "selected_version_updated": "2020-05-02T00:53:53Z",
+          "version": 2,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "23e3249e9a1e75418d82",
+          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "first_submitted": "2020-05-22T21:34:34Z",
+          "selected_version_updated": "2021-04-12T15:42:18Z",
+          "version": 4,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "title": "Language Models are Few-Shot Learners",
+          "first_submitted": "2020-05-28T17:29:03Z",
+          "selected_version_updated": "2020-07-22T19:47:17Z",
+          "version": 4,
+          "metadata_source": "public_arxiv_atom_api",
+          "date_status": "source_metadata"
+        },
+        {
+          "paper_id": "f8237d393163900fa8e4",
+          "title": "Understanding Deep Learning",
+          "first_submitted": null,
+          "selected_version_updated": null,
+          "version": null,
+          "metadata_source": "unknown",
+          "date_status": "unknown_not_inferred"
+        }
+      ],
+      "future_work": [
+        {
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "chunk_id": "bdfaa68d8984f0dc02be:p7:c83",
+          "page": 7,
+          "text": "length n is smaller than the representation dimensionality d, which is most often the case with sentence representations used by state-of-the-art models in machine translations, such as word-piece [38] and byte-pair [31] representations. To improve computational performance for tasks involving very long sequences, self-attention could be restricted to considering only a neighborhood of size r in the input sequence centered around the respective output position. This would increase the maximum path length to O(n/r). We plan to investigate this approach further in future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "chunk_id": "bdfaa68d8984f0dc02be:p10:c148",
+          "page": 10,
+          "text": "We are excited about the future of attention-based models and plan to apply them to other tasks. We plan to extend the Transformer to problems involving input and output modalities other than text and to investigate local, restricted attention mechanisms to efficiently handle large inputs and outputs such as images, audio and video. Making generation less sequential is another research goals of ours.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "23e3249e9a1e75418d82",
+          "chunk_id": "23e3249e9a1e75418d82:p1:c7",
+          "page": 1,
+          "text": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when ﬁne-tuned on down- stream NLP tasks. However, their ability to access and precisely manipulate knowl- edge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-speciﬁc architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre- trained models with a differentiable access mechanism to explicit non-parametric memory have so far been only investigated for extractive downstream tasks. We explore a general-purpose ﬁne-tuning recipe for retrieval-augmented generation (RAG) — models which combine pre-trained parametric and non-parametric mem- ory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We com- pare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, and another which can use different passages pe",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "23e3249e9a1e75418d82",
+          "chunk_id": "23e3249e9a1e75418d82:p9:c203",
+          "page": 9,
+          "text": "Retrieve-and-Edit approaches Our method shares some similarities with retrieve-and-edit style approaches, where a similar training input-output pair is retrieved for a given input, and then edited to provide a ﬁnal output. These approaches have proved successful in a number of domains including Machine Translation [18, 22] and Semantic Parsing [21]. Our approach does have several differences, including less of emphasis on lightly editing a retrieved item, but on aggregating content from several pieces of retrieved content, as well as learning latent retrieval, and retrieving evidence documents rather than related training pairs. This said, RAG techniques may work well in these settings, and could represent promising future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "23e3249e9a1e75418d82",
+          "chunk_id": "23e3249e9a1e75418d82:p9:c205",
+          "page": 9,
+          "text": "In this work, we presented hybrid generation models with access to parametric and non-parametric memory. We showed that our RAG models obtain state of the art results on open-domain QA. We found that people prefer RAG’s generation over purely parametric BART, ﬁnding RAG more factual and speciﬁc. We conducted an thorough investigation of the learned retrieval component, validating its effectiveness, and we illustrated how the retrieval index can be hot-swapped to update the model without requiring any retraining. In future work, it may be fruitful to investigate if the two components can be jointly pre-trained from scratch, either with a denoising objective similar to BART or some another objective. Our work opens up new research directions on how parametric and non-parametric memories interact and how to most effectively combine them, showing promise in being applied to a wide variety of NLP tasks.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "23e3249e9a1e75418d82",
+          "chunk_id": "23e3249e9a1e75418d82:p18:c305",
+          "page": 18,
+          "text": "For FEVER classiﬁcation, we follow the practice from [32], and ﬁrst re-generate the claim, and then classify using the representation of the ﬁnal hidden state, before ﬁnally marginalizing across documents to obtain the class probabilities. The FEVER task traditionally has two sub-tasks. The ﬁrst is to classify the claim as either \"Supported\", \"Refuted\" or \"Not Enough Info\", which is the task we explore in the main paper. FEVER’s other sub-task involves extracting sentences from Wikipedia as evidence supporting the classiﬁcation prediction. As FEVER uses a different Wikipedia dump to us, directly tackling this task is not straightforward. We hope to address this in future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p5:c49",
+          "page": 5,
+          "text": "In this paper, we test this hypothesis by training a 175 billion parameter autoregressive language model, which we call GPT-3, and measuring its in-context learning abilities. Speciﬁcally, we evaluate GPT-3 on over two dozen NLP datasets, as well as several novel tasks designed to test rapid adaptation to tasks unlikely to be directly contained in the training set. For each task, we evaluate GPT-3 under 3 conditions: (a) “few-shot learning”, or in-context learning where we allow as many demonstrations as will ﬁt into the model’s context window (typically 10 to 100), (b) “one-shot learning”, where we allow only one demonstration, and (c) “zero-shot” learning, where no demonstrations are allowed and only an instruction in natural language is given to the model. GPT-3 could also in principle be evaluated in the traditional ﬁne-tuning setting, but we leave this to future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p6:c62",
+          "page": 6,
+          "text": "• Fine-Tuning (FT) has been the most common approach in recent years, and involves updating the weights of a pre-trained model by training on a supervised dataset speciﬁc to the desired task. Typically thousands to hundreds of thousands of labeled examples are used. The main advantage of ﬁne-tuning is strong performance on many benchmarks. The main disadvantages are the need for a new large dataset for every task, the potential for poor generalization out-of-distribution [MPL19], and the potential to exploit spurious features of the training data [GSL+18, NK19], potentially resulting in an unfair comparison with human performance. In this work we do not ﬁne-tune GPT-3 because our focus is on task-agnostic performance, but GPT-3 can be ﬁne-tuned in principle and this is a promising direction for future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p7:c69",
+          "page": 7,
+          "text": "Figure 2.1 shows the four methods using the example of translating English to French. In this paper we focus on zero-shot, one-shot and few-shot, with the aim of comparing them not as competing alternatives, but as different problem settings which offer a varying trade-off between performance on speciﬁc benchmarks and sample efﬁciency. We especially highlight the few-shot results as many of them are only slightly behind state-of-the-art ﬁne-tuned models. Ultimately, however, one-shot, or even sometimes zero-shot, seem like the fairest comparisons to human performance, and are important targets for future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p9:c95",
+          "page": 9,
+          "text": "A major methodological concern with language models pretrained on a broad swath of internet data, particularly large models with the capacity to memorize vast amounts of content, is potential contamination of downstream tasks by having their test or development sets inadvertently seen during pre-training. To reduce such contamination, we searched for and attempted to remove any overlaps with the development and test sets of all benchmarks studied in this paper. Unfortunately, a bug in the ﬁltering caused us to ignore some overlaps, and due to the cost of training it was not feasible to retrain the model. In Section 4 we characterize the impact of the remaining overlaps, and in future work we will more aggressively remove data contamination.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p26:c270",
+          "page": 26,
+          "text": "Related work on language model detection by Ippolito et al. [IDCBE19] indicates that automatic discriminators like G ROV E R [ZHR+19] and GLTR [GSR19] may have greater success at detecting model generated text than human evaluators. Automatic detection of these models may be a promising area of future research.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p33:c332",
+          "page": 33,
+          "text": "GPT-3 and our analysis of it have a number of limitations. Below we describe some of these and suggest directions for future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p33:c336",
+          "page": 33,
+          "text": "he other), and several reading comprehension tasks (e.g. QuAC and RACE). We also conjecture, based on past literature, that a large bidirectional model would be stronger at ﬁne-tuning than GPT-3. Making a bidirectional model at the scale of GPT-3, and/or trying to make bidirectional models work with few- or zero-shot learning, is a promising direction for future research, and could help achieve the “best of both worlds”.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p34:c340",
+          "page": 34,
+          "text": "Another limitation broadly shared by language models is poor sample efﬁciency during pre-training. While GPT-3 takes a step towards test-time sample efﬁciency closer to that of humans (one-shot or zero-shot), it still sees much more text during pre-training than a human sees in the their lifetime [Lin20]. Improving pre-training sample efﬁciency is an important direction for future work, and might come from grounding in the physical world to provide additional information, or from algorithmic improvements.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p34:c342",
+          "page": 34,
+          "text": "w-shot learning works is an important unexplored direction for future research.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p40:c421",
+          "page": 40,
+          "text": "Another approach to increasing generality and transfer-learning capability in language models is multi-task learning [Car97], which ﬁne-tunes on a mixture of downstream tasks together, rather than separately updating the weights for each one. If successful multi-task learning could allow a single model to be used for many tasks without updating the weights (similar to our in-context learning approach), or alternatively could improve sample efﬁciency when updating the weights for a new task. Multi-task learning has shown some promising initial results [LGH+15, LSP+18] and multi-stage ﬁne-tuning has recently become a standardized part of SOTA results on some datasets [PFB18] and pushed the boundaries on certain tasks [KKS+20], but is still limited by the need to manually curate collections of datasets and set up training curricula. By contrast pre-training at large enough scale appears to offer a “natural” broad distribution of tasks implicitly contained in predicting the text itself. One direction for future work might be attempting to generate a broader set of explicit tasks for multi-task learning, for example through procedural generation [TFR+17], human interaction [ZSW+19b], or",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "97fd272f1fdfc1867746",
+          "chunk_id": "97fd272f1fdfc1867746:p40:c423",
+          "page": 40,
+          "text": "Algorithmic innovation in language models over the last two years has been enormous, including denoising-based bidirectionality [DCLT18], preﬁxLM [DL15] and encoder-decoder architectures [LLG+19, RSR+19], random permu- tations during training [YDY+19], architectures that improve the efﬁciency of sampling [DYY+19], improvements in data and training procedures [LOG+19], and efﬁciency increases in the embedding parameters [LCG+19]. Many of these techniques provide signiﬁcant gains on downstream tasks. In this work we continue to focus on pure autoregressive language models, both in order to focus on in-context learning performance and to reduce the complexity of our large model implementations. However, it is very likely that incorporating these algorithmic advances could improve GPT-3’s performance on downstream tasks, especially in the ﬁne-tuning setting, and combining GPT-3’s scale with these algorithmic techniques is a promising direction for future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "0ec1a7ab3de5514c6d3b",
+          "chunk_id": "0ec1a7ab3de5514c6d3b:p9:c147",
+          "page": 9,
+          "text": "6. Future Work",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "285fb4323972464ba0be",
+          "chunk_id": "285fb4323972464ba0be:p19:c238",
+          "page": 19,
+          "text": "As expected, on this metric the GNMT system improves also compared to the PBMT system. In some cases human and GNMT translations are nearly indistinguishable on the relatively simplistic and isolated sentences sampled from Wikipedia and news articles for this experiment. Note that we have observed that human raters, even though ﬂuent in both languages, do not necessarily fully understand each randomly sampled sentence suﬃciently and hence cannot necessarily generate the best possible translation or rate a given translation accurately. Also note that, although the scale for the scores goes from 0 (complete nonsense) to 6 (perfect translation) the human translations get an imperfect score of only around 5 in Table 10, which shows possible ambiguities in the translations and also possibly non-calibrated raters and translators with a varying level of proﬁciency. Testing our GNMT system on particularly diﬃcult translation cases and longer inputs than just single sentences is the subject of future work.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "c884c393e817e408e581",
+          "chunk_id": "c884c393e817e408e581:p7:c136",
+          "page": 7,
+          "text": "We also evaluated performance on WMT16 Romanian- English, augmented with back-translation data from Sennrich et al. (2016). We use a 6-layer transformer source encoder to map Romanian into a representation that BART is able to de-noise into English, following the approach introduced in §3.4. Experiment results are presented in Table 6. We compare our results against a baseline Transformer architecture (Vaswani et al., 2017) with Transformer- large settings (the baseline row). We show the performance of both steps of our model in the ﬁxed BART and tuned BART rows. For each row we experiment on the original WMT16 Romanian-English augmented with back-translation data. We use a beam width of 5 and a length penalty of α = 1. Preliminary results suggested that our approach was less effective without back-translation data, and prone to overﬁtting—future work should explore additional regularization techniques.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "38095da0c38496d97fd6",
+          "chunk_id": "38095da0c38496d97fd6:p9:c157",
+          "page": 9,
+          "text": "By exploring recent advances in model architectures (e.g. LSTMs), exploiting small character CNNs, and by sharing our ﬁndings in this paper and accompanying code and mod- els (to be released upon publication), we hope to inspire research on large scale Language Modeling, a problem we consider crucial towards language understanding. We hope for future research to focus on reasonably sized datasets taking inspiration from recent advances seen in the com- puter vision community thanks to efforts such as Imagenet (Deng et al., 2009).",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "995796c4f44af1fb2853",
+          "chunk_id": "995796c4f44af1fb2853:p1:c24",
+          "page": 1,
+          "text": "It has recently been observed that neural lan- guage models trained on unstructured text can implicitly store and retrieve knowledge using natural language queries. In this short pa- per, we measure the practical utility of this approach by ﬁne-tuning pre-trained models to answer questions without access to any exter- nal context or knowledge. We show that this approach scales with model size and performs competitively with open-domain systems that explicitly retrieve answers from an external knowledge source when answering questions. To facilitate reproducibility and future work, we release our code and trained models.1",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "995796c4f44af1fb2853",
+          "chunk_id": "995796c4f44af1fb2853:p3:c39",
+          "page": 3,
+          "text": "dicted answer is compared to the ground-truth after both are lowercased and stripped of arti- cles, punctuation, and duplicate whitespace (Ra- jpurkar et al., 2016). For Natural Questions, we evaluate using both 1) the standard “open- domain” version as used e.g. by (Lee et al., 2019; Min et al., 2019b,a; Asai et al., 2019) where the model is only required to produce a single nor- malized answer and 2) the standard multi-answer variant used with reading comprehension systems (Kwiatkowski et al., 2019). We review the details of Natural Questions evaluation in appendix A. Note that Natural Questions and TriviaQA have private test sets, so standard practice on their open- domain variants is to report performance on the development sets. However, we also include our results on the ofﬁcial TriviaQA test set by ﬁne- tuning on the unﬁltered training set and submitting our test set predictions to the leaderboard for the Wikipedia domain. We urge future work to adopt this approach to help ensure the validity of results and avoid potentially overﬁtting to a public set.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "995796c4f44af1fb2853",
+          "chunk_id": "995796c4f44af1fb2853:p5:c70",
+          "page": 5,
+          "text": "In this short paper, we have shown that large lan- guage models pre-trained on unstructured text can attain competitive results on open-domain ques- tion answering benchmarks without any access to external knowledge. This suggests a funda- mentally different approach to designing question answering systems, motivating many threads for future work: First, we obtained state-of-the-art results only with the largest models which had around 11 billion parameters. This model size can be prohibitively expensive in resource-constrained settings, prompting future work on more efﬁcient language models. Second, “open-book” models typically provide some indication of what infor- mation they accessed when answering a question. This can provide a useful form of interpretabil- ity. In contrast, our model distributes knowledge in its parameters in an inexplicable way and hal- lucinates realistic-looking answers when it is un- sure. Third, the maximum-likelihood objective used to train our model provides no guarantees as to whether a model will learn a fact or not. This makes it difﬁcult to ensure that the model obtains speciﬁc knowledge over the course of pre-training and prevents us from explicit",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "21dd02432f07d9bee122",
+          "chunk_id": "21dd02432f07d9bee122:p9:c175",
+          "page": 9,
+          "text": "6. Conclusion and Future Work",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "21dd02432f07d9bee122",
+          "chunk_id": "21dd02432f07d9bee122:p9:c182",
+          "page": 9,
+          "text": "We achieve a new state of the art on several public trans- lation benchmark data sets. On the WMT’16 English- Romanian task we outperform the previous best result by 1.8 BLEU, on WMT’14 English-French translation we im- prove over the LSTM model of Wu et al. (2016) by 1.5 BLEU in a comparable setting, and on WMT’14 English- German translation we ouperform the same model by 0.5 BLEU. In future work, we would like to apply convolu- tional architectures to other sequence to sequence learn- ing problems which may beneﬁt from learning hierarchical representations as well.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "ad07e47cedf437a41564",
+          "chunk_id": "ad07e47cedf437a41564:p1:c14",
+          "page": 1,
+          "text": "Transfer learning, where a model is first pre-trained on a data-rich task before being fine- tuned on a downstream task, has emerged as a powerful technique in natural language processing (NLP). The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts all text-based language problems into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled data sets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new “Colossal Clean Crawled Corpus”, we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our data set, pre-trained models, and code.1",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "ad07e47cedf437a41564",
+          "chunk_id": "ad07e47cedf437a41564:p5:c60",
+          "page": 5,
+          "text": " the ablation of their impact for future work. As part of our study, we experiment with the scalability of these models, i.e. how their performance changes as they are made to have more parameters or layers. Training large models can be non-trivial since they might not fit on a single machine and require a great deal of computation. As a result, we use a combination of model and data parallelism and train models on “slices” of Cloud TPU Pods.5 TPU pods are are multi-rack ML supercomputers that contain 1,024 TPU v3 chips connected via a high-speed 2D mesh interconnect with supporting CPU host machines. We leverage the Mesh TensorFlow library (Shazeer et al., 2018) for ease of implementation of both model parallelism and data parallelism (Krizhevsky, 2014).",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        },
+        {
+          "paper_id": "ad07e47cedf437a41564",
+          "chunk_id": "ad07e47cedf437a41564:p10:c115",
+          "page": 10,
+          "text": "We systematically study these contributions by taking a reasonable baseline (described in Section 3.1) and altering one aspect of the setup at a time. For example, in Section 3.3 we measure the performance of different unsupervised objectives while keeping the rest of our experimental pipeline fixed. This “coordinate ascent” approach might miss second-order effects (for example, some particular unsupervised objective may work best on a model larger than our baseline setting), but performing a combinatorial exploration of all of the factors in our study would be prohibitively expensive. In future work, we expect it could be fruitful to more thoroughly consider combinations of the approaches we study.",
+          "status": "待检索后续文献核验，不能视为未解决或原创 idea",
+          "category": "source_future_work_candidate",
+          "attribution_verified": false,
+          "resolved_by_later_work": null
+        }
+      ],
+      "derived_research_opportunities": [],
+      "model_hypotheses": [],
+      "limitations": "标题TF-IDF余弦/平均连接阈值0.24是可解释启发式，未做人工主题质量评测；时间线是首发/选定版更新时间，不证明影响因果。Future Work来源候选不等于仍未解决问题，不生成已证明的新结论。"
+    }
+  },
+  {
+    "path": "/api/research",
+    "request": {
+      "question": "Compare training hardware GPUs in the latest available Attention version.",
+      "paper_ids": [
+        "0a9bff1be3575cf9fe26",
+        "bdfaa68d8984f0dc02be"
+      ],
+      "use_model": false
+    },
+    "status": 200,
+    "body": {
+      "run_id": "ef8c664582804c4cb45096ee43576ee9",
+      "phase": "completed",
+      "mode": "deterministic_workflow",
+      "trace": [
+        {
+          "phase": "tool",
+          "tool": "search_library",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "tool",
+          "tool": "versions",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "tool",
+          "tool": "retrieve",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "fallback",
+          "status": "extractive_only",
+          "reason": "未请求真实模型；本地确定性证据流程"
+        }
+      ],
+      "outputs": {
+        "search_library": {
+          "papers": [
+            {
+              "id": "bdfaa68d8984f0dc02be",
+              "title": "Attention Is All You Need",
+              "version": 7,
+              "family": "1706.03762"
+            }
+          ],
+          "scientific_evidence": false
+        },
+        "versions": {
+          "policy": "all",
+          "explicit_version": null,
+          "selected_ids": [
+            "0a9bff1be3575cf9fe26",
+            "bdfaa68d8984f0dc02be"
+          ],
+          "warnings": [
+            {
+              "paper_id": "0a9bff1be3575cf9fe26",
+              "family": "1706.03762",
+              "version": 1,
+              "latest_available_version": 7,
+              "status": "older_available_source",
+              "selected": true
+            }
+          ],
+          "scope": "仅依据本次提供的文献集合，不声称已查询全网最新修订；最新版本不等于事实正确。",
+          "changes": []
+        },
+        "retrieve": {
+          "evidence": [
+            {
+              "id": "bdfaa68d8984f0dc02be:p1:c12",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 1,
+              "bbox": [
+                143.5570068359375,
+                413.33428955078125,
+                469.78717041015625,
+                576.0990600585938
+              ],
+              "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.036012,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p8:c114",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 8,
+              "bbox": [
+                108.0,
+                418.3014221191406,
+                504.6652526855469,
+                482.73406982421875
+              ],
+              "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.034912,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p2:c19",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 2,
+              "bbox": [
+                107.69100189208984,
+                300.9082946777344,
+                505.73870849609375,
+                343.6730651855469
+              ],
+              "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.033481,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p7:c91",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 7,
+              "bbox": [
+                107.53199768066406,
+                486.7832946777344,
+                504.0014953613281,
+                540.45703125
+              ],
+              "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.033149,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p8:c117",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 8,
+              "bbox": [
+                107.69100189208984,
+                598.3764038085938,
+                503.99761962890625,
+                640.9900512695312
+              ],
+              "text": "Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature. We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU 5.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.03009,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p6:c76",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 6,
+              "bbox": [
+                107.53199768066406,
+                437.5426940917969,
+                504.00238037109375,
+                480.236083984375
+              ],
+              "text": "We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.029958,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            }
+          ],
+          "abstained": false,
+          "query": "Compare training hardware GPUs in the latest available Attention version."
+        }
+      },
+      "synthesis": {
+        "claims": [
+          {
+            "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p1:c12",
+                "quote": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+              }
+            ]
+          },
+          {
+            "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p8:c114",
+                "quote": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models."
+              }
+            ]
+          },
+          {
+            "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p2:c19",
+                "quote": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs."
+              }
+            ]
+          },
+          {
+            "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+                "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+              }
+            ]
+          }
+        ],
+        "audit": [
+          {
+            "claim": {
+              "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p1:c12",
+                  "quote": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p8:c114",
+                  "quote": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p2:c19",
+                  "quote": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+                  "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          }
+        ],
+        "rejected": [],
+        "semantic_entailment_verified": false,
+        "verification_scope": "conservative_source_quotation_release_gate",
+        "disclaimer": "完整引文只支持来源表述，不证明现实事实或普适语义蕴含。数值冲突/部分支持为人工复核线索；未验证改写默认不发布。未把模型自评分当真值。"
+      },
+      "evidence": [
+        {
+          "id": "bdfaa68d8984f0dc02be:p1:c12",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 1,
+          "bbox": [
+            143.5570068359375,
+            413.33428955078125,
+            469.78717041015625,
+            576.0990600585938
+          ],
+          "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.036012,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p8:c114",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 8,
+          "bbox": [
+            108.0,
+            418.3014221191406,
+            504.6652526855469,
+            482.73406982421875
+          ],
+          "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.034912,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p2:c19",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 2,
+          "bbox": [
+            107.69100189208984,
+            300.9082946777344,
+            505.73870849609375,
+            343.6730651855469
+          ],
+          "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.033481,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p7:c91",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 7,
+          "bbox": [
+            107.53199768066406,
+            486.7832946777344,
+            504.0014953613281,
+            540.45703125
+          ],
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.033149,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p8:c117",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 8,
+          "bbox": [
+            107.69100189208984,
+            598.3764038085938,
+            503.99761962890625,
+            640.9900512695312
+          ],
+          "text": "Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature. We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU 5.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.03009,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p6:c76",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 6,
+          "bbox": [
+            107.53199768066406,
+            437.5426940917969,
+            504.00238037109375,
+            480.236083984375
+          ],
+          "text": "We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.029958,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        }
+      ],
+      "version_context": {
+        "policy": "latest",
+        "explicit_version": null,
+        "selected_ids": [
+          "bdfaa68d8984f0dc02be"
+        ],
+        "warnings": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "family": "1706.03762",
+            "version": 1,
+            "latest_available_version": 7,
+            "status": "older_available_source",
+            "selected": false
+          }
+        ],
+        "scope": "仅依据本次提供的文献集合，不声称已查询全网最新修订；最新版本不等于事实正确。"
+      },
+      "intent": {
+        "labels": [
+          "version_comparison",
+          "cross_paper_synthesis"
+        ],
+        "subquestions": [
+          "Compare training hardware GPUs in the latest available Attention version."
+        ],
+        "provenance": "deterministic_keyword_and_punctuation_hints_not_LLM_reasoning",
+        "limitations": "标点拆分最多3项，不是语义完整问题分解；原问题始终保留，真实模型需依据工具结果继续规划。"
+      },
+      "rounds": 0,
+      "tool_count": 3,
+      "fallback_reason": "未请求真实模型；本地确定性证据流程",
+      "accounting": {
+        "attempts_reserved": 0,
+        "reported_usage": [],
+        "actual_cost_usd": null
+      },
+      "max_steps": 6,
+      "limitations": "真实模型能力须由授权端点实测；替身协议测试不代表模型效果。支持关卡保守放行完整原文，未解决普适语义蕴含；状态恢复只在同一证据集合/权限内。"
+    }
+  },
+  {
+    "path": "/api/research/ef8c664582804c4cb45096ee43576ee9",
+    "status": 200,
+    "body": {
+      "run_id": "ef8c664582804c4cb45096ee43576ee9",
+      "phase": "completed",
+      "mode": "deterministic_workflow",
+      "trace": [
+        {
+          "phase": "tool",
+          "tool": "search_library",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "tool",
+          "tool": "versions",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "tool",
+          "tool": "retrieve",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "fallback",
+          "status": "extractive_only",
+          "reason": "未请求真实模型；本地确定性证据流程"
+        }
+      ],
+      "outputs": {
+        "search_library": {
+          "papers": [
+            {
+              "id": "bdfaa68d8984f0dc02be",
+              "title": "Attention Is All You Need",
+              "version": 7,
+              "family": "1706.03762"
+            }
+          ],
+          "scientific_evidence": false
+        },
+        "versions": {
+          "policy": "all",
+          "explicit_version": null,
+          "selected_ids": [
+            "0a9bff1be3575cf9fe26",
+            "bdfaa68d8984f0dc02be"
+          ],
+          "warnings": [
+            {
+              "paper_id": "0a9bff1be3575cf9fe26",
+              "family": "1706.03762",
+              "version": 1,
+              "latest_available_version": 7,
+              "status": "older_available_source",
+              "selected": true
+            }
+          ],
+          "scope": "仅依据本次提供的文献集合，不声称已查询全网最新修订；最新版本不等于事实正确。",
+          "changes": []
+        },
+        "retrieve": {
+          "evidence": [
+            {
+              "id": "bdfaa68d8984f0dc02be:p1:c12",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 1,
+              "bbox": [
+                143.5570068359375,
+                413.33428955078125,
+                469.78717041015625,
+                576.0990600585938
+              ],
+              "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.036012,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p8:c114",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 8,
+              "bbox": [
+                108.0,
+                418.3014221191406,
+                504.6652526855469,
+                482.73406982421875
+              ],
+              "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.034912,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p2:c19",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 2,
+              "bbox": [
+                107.69100189208984,
+                300.9082946777344,
+                505.73870849609375,
+                343.6730651855469
+              ],
+              "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.033481,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p7:c91",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 7,
+              "bbox": [
+                107.53199768066406,
+                486.7832946777344,
+                504.0014953613281,
+                540.45703125
+              ],
+              "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.033149,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p8:c117",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 8,
+              "bbox": [
+                107.69100189208984,
+                598.3764038085938,
+                503.99761962890625,
+                640.9900512695312
+              ],
+              "text": "Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature. We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU 5.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.03009,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p6:c76",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 6,
+              "bbox": [
+                107.53199768066406,
+                437.5426940917969,
+                504.00238037109375,
+                480.236083984375
+              ],
+              "text": "We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.029958,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            }
+          ],
+          "abstained": false,
+          "query": "Compare training hardware GPUs in the latest available Attention version."
+        }
+      },
+      "synthesis": {
+        "claims": [
+          {
+            "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p1:c12",
+                "quote": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+              }
+            ]
+          },
+          {
+            "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p8:c114",
+                "quote": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models."
+              }
+            ]
+          },
+          {
+            "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p2:c19",
+                "quote": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs."
+              }
+            ]
+          },
+          {
+            "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+                "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+              }
+            ]
+          }
+        ],
+        "audit": [
+          {
+            "claim": {
+              "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p1:c12",
+                  "quote": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p8:c114",
+                  "quote": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p2:c19",
+                  "quote": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+                  "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          }
+        ],
+        "rejected": [],
+        "semantic_entailment_verified": false,
+        "verification_scope": "conservative_source_quotation_release_gate",
+        "disclaimer": "完整引文只支持来源表述，不证明现实事实或普适语义蕴含。数值冲突/部分支持为人工复核线索；未验证改写默认不发布。未把模型自评分当真值。"
+      },
+      "evidence": [
+        {
+          "id": "bdfaa68d8984f0dc02be:p1:c12",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 1,
+          "bbox": [
+            143.5570068359375,
+            413.33428955078125,
+            469.78717041015625,
+            576.0990600585938
+          ],
+          "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.036012,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p8:c114",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 8,
+          "bbox": [
+            108.0,
+            418.3014221191406,
+            504.6652526855469,
+            482.73406982421875
+          ],
+          "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.034912,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p2:c19",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 2,
+          "bbox": [
+            107.69100189208984,
+            300.9082946777344,
+            505.73870849609375,
+            343.6730651855469
+          ],
+          "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.033481,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p7:c91",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 7,
+          "bbox": [
+            107.53199768066406,
+            486.7832946777344,
+            504.0014953613281,
+            540.45703125
+          ],
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.033149,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p8:c117",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 8,
+          "bbox": [
+            107.69100189208984,
+            598.3764038085938,
+            503.99761962890625,
+            640.9900512695312
+          ],
+          "text": "Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature. We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU 5.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.03009,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p6:c76",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 6,
+          "bbox": [
+            107.53199768066406,
+            437.5426940917969,
+            504.00238037109375,
+            480.236083984375
+          ],
+          "text": "We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.029958,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        }
+      ],
+      "version_context": {
+        "policy": "latest",
+        "explicit_version": null,
+        "selected_ids": [
+          "bdfaa68d8984f0dc02be"
+        ],
+        "warnings": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "family": "1706.03762",
+            "version": 1,
+            "latest_available_version": 7,
+            "status": "older_available_source",
+            "selected": false
+          }
+        ],
+        "scope": "仅依据本次提供的文献集合，不声称已查询全网最新修订；最新版本不等于事实正确。"
+      },
+      "intent": {
+        "labels": [
+          "version_comparison",
+          "cross_paper_synthesis"
+        ],
+        "subquestions": [
+          "Compare training hardware GPUs in the latest available Attention version."
+        ],
+        "provenance": "deterministic_keyword_and_punctuation_hints_not_LLM_reasoning",
+        "limitations": "标点拆分最多3项，不是语义完整问题分解；原问题始终保留，真实模型需依据工具结果继续规划。"
+      },
+      "rounds": 0,
+      "tool_count": 3,
+      "fallback_reason": "未请求真实模型；本地确定性证据流程",
+      "accounting": {
+        "attempts_reserved": 0,
+        "reported_usage": [],
+        "actual_cost_usd": null
+      },
+      "max_steps": 6,
+      "limitations": "真实模型能力须由授权端点实测；替身协议测试不代表模型效果。支持关卡保守放行完整原文，未解决普适语义蕴含；状态恢复只在同一证据集合/权限内。"
+    }
+  },
+  {
+    "path": "/api/research/ef8c664582804c4cb45096ee43576ee9/resume",
+    "status": 200,
+    "body": {
+      "run_id": "ef8c664582804c4cb45096ee43576ee9",
+      "phase": "completed",
+      "mode": "deterministic_workflow",
+      "trace": [
+        {
+          "phase": "tool",
+          "tool": "search_library",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "tool",
+          "tool": "versions",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "tool",
+          "tool": "retrieve",
+          "arguments": {},
+          "call_id": null,
+          "status": "completed"
+        },
+        {
+          "phase": "fallback",
+          "status": "extractive_only",
+          "reason": "未请求真实模型；本地确定性证据流程"
+        }
+      ],
+      "outputs": {
+        "search_library": {
+          "papers": [
+            {
+              "id": "bdfaa68d8984f0dc02be",
+              "title": "Attention Is All You Need",
+              "version": 7,
+              "family": "1706.03762"
+            }
+          ],
+          "scientific_evidence": false
+        },
+        "versions": {
+          "policy": "all",
+          "explicit_version": null,
+          "selected_ids": [
+            "0a9bff1be3575cf9fe26",
+            "bdfaa68d8984f0dc02be"
+          ],
+          "warnings": [
+            {
+              "paper_id": "0a9bff1be3575cf9fe26",
+              "family": "1706.03762",
+              "version": 1,
+              "latest_available_version": 7,
+              "status": "older_available_source",
+              "selected": true
+            }
+          ],
+          "scope": "仅依据本次提供的文献集合，不声称已查询全网最新修订；最新版本不等于事实正确。",
+          "changes": []
+        },
+        "retrieve": {
+          "evidence": [
+            {
+              "id": "bdfaa68d8984f0dc02be:p1:c12",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 1,
+              "bbox": [
+                143.5570068359375,
+                413.33428955078125,
+                469.78717041015625,
+                576.0990600585938
+              ],
+              "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.036012,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p8:c114",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 8,
+              "bbox": [
+                108.0,
+                418.3014221191406,
+                504.6652526855469,
+                482.73406982421875
+              ],
+              "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.034912,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p2:c19",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 2,
+              "bbox": [
+                107.69100189208984,
+                300.9082946777344,
+                505.73870849609375,
+                343.6730651855469
+              ],
+              "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.033481,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p7:c91",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 7,
+              "bbox": [
+                107.53199768066406,
+                486.7832946777344,
+                504.0014953613281,
+                540.45703125
+              ],
+              "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.033149,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p8:c117",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 8,
+              "bbox": [
+                107.69100189208984,
+                598.3764038085938,
+                503.99761962890625,
+                640.9900512695312
+              ],
+              "text": "Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature. We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU 5.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.03009,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            },
+            {
+              "id": "bdfaa68d8984f0dc02be:p6:c76",
+              "paper_id": "bdfaa68d8984f0dc02be",
+              "page": 6,
+              "bbox": [
+                107.53199768066406,
+                437.5426940917969,
+                504.00238037109375,
+                480.236083984375
+              ],
+              "text": "We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+              "mode": "native",
+              "title": "Attention Is All You Need",
+              "score": 0.029958,
+              "source_version": 7,
+              "source_family": "1706.03762",
+              "source_url": "https://arxiv.org/abs/1706.03762v7"
+            }
+          ],
+          "abstained": false,
+          "query": "Compare training hardware GPUs in the latest available Attention version."
+        }
+      },
+      "synthesis": {
+        "claims": [
+          {
+            "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p1:c12",
+                "quote": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+              }
+            ]
+          },
+          {
+            "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p8:c114",
+                "quote": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models."
+              }
+            ]
+          },
+          {
+            "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p2:c19",
+                "quote": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs."
+              }
+            ]
+          },
+          {
+            "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+            "citations": [
+              {
+                "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+                "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+              }
+            ]
+          }
+        ],
+        "audit": [
+          {
+            "claim": {
+              "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p1:c12",
+                  "quote": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p8:c114",
+                  "quote": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p2:c19",
+                  "quote": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          },
+          {
+            "claim": {
+              "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+              "citations": [
+                {
+                  "chunk_id": "bdfaa68d8984f0dc02be:p7:c91",
+                  "quote": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days)."
+                }
+              ]
+            },
+            "status": "fully_supported",
+            "reason": "complete_source_quotation_only",
+            "release": true,
+            "source_versions": [
+              {
+                "paper_id": "bdfaa68d8984f0dc02be",
+                "version": 7
+              }
+            ]
+          }
+        ],
+        "rejected": [],
+        "semantic_entailment_verified": false,
+        "verification_scope": "conservative_source_quotation_release_gate",
+        "disclaimer": "完整引文只支持来源表述，不证明现实事实或普适语义蕴含。数值冲突/部分支持为人工复核线索；未验证改写默认不发布。未把模型自评分当真值。"
+      },
+      "evidence": [
+        {
+          "id": "bdfaa68d8984f0dc02be:p1:c12",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 1,
+          "bbox": [
+            143.5570068359375,
+            413.33428955078125,
+            469.78717041015625,
+            576.0990600585938
+          ],
+          "text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.036012,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p8:c114",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 8,
+          "bbox": [
+            108.0,
+            418.3014221191406,
+            504.6652526855469,
+            482.73406982421875
+          ],
+          "text": "On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.034912,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p2:c19",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 2,
+          "bbox": [
+            107.69100189208984,
+            300.9082946777344,
+            505.73870849609375,
+            343.6730651855469
+          ],
+          "text": "In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.033481,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p7:c91",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 7,
+          "bbox": [
+            107.53199768066406,
+            486.7832946777344,
+            504.0014953613281,
+            540.45703125
+          ],
+          "text": "We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.033149,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p8:c117",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 8,
+          "bbox": [
+            107.69100189208984,
+            598.3764038085938,
+            503.99761962890625,
+            640.9900512695312
+          ],
+          "text": "Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature. We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU 5.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.03009,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        },
+        {
+          "id": "bdfaa68d8984f0dc02be:p6:c76",
+          "paper_id": "bdfaa68d8984f0dc02be",
+          "page": 6,
+          "bbox": [
+            107.53199768066406,
+            437.5426940917969,
+            504.00238037109375,
+            480.236083984375
+          ],
+          "text": "We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+          "mode": "native",
+          "title": "Attention Is All You Need",
+          "score": 0.029958,
+          "source_version": 7,
+          "source_family": "1706.03762",
+          "source_url": "https://arxiv.org/abs/1706.03762v7"
+        }
+      ],
+      "version_context": {
+        "policy": "latest",
+        "explicit_version": null,
+        "selected_ids": [
+          "bdfaa68d8984f0dc02be"
+        ],
+        "warnings": [
+          {
+            "paper_id": "0a9bff1be3575cf9fe26",
+            "family": "1706.03762",
+            "version": 1,
+            "latest_available_version": 7,
+            "status": "older_available_source",
+            "selected": false
+          }
+        ],
+        "scope": "仅依据本次提供的文献集合，不声称已查询全网最新修订；最新版本不等于事实正确。"
+      },
+      "intent": {
+        "labels": [
+          "version_comparison",
+          "cross_paper_synthesis"
+        ],
+        "subquestions": [
+          "Compare training hardware GPUs in the latest available Attention version."
+        ],
+        "provenance": "deterministic_keyword_and_punctuation_hints_not_LLM_reasoning",
+        "limitations": "标点拆分最多3项，不是语义完整问题分解；原问题始终保留，真实模型需依据工具结果继续规划。"
+      },
+      "rounds": 0,
+      "tool_count": 3,
+      "fallback_reason": "未请求真实模型；本地确定性证据流程",
+      "accounting": {
+        "attempts_reserved": 0,
+        "reported_usage": [],
+        "actual_cost_usd": null
+      },
+      "max_steps": 6,
+      "limitations": "真实模型能力须由授权端点实测；替身协议测试不代表模型效果。支持关卡保守放行完整原文，未解决普适语义蕴含；状态恢复只在同一证据集合/权限内。"
+    }
+  },
+  {
+    "path": "translation_without_model",
+    "expected_status": 503,
+    "status": 503,
+    "body": {
+      "detail": "未启用或未配置真实大模型；该操作未执行"
+    }
+  },
+  {
+    "path": "local_model_list_11434",
+    "status": "unavailable",
+    "error_type": "ConnectTimeout",
+    "inference_executed": false
+  },
+  {
+    "path": "local_model_list_1234",
+    "status": "unavailable",
+    "error_type": "ConnectTimeout",
+    "inference_executed": false
+  }
+]

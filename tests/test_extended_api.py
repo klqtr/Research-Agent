@@ -24,7 +24,9 @@ def test_search_invalid_limits(client):
 
 def test_model_workflow_without_model(client):
     response = client.post("/api/workflow", json={"question": "make an outline", "use_model": True})
-    assert response.status_code == 503
+    assert response.status_code == 200
+    assert response.json()["mode"] == "extractive_fallback"
+    assert response.json()["synthesis"]["claims"] == []
 
 
 def test_csv_row_and_size_limits():

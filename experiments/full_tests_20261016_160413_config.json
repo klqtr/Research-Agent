@@ -1,0 +1,13 @@
+{
+  "scope": "entire_pytest_suite",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--basetemp=tmp/pytest_full_20261016_160413",
+    "--junitxml=experiments/full_tests_20261016_160413.xml"
+  ],
+  "exit_code": 0,
+  "xml": "experiments/full_tests_20261016_160413.xml"
+}

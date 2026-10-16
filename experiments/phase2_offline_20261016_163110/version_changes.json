@@ -1,0 +1,30 @@
+[
+  {
+    "files": [
+      "1706.03762v1.pdf",
+      "1706.03762v7.pdf"
+    ],
+    "latency_ms": 25.780399999348447,
+    "result": {
+      "from": "0a9bff1be3575cf9fe26",
+      "to": "bdfaa68d8984f0dc02be",
+      "changes": [],
+      "method": "lexical_paragraph_alignment_and_scoped_quantity_candidates",
+      "limitations": "字词对齐/设备层数批次数值候选，不是语义矛盾证明；可能为不同实验配置、排版或OCR差异。没有候选不表示结论未变，新增/删除/跨页变化可能漏检。"
+    }
+  },
+  {
+    "files": [
+      "2010.08895v1.pdf",
+      "2010.08895v3.pdf"
+    ],
+    "latency_ms": 32.02189999865368,
+    "result": {
+      "from": "619ee219908185ff74e3",
+      "to": "6cd2645d4a50d1a61a26",
+      "changes": [],
+      "method": "lexical_paragraph_alignment_and_scoped_quantity_candidates",
+      "limitations": "字词对齐/设备层数批次数值候选，不是语义矛盾证明；可能为不同实验配置、排版或OCR差异。没有候选不表示结论未变，新增/删除/跨页变化可能漏检。"
+    }
+  }
+]

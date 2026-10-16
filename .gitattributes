@@ -10,3 +10,4 @@
 *.jpg binary
 *.png binary
 *.atom -text
+data/phase2_qa_tasks.json -text

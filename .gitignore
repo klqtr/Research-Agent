@@ -10,6 +10,7 @@ data/uploads/
 tmp/
 node_modules/
 data/papers/*.pdf
+data/phase2_papers/*.pdf
 docs/sources/*.js
 .pytest_cache/
 data/tessdata/*.traineddata

@@ -1,0 +1,7 @@
+{
+  "path": "data\\phase2_qa_tasks.json",
+  "sha256": "df6a7b40d6f661eba6eb67241b18c7af7571ffb5138509438aaca284302f5702",
+  "cases": 18,
+  "test_cases": 12,
+  "gold_reviewed_by_human": false
+}

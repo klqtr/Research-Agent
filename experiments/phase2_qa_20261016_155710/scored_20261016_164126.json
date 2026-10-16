@@ -1,0 +1,230 @@
+{
+  "annotation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "results": {
+    "citation_integrity_rag": {
+      "completed_real_endpoint": 0,
+      "human_reviewed_answers": 0,
+      "answer_correctness": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "task_success_rate": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "version_consistency": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "citation_precision": null,
+      "citation_recall": null,
+      "evidence_support_rate": null,
+      "hallucination_rate": null,
+      "unknown_support_count": 0,
+      "partial_support_count": 0,
+      "latency_median_ms": null,
+      "total_cost_usd": null,
+      "note": "人工标签缺失/分母为零记null；支持度无法判断单列。Wilson仅适用于已标注二元样本，非独立性/小样本不允许强统计结论。"
+    },
+    "conventional_rag": {
+      "completed_real_endpoint": 0,
+      "human_reviewed_answers": 0,
+      "answer_correctness": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "task_success_rate": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "version_consistency": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "citation_precision": null,
+      "citation_recall": null,
+      "evidence_support_rate": null,
+      "hallucination_rate": null,
+      "unknown_support_count": 0,
+      "partial_support_count": 0,
+      "latency_median_ms": null,
+      "total_cost_usd": null,
+      "note": "人工标签缺失/分母为零记null；支持度无法判断单列。Wilson仅适用于已标注二元样本，非独立性/小样本不允许强统计结论。"
+    },
+    "direct_llm": {
+      "completed_real_endpoint": 0,
+      "human_reviewed_answers": 0,
+      "answer_correctness": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "task_success_rate": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "version_consistency": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "citation_precision": null,
+      "citation_recall": null,
+      "evidence_support_rate": null,
+      "hallucination_rate": null,
+      "unknown_support_count": 0,
+      "partial_support_count": 0,
+      "latency_median_ms": null,
+      "total_cost_usd": null,
+      "note": "人工标签缺失/分母为零记null；支持度无法判断单列。Wilson仅适用于已标注二元样本，非独立性/小样本不允许强统计结论。"
+    },
+    "proposed_agent": {
+      "completed_real_endpoint": 0,
+      "human_reviewed_answers": 0,
+      "answer_correctness": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "task_success_rate": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "version_consistency": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "citation_precision": null,
+      "citation_recall": null,
+      "evidence_support_rate": null,
+      "hallucination_rate": null,
+      "unknown_support_count": 0,
+      "partial_support_count": 0,
+      "latency_median_ms": null,
+      "total_cost_usd": null,
+      "note": "人工标签缺失/分母为零记null；支持度无法判断单列。Wilson仅适用于已标注二元样本，非独立性/小样本不允许强统计结论。"
+    },
+    "without_agent_planning": {
+      "completed_real_endpoint": 0,
+      "human_reviewed_answers": 0,
+      "answer_correctness": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "task_success_rate": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "version_consistency": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "citation_precision": null,
+      "citation_recall": null,
+      "evidence_support_rate": null,
+      "hallucination_rate": null,
+      "unknown_support_count": 0,
+      "partial_support_count": 0,
+      "latency_median_ms": null,
+      "total_cost_usd": null,
+      "note": "人工标签缺失/分母为零记null；支持度无法判断单列。Wilson仅适用于已标注二元样本，非独立性/小样本不允许强统计结论。"
+    },
+    "without_facet_rerank": {
+      "completed_real_endpoint": 0,
+      "human_reviewed_answers": 0,
+      "answer_correctness": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "task_success_rate": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "version_consistency": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "citation_precision": null,
+      "citation_recall": null,
+      "evidence_support_rate": null,
+      "hallucination_rate": null,
+      "unknown_support_count": 0,
+      "partial_support_count": 0,
+      "latency_median_ms": null,
+      "total_cost_usd": null,
+      "note": "人工标签缺失/分母为零记null；支持度无法判断单列。Wilson仅适用于已标注二元样本，非独立性/小样本不允许强统计结论。"
+    },
+    "without_verifier": {
+      "completed_real_endpoint": 0,
+      "human_reviewed_answers": 0,
+      "answer_correctness": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "task_success_rate": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "version_consistency": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "citation_precision": null,
+      "citation_recall": null,
+      "evidence_support_rate": null,
+      "hallucination_rate": null,
+      "unknown_support_count": 0,
+      "partial_support_count": 0,
+      "latency_median_ms": null,
+      "total_cost_usd": null,
+      "note": "人工标签缺失/分母为零记null；支持度无法判断单列。Wilson仅适用于已标注二元样本，非独立性/小样本不允许强统计结论。"
+    },
+    "without_version": {
+      "completed_real_endpoint": 0,
+      "human_reviewed_answers": 0,
+      "answer_correctness": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "task_success_rate": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "version_consistency": {
+        "value": null,
+        "n": 0,
+        "wilson95": null
+      },
+      "citation_precision": null,
+      "citation_recall": null,
+      "evidence_support_rate": null,
+      "hallucination_rate": null,
+      "unknown_support_count": 0,
+      "partial_support_count": 0,
+      "latency_median_ms": null,
+      "total_cost_usd": null,
+      "note": "人工标签缺失/分母为零记null；支持度无法判断单列。Wilson仅适用于已标注二元样本，非独立性/小样本不允许强统计结论。"
+    }
+  },
+  "caveat": "human字段不是人工行为证明；真实性由实际审阅过程/身份/记录核验。未标注保持null。"
+}

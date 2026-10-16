@@ -3,11 +3,8 @@
 Native Function Calling is used only with an explicitly enabled real endpoint.
 Offline operation remains deterministic and never masquerades as model planning.
 """
-import json
 from .agent import answer
-from .model import ModelClient
 from .tools import future_work, graph, writing_outline
-from .retrieval import validate_claims
 
 ALLOWED = {"retrieve", "graph", "future_work", "outline"}
 PLAN_PROMPT = """Plan a research request using only these local tools: retrieve, graph,
@@ -31,20 +28,16 @@ def validate_plan(payload):
 def workflow(objective, papers, settings, use_model=False):
     if not objective.strip() or len(objective) > 6000:
         raise ValueError("研究目标须为1–6000字符")
-    trace, outputs = [], {}
     if use_model:
-        model = ModelClient(settings)
-        planned = model.plan_native(objective)
-        steps = list(dict.fromkeys(call["function"]["name"] for call in planned["calls"]))
-        mode = "real_llm_native_tools"
-        trace.append({"phase": "plan", "mode": mode, "steps": steps, "usage": planned.get("usage"), "calls": planned["calls"]})
-    else:
-        steps = ["retrieve"]
-        for words, tool in [(('graph', '引用', '图谱'), 'graph'), (('future', '未来', '前沿'), 'future_work'), (('outline', '框架', '写作'), 'outline')]:
-            if any(word in objective.lower() for word in words):
-                steps.append(tool)
-        mode = "deterministic_workflow"
-        trace.append({"phase": "plan", "mode": mode, "steps": steps})
+        from .research_agent import ResearchAgent
+        return ResearchAgent(settings).run(objective,papers,use_model=True)
+    trace, outputs = [], {}
+    steps = ["retrieve"]
+    for words, tool in [(('graph', '引用', '图谱'), 'graph'), (('future', '未来', '前沿'), 'future_work'), (('outline', '框架', '写作'), 'outline')]:
+        if any(word in objective.lower() for word in words):
+            steps.append(tool)
+    mode = "deterministic_workflow"
+    trace.append({"phase": "plan", "mode": mode, "steps": steps})
     for tool in steps:
         if tool == "retrieve":
             outputs[tool] = answer(objective, papers, settings, use_model=False)
@@ -55,11 +48,5 @@ def workflow(objective, papers, settings, use_model=False):
         else:
             outputs[tool] = writing_outline(objective, papers)
         trace.append({"phase": "tool", "tool": tool, "status": "completed"})
-    synthesis = None
-    if use_model:
-        final = model.finish_native(objective, planned, outputs)
-        evidence = outputs.get("retrieve", {}).get("evidence", [])
-        synthesis = validate_claims(final["output"], evidence)
-        trace.append({"phase": "synthesize", "usage": final.get("usage"), "accepted_claims": len(synthesis["claims"])})
-    return {"mode": mode, "trace": trace, "outputs": outputs, "synthesis": synthesis, "max_steps": 4,
+    return {"mode": mode, "trace": trace, "outputs": outputs, "synthesis": None, "max_steps": 4,
             "limitations": "真实模型原生工具协议已接入但尚无真实端点实验；未启用模型时为确定性路由。引用检查不保证语义蕴含。"}
