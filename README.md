@@ -115,7 +115,13 @@ docker run --rm -p 127.0.0.1:8000:8000 -v researchtrace-data:/app/data researcht
 
 参赛者姓名、学校、组别、指导教师：**待用户填写，不虚构**。代码与文档由本次 AI 辅助研发生成并通过所列实际测试，AI 协同说明见 `docs/ai_collaboration.md`。保留真实阶段 Git 历史，不回填虚构提交。没有推送远程、购买云资源或调用付费模型。
 
-源代码公开许可证尚待用户决定；依赖及论文许可需按上游声明核验。PyMuPDF 有其上游许可证约束，不能因为本项目自研就忽略依赖许可。
+仓库保留用户在 GitHub 初始化时选择的 MIT 许可证（见 LICENSE）；依赖及论文许可需按上游声明分别核验。PyMuPDF 有其上游许可证约束，不能因为本项目自研就忽略依赖许可。
+
+## GitHub 与本地启动
+
+用户指定仓库：https://github.com/klqtr/Research-Assistant-Agent 。保留第一、二阶段六次真实开发提交及 GitHub 初始化历史，后续按真实修改继续提交，不补造开发记录。同步与恢复说明见 [Git 使用指南](docs/git_workflow.md)。
+
+GitHub 托管代码；本地网页需要运行 Python 服务。在项目目录执行 `.\.venv\Scripts\python.exe -m uvicorn src.app:app --host 127.0.0.1 --port 8000`，保持终端运行，再打开 http://127.0.0.1:8000 。关闭服务或重启电脑后需要重新启动。仓库页面不会自动运行这个 Python 网站。
 
 ## 第二阶段评测与交付
 
