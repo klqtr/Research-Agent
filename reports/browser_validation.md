@@ -4,7 +4,7 @@
 
 - 文献库：7份真实文献卡片、版本标签与运行模式已显示；截图`reports/screenshots/library.jpg`。
 - 初始阅读：PDF插件预览黑屏，虽然原文API返回200。记录为真实UI缺陷并修复。
-- 修复阅读：服务端页图真实显示Attention首页，原始版式保留，正文侧可读；截图`reports/screenshots/reader.jpg`。原PDF单独保留链接。
+- 修复阅读：服务端页图真实显示Attention首页，原始版式保留，正文侧可读。原截图含论文作者联系邮箱，已留在本机私有备份；公开仓库以第二阶段的`reports/screenshots/phase2_reader_source.jpg`说明阅读与证据定位界面，不冒充原阶段截图。原PDF单独保留链接。
 - 数字引文：点击Attention首页[12]跳转到第10页相应参考条目；“返回引文正文”回到第1页。并不声称作者年份引文或所有PDF引用均可无损定位。
 - 引用图谱：7份文件合并为6个论文家族，PageRank与Future Work原文候选真实显示；截图`reports/screenshots/graph.jpg`。边仅表示论文家族，不声称BERT引用了2023版Transformer。
 - 问答：实际填写训练硬件问题并选择Attention，返回抽取式证据和页码。未配置真实模型，未展示假模型综合。

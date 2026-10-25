@@ -1,0 +1,15 @@
+{
+  "client_date": "2026-10-25",
+  "kind": "real_engineering_regression_not_LLM_evaluation",
+  "counts": {
+    "tests": 137,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "warning_count": 1,
+  "public_copy": "Paths and identities redacted; original XML retained locally.",
+  "first_restricted_attempt": "stalled_and_stopped_not_passed",
+  "completed_attempt": "normal_permissions",
+  "xml": "experiments/publication_review_20261025/tests.xml"
+}

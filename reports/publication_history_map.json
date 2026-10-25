@@ -1,0 +1,35 @@
+{
+  "client_date": "2026-10-25",
+  "scope": "Local main now uses the audited sanitized history; original private bundle retained locally; no remote contacted.",
+  "historical_commit_count": 9,
+  "original_tip": "09c2683d95f427482335f05c027c37da927b2394",
+  "sanitized_tip": "9fabb7924061640c9a17a2e26acb3851e8a9ace2",
+  "commit_map": {
+    "ade3312ef10669f240172ee15876e211fc5273e7": "8c1d7eeeacdd63afbee2aed0c73469b9dcaf76fb",
+    "e170801f7dd27cc0d10a159a58f963e622f94abf": "705251eddd4ddcf4c3db0edbaec2de49a1669352",
+    "1944a726bff110b18bc64878aa9c98ae57bbdad5": "8bdeeb44ac7395cfc3f17efd04d73d67a91b6c92",
+    "50428c5b5aeaf19e154fcd2c0d17290510da71da": "b56adc75c0d5319c06d0d8195fedfe10a3df8767",
+    "d0081629f668b7e5df2f36db6e4f1188195caf6a": "3769c499067b8551e97703c92ced0dcd32f3033c",
+    "d0c594e47947b4e3513b624fb4d07809c53db49e": "1d904f5947030ef644f2254ad85568210508a534",
+    "ae3d31efd2790ad0b8dc2dd7bf4f347b824767f4": "0696a3d83113722974b204826d47a9f03c874f3e",
+    "0db2e3c063e538e79334d5c3ac1e36466cab53a1": "bbb5ca0747cd3eb41f418ca336ceed8c1e8768a1",
+    "09c2683d95f427482335f05c027c37da927b2394": "9fabb7924061640c9a17a2e26acb3851e8a9ace2"
+  },
+  "modified_blob_versions": 63,
+  "removed_paths": [
+    "checkpoints/LATEST.json",
+    "reports/screenshots/reader.jpg"
+  ],
+  "redacted_identity_fields": 1,
+  "invalidated_signature_headers_removed": 1,
+  "preserved": [
+    "commit messages",
+    "author and committer timestamps/timezones",
+    "parent order and merge topology",
+    "historical test failures and metrics"
+  ],
+  "new_worktree_cleanup_commit": "not_created_pending_user_confirmation",
+  "github_upload": "not_performed",
+  "source_main_uses_sanitized_history": true,
+  "new_cleanup_commit": "authorized_separately_not_part_of_this_9_commit_snapshot"
+}

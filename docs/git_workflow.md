@@ -1,10 +1,12 @@
 # ResearchTrace Git 与运行指南
 
-用户指定仓库：https://github.com/klqtr/Research-Assistant-Agent
+当前公开仓库：https://github.com/klqtr/Research-Agent 。旧 Research-Assistant-Agent 仓库保持不变。
 
 Git 保存本地版本；GitHub 保存上传后的远程版本。网站服务与 GitHub 仓库分别运行，上传代码不会自动部署 Python 网站。
 
 ## 本次历史合并
+
+2026-10-25 公开发布：下述编号记录原始本地开发历史。用户已确认逐提交脱敏和公开发布，本地main使用清理后的9条历史，日期、顺序和合并关系保留；编号映射见reports/publication_history_map.json。清理说明和工具另保存为新提交。只显式发布main，不使用--all或--mirror。
 
 保留本地六次开发提交 ade3312、e170801、1944a72、50428c5、d008162、d0c594e，以及用户仓库的初始化提交 ae3d31e。通过合并提交连接历史，不强推、不删除旧提交、不伪造时间。README 保留完整项目说明，.gitignore 合并双方规则，保留远程 MIT LICENSE；第三方依赖和论文许可单独适用。
 
@@ -17,12 +19,12 @@ git status
 git diff
 git add README.md src/本次修改的文件.py
 git commit -m "说明本次具体修改和目的"
-git push origin HEAD:main
+git push Origin main
 ```
 
 示例文件名须替换为真实路径。每次有意义的修改并通过必要检查后提交，不需要为凑数量提交。首次配置个人作者信息时，在本仓库使用 `git config user.name` 和 `git config user.email` 设置自己的姓名和 GitHub 隐私邮箱；不要把示例邮箱当作个人账号。既有 AI 辅助开发署名保留。
 
-查看真实记录：`git log --graph --oneline --all`。比较同步状态先运行 `git fetch origin`，再运行 `git log --oneline origin/main..HEAD`（待上传）与 `git log --oneline HEAD..origin/main`（远程新增）。不要使用强制推送覆盖他人提交。
+查看公开开发记录：`git log --graph --oneline main`。比较同步状态先运行 `git fetch Origin`，再运行 `git log --oneline Origin/main..HEAD`（待上传）与 `git log --oneline HEAD..Origin/main`（远程新增）。不要使用强制推送覆盖他人提交。
 
 .env、数据库、原始论文、虚拟环境、OCR 数据与本地服务日志不上传。环境模板 .env.example 保留。上传前检查暂存内容，不在聊天或提交中填写 API 密钥。历史中的敏感信息无法仅靠后续删除清除。
 

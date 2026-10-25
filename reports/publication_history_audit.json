@@ -1,0 +1,21 @@
+{
+  "client_date": "2026-10-25",
+  "scope": "all reachable objects and identity fields of local sanitized release history",
+  "objects_scanned": 542,
+  "unique_blobs_scanned": 437,
+  "identity_fields_checked": 18,
+  "historical_xml_versions_compared": 30,
+  "historical_commits": 9,
+  "messages_dates_parent_topology": "preserved_and_verified_during_rewrite",
+  "historical_binary_review": {
+    "pdf_versions_text_checked": 5,
+    "image_versions_metadata_checked": 12,
+    "findings": 0,
+    "contact_email_reader_screenshot": "removed_from_all_release_commits"
+  },
+  "source_main_uses_sanitized_history": true,
+  "only_release_main_ref": true,
+  "findings": [],
+  "github_upload": "not_performed",
+  "new_cleanup_commit": "authorized_separately_not_part_of_this_9_commit_snapshot"
+}
